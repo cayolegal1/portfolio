@@ -6,8 +6,18 @@ const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Cayo Legal - Software Developer",
-  description: "Desarrollador Frontend y Mobile especializado en JavaScript y TypeScript con React. Experto en crear interfaces modernas y optimizadas, con sólidos conocimientos de backend para soluciones completas.",
-  keywords: ["software development", "frontend developer", "mobile developer", "javascript", "typescript", "react", "react native", "nextjs"],
+  description:
+    "Desarrollador Frontend y Mobile especializado en JavaScript y TypeScript con React. Experto en crear interfaces modernas y optimizadas, con sólidos conocimientos de backend para soluciones completas.",
+  keywords: [
+    "software development",
+    "frontend developer",
+    "mobile developer",
+    "javascript",
+    "typescript",
+    "react",
+    "react native",
+    "nextjs",
+  ],
 };
 
 export default function RootLayout({

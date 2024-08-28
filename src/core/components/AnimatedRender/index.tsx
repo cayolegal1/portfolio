@@ -1,14 +1,16 @@
-import type { AnimatedProps, AnimationType } from "./Animated.types";
-import styles from "./Animated.module.css";
+import type {
+  AnimatedRenderProps,
+  AnimationRenderType,
+} from "./AnimatedRender.types";
+import styles from "./AnimatedRender.module.css";
 
-export default function Animated({
+export default function AnimatedRender({
   children,
   delay = "0s",
   animationType = "fadeInLeft",
   ...props
-}: AnimatedProps): JSX.Element {
-    
-  const animations: Record<AnimationType, string> = {
+}: AnimatedRenderProps): JSX.Element {
+  const animations: Record<AnimationRenderType, string> = {
     fadeInLeft: styles.fadeInLeft,
   };
 
