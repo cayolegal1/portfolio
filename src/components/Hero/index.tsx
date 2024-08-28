@@ -2,6 +2,12 @@ import AnimatedRender from "@/core/components/AnimatedRender";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
+  const skills = [
+    "Desarrollador de Software",
+    "Desarrollador Web",
+    "Desarrollador de Apps",
+  ];
+
   return (
     <div className={styles.main}>
       <AnimatedRender>
@@ -15,9 +21,16 @@ export default function Hero() {
       </AnimatedRender>
 
       <AnimatedRender delay="2.2s" className={styles.typing_text_container}>
-        <h2 className={styles.text}>
-          Y soy un <span className={styles.typing_text}>Desarrollador de software</span>
-        </h2>
+        <h2 className={styles.text}>Y soy un</h2>
+        <ul className={styles.list}>
+          {skills.map(skill => (
+            <li key={skill} className={styles.list_item}>
+              <h2 className={styles.text}>
+                <span className={styles.typing_text}>{skill}</span>
+              </h2>
+            </li>
+          ))}
+        </ul>
       </AnimatedRender>
     </div>
   );
