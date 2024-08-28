@@ -6,6 +6,7 @@ import styles from "./AnimatedRender.module.css";
 
 export default function AnimatedRender({
   children,
+  className = "",
   delay = "0s",
   animationType = "fadeInLeft",
   ...props
@@ -17,7 +18,7 @@ export default function AnimatedRender({
   return (
     <div
       {...props}
-      className={`${styles.animation_config} ${animations[animationType]} ${props.className}`}
+      className={`${styles.animation_config} ${animations[animationType]} ${className}`}
       style={{ animationDelay: delay, ...props.style }}
     >
       {children}
