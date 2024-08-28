@@ -14,13 +14,13 @@ export default function Hero() {
         <h1 className={styles.text}>Hola,</h1>
       </AnimatedRender>
 
-      <AnimatedRender delay="1.2s">
+      <AnimatedRender delay="400ms">
         <h1 className={styles.text}>
           Mi nombre es <span className={styles.text_gradient}>Cayo Legal</span>
         </h1>
       </AnimatedRender>
 
-      <AnimatedRender delay="2.2s" className={styles.typing_text_container}>
+      <AnimatedRender delay="800ms" className={styles.typing_text_container}>
         <h2 className={styles.text}>Y soy un</h2>
         <ul className={styles.list}>
           {skills.map(skill => (

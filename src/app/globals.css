@@ -30,6 +30,10 @@ a {
   html {
     color-scheme: dark;
   }
+
+  body {
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme: light) {
