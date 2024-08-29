@@ -25,8 +25,8 @@
 }
 
 .list {
-  line-height: 5rem;
-  height: 5rem;
+  line-height: 6rem;
+  height: 6rem;
   overflow: hidden;
   padding-right: 1rem;
 }
@@ -35,18 +35,18 @@
   list-style: none;
   position: relative;
   top: 0;
-  animation: slide 9s steps(3) 1.8s forwards infinite;
+  animation: slide 4.5s steps(3) 2.6s forwards infinite;
 }
 
-.typing_text {
+.infinite_typing {
   position: relative;
   white-space: nowrap;
 }
 
-.typing_text::after {
-  animation: typing 3s steps(30) 1.8s forwards infinite, cursor 0.5s linear backwards infinite;
+.infinite_typing::after {
+  animation: typing 1.5s steps(30) 2.6s forwards infinite, cursor 0.5s linear 2.67s backwards infinite;
   background-color: var(--background);
-  border-left: 2px solid white;
+  border-left: 2px solid transparent;
   content: "";
   height: 100%;
   left: 0;
@@ -55,29 +55,31 @@
   bottom: 0;
 }
 
-
 @keyframes slide {
-
   100% {
     top: -300%;
   }
 }
 
 @keyframes typing {
-
-  70% {
-    left: 101%;
+  50% {
+    left: 100%;
   }
 
   100% {
-    left: 101%;
+    left: 100%;
   }
-
 }
-
 
 @keyframes cursor {
   to {
-    border-color: transparent;
+    border-color: white;
+  }
+}
+
+@media (max-width: 550px)  {
+  .list {
+    line-height: 3.5rem;
+    height: 3.5rem;
   }
 }
