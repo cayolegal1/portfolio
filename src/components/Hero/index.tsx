@@ -1,5 +1,4 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
-import SingleTyping from "@/core/components/SingleTyping";
 import styles from "./Hero.module.css";
 
 const skills = [
@@ -11,29 +10,29 @@ const skills = [
 export default function Hero() {
   return (
     <div className={styles.main}>
-      <AnimatedRender>
-        <h1 className={styles.text}>Hola,</h1>
+      <AnimatedRender className={styles.xsalign_self_start}>
+        <p className={styles.text}>Hola,</p>
       </AnimatedRender>
 
-      <AnimatedRender delay="400ms">
+      <AnimatedRender className={styles.xsalign_self_start} delay="400ms">
         <h1 className={styles.text}>
           Mi nombre es <span className={styles.text_gradient}>Cayo Legal</span>
         </h1>
       </AnimatedRender>
 
-      <AnimatedRender delay="800ms" className={styles.typing_text_container}>
-        <h2 className={styles.text}>
-          Y soy {" "}
-         <SingleTyping>
-           Desarrollador de
-         </SingleTyping>
-        </h2>
+      <AnimatedRender className={styles.xsalign_self_start} delay="800ms">
+        <p className={styles.text}>
+          Y soy Desarrollador de
+        </p>
+      </AnimatedRender>
+
+      <AnimatedRender delay="1.2s">
         <ul className={styles.list}>
           {skills.map(skill => (
             <li key={skill} className={styles.list_item}>
-              <h2 className={styles.text}>
-                <span className={styles.infinite_typing}>{skill}</span>
-              </h2>
+              <h1 className={`${styles.text} ${styles.text_ellipsis}`}>
+                <span className={`${styles.skill} ${styles.text_gradient}`}>{skill}</span>
+              </h1>
             </li>
           ))}
         </ul>

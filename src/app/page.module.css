@@ -1,4 +1,5 @@
 .container {
-  display: flex;
-  justify-content: center;
+  max-width: 100%;
+  min-height: 100vh;
+  padding-inline: 1.2rem;
 }
