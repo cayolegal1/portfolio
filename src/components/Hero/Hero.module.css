@@ -9,19 +9,6 @@
   font-weight: bold;
 }
 
-.text_gradient {
-  background-image: linear-gradient(to right,
-      var(--gradient-from),
-      #a855f7,
-      var(--gradient-to, rgba(168, 85, 247, 0)));
-  background-clip: text;
-  color: transparent;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  -webkit-background-clip: text;
-}
-
 .text_ellipsis {
   color: #b34cdd;
   overflow: hidden;
@@ -38,8 +25,8 @@
 }
 
 .list {
-  line-height: 6rem;
-  height: 6rem;
+  line-height: 3.5rem;
+  height: 3.5rem;
   overflow: hidden;
   padding-right: 1rem;
 }
@@ -66,22 +53,5 @@
 
   60%, 90% {
     transform: translateY(-200%);
-  }
-}
-
-@media (max-width: 650px)  {
-  .list {
-    line-height: 3.5rem;
-    height: 3.5rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .xsalign_self_start {
-    align-self: flex-start;
-  }
-
-  .slide_container {
-    justify-content: flex-start;
   }
 }

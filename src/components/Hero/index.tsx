@@ -1,4 +1,5 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
+import TextGradient from "@/core/components/TextGradient";
 import styles from "./Hero.module.css";
 
 const skills = [
@@ -9,14 +10,14 @@ const skills = [
 
 export default function Hero() {
   return (
-    <div className={styles.main}>
+    <section className={styles.main}>
       <AnimatedRender className={styles.xsalign_self_start}>
         <p className={styles.text}>Hola,</p>
       </AnimatedRender>
 
       <AnimatedRender className={styles.xsalign_self_start} delay="400ms">
         <h1 className={styles.text}>
-          Mi nombre es <span className={styles.text_gradient}>Cayo Legal</span>
+          Mi nombre es <TextGradient>Cayo Legal</TextGradient>
         </h1>
       </AnimatedRender>
 
@@ -31,12 +32,12 @@ export default function Hero() {
           {skills.map(skill => (
             <li key={skill} className={styles.list_item}>
               <h1 className={`${styles.text} ${styles.text_ellipsis}`}>
-                <span className={`${styles.skill} ${styles.text_gradient}`}>{skill}</span>
+                <TextGradient className={styles.skill}>{skill}</TextGradient>
               </h1>
             </li>
           ))}
         </ul>
       </AnimatedRender>
-    </div>
+    </section>
   );
 }

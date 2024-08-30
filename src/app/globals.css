@@ -1,8 +1,8 @@
 :root {
   --background-color:  rgb(3 7 18 / 1);
   --background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #7877c64d, #fff0);
-  --gradient-from: #0ea5e9;
-  --gradient-to: #db2777;
+  --text-gradient-from: #0ea5e9;
+  --text-gradient-to: #db2777;
 }
 
 * {
