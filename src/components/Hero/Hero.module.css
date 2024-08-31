@@ -8,16 +8,6 @@
   font-size: clamp(2.6rem, 2.5vw, 4.8rem);
 }
 
-.text_gradient {
-  background-image: linear-gradient(to right,
-      var(--gradient-from),
-      #a855f7,
-      var(--gradient-to, rgba(168, 85, 247, 0)));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 .typing_text_container {
   align-items: center;
   display: inline-flex;
@@ -39,42 +29,9 @@
   top: 0;
 }
 
-.skill {
-  position: relative;
-  white-space: nowrap;
-}
-
-.skill::after {
-  animation: typing 1.5s steps(30) 2.6s forwards infinite, cursor 0.5s linear 2.67s backwards infinite;
-  background-color: var(--background);
-  border-left: 2px solid transparent;
-  bottom: 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
 @keyframes slide {
   100% {
     top: -300%;
-  }
-}
-
-@keyframes typing {
-  50% {
-    left: 100%;
-  }
-
-  100% {
-    left: 100%;
-  }
-}
-
-@keyframes cursor {
-  to {
-    border-color: white;
   }
 }
 

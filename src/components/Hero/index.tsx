@@ -1,13 +1,10 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
+import AnimatedTyping from "@/core/components/AnimatedTyping";
 import SingleTyping from "@/core/components/SingleTyping";
 import TextGradient from "@/core/components/TextGradient";
 import styles from "./Hero.module.css";
 
-const skills = [
-  "de Software",
-  "Web",
-  "Móvil",
-];
+const skills = ["de Software", "Web", "Móvil"];
 
 export default function Hero() {
   return (
@@ -24,16 +21,15 @@ export default function Hero() {
 
       <AnimatedRender delay="800ms" className={styles.typing_text_container}>
         <h2 className={styles.text}>
-          Y soy {" "}
-         <SingleTyping>
-           Desarrollador 
-         </SingleTyping>
+          Y soy <SingleTyping>Desarrollador</SingleTyping>
         </h2>
         <ul className={styles.list}>
-          {skills.map((skill) => (
+          {skills.map(skill => (
             <li key={skill} className={styles.list_item}>
               <h2 className={styles.text}>
-                <TextGradient className={styles.skill}>{skill}</TextGradient>
+                <AnimatedTyping>
+                  <TextGradient>{skill}</TextGradient>
+                </AnimatedTyping>
               </h2>
             </li>
           ))}
