@@ -1,0 +1,24 @@
+.text_gradient_config {
+    background-image: linear-gradient(to right,
+            var(--text-gradient-from),
+            #a855f7,
+            var(--text-gradient-to, rgba(168, 85, 247, 0)));
+    background-clip: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.4s ease, background-size 0.4s ease;
+    white-space: nowrap;
+    -webkit-background-clip: text;
+}
+
+.in_hover {
+    color: inherit
+}
+
+.in_hover:hover {
+    color: transparent;
+}
+
+.text_gradient {
+    color: transparent;
+}
