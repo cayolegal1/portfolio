@@ -4,12 +4,3 @@
   min-height: 100vh;
   padding-top: 11.2rem;
 }
-
-.centered {
-  display: flex;
-  justify-content: center;
-  bottom: 7rem;
-  left: 50%;
-  position: absolute;
-  right: 50%;
-}

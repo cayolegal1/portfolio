@@ -1,9 +1,0 @@
-.see_more {
-    cursor: pointer;
-    transform: translateY(0);
-    transition: 0.5s;
-}
-
-.see_more:hover {
-    transform: translateY(5px);
-}

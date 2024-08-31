@@ -9,6 +9,10 @@
     animation-name: fadeInLeft;
 }
 
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
 .bounceInDown {
     animation-name: bounceInDown;
 }
@@ -18,6 +22,18 @@
     from {
         opacity: 0;
         transform: translate3d(-400%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
     }
 
     to {
