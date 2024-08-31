@@ -10,7 +10,7 @@
 .single_typing::after {
     animation: typing 1.5s steps(60) 1.8s forwards 1;
     background-color: var(--background);
-    border-left: 2px solid white;
+    border-left: 3px solid var(--text-color);
     content: "";
     height: 100%;
     left: 0;
@@ -26,12 +26,12 @@
     }
 
     99% {
-        border-left: none;
         left: 100%;
     }
 
 
     100% {
         left: 100%;
+        border-left: none;
     }
 }

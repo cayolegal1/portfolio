@@ -1,7 +1,8 @@
+import TextGradient from "@/core/components/TextGradient";
 import AnimatedRender from "@/core/components/AnimatedRender";
 import AnimatedTyping from "@/core/components/AnimatedTyping";
 import SingleTyping from "@/core/components/SingleTyping";
-import TextGradient from "@/core/components/TextGradient";
+import ExpandMore from "@/core/components/ExpandMore";
 import styles from "./Hero.module.css";
 
 const skills = ["de Software", "Web", "Móvil"];
@@ -19,7 +20,7 @@ export default function Hero() {
         </h1>
       </AnimatedRender>
 
-      <AnimatedRender delay="800ms" className={styles.typing_text_container}>
+      <AnimatedRender delay="800ms" className={styles.animated_typing_container}>
         <h2 className={styles.text}>
           Y soy <SingleTyping>Desarrollador</SingleTyping>
         </h2>
@@ -34,6 +35,13 @@ export default function Hero() {
             </li>
           ))}
         </ul>
+      </AnimatedRender>
+      <AnimatedRender
+        animationType="bounceInDown"
+        delay="3s"
+        className={styles.centered}
+      >
+       <ExpandMore />
       </AnimatedRender>
     </div>
   );

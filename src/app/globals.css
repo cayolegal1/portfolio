@@ -1,7 +1,9 @@
 :root {
-  --background: #191919;
+  /* --background: #191919; */
+  --background: #3A353f;
   --text-gradient-from: #0ea5e9;
   --text-gradient-to: #db2777;
+  --text-color: #f1ece1;
 }
 
 * {
@@ -35,7 +37,7 @@ a {
   }
 
   body {
-    color: white;
+    color: var(--text-color);
   }
 }
 
