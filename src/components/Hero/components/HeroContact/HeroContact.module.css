@@ -2,5 +2,14 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 20.0rem;
+    margin-top: 10rem;
+}
+
+.social_media_icon {
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.social_media_icon:hover {
+  transform: translateY(5px);
 }

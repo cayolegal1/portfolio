@@ -4,7 +4,7 @@ import SingleTyping from "@/core/components/SingleTyping";
 import TextGradient from "@/core/components/TextGradient";
 import styles from "./HeroPresentation.module.css";
 
-const skills = ["de Software", "Web", "Móvil"];
+const skills = ["Software a medida", "Aplicaciones Web", "Aplicaciones Móviles"];
 
 export default function HeroPresentation(): JSX.Element {
   return (
@@ -24,7 +24,7 @@ export default function HeroPresentation(): JSX.Element {
         className={styles.animated_typing_container}
       >
         <h2 className={styles.text}>
-          Y soy <SingleTyping>Desarrollador</SingleTyping>
+          Y soy <SingleTyping>Desarrollador de </SingleTyping>
         </h2>
         <ul className={styles.list}>
           {skills.map(skill => (

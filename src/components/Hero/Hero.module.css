@@ -1,6 +1,10 @@
-.main {
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-inline: auto;
   max-width: fit-content;
   min-height: 100vh;
-  padding-top: 11.2rem;
+  width: 100%;
 }

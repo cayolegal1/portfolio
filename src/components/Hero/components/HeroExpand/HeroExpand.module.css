@@ -1,7 +1,7 @@
 .expand_container {
     display: flex;
     justify-content: center;
-    bottom: 7rem;
+    bottom: 5rem;
     left: 50%;
     position: absolute;
     right: 50%;

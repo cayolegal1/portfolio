@@ -5,10 +5,10 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <div className={styles.main}>
+    <section className={styles.container}>
       <HeroPresentation />
       <HeroContact />
       <HeroExpand />
-    </div>
+    </section>
   );
 }
