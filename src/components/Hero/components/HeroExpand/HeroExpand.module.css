@@ -1,0 +1,18 @@
+.expand_container {
+    display: flex;
+    justify-content: center;
+    bottom: 7rem;
+    left: 50%;
+    position: absolute;
+    right: 50%;
+}
+
+.expand {
+    cursor: pointer;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.expand:hover {
+    transform: translateY(5px);
+}
