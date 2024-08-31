@@ -1,7 +1,7 @@
 :root {
   --background: #191919;
-  --gradient-from: #0ea5e9;
-  --gradient-to: #db2777;
+  --text-gradient-from: #0ea5e9;
+  --text-gradient-to: #db2777;
 }
 
 * {
@@ -15,6 +15,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-size: 62.5%;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {

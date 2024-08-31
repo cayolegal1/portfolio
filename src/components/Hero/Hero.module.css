@@ -1,6 +1,7 @@
 .main {
+  margin-inline: auto;
+  max-width: fit-content;
   padding-top: 11.2rem;
-  padding-inline: clamp(2rem, 2.5vw, 4.8rem);
 }
 
 .text {
@@ -25,34 +26,34 @@
 }
 
 .list {
-  line-height: 6rem;
-  height: 6rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
   overflow: hidden;
   padding-right: 1rem;
 }
 
 .list_item {
+  animation: slide 4.5s steps(3) 2.6s forwards infinite;
   list-style: none;
   position: relative;
   top: 0;
-  animation: slide 4.5s steps(3) 2.6s forwards infinite;
 }
 
-.infinite_typing {
+.skill {
   position: relative;
   white-space: nowrap;
 }
 
-.infinite_typing::after {
+.skill::after {
   animation: typing 1.5s steps(30) 2.6s forwards infinite, cursor 0.5s linear 2.67s backwards infinite;
   background-color: var(--background);
   border-left: 2px solid transparent;
+  bottom: 0;
   content: "";
   height: 100%;
   left: 0;
   position: absolute;
   width: 100%;
-  bottom: 0;
 }
 
 @keyframes slide {
@@ -77,9 +78,9 @@
   }
 }
 
-@media (max-width: 550px)  {
+@media (min-width: 1000px) {
   .list {
-    line-height: 3.5rem;
-    height: 3.5rem;
+    height: 6rem;
+    line-height: 6rem;
   }
 }
