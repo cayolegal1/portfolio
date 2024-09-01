@@ -1,0 +1,26 @@
+.icon {
+    cursor: pointer;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: translateY(5px);
+}
+
+.stop {
+    stop-opacity: 1;
+    transition: 0.5s;
+}
+
+.white_stop {
+    stop-color: white;
+}
+
+.first_stop {
+    stop-color: var(--text-gradient-from);
+}
+
+.second_stop {
+    stop-color: var(--text-gradient-to);
+}
