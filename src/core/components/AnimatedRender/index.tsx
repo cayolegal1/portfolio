@@ -9,6 +9,7 @@ export default function AnimatedRender({
   className = "",
   delay = "0s",
   animationType = "fadeInLeft",
+  as: Component = "div",
   ...props
 }: AnimatedRenderProps): JSX.Element {
   const animations: Record<AnimationRenderType, string> = {
@@ -18,12 +19,12 @@ export default function AnimatedRender({
   };
 
   return (
-    <div
+    <Component
       {...props}
       className={`${styles.animation_config} ${animations[animationType]} ${className}`}
       style={{ animationDelay: delay, ...props.style }}
     >
       {children}
-    </div>
+    </Component>
   );
 }

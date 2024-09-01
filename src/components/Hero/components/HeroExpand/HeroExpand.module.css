@@ -2,9 +2,7 @@
     display: flex;
     justify-content: center;
     bottom: 5rem;
-    left: 50%;
     position: absolute;
-    right: 50%;
 }
 
 .expand {
@@ -15,4 +13,21 @@
 
 .expand:hover {
     transform: translateY(5px);
+}
+
+.stop {
+    stop-opacity: 1;
+    transition: 0.5s;
+}
+
+.white_stop {
+    stop-color: white;
+}
+
+.first_stop {
+    stop-color: var(--text-gradient-from);
+}
+
+.second_stop {
+    stop-color: var(--text-gradient-to);
 }

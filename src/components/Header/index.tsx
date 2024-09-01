@@ -1,3 +1,4 @@
+import AnimatedRender from "@/core/components/AnimatedRender";
 import TextGradient from "@/core/components/TextGradient";
 import styles from "./Header.module.css";
 
@@ -9,7 +10,12 @@ const headers = [
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <AnimatedRender
+      as="header"
+      animationType="fadeInDown"
+      delay="3.3s"
+      className={styles.header}
+    >
       <nav className={styles.nav}>
         {headers.map(header => (
           <a key={header} className={styles.nav_link}>
@@ -17,6 +23,6 @@ export default function Header() {
           </a>
         ))}
       </nav>
-    </header>
+    </AnimatedRender>
   );
 }
