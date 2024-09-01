@@ -1,11 +1,12 @@
 .typing {
     position: relative;
     white-space: nowrap;
+    color: transparent;
 }
 
 .typing::after {
     animation: typing 1.5s steps(30) 2.6s forwards infinite, cursor 0.6s linear 2.67s backwards infinite;
-    background-color: var(--background);
+    background-color: transparent;
     border-left: 3px solid transparent;
     bottom: 0;
     content: "";

@@ -24,7 +24,7 @@ export default function HeroPresentation(): JSX.Element {
         className={styles.animated_typing_container}
       >
         <h2 className={styles.text}>
-          Y soy <SingleTyping>Desarrollador de </SingleTyping>
+          Soy <SingleTyping>Desarrollador de </SingleTyping>
         </h2>
         <ul className={styles.list}>
           {skills.map(skill => (
