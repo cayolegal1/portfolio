@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import AnimatedRender from "@/core/components/AnimatedRender";
 import textStyles from "../HeroPresentation/HeroPresentation.module.css";
 import gradient from "../../../../core/components/TextGradient/TextGradient.module.css";
+import styles from "./HeroSkills.module.css";
 
 export default function HeroSkills() {
   return (
@@ -17,8 +18,8 @@ export default function HeroSkills() {
           wrapper="span"
         />
         <TypeAnimation
-          className={`${gradient.text_gradient_config} ${gradient.text_gradient}`}
-          cursor
+          cursor={false}
+          className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${styles.cursor}`}
           sequence={["", 2300, "Software"]}
           speed={55}
           style={{ whiteSpace: "normal" }}
