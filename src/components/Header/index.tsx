@@ -20,7 +20,7 @@ export default function Header() {
       <nav className={styles.nav}>
         {headers.map(header => (
           <Link key={header.title} className={styles.nav_link} href={header.href}>
-            <TextGradient inHover style={{cursor: "pointer"}}>{header.title}</TextGradient>
+            <TextGradient inHover className={styles.focusable}>{header.title}</TextGradient>
           </Link>
         ))}
       </nav>
