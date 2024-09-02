@@ -1,12 +1,10 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
-import AnimatedTyping from "@/core/components/AnimatedTyping";
-import SingleTyping from "@/core/components/SingleTyping";
 import TextGradient from "@/core/components/TextGradient";
+import data from "@/core/data/info.json";
 import styles from "./HeroPresentation.module.css";
 
-const skills = ["Software a medida", "Aplicaciones Web", "Aplicaciones Móviles"];
-
 export default function HeroPresentation(): JSX.Element {
+  const { name } = data;
   return (
     <>
       <AnimatedRender>
@@ -15,28 +13,8 @@ export default function HeroPresentation(): JSX.Element {
 
       <AnimatedRender delay="400ms">
         <h1 className={styles.text}>
-          Mi nombre es <TextGradient>Cayo Legal</TextGradient>
+          Mi nombre es <TextGradient>{name}</TextGradient>
         </h1>
-      </AnimatedRender>
-
-      <AnimatedRender
-        delay="800ms"
-        className={styles.animated_typing_container}
-      >
-        <h2 className={styles.text}>
-          Soy <SingleTyping>Desarrollador de </SingleTyping>
-        </h2>
-        <ul className={styles.list}>
-          {skills.map(skill => (
-            <li key={skill} className={styles.list_item}>
-              <h2 className={styles.text}>
-                <AnimatedTyping>
-                  <TextGradient>{skill}</TextGradient>
-                </AnimatedTyping>
-              </h2>
-            </li>
-          ))}
-        </ul>
       </AnimatedRender>
     </>
   );
