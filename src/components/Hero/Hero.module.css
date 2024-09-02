@@ -1,8 +1,5 @@
 .container {
   align-items: center;
-  background-image: url("/images/dark.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;

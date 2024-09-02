@@ -6,8 +6,14 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.container}>
-      
+    <section
+      className={styles.container}
+      style={{
+        backgroundImage: "url(/images/bg.webp)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className={styles.content}>
         <HeroPresentation />
       </div>
@@ -15,10 +21,9 @@ export default function Hero() {
       <div className={styles.content}>
         <HeroSkills />
       </div>
-      
+
       <HeroContact />
       <HeroExpand />
-
     </section>
   );
 }
