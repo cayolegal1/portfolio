@@ -8,7 +8,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'",
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'",
           },
           {
             key: "X-Content-Type-Options",
@@ -23,10 +23,8 @@ const nextConfig = {
     ];
   },
   experimental: {
-    optimizePackageImports: [
-        "react-type-animation"
-    ],
-  }
+    optimizePackageImports: ["react-type-animation"],
+  },
 };
 
 export default nextConfig;
