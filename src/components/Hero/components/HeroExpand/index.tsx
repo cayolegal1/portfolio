@@ -6,7 +6,7 @@ export default function HeroExpand(): JSX.Element {
   return (
     <AnimatedRender
       animationType="bounceInDown"
-      delay="3.6s"
+      delay="3s"
       className={styles.expand_container}
     >
       <ExpandIcon />

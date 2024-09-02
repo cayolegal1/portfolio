@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "refresh": "next build && next start",
     "lint": "next lint",
     "check:types": "tsc --noEmit",
     "prepare": "husky"

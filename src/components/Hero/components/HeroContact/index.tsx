@@ -10,7 +10,7 @@ export default function HeroContact(): JSX.Element {
   return (
     <AnimatedRender
       animationType="fadeInDown"
-      delay="3s"
+      delay="2.5s"
       className={styles.social_media_container}
     >
       <Link href={github_url} target="_blank" className={styles.social_media_icon}>

@@ -1,11 +1,12 @@
+import Link from "next/link";
 import AnimatedRender from "@/core/components/AnimatedRender";
 import TextGradient from "@/core/components/TextGradient";
 import styles from "./Header.module.css";
 
 const headers = [
-  "Sobre Mi",
-  "Experiencia",
-  "Proyectos"
+  { title: "Sobre mi", href: "/" },
+  { title: "Experiencia", href: "#experience" },
+  { title: "Proyectos", href: "#proyects" },
 ];
 
 export default function Header() {
@@ -13,14 +14,14 @@ export default function Header() {
     <AnimatedRender
       as="header"
       animationType="fadeInDown"
-      delay="3.3s"
+      delay="2.7s"
       className={styles.header}
     >
       <nav className={styles.nav}>
         {headers.map(header => (
-          <a key={header} className={styles.nav_link}>
-            <TextGradient inHover>{header}</TextGradient>
-          </a>
+          <Link key={header.title} className={styles.nav_link} href={header.href}>
+            <TextGradient inHover style={{cursor: "pointer"}}>{header.title}</TextGradient>
+          </Link>
         ))}
       </nav>
     </AnimatedRender>

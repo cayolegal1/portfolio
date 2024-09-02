@@ -3,11 +3,9 @@
 }
 
 .cursor::after {
-    animation: cursor 1s linear 3s normal infinite !important;
+    animation: cursor 1s linear 2.3s normal infinite !important;
     border-left: 3px solid var(--text-color);
-    border-radius: 100px;
-    bottom: 0;
-    color: white;
+    border-radius: 50px;
     content: "";
     height: 100%;
     margin-left: 2px;
@@ -15,7 +13,7 @@
 }
 
 @keyframes cursor {
-    70% {
+    50% {
       border-left-color: transparent;
     }
 }

@@ -19,8 +19,16 @@ export default function SvgGradient({ children, properties, gradientId }: SvgGra
             className={`${styles.stop} ${isHovered ? styles.first_stop : styles.white_stop} `}
           />
           <stop
-            offset="100%"
+            offset="50%"
             className={`${styles.stop} ${isHovered ? styles.second_stop : styles.white_stop} `}
+          />
+          <stop
+            offset="75%"
+            className={`${styles.stop} ${isHovered ? styles.third_stop : styles.white_stop} `}
+          />
+          <stop
+            offset="100%"
+            className={`${styles.stop} ${isHovered ? styles.fourth_stop : styles.white_stop} `}
           />
         </linearGradient>
       </defs>

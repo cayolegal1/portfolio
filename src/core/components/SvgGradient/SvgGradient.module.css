@@ -18,9 +18,19 @@
 }
 
 .first_stop {
-    stop-color: var(--text-gradient-from);
+    /* stop-color: var(--text-gradient-from); */
+    stop-color: #0691ee;
 }
 
 .second_stop {
-    stop-color: var(--text-gradient-to);
+    /* stop-color: var(--text-gradient-to); */
+    stop-color: #0f98dc;
+}
+
+.third_stop {
+    stop-color: #4c99e5;
+}
+
+.fourth_stop {
+    stop-color: #068fea;
 }

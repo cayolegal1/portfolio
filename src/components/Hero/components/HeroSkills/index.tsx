@@ -7,21 +7,14 @@ import styles from "./HeroSkills.module.css";
 
 export default function HeroSkills() {
   return (
-    <AnimatedRender delay="1s">
+    <AnimatedRender delay="1.2s">
       <h1 className={textStyles.text} style={{width: "101%"}}>
-        Soy{" "}
+        Soy {" "}
         <TypeAnimation
-          cursor={false}
-          sequence={["", 1500, "Desarrollador de "]}
-          speed={55}
-          style={{ whiteSpace: "normal" }}
-          wrapper="span"
-        />
-        <TypeAnimation
-          cursor={false}
           className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${styles.cursor}`}
-          sequence={["", 2300, "Software"]}
-          speed={55}
+          cursor={false}
+          sequence={["", 2000, "Desarrollador de Software"]}
+          speed={50}
           style={{ whiteSpace: "normal" }}
           wrapper="span"
         />
