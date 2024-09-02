@@ -7,11 +7,11 @@ export default function HeroPresentation(): JSX.Element {
   const { name } = data;
   return (
     <>
-      <AnimatedRender>
+      <AnimatedRender animationType="fadeInDown">
         <h1 className={styles.text}>Hola,</h1>
       </AnimatedRender>
 
-      <AnimatedRender delay="400ms">
+      <AnimatedRender delay="400ms" animationType="fadeInDown">
         <h1 className={styles.text}>
           Mi nombre es <TextGradient>{name}</TextGradient>
         </h1>
