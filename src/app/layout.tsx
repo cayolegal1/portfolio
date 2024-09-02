@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="preload" href="/images/bg_mobile.webp" as="image" />
       <link rel="preload" href="/images/bg.webp" as="image" />
+      <link rel="preload" href="/images/bg_tablet.webp" as="image" />
       <body className={inter.className}>{children}</body>
     </html>
   );

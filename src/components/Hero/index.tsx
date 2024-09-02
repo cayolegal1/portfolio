@@ -6,14 +6,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section
-      className={styles.container}
-      style={{
-        backgroundImage: "url(/images/bg.webp)",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <section className={styles.container}>
       <div className={styles.content}>
         <HeroPresentation />
       </div>

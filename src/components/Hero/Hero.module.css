@@ -1,5 +1,8 @@
 .container {
   align-items: center;
+  background-image: url("/images/bg_mobile.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,4 +14,18 @@
 
 .content {
   padding-inline: var(--padding-inline);
+}
+
+
+@media (min-width: 700px) {
+  .container {
+    background-image: url("/images/bg_tablet.webp");
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    background-image: url("/images/bg.webp");
+  }
 }
