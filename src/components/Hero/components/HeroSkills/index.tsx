@@ -7,7 +7,7 @@ import styles from "./HeroSkills.module.css";
 
 export default function HeroSkills() {
   return (
-    <AnimatedRender delay="1.2s">
+    <AnimatedRender delay="1.2s" className={styles.container}>
       <h1 className={textStyles.text} style={{width: "101%"}}>
         Soy {" "}
         <TypeAnimation

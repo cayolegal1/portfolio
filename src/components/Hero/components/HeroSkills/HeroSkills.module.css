@@ -1,25 +1,26 @@
 .cursor {
-    position: relative;
+  position: relative;
 }
 
 .cursor::after {
-    animation: cursor 1s linear 2.3s normal infinite !important;
-    border-left: 3px solid var(--text-color);
-    border-radius: 50px;
-    content: "";
-    height: 3.5rem;
-    margin-left: 2px;
-    position: absolute;
+  animation: cursor 1s linear 2.3s normal infinite !important;
+  border-left: 3px solid var(--text-color);
+  border-radius: 50px;
+  content: "";
+  height: 3.5rem;
+  margin-left: 2px;
+  position: absolute;
 }
 
 @keyframes cursor {
-    50% {
-      border-left-color: transparent;
-    }
+  50% {
+    border-left-color: transparent;
+  }
 }
 
 
 @media (min-width: 390px) {
+
   .cursor::after {
     height: 100%;
   }
