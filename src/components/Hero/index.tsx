@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HeroPresentation from "./components/HeroPresentation";
 import HeroContact from "./components/HeroContact";
 import HeroSkills from "./components/HeroSkills";
@@ -6,14 +7,15 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section
-      className={styles.container}
-      style={{
-        backgroundImage: "url(/images/bg.webp)",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <section className={styles.container}>
+      <div className={styles.bg_container}>
+        <Image
+          src="/images/bg.webp"
+          alt="bg_image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className={styles.content}>
         <HeroPresentation />
       </div>
@@ -23,6 +25,7 @@ export default function Hero() {
       </div>
 
       <HeroContact />
+
       <HeroExpand />
     </section>
   );
