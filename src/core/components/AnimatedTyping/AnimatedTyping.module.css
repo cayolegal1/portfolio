@@ -1,7 +1,6 @@
 .typing {
     position: relative;
     white-space: nowrap;
-    color: transparent;
 }
 
 .typing::after {

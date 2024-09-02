@@ -6,8 +6,10 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   return (
     <section className={styles.container}>
-      <HeroPresentation />
-      <HeroContact />
+      <div className={styles.content}>
+        <HeroPresentation />
+        <HeroContact />
+      </div>
       <HeroExpand />
     </section>
   );

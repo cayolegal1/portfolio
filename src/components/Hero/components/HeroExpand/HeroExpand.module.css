@@ -1,6 +1,12 @@
 .expand_container {
     display: flex;
     justify-content: center;
-    bottom: 5rem;
+    bottom: 0rem;
     position: absolute;
+}
+
+@media (min-height: 550px) {
+  .expand_container {
+    bottom: 5rem;
+  }
 }

@@ -1,5 +1,7 @@
 .text {
+  color: white;
   font-size: clamp(2.6rem, 2.5vw, 4.8rem);
+  text-align: center;
 }
 
 .animated_typing_container {
@@ -34,5 +36,11 @@
   .list {
     height: 6rem;
     line-height: 6rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .text {
+    text-align: initial;
   }
 }
