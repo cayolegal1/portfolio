@@ -13,8 +13,8 @@ export default function HeroSkills() {
         <TypeAnimation
           className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${styles.cursor}`}
           cursor={false}
-          sequence={["", 2000, "Desarrollador de Software"]}
-          speed={50}
+          sequence={["", 2000, "Desarrollador de Software", 1000]}
+          speed={60}
           style={{ whiteSpace: "normal" }}
           wrapper="span"
         />
