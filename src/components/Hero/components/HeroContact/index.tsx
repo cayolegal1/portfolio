@@ -7,7 +7,7 @@ import data from "@/core/data/info.json";
 
 const { github_url, linkedin_url } = data;
 
-const contactSources = [
+const contactLinks = [
   { ariaLabel: "Visit my repository on github", href: github_url, icon: <GitHubIcon /> },
   { ariaLabel: "Visit my profile on LinkedIn", href: linkedin_url, icon: <LinkedinIcon /> },
 ];
@@ -19,7 +19,7 @@ export default function HeroContact(): JSX.Element {
       delay="2.5s"
       className={styles.social_media_container}
     >
-      {contactSources.map(source => (
+      {contactLinks.map(source => (
         <Link
           aria-label={source.ariaLabel}
           className={styles.social_media_icon}

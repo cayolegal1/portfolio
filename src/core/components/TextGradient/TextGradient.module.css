@@ -1,9 +1,5 @@
 .text_gradient_config {
-    /* background-image: linear-gradient(to right,
-            var(--text-gradient-from),
-            #a855f7,
-            var(--text-gradient-to, rgba(168, 85, 247, 0))); */
-            background: linear-gradient(90deg, #0691ee, #0f98dc, #2c87e1, #39a6ef);
+    background: linear-gradient(90deg, #0691ee, #0f98dc, #2c87e1, #39a6ef);
     background-clip: text;
     overflow: hidden;
     text-overflow: ellipsis;
