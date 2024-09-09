@@ -1,6 +1,7 @@
-import type { HTMLAttributes, ReactNode } from "react";
+import type { ElementType, HTMLAttributes, ReactNode } from "react";
 
-export type TextGradientProps = HTMLAttributes<HTMLSpanElement> & {
+export type TextGradientProps = HTMLAttributes<HTMLElement> & {
+  as?: ElementType;
   children: ReactNode;
   className?: string;
   inHover?: boolean;
