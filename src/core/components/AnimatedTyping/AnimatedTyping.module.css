@@ -25,14 +25,3 @@
         height: 100%;
     }
 }
-
-@media (max-width: 385px) {
-    .cursor {
-        display: inline-flex;
-    }
-
-    .cursor::after {
-        right: -1px;
-        margin-left: 0;
-    }
-}

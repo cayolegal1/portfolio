@@ -7,7 +7,7 @@ import styles from "./AnimatedTyping.module.css";
 export default function AnimatedTyping({
   strings,
   className = "",
-  typeSpeed = 35,
+  typeSpeed = 40,
   ...props
 }: ReactTypedProps): JSX.Element {
   return (

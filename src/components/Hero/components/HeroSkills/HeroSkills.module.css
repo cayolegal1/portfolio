@@ -1,0 +1,4 @@
+.no_border::after {
+  animation: none;
+  border-left-color: transparent;
+}
