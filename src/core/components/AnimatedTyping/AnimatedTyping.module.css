@@ -1,32 +1,27 @@
-.typing {
+.cursor {
     position: relative;
-    white-space: nowrap;
 }
 
-.typing::after {
-    animation: typing 1.5s steps(30) 2.6s forwards infinite, cursor 0.6s linear 2.67s backwards infinite;
-    background-color: transparent;
-    border-left: 3px solid transparent;
-    bottom: 0;
+.cursor::after {
+    animation: cursor 1s linear 3.5s normal infinite !important;
+    border-left: 3px solid var(--text-color);
+    border-radius: 50px;
     content: "";
-    height: 100%;
-    left: 0;
+    height: 3.5rem;
+    margin-left: 2px;
     position: absolute;
-    width: 100%;
-}
-
-@keyframes typing {
-    50% {
-        left: 100%;
-    }
-
-    100% {
-        left: 100%;
-    }
 }
 
 @keyframes cursor {
-    to {
-        border-color: var(--text-color);
+    50% {
+        border-left-color: transparent;
+    }
+}
+
+
+@media (min-width: 390px) {
+
+    .cursor::after {
+        height: 100%;
     }
 }
