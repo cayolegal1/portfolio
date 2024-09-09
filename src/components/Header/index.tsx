@@ -1,6 +1,6 @@
 import Link from "next/link";
 import AnimatedRender from "@/core/components/AnimatedRender";
-import TextGradient from "@/core/components/TextGradient";
+import Text from "@/core/components/Text";
 import styles from "./Header.module.css";
 
 const headers = [
@@ -19,8 +19,14 @@ export default function Header() {
     >
       <nav className={styles.nav}>
         {headers.map(header => (
-          <Link key={header.title} className={styles.nav_link} href={header.href}>
-            <TextGradient inHover className={styles.focusable}>{header.title}</TextGradient>
+          <Link
+            key={header.title}
+            className={styles.nav_link}
+            href={header.href}
+          >
+            <Text className={styles.nav_link_text} variant="gradient" inHover>
+              {header.title}
+            </Text>
           </Link>
         ))}
       </nav>

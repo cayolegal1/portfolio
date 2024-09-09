@@ -17,5 +17,5 @@
 }
 
 .text_gradient {
-    color: transparent;
+    color: transparent !important;
 }

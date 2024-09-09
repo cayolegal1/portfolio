@@ -22,14 +22,17 @@
     color: var(--text-color);
     cursor: pointer;
     display: block;
-    font-size: 1.6rem;
-    font-weight: 500;
     padding: 0.5rem;
     position: relative;
 }
 
-.focusable::after {
+.nav_link_text {
     cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.nav_link_text::after {
     display: block;
     content: '';
     border-bottom: 1px solid var(--text-color);
@@ -38,8 +41,7 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.focusable:hover::after {
-    cursor: pointer;
+.nav_link_text:hover::after {
     transform: scaleX(1);
     transform-origin: 0% 50%;
 }

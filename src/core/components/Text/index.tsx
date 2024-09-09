@@ -6,18 +6,27 @@ export default function Text({
   as: Component = "span",
   centered = true,
   children,
+  className = "",
   variant = "normal",
+  ...props
 }: TextProps): JSX.Element {
   if (variant === "gradient") {
     return (
-      <TextGradient as={Component} className={`${styles.text} ${centered && styles.centered}`}>
+      <TextGradient
+        {...props}
+        as={Component}
+        className={`${styles.text} ${centered && styles.centered} ${className}`}
+      >
         {children}
       </TextGradient>
     );
   }
 
   return (
-    <Component className={`${styles.text} ${centered && styles.centered}`}>
+    <Component
+      {...props}
+      className={`${styles.text} ${centered && styles.centered} ${className}`}
+    >
       {children}
     </Component>
   );

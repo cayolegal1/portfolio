@@ -1,3 +1,7 @@
+.hero_skills_content {
+  width: "101%"
+}
+
 .no_border::after {
   animation: none;
   border-left-color: transparent;

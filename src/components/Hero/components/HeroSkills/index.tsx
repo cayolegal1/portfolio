@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import AnimatedRender from "@/core/components/AnimatedRender";
+import Text from "@/core/components/Text";
 import AnimatedTyping from "@/core/components/AnimatedTyping";
-import textStyles from "../HeroPresentation/HeroPresentation.module.css";
 import styles from "./HeroSkills.module.css";
 import gradient from "../../../../core/components/TextGradient/TextGradient.module.css";
 
@@ -19,14 +19,13 @@ export default function HeroSkills() {
 
   return (
     <AnimatedRender delay="1.2s">
-      <h1 className={textStyles.text} style={{ width: "101%" }}>
+      <Text as="h1" className={styles.hero_skills_content}>
         Soy{" "}
-        <AnimatedTyping 
+        <AnimatedTyping
           className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${isRendered && styles.no_border}`}
           startDelay={2200}
           strings={["Desarrollador"]}
-        />
-        {" "}
+        />{" "}
         <AnimatedTyping
           backSpeed={50}
           className={`${gradient.text_gradient_config} ${gradient.text_gradient}`}
@@ -34,7 +33,7 @@ export default function HeroSkills() {
           startDelay={isRendered ? 0 : delay}
           strings={["de Software", "de Apps", "Web"]}
         />
-      </h1>
+      </Text>
     </AnimatedRender>
   );
 }
