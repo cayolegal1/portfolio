@@ -14,7 +14,7 @@ export default function Header() {
     <AnimatedRender
       as="header"
       animationType="fadeInDown"
-      delay="2.7s"
+      delay="2.8s"
       className={styles.header}
     >
       <nav className={styles.nav}>
