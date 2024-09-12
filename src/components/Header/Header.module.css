@@ -26,7 +26,7 @@
     position: relative;
 }
 
-.nav_link_text {
+.nav_link span {
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 500;

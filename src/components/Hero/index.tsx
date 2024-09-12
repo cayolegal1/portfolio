@@ -1,3 +1,4 @@
+import Section from "@/core/components/Section";
 import HeroPresentation from "./components/HeroPresentation";
 import HeroContact from "./components/HeroContact";
 import HeroExpand from "./components/HeroExpand";
@@ -5,10 +6,10 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.container}>
+    <Section className={styles.hero_container}>
       <HeroPresentation />
       <HeroContact />
       <HeroExpand />
-    </section>
+    </Section>
   );
 }
