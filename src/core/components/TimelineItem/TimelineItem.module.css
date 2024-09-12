@@ -2,7 +2,12 @@
     position: relative;
 }
 
-.timeline_item_container::before {
+.timeline_item {
+    margin-inline: 4.8rem;
+    padding-bottom: 3.0rem;
+}
+
+.timeline_item::before {
     border-left: 2px solid #ffffff26;
     content: "";
     height: 100%;
@@ -11,16 +16,11 @@
     position: absolute;
 }
 
-.timeline_item {
-    margin-inline: 4.8rem;
-    padding-bottom: 3.0rem;
-}
 
-.timeline_item::before {
+.timeline_item span::before {
     content: "•";
     font-size: 4rem;
     left: -10px;
     position: absolute;
-    top: -14px;
     color: #1893dd;
 }

@@ -4,5 +4,6 @@
     flex-direction: column;
     justify-content: center;
     margin-inline: auto;
+    max-width: 90.0rem;
     width: 100%;
 }
