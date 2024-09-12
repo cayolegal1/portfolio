@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_next/
 Disallow: /public/
+Sitemap: https://cayolegal.vercel.app/sitemap-index.xml
