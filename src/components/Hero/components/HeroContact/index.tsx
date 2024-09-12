@@ -1,4 +1,3 @@
-import Link from "next/link";
 import AnimatedRender from "@/core/components/AnimatedRender";
 import GitHubIcon from "@/core/components/Icons/GitHubIcon";
 import LinkedinIcon from "@/core/components/Icons/LinkedinIcon";
@@ -20,7 +19,7 @@ export default function HeroContact(): JSX.Element {
       className={styles.social_media_container}
     >
       {contactLinks.map(source => (
-        <Link
+        <a
           aria-label={source.ariaLabel}
           className={styles.social_media_icon}
           href={source.href}
@@ -28,7 +27,7 @@ export default function HeroContact(): JSX.Element {
           target="_blank"
         >
           {source.icon}
-        </Link>
+        </a>
       ))}
     </AnimatedRender>
   );
