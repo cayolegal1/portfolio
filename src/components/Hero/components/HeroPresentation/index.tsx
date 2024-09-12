@@ -8,7 +8,7 @@ export default function HeroPresentation(): JSX.Element {
   return (
     <>
       <AnimatedRender animationType="fadeInDown">
-        <Text as="h1">Hola,</Text>
+        <Text as="p">Hola,</Text>
       </AnimatedRender>
 
       <AnimatedRender delay="400ms" animationType="fadeInDown">

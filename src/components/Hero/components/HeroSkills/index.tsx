@@ -19,7 +19,7 @@ export default function HeroSkills() {
 
   return (
     <AnimatedRender delay="1.2s">
-      <Text as="h1" className={styles.hero_skills_content}>
+      <Text as="h2" className={styles.hero_skills_content}>
         Soy{" "}
         <AnimatedTyping
           className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${isRendered && styles.no_border}`}
