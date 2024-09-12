@@ -25,7 +25,7 @@ const nextConfig = {
     ];
   },
   experimental: {
-    optimizePackageImports: ["react-type-animation"],
+    optimizePackageImports: ["react-typed"],
   },
 };
 
