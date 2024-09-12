@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   description:
     "Desarrollador Frontend y Mobile especializado en JavaScript y TypeScript con React. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas.",
   keywords: [
+    "desarrollador de software",
+    "desarrollador web",
+    "desarrollador movil",
     "software development",
     "frontend developer",
     "mobile developer",
@@ -17,7 +20,15 @@ export const metadata: Metadata = {
     "react",
     "react native",
     "nextjs",
+    "cayo legal",
+    "developer portfolio",
   ],
+  authors: [{ name: "Cayo Legal", url: "https://cayolegal.vercel.app" }],
+  creator: "Cayo Legal",
+  publisher: "Vercel",
+  applicationName: "Cayo Legal - Software Developer",
+  category: "Developer Portfolio",
+  generator: "Next.js",
 };
 
 export default function RootLayout({
