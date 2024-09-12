@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import AnimatedRender from "@/core/components/AnimatedRender";
 import Text from "@/core/components/Text";
-import AnimatedTyping from "@/core/components/AnimatedTyping";
+import AnimatedType from "@/core/components/AnimatedType";
 import styles from "./HeroSkills.module.css";
 import gradient from "../../../../core/components/TextGradient/TextGradient.module.css";
 
@@ -21,12 +21,12 @@ export default function HeroSkills() {
     <AnimatedRender delay="1.2s">
       <Text as="h2" className={styles.hero_skills_content}>
         Soy{" "}
-        <AnimatedTyping
+        <AnimatedType
           className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${isRendered && styles.no_border}`}
           startDelay={2200}
           strings={["Desarrollador"]}
         />{" "}
-        <AnimatedTyping
+        <AnimatedType
           backSpeed={50}
           className={`${gradient.text_gradient_config} ${gradient.text_gradient}`}
           loop
