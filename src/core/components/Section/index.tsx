@@ -7,7 +7,7 @@ export default function Section({
   ...props
 }: SectionProps): JSX.Element {
   return (
-    <section {...props} className={`${styles.container} ${className}`}>
+    <section {...props} className={`${styles.section_container} ${className}`}>
       {children}
     </section>
   );
