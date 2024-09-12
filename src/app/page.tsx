@@ -8,8 +8,6 @@ export default function App() {
       <Header />
       <main className={styles.main}>
         <Hero />
-        <div className={styles.container}>
-        </div>
       </main>
     </>
   );
