@@ -1,7 +1,7 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
 import Text from "@/core/components/Text";
 import HeroSkills from "../HeroSkills";
-import data from "@/core/data/info.json";
+import data from "@/core/data/user-info.json";
 
 export default function HeroPresentation(): JSX.Element {
   const { name } = data;

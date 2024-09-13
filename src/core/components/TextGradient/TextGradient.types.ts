@@ -4,4 +4,5 @@ export type TextGradientProps = HTMLAttributes<HTMLElement> & {
   as?: ElementType;
   children: ReactNode;
   inHover?: boolean;
+  ellipsis?: boolean
 }

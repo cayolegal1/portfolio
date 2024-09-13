@@ -24,7 +24,7 @@ export default function Header() {
             className={styles.nav_link}
             href={header.href}
           >
-            <Text className={styles.nav_link_text} variant="gradient" inHover>
+            <Text variant="gradient" inHover>
               {header.title}
             </Text>
           </Link>

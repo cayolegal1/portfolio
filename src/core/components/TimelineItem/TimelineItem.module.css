@@ -1,0 +1,30 @@
+.timeline_item_container {
+    position: relative;
+}
+
+.timeline_item {
+    margin-inline: 4.8rem;
+    padding-bottom: 7.0rem;
+}
+
+.timeline_item::before {
+    border-left: 2px solid #ffffff26;
+    content: "";
+    height: 100%;
+    left: 10px;
+    position: absolute;
+    width: 0;
+}
+
+
+.timeline_item span::before {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    content: "•";
+    font-size: 4rem;
+    left: 0;
+    position: absolute;
+    top: -5px;
+}

@@ -1,0 +1,32 @@
+{
+    "experience": [
+        {
+            "id": 0,
+            "position": "Desarrollador Móvil",
+            "company": "Bebidas del Paraguay",
+            "from_date": "Actualmente",
+            "description": "Desarrollo de aplicación móvil de ecommerce de bebidas con React Native y TypeScript siguiendo la metodología agil Scrum."
+        },
+        {
+            "id": 1,
+            "position": "Desarrollador FrontEnd",
+            "company": "Mega Digital",
+            "from_date": "Mayo 2023",
+            "description": "Desarrollo de plataforma web empresarial que permite automatizar envío de cobranzas, gestionar equipos de trabajo y ver métricas desarrollado en Next.js. Desarrollo de aplicación móvil de atención al cliente en tiempo real con React Native y Socket.IO."
+        },
+        {
+            "id": 2,
+            "position": "Desarrollador FrontEnd",
+            "company": "Innovatica",
+            "from_date": "Octubre 2022",
+            "description": "Fábrica de software a medida para clientes de USA con React y React Native. Creación de componentes reutilizables siguiendo diseños de Figma."
+        },
+        {
+            "id": 3,
+            "position": "Desarrollador de Software",
+            "company": "Banco Continental",
+            "from_date": "Julio 2022",
+            "description": "Desarrollo de software empresarial bancario usando .NET Core y SQL."
+        }
+    ]
+}

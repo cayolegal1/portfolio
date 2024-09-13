@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
+import { ReactTyped, type ReactTypedProps } from "react-typed";
+import styles from "./AnimatedType.module.css";
 
-import { ReactTyped, ReactTypedProps } from "react-typed";
-import styles from "./AnimatedTyping.module.css";
-
-export default function AnimatedTyping({
+export default function AnimatedType({
   strings,
   className = "",
   typeSpeed = 40,

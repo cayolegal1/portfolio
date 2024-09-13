@@ -1,8 +1,31 @@
 .text {
     color: white;
-    font-size: clamp(2.6rem, 2.5vw, 4.8rem);
 }
 
 .centered {
     text-align: center;
+}
+
+.xl {
+    font-size: clamp(2.6rem, 2.5vw, 3.6rem);
+}
+
+.title {
+    font-size: clamp(2.6rem, 2.5vw, 3.0rem);
+}
+
+.subtitle {
+    font-size: clamp(2.0rem, 2.5vw, 2.5rem);
+}
+
+.text_size {
+    font-size: clamp(1.5rem, 2.5vw, 2.0rem);
+}
+
+.description {
+    font-size: clamp(1.6rem, 2.4vw, 1.6rem);
+}
+
+.caption {
+    font-size: clamp(1.4rem, 2.4vw, 1.4rem);
 }

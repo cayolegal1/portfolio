@@ -1,0 +1,17 @@
+.content_container {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 2rem;
+    max-width: 95%;
+}
+
+.content_container time {
+    color: #bababa;
+}
+
+@media (min-width: 800px) {
+    .content_container {
+        grid-template-columns: 50% 50%;
+        column-gap: 10%;
+    }
+}
