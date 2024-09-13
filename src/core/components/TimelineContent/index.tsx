@@ -8,17 +8,17 @@ export default function TimelineContent({
   return (
     <div className={styles.content_container}>
       <div>
-        <Text as="h3" size="subtitle" variant="gradient">
+        <Text as="h3" size="subtitle" variant="gradient" centered={false}>
           {content.position}
         </Text>
-        <Text as="h4" size="text">
+        <Text as="h4" size="description" centered={false}>
           {content.company}
         </Text>
-        <Text as="p" size="caption">
+        <Text as="p" size="caption" centered={false}>
           {content.from_date}
         </Text>
       </div>
-        <Text as="p" size="text">
+        <Text as="p" size="description" centered={false}>
           {content.description}
         </Text>
     </div>

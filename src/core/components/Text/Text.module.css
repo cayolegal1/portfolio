@@ -7,15 +7,15 @@
 }
 
 .xl {
-    font-size: clamp(2.6rem, 2.5vw, 4.8rem);
+    font-size: clamp(2.6rem, 2.5vw, 3.6rem);
 }
 
 .title {
-    font-size: clamp(2.0rem, 2.5vw, 4.0rem);
+    font-size: clamp(2.0rem, 2.5vw, 3.0rem);
 }
 
 .subtitle {
-    font-size: clamp(2.0rem, 2.5vw, 3.0rem);
+    font-size: clamp(2.0rem, 2.5vw, 2.5rem);
 }
 
 .text_size {
@@ -23,9 +23,9 @@
 }
 
 .description {
-    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    font-size: clamp(1.6rem, 2.4vw, 1.6rem);
 }
 
 .caption {
-    font-size: clamp(1.5rem, 2.5vw, 1.4rem);
+    font-size: clamp(1.4rem, 2.4vw, 1.4rem);
 }

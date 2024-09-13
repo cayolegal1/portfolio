@@ -10,7 +10,7 @@ export default function Experience(): JSX.Element {
   const { experience } = data;
   return (
     <Section>
-      <Text as="h3">Experiencia</Text>
+      <Text as="h3" size="title">Experiencia laboral</Text>
       <div className={styles.timeline_container}>
         <Timeline>
           {experience.map(item => (

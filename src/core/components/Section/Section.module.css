@@ -7,3 +7,10 @@
     max-width: 90.0rem;
     width: 100%;
 }
+
+
+@media (min-width: 1400px) {
+  .section_container {
+    max-width: 110.0rem;
+  }
+}

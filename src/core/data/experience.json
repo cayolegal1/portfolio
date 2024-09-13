@@ -9,17 +9,17 @@
         },
         {
             "id": 1,
-            "position": "Desarrollador FrontEnd y Móvil",
+            "position": "Desarrollador FrontEnd",
             "company": "Mega Digital",
             "from_date": "Mayo 2023",
-            "description": "Desarrollo de plataforma web multiuso para empresas que permite automatizar envío de cobranzas, gestionar equipos de trabajo y visualización de métricas con Next.js. Desarrollo de aplicación móvil de atención al cliente en tiempo real con React Native y Socket.IO."
+            "description": "Desarrollo de plataforma web empresarial que permite automatizar envío de cobranzas, gestionar equipos de trabajo y ver métricas desarrollado en Next.js. Desarrollo de aplicación móvil de atención al cliente en tiempo real con React Native y Socket.IO."
         },
         {
             "id": 2,
-            "position": "Desarrollador FrontEnd y Móvil",
+            "position": "Desarrollador FrontEnd",
             "company": "Innovatica",
             "from_date": "Octubre 2022",
-            "description": "Fábrica de software a medida para clientes de USA con React y React Native. Creación de componentes reutilizables siguiendo diseños previos de Figma."
+            "description": "Fábrica de software a medida para clientes de USA con React y React Native. Creación de componentes reutilizables siguiendo diseños de Figma."
         },
         {
             "id": 3,

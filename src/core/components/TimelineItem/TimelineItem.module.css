@@ -4,23 +4,24 @@
 
 .timeline_item {
     margin-inline: 4.8rem;
-    padding-bottom: 3.0rem;
+    padding-bottom: 7.0rem;
 }
 
 .timeline_item::before {
     border-left: 2px solid #ffffff26;
     content: "";
     height: 100%;
-    left: 0;
+    left: 20px;
     width: 0;
     position: absolute;
 }
 
 
 .timeline_item span::before {
+    color: #1893dd;
     content: "•";
     font-size: 4rem;
-    left: -10px;
+    left: 11px;
     position: absolute;
-    color: #1893dd;
+    top: -5px;
 }
