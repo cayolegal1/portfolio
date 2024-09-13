@@ -2,7 +2,7 @@ import AnimatedRender from "@/core/components/AnimatedRender";
 import GitHubIcon from "@/core/components/Icons/GitHubIcon";
 import LinkedinIcon from "@/core/components/Icons/LinkedinIcon";
 import styles from "./HeroContact.module.css";
-import data from "@/core/data/info.json";
+import data from "@/core/data/user-info.json";
 
 const { github_url, linkedin_url } = data;
 
