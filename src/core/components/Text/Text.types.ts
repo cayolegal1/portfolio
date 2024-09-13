@@ -1,5 +1,5 @@
-import { ElementType, HTMLAttributes, ReactNode } from "react";
-import { TextGradientProps } from "../TextGradient/TextGradient.types";
+import type { ElementType, HTMLAttributes, ReactNode } from "react";
+import type { TextGradientProps } from "../TextGradient/TextGradient.types";
 
 export type TextVariant = "normal" | "gradient";
 export type TextSize = "xl" | "title" | "subtitle" | "text" | "description" | "caption";

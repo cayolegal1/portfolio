@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { SvgGradientProps } from "./SvgGradient.types";
+import type { SvgGradientProps } from "./SvgGradient.types";
 import styles from "./SvgGradient.module.css";
 
 export default function SvgGradient({ children, properties, gradientId }: SvgGradientProps): JSX.Element {

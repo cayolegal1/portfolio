@@ -1,5 +1,5 @@
 import TextGradient from "../TextGradient";
-import { TextProps, TextSize } from "./Text.types";
+import type { TextProps, TextSize } from "./Text.types";
 import styles from "./Text.module.css";
 
 export default function Text({
