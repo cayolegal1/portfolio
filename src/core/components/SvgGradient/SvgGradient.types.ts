@@ -1,6 +1,6 @@
-import type { ReactNode, SVGAttributes } from "react";
+import type { HTMLAttributes, ReactNode, SVGAttributes } from "react";
 
-export type SvgGradientProps = {
+export type SvgGradientProps = HTMLAttributes<HTMLOrSVGElement> & {
   children: ReactNode;
   properties: SVGAttributes<SVGSVGElement>;
   gradientId: string;
