@@ -1,5 +1,5 @@
 .text_gradient_config {
-    background: linear-gradient(90deg, #0691ee, #0f98dc, #2c87e1, #39a6ef);
+    background: var(--text-gradient);
     background-clip: text;
     transition: color 0.4s ease, background-size 0.4s ease;
     -webkit-background-clip: text;

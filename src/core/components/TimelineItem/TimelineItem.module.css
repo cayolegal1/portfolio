@@ -18,7 +18,10 @@
 
 
 .timeline_item span::before {
-    color: #1893dd;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     content: "•";
     font-size: 4rem;
     left: 0;
