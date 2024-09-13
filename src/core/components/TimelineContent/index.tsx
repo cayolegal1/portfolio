@@ -14,7 +14,7 @@ export default function TimelineContent({
         <Text as="h4" size="description" centered={false}>
           {content.company}
         </Text>
-        <Text as="p" size="caption" centered={false}>
+        <Text as="time" size="caption" centered={false}>
           {content.from_date}
         </Text>
       </div>

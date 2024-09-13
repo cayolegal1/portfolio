@@ -5,9 +5,8 @@
     max-width: 95%;
 }
 
-
-.justified {
-    text-align: justify;
+.content_container time {
+    color: #bababa;
 }
 
 @media (min-width: 800px) {

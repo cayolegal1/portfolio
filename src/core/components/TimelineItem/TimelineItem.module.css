@@ -11,9 +11,9 @@
     border-left: 2px solid #ffffff26;
     content: "";
     height: 100%;
-    left: 20px;
-    width: 0;
+    left: 10px;
     position: absolute;
+    width: 0;
 }
 
 
@@ -21,7 +21,7 @@
     color: #1893dd;
     content: "•";
     font-size: 4rem;
-    left: 11px;
+    left: 0;
     position: absolute;
     top: -5px;
 }

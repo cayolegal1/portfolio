@@ -1,5 +1,8 @@
-import { HTMLAttributes, ReactNode } from "react";
+import type { HTMLAttributes } from "react";
+import type {
+  Experience,
+} from "../TimelineContent/TimelineContent.types";
 
 export type TimelineItemProps = HTMLAttributes<HTMLLIElement> & {
-  children?: ReactNode;
-}
+  experience: Experience;
+};

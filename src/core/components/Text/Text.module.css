@@ -11,7 +11,7 @@
 }
 
 .title {
-    font-size: clamp(2.0rem, 2.5vw, 3.0rem);
+    font-size: clamp(2.6rem, 2.5vw, 3.0rem);
 }
 
 .subtitle {
