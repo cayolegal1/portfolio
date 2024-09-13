@@ -4,7 +4,7 @@ import Text from "@/core/components/Text";
 import styles from "./Header.module.css";
 
 const headers = [
-  { title: "Sobre mi", href: "/" },
+  { title: "Sobre mi", href: "#hero" },
   { title: "Experiencia", href: "#experience" },
   { title: "Proyectos", href: "#proyects" },
 ];
