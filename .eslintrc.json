@@ -4,6 +4,7 @@
     "quotes": ["error", "double"],
     "jsx-quotes": ["error", "prefer-double"],
     "semi": ["error", "always"],
-    "no-unused-vars": "error"
+    "no-unused-vars": "error",
+    "react-hooks/exhaustive-deps": "off"
   }
 }

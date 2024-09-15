@@ -1,11 +1,12 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
 import NavItem from "./components/NavItem";
+import { SECTIONS } from "@/core/data/global";
 import styles from "./Header.module.css";
 
 const headers = [
-  { title: "Sobre mi", href: "hero" },
-  { title: "Experiencia", href: "experience" },
-  { title: "Proyectos", href: "proyects" },
+  { title: "Sobre mi", href: SECTIONS.HERO },
+  { title: "Experiencia", href: SECTIONS.EXPERIENCE },
+  { title: "Proyectos", href: SECTIONS.PROYECTS },
 ];
 
 export default function Header() {
