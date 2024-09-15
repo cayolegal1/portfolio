@@ -25,10 +25,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Cayo Legal", url: "https://cayolegal.vercel.app" }],
   creator: "Cayo Legal",
-  publisher: "Vercel",
-  applicationName: "Cayo Legal - Software Developer",
-  category: "Developer Portfolio",
-  generator: "Next.js",
 };
 
 export default function RootLayout({
