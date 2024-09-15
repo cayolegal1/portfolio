@@ -1,12 +1,11 @@
-import Link from "next/link";
 import AnimatedRender from "@/core/components/AnimatedRender";
-import Text from "@/core/components/Text";
+import NavItem from "./components/NavItem";
 import styles from "./Header.module.css";
 
 const headers = [
-  { title: "Sobre mi", href: "#hero" },
-  { title: "Experiencia", href: "#experience" },
-  { title: "Proyectos", href: "#proyects" },
+  { title: "Sobre mi", href: "hero" },
+  { title: "Experiencia", href: "experience" },
+  { title: "Proyectos", href: "proyects" },
 ];
 
 export default function Header() {
@@ -18,16 +17,8 @@ export default function Header() {
       className={styles.header}
     >
       <nav className={styles.nav}>
-        {headers.map(header => (
-          <Link
-            key={header.title}
-            className={styles.nav_link}
-            href={header.href}
-          >
-            <Text variant="gradient" inHover>
-              {header.title}
-            </Text>
-          </Link>
+        {headers.map(item => (
+          <NavItem key={item.href} item={item} />
         ))}
       </nav>
     </AnimatedRender>
