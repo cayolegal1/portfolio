@@ -3,7 +3,7 @@
 }
 
 .cursor::after {
-    animation: cursor 1s linear 3.5s normal infinite !important;
+    animation: cursor 1s linear 3.5s normal infinite;
     border-left: 3px solid var(--text-color);
     border-radius: 50px;
     content: "";

@@ -22,7 +22,7 @@ export default function HeroSkills() {
       <Text as="h2" className={styles.hero_skills_content}>
         Soy{" "}
         <AnimatedType
-          className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${isRendered && styles.no_border}`}
+          className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${styles.no_border}`}
           startDelay={2200}
           strings={["Desarrollador"]}
         />{" "}
