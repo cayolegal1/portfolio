@@ -3,12 +3,22 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 30;
+}
+
+.nav_container {
+    backdrop-filter: blur(8px);
+    width: fit-content;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
 }
 
 .nav {
     align-items: center;
-    animation: header_background 1s linear both;
+    animation: nav_animation 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 200px;
     border: 1px solid transparent;
@@ -21,16 +31,10 @@
     width: fit-content;
 }
 
-@keyframes header_background {
-    0% {
-        background-color: rgba(255, 255, 255, 0);
-    }
+@keyframes nav_animation {
 
     100% {
-        background-color: #1e2837;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(50px);
-        -webkit-backdrop-filter: blur(50px);
+        border: 1px solid rgb(186 181 181 / 7%);
     }
 }

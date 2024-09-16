@@ -1,5 +1,5 @@
 export const SECTIONS = {
-  HERO: "hero",
+  ABOUT: "hero",
   EXPERIENCE: "experience",
   PROYECTS: "proyects",
 };
