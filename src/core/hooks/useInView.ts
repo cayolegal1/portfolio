@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const useInView = (
-  href: string,
-  config?: Partial<IntersectionObserverInit>,
-) => {
+export const useInView = (href: string) => {
   const [isInView, setIsInView] = useState(false);
 
   const observe = (section: HTMLElement) => {
@@ -16,7 +13,6 @@ export const useInView = (
       root: null,
       rootMargin: "0px",
       threshold: [0.5, 1.0],
-      ...config,
     });
 
     observer.observe(section);
