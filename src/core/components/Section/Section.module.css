@@ -1,13 +1,16 @@
 .section_container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-inline: auto;
-    max-width: 90.0rem;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  max-width: 90.0rem;
+  width: 100%;
 }
 
+.separator {
+  height: 7.0rem;
+}
 
 @media (min-width: 1400px) {
   .section_container {

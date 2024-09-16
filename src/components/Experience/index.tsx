@@ -9,7 +9,7 @@ import styles from "./Experience.module.css";
 export default function Experience(): JSX.Element {
   const { experience } = data;
   return (
-    <Section id={SECTIONS.EXPERIENCE}>
+    <Section id={SECTIONS.EXPERIENCE} withSeparator>
       <Text as="h3" size="title">
         Experiencia laboral
       </Text>
