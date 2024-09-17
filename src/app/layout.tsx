@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Nunito({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
-  title: "Cayo Legal - Software Developer | Web Developer | Mobile Developer",
+  title: "Cayo Legal - Software Developer | Web, Mobile Developer",
   description:
-    "Desarrollador Frontend y Mobile especializado en React. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas.",
+    "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas",
   keywords: [
     "desarrollador de software",
     "desarrollador web",
