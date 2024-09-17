@@ -1,6 +1,6 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
 import NavItem from "./components/NavItem";
-import NavDrawerButton from "./components/NavButton";
+import NavButton from "./components/NavButton";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./Header.module.css";
 
@@ -13,7 +13,7 @@ const headers = [
 export default function Header() {
   return (
     <>
-      <NavDrawerButton />
+      <NavButton />
       <AnimatedRender
         animationType="fadeInDown"
         as="header"
