@@ -1,7 +1,6 @@
 .header {
     backdrop-filter: blur(8px);
     background: radial-gradient(#272f5d, transparent);
-    border-left: 1px solid #21233a;
     border-radius: 0;
     height: 100%;
     left: auto;
