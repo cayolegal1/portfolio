@@ -8,6 +8,8 @@ const headers = [
   { title: "Experiencia", href: SECTIONS.EXPERIENCE },
   { title: "Proyectos", href: SECTIONS.PROYECTS },
   { title: "Sobre mi", href: SECTIONS.ABOUT },
+  // { title: "Contacto", href: SECTIONS.CONTACT },
+  // { title: "Idioma", href: "" }
 ];
 
 export default function Header() {
