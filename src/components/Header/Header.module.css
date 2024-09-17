@@ -6,12 +6,12 @@
     height: 100%;
     left: auto;
     margin-block: 0;
+    min-height: 100vh;
     position: fixed;
     right: 0;
     top: 0;
     transition: all 250ms ease-in-out;
     width: 18.0rem;
-    opacity: 1;
     z-index: 3;
 }
 
@@ -39,7 +39,7 @@
         left: 0;
         margin-block: 10px;
         margin-inline: auto;
-        width: 100%;
+        min-height: auto;
         width: fit-content;
     }
 
