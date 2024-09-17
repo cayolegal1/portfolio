@@ -23,6 +23,7 @@ export default function NavButton() {
     <>
       <AnimatedRender
         animationType="fadeInDown"
+        aria-label={isExpanded ? "Cerrar menú" : "Abrir menú"}
         as="button"
         className={styles.button}
         delay="2.8s"
