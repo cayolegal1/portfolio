@@ -1,6 +1,7 @@
 export const SECTIONS = {
-  ABOUT: "hero",
+  HOME: "hero",
   EXPERIENCE: "experience",
   PROYECTS: "proyects",
   CONTACT: "contact",
+  ABOUT: "about",
 };
