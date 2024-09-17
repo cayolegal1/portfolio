@@ -1,6 +1,7 @@
 .header {
     backdrop-filter: blur(8px);
-    background: radial-gradient(#272f5d, transparent);
+    background-color: rgb(18 23 37);
+    background-image: var(--background-image);
     border-radius: 0;
     height: 100%;
     left: auto;
@@ -9,7 +10,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    transition: all 250ms ease-in-out;
+    transition: margin-right 250ms ease-in-out;
     width: 18.0rem;
     z-index: 3;
 }
