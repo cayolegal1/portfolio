@@ -1,5 +1,5 @@
 .header {
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(8px);
     background: radial-gradient(#272f5d, transparent);
     border-left: 1px solid #21233a;
     border-radius: 0;
@@ -30,7 +30,6 @@
 
 @media (min-width: 550px) {
     .header {
-        backdrop-filter: blur(12px);
         background: none;
         border-left: none;
         border-radius: 30px;
