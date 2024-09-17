@@ -1,18 +1,18 @@
 .header {
     backdrop-filter: blur(12px);
     background: radial-gradient(#272f5d, transparent);
-    border-left: 2px solid #21233a;
+    border-left: 1px solid #21233a;
     border-radius: 0;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .8);
     height: 100%;
     left: auto;
     margin-block: 0;
     position: fixed;
     right: 0;
     top: 0;
-    transition: all 300ms ease-in-out;
-    width: 35%;
-    z-index: 2;
+    transition: all 250ms ease-in-out;
+    width: 18.0rem;
+    opacity: 1;
+    z-index: 3;
 }
 
 .nav {
@@ -23,8 +23,8 @@
     flex-direction: column;
     height: 100%;
     justify-content: flex-start;
-    padding-top: 10.0rem;
-    row-gap: 6.0rem;
+    padding-top: 7rem;
+    row-gap: 5rem;
     width: 100%;
 }
 

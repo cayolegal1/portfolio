@@ -1,5 +1,6 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
 import NavItem from "./components/NavItem";
+import NavDrawerButton from "./components/NavButton";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./Header.module.css";
 
@@ -11,11 +12,14 @@ const headers = [
 
 export default function Header() {
   return (
+    <>
+      <NavDrawerButton />
       <AnimatedRender
         animationType="fadeInDown"
         as="header"
-        className={styles.header}
+        className={`navbar__hidden ${styles.header}`}
         delay="2.8s"
+        id="header"
       >
         <nav className={styles.nav}>
           {headers.map(item => (
@@ -23,5 +27,6 @@ export default function Header() {
           ))}
         </nav>
       </AnimatedRender>
+    </>
   );
 }
