@@ -11,10 +11,10 @@ const headers = [
 
 export default function Header() {
   return (
-    <header className={styles.header}>
       <AnimatedRender
         animationType="fadeInDown"
-        className={styles.nav_container}
+        as="header"
+        className={styles.header}
         delay="2.8s"
       >
         <nav className={styles.nav}>
@@ -23,6 +23,5 @@ export default function Header() {
           ))}
         </nav>
       </AnimatedRender>
-    </header>
   );
 }

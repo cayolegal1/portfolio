@@ -1,19 +1,15 @@
 .header {
-    padding: 10px;
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    left: 0;
+    margin-block: 10px;
+    margin-inline: auto;
     position: fixed;
+    right: 0;
     top: 0;
     width: 100%;
-    z-index: 30;
-}
-
-.nav_container {
-    backdrop-filter: blur(8px);
     width: fit-content;
-    border-radius: 30px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
+    z-index: 2;
 }
 
 .nav {
