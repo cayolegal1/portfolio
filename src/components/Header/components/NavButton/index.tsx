@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import AnimatedRender from "@/core/components/AnimatedRender";
 import MenuIcon from "@/core/components/Icons/MenuIcon";
 import CloseIcon from "@/core/components/Icons/CloseIcon";
@@ -8,8 +8,7 @@ import styles from "./NavButton.module.css";
 export default function NavButton() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleClick = () => {
-    setIsExpanded(prev => !prev);
+  const handleClick = useCallback(() => {
     const element = document.getElementById("header");
     if (element) {
       if (element.classList.contains("navbar__hidden")) {
@@ -18,7 +17,7 @@ export default function NavButton() {
         element.classList.add("navbar__hidden");
       }
     }
-  };
+  }, []);
 
   return (
     <>
@@ -27,8 +26,10 @@ export default function NavButton() {
         as="button"
         className={styles.button}
         delay="2.8s"
-        id="header-btn"
-        onClick={handleClick}
+        onClick={() => {
+          setIsExpanded(prev => !prev);
+          handleClick();
+        }}
       >
         {isExpanded ? <CloseIcon /> : <MenuIcon />}
       </AnimatedRender>
@@ -37,7 +38,10 @@ export default function NavButton() {
           ${styles.overlay} 
           ${isExpanded && styles.overlay__active}
         `}
-        onClick={handleClick}
+        onClick={() => {
+          setIsExpanded(prev => !prev);
+          handleClick();
+        }}
       />
     </>
   );
