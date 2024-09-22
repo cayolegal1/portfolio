@@ -40,11 +40,11 @@
 @media (min-width: 550px) {
 
   .section_dropdown {
-    background-color: #374151;
+    background-color: #2f3455;
   }
 
   .dropdown_input:checked~.section_dropdown::after {
-    border-bottom: 8px solid #374151;
+    border-bottom: 8px solid #2f3455;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     content: '';

@@ -20,7 +20,7 @@ export default function NavItem({ item }: NavItemProps): JSX.Element {
   };
 
   if (item.href === SECTIONS.LANGUAGE) {
-    return <NavToggleLanguage title={title} className={styles.nav_link} />;
+    return <NavToggleLanguage title={title} />;
   }
 
   return (
