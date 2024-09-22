@@ -5,10 +5,11 @@ import { SECTIONS } from "@/core/data/global";
 import styles from "./Header.module.css";
 
 const headers = [
-  { title: "Inicio", href: SECTIONS.HOME },
-  { title: "Experiencia", href: SECTIONS.EXPERIENCE },
-  { title: "Proyectos", href: SECTIONS.PROYECTS },
-  { title: "Sobre mi", href: SECTIONS.ABOUT },
+  { title: "home", href: SECTIONS.HOME },
+  { title: "experience", href: SECTIONS.EXPERIENCE },
+  { title: "proyects", href: SECTIONS.PROYECTS },
+  { title: "about_me", href: SECTIONS.ABOUT },
+  { title: "language", href: SECTIONS.LANGUAGE },
 ];
 
 export default function Header() {

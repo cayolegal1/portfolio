@@ -1,0 +1,17 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "proyects": "Proyectos",
+    "about_me": "Sobre mi",
+    "language": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español",
+    "portuguese": "Portugués"
+  },
+  "Hero": {
+    "greeting": "Hola",
+    "my_name_is": "Mi nombre es",
+    "i_am": "Soy"
+  }
+}

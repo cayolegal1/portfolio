@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import AnimatedRender from "@/core/components/AnimatedRender";
 import Text from "@/core/components/Text";
 import AnimatedType from "@/core/components/AnimatedType";
@@ -9,6 +10,7 @@ import gradient from "../../../../core/components/TextGradient/TextGradient.modu
 const delay = 3000;
 
 export default function HeroSkills() {
+  const translate = useTranslations("Hero");
   const [isRendered, setIsRendered] = useState(false);
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function HeroSkills() {
   return (
     <AnimatedRender delay="1.2s">
       <Text as="h2" className={styles.hero_skills_content}>
-        Soy{" "}
+        {translate("i_am")}{" "}
         <AnimatedType
           className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${styles.no_border}`}
           startDelay={2200}
