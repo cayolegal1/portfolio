@@ -8,6 +8,12 @@
   display: none;
 }
 
+.label {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 .dropdown_input:checked+label span,
 .dropdown_input:not(:checked)+label span {
   border: none;
@@ -28,13 +34,25 @@
   position: absolute;
   top: 30px;
   transform: translateY(20px);
-  transition: all 200ms linear;
+  transition: all 150ms linear;
   width: 100%;
 }
 
 .dropdown_input:checked~.section_dropdown {
   opacity: 1;
   transform: translateY(0);
+}
+
+.label svg {
+  transform: rotate(0) translateY(1.5px);
+}
+
+.dropdown_input:checked + .label svg {
+  transform: rotate(-180deg);
+}
+
+.label svg:hover {
+  transform: translateY(1.5px);
 }
 
 @media (min-width: 550px) {

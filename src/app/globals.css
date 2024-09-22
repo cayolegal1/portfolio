@@ -48,7 +48,7 @@ button {
 }
 
 .navbar__hidden {
-  margin-right: -60%;
+  margin-right: -100%;
   box-shadow: none !important;
 }
 
