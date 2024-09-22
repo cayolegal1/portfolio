@@ -9,7 +9,7 @@ import styles from "./Experience.module.css";
 
 
 export default function Experience(): JSX.Element {
-  const translate = useTranslations();
+  const translate = useTranslations("Experience");
   const experiences = useExperienceTranslation();
   return (
     <Section id={SECTIONS.EXPERIENCE} withSeparator>

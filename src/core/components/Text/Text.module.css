@@ -1,5 +1,5 @@
 .text {
-    color: white;
+    color: var(--text-color);
 }
 
 .centered {
