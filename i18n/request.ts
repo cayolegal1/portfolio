@@ -1,19 +1,19 @@
 import { cookies } from "next/headers";
 import { getRequestConfig } from "next-intl/server";
 
-const LOCALES = {
+export const LOCALES = {
   ENGLISH: "en",
   SPANISH: "es",
   PORTUGUES: "pt",
 };
 
-const supportedLocales = [LOCALES.ENGLISH, LOCALES.SPANISH];
+const supportedLocales = [LOCALES.ENGLISH, LOCALES.SPANISH, LOCALES.PORTUGUES];
 
 export default getRequestConfig(async () => {
   const locale = cookies().get("locale")?.value || LOCALES.SPANISH;
-  if (!supportedLocales.includes(locale)) return {};
+  const responseLocale = !supportedLocales.includes(locale) ? LOCALES.SPANISH : locale;
   return {
     locale,
-    messages: (await import(`./locales/${locale}.json`)).default,
+    messages: (await import(`./locales/${responseLocale}.json`)).default,
   };
 });
