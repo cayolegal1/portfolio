@@ -27,6 +27,7 @@
     "1": {
       "id": 1,
       "position": "Desarrollador FrontEnd",
+      "company": "Mega Digital",
       "from_date": "Mayo 2023",
       "description": "Desarrollo de plataforma web empresarial que permite automatizar envío de cobranzas, gestionar equipos de trabajo y ver métricas desarrollado en Next.js. Desarrollo de aplicación móvil de atención al cliente en tiempo real con React Native y Socket.IO."
     },
