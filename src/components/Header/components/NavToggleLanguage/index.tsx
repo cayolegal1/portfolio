@@ -1,9 +1,9 @@
 import Dropdown from "@/core/components/Dropdown";
+import { useTranslations } from "next-intl";
 import { toggleLanguage } from "@/app/actions";
 import { LOCALES } from "../../../../../i18n/request";
 import type { NavToggleLanguageProps } from "./NavToggleLanguage.types";
 import styles from "./NavToggleLanguage.module.css";
-import { useTranslations } from "next-intl";
 
 const languages = [
   {label: "🇺🇸 English", locale: LOCALES.ENGLISH},
