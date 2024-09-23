@@ -67,6 +67,7 @@
 
   .section_dropdown {
     background-color: #2f3455;
+    left: -6px;
   }
 
   .dropdown_input:checked~.section_dropdown::after {
