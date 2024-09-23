@@ -1,7 +1,9 @@
 .dropdown_container {
   max-width: 100%;
   position: relative;
-  z-index: 4;
+  z-index: 5;
+  padding: 0.5rem;
+  margin-left: 1.8rem;
 }
 
 .dropdown_input {
@@ -26,13 +28,14 @@
 .section_dropdown {
   background-color: transparent;
   border-radius: 5px;
-  left: -10px;
+  left: 0;
   min-width: 12.0rem;
   opacity: 0;
   padding: 10px;
+  padding-bottom: 0;
   pointer-events: none;
   position: absolute;
-  top: 30px;
+  top: 37px;
   transform: translateY(20px);
   transition: all 150ms linear;
   width: 100%;
@@ -41,6 +44,7 @@
 .dropdown_input:checked~.section_dropdown {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: all;
 }
 
 .label svg {
@@ -56,6 +60,10 @@
 }
 
 @media (min-width: 550px) {
+
+  .dropdown_container {
+    margin-left: 0;
+  }
 
   .section_dropdown {
     background-color: #2f3455;

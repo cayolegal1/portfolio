@@ -1,5 +1,6 @@
 import AnimatedRender from "@/core/components/AnimatedRender";
 import NavItem from "./components/NavItem";
+import NavToggleLanguage from "./components/NavToggleLanguage";
 import NavButton from "./components/NavButton";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./Header.module.css";
@@ -24,8 +25,10 @@ export default function Header() {
         id="header"
       >
         <nav className={styles.nav}>
-          {headers.map(item => (
+          {headers.map(item => item.href !== SECTIONS.LANGUAGE ?(
             <NavItem key={item.href} item={item} />
+          ): (
+            <NavToggleLanguage key={item.href} title={item.title} />
           ))}
         </nav>
       </AnimatedRender>
