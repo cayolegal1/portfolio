@@ -28,7 +28,7 @@
 .section_dropdown {
   background-color: transparent;
   border-radius: 5px;
-  left: 0;
+  left: -12px;
   min-width: 12.0rem;
   opacity: 0;
   padding: 10px;
