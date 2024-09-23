@@ -20,10 +20,8 @@ export default function NavToggleLanguage({
 }: NavToggleLanguageProps): JSX.Element {
   const translate = useTranslations("Header");
   const formAction = async (data: FormData) => {
-    Promise.all([
-      await toggleLanguage(data),
-      location.reload()
-    ]);
+    const action = await toggleLanguage(data);
+    if (action.changed) location.reload();
   };
   
   return (

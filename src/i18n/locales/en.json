@@ -13,7 +13,9 @@
     "greeting": "Hi",
     "my_name_is": "My name is",
     "i_am": "I am a",
-    "developer": "Developer"
+    "developer": "Developer",
+    "of_software": "of Software",
+    "of_apps": "of Apps"
   },
   "Experience": {
     "title": "Work experience",

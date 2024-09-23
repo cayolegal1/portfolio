@@ -10,5 +10,12 @@ export const toggleLanguage = async (formData: FormData) => {
     supportedLocales.includes(locale)
   ) {
     cookieStore.set("locale", locale);
+    return {
+      changed: true,
+    };
   }
+
+  return {
+    changed: false,
+  };
 };
