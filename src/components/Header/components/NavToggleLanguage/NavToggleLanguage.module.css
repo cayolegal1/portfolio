@@ -1,4 +1,5 @@
 .language_item {
+  color: var(--text-color);
   margin-bottom: 30px;
   cursor: pointer;
   width: 100%;
