@@ -7,11 +7,13 @@ import AnimatedType from "@/core/components/AnimatedType";
 import styles from "./HeroSkills.module.css";
 import gradient from "@/core/components/TextGradient/TextGradient.module.css";
 
-const delay = 3000;
-
 export default function HeroSkills() {
   const translate = useTranslations("Hero");
   const [isRendered, setIsRendered] = useState(false);
+  const developer = translate("developer");
+  const ofSoftware = translate("of_software");
+  const ofApps = translate("of_apps");
+  const delay = developer.length > 9 ? 3000 : 2700;
 
   useEffect(() => {
     setTimeout(() => {
@@ -26,14 +28,14 @@ export default function HeroSkills() {
         <AnimatedType
           className={`${gradient.text_gradient_config} ${gradient.text_gradient} ${styles.no_border}`}
           startDelay={2200}
-          strings={[translate("developer")]}
+          strings={[developer]}
         />{" "}
         <AnimatedType
           backSpeed={50}
           className={`${gradient.text_gradient_config} ${gradient.text_gradient}`}
           loop
           startDelay={isRendered ? 0 : delay}
-          strings={[translate("of_software"), translate("of_apps"), "Web"]}
+          strings={[ofSoftware, ofApps, "Web"]}
         />
       </Text>
     </AnimatedRender>
