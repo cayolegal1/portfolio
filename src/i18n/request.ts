@@ -1,14 +1,7 @@
 import { cookies } from "next/headers";
 import { getRequestConfig } from "next-intl/server";
+import { defaultLocale, supportedLocales } from "./settings";
 
-export const LOCALES = {
-  ENGLISH: "en",
-  SPANISH: "es",
-  PORTUGUES: "pt",
-};
-
-export const supportedLocales = [LOCALES.ENGLISH, LOCALES.SPANISH, LOCALES.PORTUGUES];
-export const defaultLocale = LOCALES.SPANISH;
 
 export default getRequestConfig(async () => {
   const locale = cookies().get("locale")?.value || defaultLocale;

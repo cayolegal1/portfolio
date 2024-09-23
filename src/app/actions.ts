@@ -1,9 +1,8 @@
 "use server";
-import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
-import { supportedLocales } from "../../i18n/request";
+import { supportedLocales } from "../i18n/settings";
 
-export const toggleLanguage = (formData: FormData) => {
+export const toggleLanguage = async (formData: FormData) => {
   const locale = formData.get("locale") as string;
   const cookieStore = cookies();
   if (
@@ -11,6 +10,5 @@ export const toggleLanguage = (formData: FormData) => {
     supportedLocales.includes(locale)
   ) {
     cookieStore.set("locale", locale);
-    redirect("/");
   }
 };

@@ -12,7 +12,8 @@
     "Hero": {
       "greeting": "Olá",
       "my_name_is": "Meu nome é",
-      "i_am": "Sou"
+      "i_am": "Sou",
+      "developer": "Desenvolvedor"
     },
     "Experience": {
       "title": "Experiência profissional",
