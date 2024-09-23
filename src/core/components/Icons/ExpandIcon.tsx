@@ -1,16 +1,30 @@
+import { SVGAttributes } from "react";
 import SvgGradient from "../SvgGradient";
 
-const gradientId = "expand_gradient";
+const defaultGradientId = "expand_gradient";
 
-export default function ExpandIcon(): JSX.Element {
+export default function ExpandIcon({
+  properties,
+  gradientId = defaultGradientId,
+  color = "",
+}: {
+  properties?: SVGAttributes<SVGSVGElement>;
+  gradientId?: string,
+  color?: string,
+}): JSX.Element {
   return (
     <SvgGradient
-      properties={{ width: "6.0rem", height: "6.0rem", viewBox: "0 -960 960 960" }}
+      properties={{
+        width: properties?.width || "6.0rem",
+        height: properties?.height || "6.0rem",
+        viewBox: properties?.viewBox || "0 -960 960 960",
+      }}
       gradientId={gradientId}
+      {...properties}
     >
       <path
         d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
-        fill={`url(#${gradientId})`}
+        fill={color || `url(#${gradientId})`}
       />
     </SvgGradient>
   );

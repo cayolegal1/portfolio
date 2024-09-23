@@ -4,4 +4,5 @@ export const SECTIONS = {
   PROYECTS: "proyects",
   CONTACT: "contact",
   ABOUT: "about",
-};
+  LANGUAGE: "language",
+} as const;

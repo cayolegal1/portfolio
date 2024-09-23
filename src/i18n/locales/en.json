@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "home": "Home",
+    "experience": "Experience",
+    "proyects": "Proyects",
+    "about_me": "About me",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish",
+    "portuguese": "Portuguese"
+  },
+  "Hero": {
+    "greeting": "Hi",
+    "my_name_is": "My name is",
+    "i_am": "I am a",
+    "developer": "Developer"
+  },
+  "Experience": {
+    "title": "Work experience",
+    "length": "4",
+    "0": {
+      "id": 0,
+      "company": "Bebidas del Paraguay",
+      "position": "Mobile Developer",
+      "from_date": "Actually",
+      "description": "Development of a beverage e-commerce mobile application with React Native and TypeScript following the agile Scrum methodology."
+    },
+    "1": {
+      "id": 1,
+      "company": "Mega Digital",
+      "position": "Frontend Developer",
+      "from_date": "May 2023",
+      "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js.Development of a real-time customer support mobile app using React Native and Socket.IO.." 
+    },
+    "2": {
+      "id": 2,
+      "company": "Innovatica",
+      "position": "Frontend Developer",
+      "from_date": "October 2022",
+      "description": "Custom software development for USA clients using React and React Native. Creation of reusable components following Figma designs"
+    },
+    "3": {
+      "id": 3,
+      "company": "Banco Continental",
+      "position": "Software Developer",
+      "from_date": "July 2022",
+      "description": "Development of enterprise banking software using .NET Core and SQL."
+    }
+  }
+}

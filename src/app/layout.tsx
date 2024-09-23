@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+import data from "@/core/data/user-info.json";
 import "./globals.css";
+
+const { name } = data;
 
 const inter = Nunito({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
-  title: "Cayo Legal - Software Developer | Web, Mobile Developer",
+  title: `${name} - Software Developer`,
   description:
     "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas",
   keywords: [
@@ -20,21 +25,26 @@ export const metadata: Metadata = {
     "react",
     "react native",
     "nextjs",
-    "cayo legal",
     "developer portfolio",
+    name,
   ],
-  authors: [{ name: "Cayo Legal", url: "https://cayolegal.vercel.app" }],
-  creator: "Cayo Legal",
+  creator: name,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang={locale}>
+      <body className={inter.className}>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }

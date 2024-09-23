@@ -1,0 +1,51 @@
+{
+    "Header": {
+      "home": "Início",
+      "experience": "Experiência",
+      "proyects": "Projetos",
+      "about_me": "Sobre mim",
+      "language": "Idioma",
+      "english": "Inglês",
+      "spanish": "Espanhol",
+      "portuguese": "Português"
+    },
+    "Hero": {
+      "greeting": "Olá",
+      "my_name_is": "Meu nome é",
+      "i_am": "Sou",
+      "developer": "Desenvolvedor"
+    },
+    "Experience": {
+      "title": "Experiência profissional",
+      "length": "4",
+      "0": {
+        "id": 0,
+        "position": "Desenvolvedor Móvel",
+        "company": "Bebidas do Paraguai",
+        "from_date": "Atualmente",
+        "description": "Desenvolvimento de um aplicativo móvel de e-commerce de bebidas com React Native e TypeScript seguindo a metodologia ágil Scrum."
+      },
+      "1": {
+        "id": 1,
+        "position": "Desenvolvedor FrontEnd",
+        "company": "Mega Digital",
+        "from_date": "Maio de 2023",
+        "description": "Desenvolvimento de uma plataforma web empresarial que automatiza o envio de cobranças, gerencia equipes de trabalho e fornece métricas, construída com Next.js. Desenvolvimento de um aplicativo móvel de suporte ao cliente em tempo real usando React Native e Socket.IO."
+      },
+      "2": {
+        "id": 2,
+        "company": "Innovatica",
+        "position": "Desenvolvedor FrontEnd",
+        "from_date": "Outubro de 2022",
+        "description": "Fábrica de software sob medida para clientes dos EUA com React e React Native. Criação de componentes reutilizáveis seguindo designs do Figma."
+      },
+      "3": {
+        "id": 3,
+        "company": "Banco Continental",
+        "position": "Desenvolvedor de Software",
+        "from_date": "Julho de 2022",
+        "description": "Desenvolvimento de software bancário empresarial usando .NET Core e SQL."
+      }
+    }
+  }
+  
