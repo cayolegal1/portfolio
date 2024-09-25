@@ -12,6 +12,7 @@
       var(--second-gradient-color),
       var(--third-gradient-color),
       var(--fourth-gradient-color));
+  --gradient-color: #2e8ee4;
 }
 
 * {

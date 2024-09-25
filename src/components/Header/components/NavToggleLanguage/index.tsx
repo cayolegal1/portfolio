@@ -27,7 +27,7 @@ export default function NavToggleLanguage({
   return (
     <Dropdown title={translate(title)}>
       {languages.map(language => (
-        <form action={formAction} method="post" key={language.locale}>
+        <form action={formAction} key={language.locale}>
           <input type="hidden" name="locale" value={language.locale} />
           <button type="submit" className={styles.language_item}>
             {language.label}
