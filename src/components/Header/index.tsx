@@ -10,6 +10,7 @@ const headers = [
   { title: "experience", href: SECTIONS.EXPERIENCE },
   { title: "proyects", href: SECTIONS.PROYECTS },
   { title: "about_me", href: SECTIONS.ABOUT },
+  { title: "contact", href: SECTIONS.CONTACT },
   { title: "language", href: SECTIONS.LANGUAGE },
 ];
 

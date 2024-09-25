@@ -4,6 +4,7 @@
     "experience": "Experiencia",
     "proyects": "Proyectos",
     "about_me": "Sobre mi",
+    "contact": "Contacto",
     "language": "Idioma",
     "english": "Inglés",
     "spanish": "Español",
@@ -48,5 +49,8 @@
       "from_date": "Julio 2022",
       "description": "Desarrollo de software empresarial bancario usando .NET Core y SQL."
     }
+  },
+  "Contact": {
+    "title": "Contactame"
   }
 }

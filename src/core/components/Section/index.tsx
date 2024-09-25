@@ -4,7 +4,7 @@ import styles from "./Section.module.css";
 export default function Section({
   children,
   className = "",
-  withSeparator,
+  withSeparator = true,
   ...props
 }: SectionProps): JSX.Element {
   return (
