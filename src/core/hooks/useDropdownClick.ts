@@ -1,19 +1,16 @@
 import { useEffect } from "react";
 
-export const useDropdownClick = (inputId: string, contentId: string) => {
+export const useDropdownClick = (inputId: string, containerId: string) => {
   useEffect(() => {
     const input = document.getElementById(inputId) as HTMLInputElement | null;
-    const dropdownContent = document.getElementById(contentId);
+    const container = document.getElementById(containerId);
 
-    if (input && dropdownContent) {
+    if (input && container) {
       const listener = (event: MouseEvent) => {
-        if (
-          input.checked &&
-          !input.contains(event.target as Node) &&
-          !dropdownContent.contains(event.target as Node)
-        ) {
+        const isContainerClicked = container.contains(event.target as Node);
+        if (input.checked && !isContainerClicked) {
           input.checked = false;
-        } else {
+        } else if (isContainerClicked) {
           input.checked = !input.checked;
         }
       };

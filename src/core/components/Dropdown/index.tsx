@@ -6,12 +6,12 @@ import styles from "./Dropdown.module.css";
 import { useDropdownClick } from "@/core/hooks/useDropdownClick";
 
 const checkboxId = "checkbox_dropdown";
-const contentId = "dropdown_content";
+const containerId = "dropdown_container";
 
 const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
-  useDropdownClick(checkboxId, contentId);
+  useDropdownClick(checkboxId, containerId);
   return (
-    <div className={styles.dropdown_container}>
+    <div className={styles.dropdown_container} id={containerId}>
       <input
         className={styles.dropdown_input}
         name={checkboxId}
@@ -31,7 +31,7 @@ const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
           color="white"
         />
       </label>
-      <div className={styles.section_dropdown} id={contentId}>{children}</div>
+      <div className={styles.section_dropdown}>{children}</div>
     </div>
   );
 };
