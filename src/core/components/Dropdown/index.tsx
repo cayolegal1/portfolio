@@ -1,18 +1,33 @@
+"use client";
 import Text from "../Text";
+import ExpandIcon from "../Icons/ExpandIcon";
+import { useDropdownClick } from "@/core/hooks/useDropdownClick";
 import type { DropdownProps } from "./Dropdown.types";
 import styles from "./Dropdown.module.css";
-import ExpandIcon from "../Icons/ExpandIcon";
+
+const checkboxId = "checkbox_dropdown";
+const contentId = "dropdown";
 
 const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
+
+  useDropdownClick(
+    checkboxId,
+    contentId,
+    (checkbox: HTMLInputElement) => {
+      checkbox.checked = !checkbox.checked;
+    },
+  );
+
   return (
     <div className={styles.dropdown_container}>
       <input
         className={styles.dropdown_input}
+        id={checkboxId}
+        name={checkboxId}
         type="checkbox"
-        id="dropdown"
-        name="dropdown"
       />
-      <label htmlFor="dropdown" className={styles.label}>
+
+      <label htmlFor={checkboxId} className={styles.label}>
         <Text variant="gradient" inHover>
           {title}
         </Text>
@@ -25,7 +40,7 @@ const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
           color="white"
         />
       </label>
-      <div className={styles.section_dropdown}>{children}</div>
+      <div className={styles.section_dropdown} id={contentId}>{children}</div>
     </div>
   );
 };
