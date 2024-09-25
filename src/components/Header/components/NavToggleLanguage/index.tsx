@@ -6,9 +6,9 @@ import { LOCALES } from "@/i18n/settings";
 import styles from "./NavToggleLanguage.module.css";
 
 const languages = [
-  { label: "🇺🇸 English", locale: LOCALES.ENGLISH },
-  { label: "🇪🇸 Español", locale: LOCALES.SPANISH },
-  { label: "🇧🇷 Portugues", locale: LOCALES.PORTUGUES },
+  { label: "english", locale: LOCALES.ENGLISH },
+  { label: "spanish", locale: LOCALES.SPANISH },
+  { label: "portuguese", locale: LOCALES.PORTUGUES },
 ];
 
 type NavToggleLanguageProps = {
@@ -30,7 +30,7 @@ export default function NavToggleLanguage({
         <form action={formAction} key={language.locale}>
           <input type="hidden" name="locale" value={language.locale} />
           <button type="submit" className={styles.language_item}>
-            {language.label}
+            {translate(language.label)}
           </button>
         </form>
       ))}

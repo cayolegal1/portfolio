@@ -6,9 +6,9 @@
     "about_me": "About me",
     "contact": "Contact",
     "language": "Language",
-    "english": "English",
-    "spanish": "Spanish",
-    "portuguese": "Portuguese"
+    "english": "🇺🇸 English",
+    "spanish": "🇪🇸 Spanish",
+    "portuguese": "🇧🇷 Portuguese"
   },
   "Hero": {
     "greeting": "Hi",
