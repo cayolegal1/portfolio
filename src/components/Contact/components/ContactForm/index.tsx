@@ -3,8 +3,20 @@ import { useTranslations } from "next-intl";
 import styles from "./ContactForm.module.css";
 
 const fields = [
-  { label: "full_name", name: "name", type: "text", variant: "normal" },
-  { label: "email", name: "email", type: "email", variant: "normal" },
+  {
+    label: "full_name",
+    name: "name",
+    type: "text",
+    variant: "normal",
+    autocomplete: "name",
+  },
+  {
+    label: "email",
+    name: "email",
+    type: "email",
+    variant: "normal",
+    autocomplete: "email",
+  },
   { label: "message", name: "message", type: "text", variant: "textarea" },
 ] as const;
 

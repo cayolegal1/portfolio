@@ -5,11 +5,12 @@
   gap: 2.0rem;
   justify-content: center;
   margin-block: 2.0rem;
+  width: 100%;
 }
 
 
 @media (min-width: 550px) {
   .form {
-    flex-direction: row;
+    width: auto;
   }
 }
