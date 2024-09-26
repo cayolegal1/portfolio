@@ -51,6 +51,9 @@
     }
   },
   "Contact": {
-    "title": "Contactame"
+    "title": "Contactame",
+    "full_name": "Nombre completo",
+    "email": "Correo Electrónico",
+    "message": "Message"
   }
 }

@@ -51,7 +51,10 @@
       }
     },
     "Contact": {
-      "title": "Contate-me"
+      "title": "Contate-me",
+      "full_name": "Nome completo",
+      "email": "Email",
+      "message": "Mensagem"
     }
   }
   

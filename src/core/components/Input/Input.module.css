@@ -10,6 +10,7 @@
     font-size: 18px;
     height: 60px;
     max-width: 35.0rem;
+    min-width: 30.0rem;
     outline: none;
     padding: 0 15px;
     transition: 100ms;

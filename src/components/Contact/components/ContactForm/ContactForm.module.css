@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.0rem;
+  justify-content: center;
+  margin-block: 2.0rem;
+}
+
+
+@media (min-width: 550px) {
+  .form {
+    flex-direction: row;
+  }
+}

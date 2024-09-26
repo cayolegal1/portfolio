@@ -51,6 +51,9 @@
     }
   },
   "Contact": {
-    "title": "Contact me"
+    "title": "Contact me",
+    "full_name": "Fullname",
+    "email": "Email",
+    "message": "Message"
   }
 }
