@@ -4,10 +4,10 @@ import { defaultLocale, supportedLocales } from "./settings";
 
 
 export default getRequestConfig(async () => {
-  const locale = cookies().get("locale")?.value || defaultLocale;
-  const responseLocale = !supportedLocales.includes(locale) ? defaultLocale : locale;
+  const cookieLocale = cookies().get("locale")?.value || defaultLocale;
+  const responseLocale = !supportedLocales.includes(cookieLocale) ? defaultLocale : cookieLocale;
   return {
-    locale,
+    locale: cookieLocale,
     messages: (await import(`./locales/${responseLocale}.json`)).default,
   };
 });
