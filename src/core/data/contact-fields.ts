@@ -7,6 +7,7 @@ type ContactField = Omit<InputProps, "label"> & {
 
 export const fields: ContactField[] = [
   {
+    autoCapitalize: "words",
     autoComplete: "name",
     label: "full_name",
     name: "name",
@@ -21,11 +22,18 @@ export const fields: ContactField[] = [
     variant: "normal",
   },
   {
+    autoCapitalize: "characters",
     autoComplete: "subject",
     label: "subject",
     name: "subject",
     type: "text",
     variant: "normal",
   },
-  { label: "message", name: "message", type: "text", variant: "textarea" },
+  {
+    autoCapitalize: "characters",
+    label: "message",
+    name: "message",
+    type: "text",
+    variant: "textarea",
+  },
 ];
