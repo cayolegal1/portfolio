@@ -57,6 +57,15 @@
     font-size: 16px;
 }
 
+.input_container input:placeholder-shown:not(:focus)::placeholder, 
+.input_container textarea:placeholder-shown:not(:focus)::placeholder  {
+    color: transparent;
+}
+
+.input_container input:focus::placeholder,
+.input_container textarea:focus::placeholder {
+    color: gray;
+}
 
 @media (min-width: 550px) {
 

@@ -57,6 +57,10 @@
     "subject": "Subject",
     "message": "Message",
     "submit": "Submit",
+    "full_name_placeholder": "Enter your fullname here",
+    "email_placeholder": "example@example.com",
+    "subject_placeholder": "Type your subject here",
+    "message_placeholder": "Type your message here",
     "email_greeting": "Hi Cayo, my name is",
     "email_reason": "I am writing to you for the following",
     "email_goodbye": "Best regards"
