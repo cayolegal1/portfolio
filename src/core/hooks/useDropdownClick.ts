@@ -7,10 +7,10 @@ export const useDropdownClick = (inputId: string, containerId: string) => {
 
     if (input && container) {
       const listener = (event: MouseEvent) => {
-        const isContainerClicked = container.contains(event.target as Node);
-        if (input.checked && !isContainerClicked) {
+        const isClickedInside = container.contains(event.target as Node);
+        if (input.checked && !isClickedInside) {
           input.checked = false;
-        } else if (isContainerClicked) {
+        } else if (isClickedInside) {
           input.checked = !input.checked;
         }
       };

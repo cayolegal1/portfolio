@@ -51,7 +51,19 @@
       }
     },
     "Contact": {
-      "title": "Contate-me"
+      "title": "Contate-me",
+      "full_name": "Nome completo",
+      "email": "Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submit": "Enviar",
+      "full_name_placeholder": "Insira seu nome completo aqui",
+      "email_placeholder": "example@example.com",
+      "subject_placeholder": "Digite o assunto aqui",
+      "message_placeholder": "Digite sua mensagem aqui",
+      "email_greeting": "Oi Cayo, meu nome e",
+      "email_reason": "Estou escrevendo para você para o seguinte",
+      "email_goodbye": "Saudações"
     }
   }
   

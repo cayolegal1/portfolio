@@ -12,7 +12,7 @@ const headers = [
   { title: "about_me", href: SECTIONS.ABOUT },
   { title: "contact", href: SECTIONS.CONTACT },
   { title: "language", href: SECTIONS.LANGUAGE },
-];
+] as const;
 
 export default function Header() {
   return (

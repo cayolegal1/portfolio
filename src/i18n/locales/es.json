@@ -51,6 +51,18 @@
     }
   },
   "Contact": {
-    "title": "Contactame"
+    "title": "Contactame",
+    "full_name": "Nombre completo",
+    "email": "Correo Electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "submit": "Enviar",
+    "full_name_placeholder": "Ingresa aquí tu nombre completo",
+    "email_placeholder": "example@example.com",
+    "subject_placeholder": "Escribe aquí el asunto",
+    "message_placeholder": "Escribe aquí tu mensaje",
+    "email_greeting": "Hola Cayo, mi nombre es",
+    "email_reason": "Te escribo por lo siguiente",
+    "email_goodbye": "Saludos"
   }
 }

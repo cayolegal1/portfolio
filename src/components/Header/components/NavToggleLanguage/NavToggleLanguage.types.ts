@@ -1,3 +1,5 @@
+import type { MessageKeys } from "next-intl";
+
 export type NavToggleLanguageProps = {
-  title: string;
-}
+  title: MessageKeys<"Header", "language">;
+};
