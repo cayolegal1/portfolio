@@ -8,7 +8,7 @@
     border-radius: 6px;
     border: 1px solid var(--text-color);
     color: #fff;
-    font-size: 18px;
+    font-size: 1.8rem;
     height: 60px;
     outline: none;
     padding: 0 15px;
@@ -40,9 +40,9 @@
 }
 
 .input_container input:focus~label,
-.input_container input:valid~label,
 .input_container textarea:focus~label,
-.input_container textarea:valid~label {
+.input_container input:not(:placeholder-shown)~label,
+.input_container textarea:not(:placeholder-shown)~label {
     background: #030713;
     font-size: 17px;
     left: 15px;
