@@ -1,7 +1,8 @@
 "use client";
 import { useRef } from "react";
-import Input from "@/core/components/Input";
 import { useTranslations } from "next-intl";
+import Input from "@/core/components/Input";
+import Button from "@/core/components/Button";
 import { useSendEmail } from "@/core/hooks/useSendEmail";
 import { fields } from "@/core/data/contact-fields";
 import data from "@/core/data/user-info.json";
@@ -30,6 +31,9 @@ export default function ContactForm(): JSX.Element {
       <input type="hidden" name="email_greeting" value={translate("email_greeting")} />
       <input type="hidden" name="email_reason" value={translate("email_reason")} />
       <input type="hidden" name="email_goodbye" value={translate("email_goodbye")} />
+      <Button className={styles.btn} type="submit">
+        {translate("submit")}
+      </Button>
     </form>
   );
 }

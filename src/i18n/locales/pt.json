@@ -56,6 +56,7 @@
       "email": "Email",
       "subject": "Assunto",
       "message": "Mensagem",
+      "submit": "Enviar",
       "email_greeting": "Oi Cayo, meu nome e",
       "email_reason": "Estou escrevendo para você para o seguinte",
       "email_goodbye": "Saudações"
