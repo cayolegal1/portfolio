@@ -54,6 +54,7 @@
     "title": "Contactame",
     "full_name": "Nombre completo",
     "email": "Correo Electrónico",
+    "subject": "Asunto",
     "message": "Mensaje"
   }
 }

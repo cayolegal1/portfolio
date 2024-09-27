@@ -54,6 +54,7 @@
       "title": "Contate-me",
       "full_name": "Nome completo",
       "email": "Email",
+      "subject": "Assunto",
       "message": "Mensagem"
     }
   }

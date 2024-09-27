@@ -17,6 +17,13 @@ const fields = [
     type: "email",
     variant: "normal",
   },
+  {
+    autoComplete: "subject",
+    label: "subject",
+    name: "subject",
+    type: "text",
+    variant: "normal",
+  },
   { label: "message", name: "message", type: "text", variant: "textarea" },
 ] as const;
 
