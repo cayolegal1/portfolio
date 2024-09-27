@@ -4,18 +4,18 @@ import styles from "./ContactForm.module.css";
 
 const fields = [
   {
+    autoComplete: "name",
     label: "full_name",
     name: "name",
     type: "text",
     variant: "normal",
-    autocomplete: "name",
   },
   {
+    autoComplete: "email",
     label: "email",
     name: "email",
     type: "email",
     variant: "normal",
-    autocomplete: "email",
   },
   { label: "message", name: "message", type: "text", variant: "textarea" },
 ] as const;

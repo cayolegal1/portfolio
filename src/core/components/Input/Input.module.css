@@ -6,13 +6,13 @@
 .input_container textarea {
     background: transparent;
     border-radius: 6px;
-    border: 2px solid var(--text-color);
+    border: 1px solid var(--text-color);
     color: #fff;
     font-size: 18px;
     height: 60px;
     outline: none;
     padding: 0 15px;
-    transition: 100ms;
+    transition: border 300ms;
     width: 100%;
 }
 
@@ -36,7 +36,7 @@
 
 .input_container input:focus,
 .input_container textarea:focus {
-    border: 2px solid var(--gradient-color);
+    border: 1px solid var(--gradient-color);
 }
 
 .input_container input:focus~label,
@@ -44,10 +44,17 @@
 .input_container textarea:focus~label,
 .input_container textarea:valid~label {
     background: #030713;
-    font-size: 16px;
+    font-size: 17px;
     left: 15px;
     padding: 0 2px;
     top: 0px;
+}
+
+.input_container input:-webkit-autofill,
+.input_container textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #030713 inset;
+  box-shadow: 0 0 0 1000px #030713 inset;
+  font-size: 16px;
 }
 
 

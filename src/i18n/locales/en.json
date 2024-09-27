@@ -33,14 +33,14 @@
       "company": "Mega Digital",
       "position": "Frontend Developer",
       "from_date": "May 2023",
-      "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js.Development of a real-time customer support mobile app using React Native and Socket.IO.." 
+      "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js.Development of a real-time customer support mobile app using React Native and Socket.IO." 
     },
     "2": {
       "id": 2,
       "company": "Innovatica",
       "position": "Frontend Developer",
       "from_date": "October 2022",
-      "description": "Custom software development for USA clients using React and React Native. Creation of reusable components following Figma designs"
+      "description": "Custom software development for USA clients using React and React Native. Creation of reusable components following Figma designs."
     },
     "3": {
       "id": 3,
