@@ -55,6 +55,9 @@
     "full_name": "Fullname",
     "email": "Email",
     "subject": "Subject",
-    "message": "Message"
+    "message": "Message",
+    "email_greeting": "Hi Cayo, my name is",
+    "email_reason": "I am writing to you for the following",
+    "email_goodbye": "Best regards"
   }
 }

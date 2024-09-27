@@ -1,9 +1,4 @@
-import type { MessageKeys } from "next-intl";
-import type { InputProps } from "../components/Input/Input.types";
-
-type ContactField = Omit<InputProps, "label"> & {
-  label: MessageKeys<"Contact", "full_name" | "email" | "subject" | "message">;
-};
+import type { ContactField } from "@/core/types/contact";
 
 export const fields: ContactField[] = [
   {

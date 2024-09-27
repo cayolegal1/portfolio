@@ -55,6 +55,9 @@
     "full_name": "Nombre completo",
     "email": "Correo Electrónico",
     "subject": "Asunto",
-    "message": "Mensaje"
+    "message": "Mensaje",
+    "email_greeting": "Hola Cayo, mi nombre es",
+    "email_reason": "Te escribo por lo siguiente",
+    "email_goodbye": "Saludos"
   }
 }
