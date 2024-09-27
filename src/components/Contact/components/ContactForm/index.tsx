@@ -12,7 +12,7 @@ import styles from "./ContactForm.module.css";
 export default function ContactForm(): JSX.Element {
   const { sendEmail } = useSendEmail();
   const translate = useTranslations("Contact");
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   const sendForm = async () => {
