@@ -3,7 +3,6 @@ import ENV from "../config/env";
 
 export const useSendEmail = () => {
   const sendEmail = async (form: HTMLFormElement) => {
-    console.log({ENV});
     try {
       const response = await emailjs.sendForm(
         ENV.EMAIL_SERVICE_ID,
