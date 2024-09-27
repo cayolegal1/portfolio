@@ -1,13 +1,15 @@
 import emailjs from "@emailjs/browser";
+import ENV from "../config/env";
 
 export const useSendEmail = () => {
   const sendEmail = async (form: HTMLFormElement) => {
+    console.log({ENV});
     try {
       const response = await emailjs.sendForm(
-        "service_s5onhv9",
-        "template_seoec6b",
+        ENV.EMAIL_SERVICE_ID,
+        ENV.EMAIL_TEMPLATE_ID,
         form,
-        { publicKey: "VDE8fGRXtIA8tqUZo" },
+        { publicKey: ENV.EMAILJS_PUBLIC_KEY },
       );
 
       return {
