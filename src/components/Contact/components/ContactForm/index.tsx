@@ -1,6 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
-import { useTranslations } from "next-intl";
+import { FormEvent } from "react";
 import Input from "@/core/components/Input";
 import Button from "@/core/components/Button";
 import Loader from "@/core/components/Loader";
@@ -10,23 +9,16 @@ import data from "@/core/data/user-info.json";
 import styles from "./ContactForm.module.css";
 
 export default function ContactForm(): JSX.Element {
-  const { sendEmail } = useSendEmail();
-  const translate = useTranslations("Contact");
-  const [isLoading, setIsLoading] = useState(false);
-  const formRef = useRef<HTMLFormElement>(null);
 
-  const sendForm = async () => {
-    if (formRef.current) {
-      setIsLoading(true);
-      const email = await sendEmail(formRef.current);
+  const { isLoading, formRef, sendEmail, translate } = useSendEmail();
 
-      if (email.ok) formRef.current.reset();
-      setIsLoading(false);
-    }
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    await sendEmail();
   };
 
   return (
-    <form action={sendForm} className={styles.form} ref={formRef}>
+    <form onSubmit={onSubmit} className={styles.form} ref={formRef}>
       {fields.map(field => (
         <Input
           key={field.name}

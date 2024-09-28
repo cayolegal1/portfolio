@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import data from "@/core/data/user-info.json";
 import "./globals.css";
+import "./custom.css";
 
 const { name } = data;
 

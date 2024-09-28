@@ -1,0 +1,20 @@
+.navbar__hidden {
+    margin-right: -100%;
+    box-shadow: none;
+}
+
+.toast__visible {
+    opacity: 1;
+    transform: translateY(0) scale(99%);
+}
+
+.toast__hidden {
+    opacity: 0;
+    transform: translateY(150%) scale(40%);
+}
+
+@media (min-width: 550px) {
+    .navbar__hidden {
+        margin-right: 0;
+    }
+}

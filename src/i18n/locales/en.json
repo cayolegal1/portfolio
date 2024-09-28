@@ -61,6 +61,10 @@
     "email_placeholder": "example@example.com",
     "subject_placeholder": "Type your subject here",
     "message_placeholder": "Type your message here",
+    "success_message": "Message sent",
+    "success_message_body": "The message was successfully sent. I will get in touch with you shortly.",
+    "error_message": "An error occurred",
+    "error_message_body": "Please try again later",
     "email_greeting": "Hi Cayo, my name is",
     "email_reason": "I am writing to you for the following",
     "email_goodbye": "Best regards"

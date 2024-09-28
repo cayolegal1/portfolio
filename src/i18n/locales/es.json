@@ -61,6 +61,10 @@
     "email_placeholder": "example@example.com",
     "subject_placeholder": "Escribe aquí el asunto",
     "message_placeholder": "Escribe aquí tu mensaje",
+    "success_message": "Mensaje enviado",
+    "success_message_body": "El mensaje se envió correctamente, me pondré en contacto contigo en la brevedad",
+    "error_message": "Hubo un error",
+    "error_message_body": "Por favor vuelve a intentarlo más tarde",
     "email_greeting": "Hola Cayo, mi nombre es",
     "email_reason": "Te escribo por lo siguiente",
     "email_goodbye": "Saludos"
