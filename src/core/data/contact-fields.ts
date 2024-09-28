@@ -19,7 +19,7 @@ export const fields: ContactField[] = [
     variant: "normal",
   },
   {
-    autoCapitalize: "characters",
+    autoCapitalize: "sentences",
     autoComplete: "subject",
     label: "subject",
     name: "subject",
@@ -28,7 +28,7 @@ export const fields: ContactField[] = [
     variant: "normal",
   },
   {
-    autoCapitalize: "characters",
+    autoCapitalize: "sentences",
     label: "message",
     name: "message",
     placeholder: "message_placeholder",
