@@ -56,7 +56,7 @@
     "email": "Email",
     "subject": "Subject",
     "message": "Message",
-    "submit": "Submit",
+    "submit": "Send Message",
     "full_name_placeholder": "Enter your fullname here",
     "email_placeholder": "example@example.com",
     "subject_placeholder": "Type your subject here",
