@@ -1,11 +1,13 @@
 .toast_container {
+    left: 0;
+    margin-inline: auto;
     max-width: 30.0rem;
     pointer-events: none;
     position: fixed;
-    right: 16px;
+    right: 0;
     top: 16px;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    width: fit-content;
+    width: 100%;
     z-index: 11;
 }
 
@@ -44,4 +46,14 @@
     color: #6c757d;
     font-size: 14px;
     padding: 1rem;
+}
+
+@media (min-width: 550px) {
+    .toast_container {
+        bottom: 30px;
+        left: auto;
+        right: 16px;
+        top: auto;
+        width: fit-content;
+    }
 }
