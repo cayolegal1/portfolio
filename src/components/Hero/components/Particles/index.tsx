@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import type { ParticlesProps, Particle } from "./Particles.types";
 import styles from "./Particles.module.css";
 
-const defaultNumber = window.innerWidth >= 550 ? 25 : 8;
+const defaultNumber = window.innerWidth >= 550 ? 25 : 15;
 
 export default function Particles({
   number = defaultNumber,
@@ -36,7 +36,7 @@ export default function Particles({
           fadeOutSpeed,
           fadingIn: true,
         });
-      }, i * 200);
+      }, i * 100);
     }
   };
 
