@@ -9,7 +9,6 @@ import data from "@/core/data/user-info.json";
 import styles from "./ContactForm.module.css";
 
 export default function ContactForm(): JSX.Element {
-
   const { isLoading, formRef, sendEmail, translate } = useSendEmail();
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -18,7 +17,12 @@ export default function ContactForm(): JSX.Element {
   };
 
   return (
-    <form onSubmit={onSubmit} className={styles.form} ref={formRef}>
+    <form
+      className={styles.form}
+      id="contact_form"
+      onSubmit={onSubmit}
+      ref={formRef}
+    >
       {fields.map(field => (
         <Input
           key={field.name}
