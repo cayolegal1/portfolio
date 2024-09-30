@@ -1,0 +1,9 @@
+.form_container {
+  width: 100%;
+}
+
+@media (min-width: 550px) {
+  .form_container {
+    width: auto;
+  }  
+}

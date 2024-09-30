@@ -17,12 +17,7 @@ export default function ContactForm(): JSX.Element {
   };
 
   return (
-    <form
-      className={styles.form}
-      id="contact_form"
-      onSubmit={onSubmit}
-      ref={formRef}
-    >
+    <form className={styles.form} onSubmit={onSubmit} ref={formRef}>
       {fields.map(field => (
         <Input
           key={field.name}
