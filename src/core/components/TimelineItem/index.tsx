@@ -1,7 +1,6 @@
 "use client";
-import AnimatedRender from "../AnimatedRender";
+import AnimatedInView from "../AnimatedInView";
 import TimelineContent from "../TimelineContent";
-import { useInView } from "@/core/hooks/useInView";
 import type { TimelineItemProps } from "./TimelineItem.types";
 import styles from "./TimelineItem.module.css";
 
@@ -9,11 +8,9 @@ export default function TimelineItem({
   experience,
   ...props
 }: TimelineItemProps): JSX.Element {
-  const isInView = useInView(experience.id, true);
   return (
-    <AnimatedRender
-      animate={isInView}
-      animationType="slideInLeft"
+    <AnimatedInView
+      animationType="fadeInDown"
       as="li"
       className={styles.timeline_item_container}
       delay="0"
@@ -24,6 +21,6 @@ export default function TimelineItem({
         <span />
         <TimelineContent content={experience} />
       </div>
-    </AnimatedRender>
+    </AnimatedInView>
   );
 }
