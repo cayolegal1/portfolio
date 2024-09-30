@@ -1,4 +1,4 @@
-import AnimatedRender from "@/core/components/AnimatedRender";
+import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import NavItem from "./components/NavItem";
 import NavToggleLanguage from "./components/NavToggleLanguage";
 import NavButton from "./components/NavButton";

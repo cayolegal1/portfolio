@@ -1,4 +1,4 @@
-import AnimatedRender from "@/core/components/AnimatedRender";
+import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import GitHubIcon from "@/core/components/Icons/GitHubIcon";
 import LinkedinIcon from "@/core/components/Icons/LinkedinIcon";
 import styles from "./HeroContact.module.css";

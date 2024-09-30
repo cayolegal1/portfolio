@@ -1,5 +1,5 @@
 "use client";
-import AnimatedRender from "@/core/components/AnimatedRender";
+import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import ExpandIcon from "@/core/components/Icons/ExpandIcon";
 import styles from "./HeroExpand.module.css";
 

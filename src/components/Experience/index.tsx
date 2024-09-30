@@ -1,6 +1,6 @@
 import Section from "@/core/components/Section";
-import AnimatedTitle from "@/core/components/AnimatedTitle";
-import AnimatedInView from "@/core/components/AnimatedInView";
+import AnimatedTitle from "@/core/components/Animated/AnimatedTitle";
+import AnimatedInView from "@/core/components/Animated/AnimatedInView";
 import Timeline from "@/core/components/Timeline";
 import TimelineItem from "@/core/components/TimelineItem";
 import { useTranslations } from "next-intl";

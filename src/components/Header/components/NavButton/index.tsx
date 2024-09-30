@@ -1,6 +1,6 @@
 "use client";
 import { useState, useCallback } from "react";
-import AnimatedRender from "@/core/components/AnimatedRender";
+import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import MenuIcon from "@/core/components/Icons/MenuIcon";
 import CloseIcon from "@/core/components/Icons/CloseIcon";
 import styles from "./NavButton.module.css";

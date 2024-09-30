@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import AnimatedRender from "@/core/components/AnimatedRender";
+import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import Text from "@/core/components/Text";
-import AnimatedType from "@/core/components/AnimatedType";
+import AnimatedType from "@/core/components/Animated/AnimatedType";
 import styles from "./HeroSkills.module.css";
 import gradient from "@/core/components/TextGradient/TextGradient.module.css";
 

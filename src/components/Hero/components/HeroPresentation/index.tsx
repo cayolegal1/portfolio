@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import AnimatedRender from "@/core/components/AnimatedRender";
+import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import Text from "@/core/components/Text";
 import HeroSkills from "../HeroSkills";
 import data from "@/core/data/user-info.json";

@@ -1,5 +1,5 @@
 import AnimatedInView from "../AnimatedInView";
-import Text from "../Text";
+import Text from "@/core/components/Text";
 import type { AnimatedTitleProps } from "./AnimatedTitle.types";
 
 export default function AnimatedTitle({ children, id }: AnimatedTitleProps): JSX.Element {
