@@ -11,8 +11,9 @@
 }
 
 .label {
-  display: flex;
   align-items: center;
+  display: flex;
+  font-family: Arial;
   gap: 2px;
 }
 
@@ -63,6 +64,10 @@
 
   .dropdown_container {
     margin-left: 0;
+  }
+
+  .label {
+    padding-bottom: 1px;
   }
 
   .section_dropdown {

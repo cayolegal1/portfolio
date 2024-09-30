@@ -3,6 +3,7 @@
   color: var(--text-color);
   cursor: pointer;
   display: flex;
+  font-family: Arial;
   gap: 0.5rem;
   margin-bottom: 30px;
   padding-inline: 0.5rem;
