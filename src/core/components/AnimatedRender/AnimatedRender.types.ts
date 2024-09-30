@@ -4,7 +4,6 @@ export type AnimationRenderType =
   | "fadeInLeft"
   | "fadeInDown"
   | "bounceInDown"
-  | "slideInLeft"
   | "pulse";
 
 export type AnimatedRenderProps = HTMLAttributes<HTMLElement> & {
