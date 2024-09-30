@@ -6,7 +6,7 @@ export const useExperienceTranslation = () => {
   const experiences = arr.map(
     (_, index) => {
       return {
-        id: index,
+        id: `experience_${index}`,
         company: translate(`${index}.company` as any),
         position: translate(`${index}.position` as any),
         from_date: translate(`${index}.from_date` as any),

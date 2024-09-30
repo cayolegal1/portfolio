@@ -1,47 +1,53 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-export const useInView = (href: string) => {
+export const useInView = (href: string, once: boolean | undefined = false) => {
   const [isInView, setIsInView] = useState(false);
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   const observe = (section: HTMLElement) => {
     const callback = (entries: IntersectionObserverEntry[]) => {
       const entry = entries[0];
       setIsInView(entry.isIntersecting);
+      if (observerRef.current && entry.isIntersecting && once) {
+        observerRef.current.disconnect();
+      }
     };
 
-    const observer = new IntersectionObserver(callback, {
+    observerRef.current = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
       threshold: [0.5, 1.0],
     });
 
-    observer.observe(section);
-
-    return observer;
+    observerRef.current.observe(section);
   };
 
-  const onDocVisibilityChange = (
-    observer: IntersectionObserver,
-    section: HTMLElement,
-  ) => {
+  const onDocVisibilityChange = (section: HTMLElement) => {
     if (document.visibilityState === "hidden") {
-      observer.disconnect();
+      observerRef.current?.disconnect();
     } else {
-      observe(section);
+      observerRef.current?.observe(section);
     }
   };
 
   useEffect(() => {
-    if (!document) return;
+    if (typeof window === "undefined" || !document) return;
+
     const section = document.getElementById(href);
     if (section) {
-      const observer = observe(section);
-      document.onvisibilitychange = () => {
-        onDocVisibilityChange(observer, section);
-      };
+      observe(section);
+      const handleVisibilityChange = () => onDocVisibilityChange(section);
+      document.addEventListener("visibilitychange", handleVisibilityChange);
 
       return () => {
-        observer.disconnect();
+        if (observerRef.current) {
+          observerRef.current.disconnect();
+        }
+
+        document.removeEventListener(
+          "visibilitychange",
+          handleVisibilityChange,
+        );
       };
     }
   }, []);
