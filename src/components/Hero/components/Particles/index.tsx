@@ -3,10 +3,10 @@ import React, { useEffect, useRef } from "react";
 import type { ParticlesProps, Particle } from "./Particles.types";
 import styles from "./Particles.module.css";
 
-const defaultNumber = window.innerWidth >= 550 ? 25 : 15;
+// const defaultNumber = window.innerWidth >= 550 ? 25 : 15;
 
 export default function Particles({
-  number = defaultNumber,
+  number = 25,
   timeout = 2000,
 }: ParticlesProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -36,7 +36,7 @@ export default function Particles({
           fadeOutSpeed,
           fadingIn: true,
         });
-      }, i * 100);
+      }, i);
     }
   };
 
