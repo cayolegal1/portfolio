@@ -1,5 +1,6 @@
 import Section from "@/core/components/Section";
 import AnimatedTitle from "@/core/components/AnimatedTitle";
+import AnimatedInView from "@/core/components/AnimatedInView";
 import Timeline from "@/core/components/Timeline";
 import TimelineItem from "@/core/components/TimelineItem";
 import { useTranslations } from "next-intl";
@@ -16,7 +17,13 @@ export default function Experience(): JSX.Element {
       <div className={styles.timeline_container}>
         <Timeline>
           {experiences.map(item => (
-            <TimelineItem key={item.id} experience={item} />
+            <AnimatedInView
+              key={item.id}
+              animationType="fadeInDown"
+              id={item.id}
+            >
+              <TimelineItem key={item.id} experience={item} />
+            </AnimatedInView>
           ))}
         </Timeline>
       </div>
