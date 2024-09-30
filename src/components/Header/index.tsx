@@ -2,6 +2,7 @@ import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import NavItem from "./components/NavItem";
 import NavToggleLanguage from "./components/NavToggleLanguage";
 import NavButton from "./components/NavButton";
+import { getLocale } from "next-intl/server";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./Header.module.css";
 
@@ -14,7 +15,8 @@ const headers = [
   { title: "language", href: SECTIONS.LANGUAGE },
 ] as const;
 
-export default function Header() {
+export default async function Header() {
+  const currentLocale = await getLocale();
   return (
     <>
       <NavButton />
@@ -26,11 +28,17 @@ export default function Header() {
         id="header"
       >
         <nav className={styles.nav}>
-          {headers.map(item => item.href !== SECTIONS.LANGUAGE ?(
-            <NavItem key={item.href} item={item} />
-          ): (
-            <NavToggleLanguage key={item.href} title={item.title} />
-          ))}
+          {headers.map(item =>
+            item.href !== SECTIONS.LANGUAGE ? (
+              <NavItem key={item.href} item={item} />
+            ) : (
+              <NavToggleLanguage
+                key={item.href}
+                locale={currentLocale}
+                title={item.title}
+              />
+            ),
+          )}
         </nav>
       </AnimatedRender>
     </>
