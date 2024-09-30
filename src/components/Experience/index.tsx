@@ -1,4 +1,3 @@
-"use client";
 import Section from "@/core/components/Section";
 import AnimatedTitle from "@/core/components/AnimatedTitle";
 import Timeline from "@/core/components/Timeline";
