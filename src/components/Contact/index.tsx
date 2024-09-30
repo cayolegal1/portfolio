@@ -12,7 +12,7 @@ export default function Contact() {
     <Section id={SECTIONS.CONTACT}>
       <AnimatedTitle id="contact_title">{translate("title")}</AnimatedTitle>
       <AnimatedInView
-        animationType="fadeInDown"
+        animationType="slideInUp"
         className={styles.form_container}
         id="contact_form"
       >

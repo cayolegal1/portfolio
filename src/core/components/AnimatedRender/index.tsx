@@ -15,9 +15,11 @@ export default function AnimatedRender({
 }: AnimatedRenderProps): JSX.Element {
   const animations: Record<AnimationRenderType, string> = {
     bounceInDown: styles.bounceInDown,
+    fadeIn: styles.fadeIn,
     fadeInDown: styles.fadeInDown,
     fadeInLeft: styles.fadeInLeft,
     pulse: styles.pulse,
+    slideInUp: styles.slideInUp,
   };
 
   return (

@@ -9,11 +9,11 @@ export default function Input({
   return (
     <div className={styles.input_container}>
       {variant === "normal" ? (
-        <input required placeholder="" {...props} />
+        <input id={props.name} placeholder="" required  {...props} />
       ) : (
-        <textarea required placeholder="" {...props} />
+        <textarea id={props.name} placeholder="" required  {...props} />
       )}
-      <label>{label}</label>
+      <label htmlFor={props.name}>{label}</label>
     </div>
   );
 }

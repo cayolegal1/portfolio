@@ -1,10 +1,12 @@
 import type { HTMLAttributes, ReactNode, ElementType } from "react";
 
 export type AnimationRenderType =
+  | "fadeIn"
   | "fadeInLeft"
   | "fadeInDown"
   | "bounceInDown"
-  | "pulse";
+  | "pulse"
+  | "slideInUp";
 
 export type AnimatedRenderProps = HTMLAttributes<HTMLElement> & {
   animate?: boolean;
