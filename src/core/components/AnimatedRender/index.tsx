@@ -18,6 +18,7 @@ export default function AnimatedRender({
     slideInLeft: styles.slideInLeft,
     fadeInDown: styles.fadeInDown,
     fadeInLeft: styles.fadeInLeft,
+    pulse: styles.pulse,
   };
 
   return (

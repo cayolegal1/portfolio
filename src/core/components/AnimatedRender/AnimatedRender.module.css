@@ -21,6 +21,10 @@
     animation-name: slideInLeft;
 }
 
+.pulse {
+    animation-name: pulse;
+}
+
 @keyframes fadeInLeft {
     from {
         transform: translate3d(-400%, 0, 0);
@@ -86,6 +90,23 @@
 
     to {
         transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes pulse {
+    from {
+        transform: scale3d(2, 2, 2);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
         opacity: 1;
     }
 }

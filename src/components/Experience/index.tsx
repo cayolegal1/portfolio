@@ -1,5 +1,7 @@
+"use client";
 import Section from "@/core/components/Section";
 import { SECTIONS } from "@/core/data/global";
+import AnimatedInView from "@/core/components/AnimatedInView";
 import Text from "@/core/components/Text";
 import Timeline from "@/core/components/Timeline";
 import TimelineItem from "@/core/components/TimelineItem";
@@ -13,9 +15,11 @@ export default function Experience(): JSX.Element {
   const experiences = useExperienceTranslation();
   return (
     <Section id={SECTIONS.EXPERIENCE}>
-      <Text as="h3" size="title">
-        {translate("title")}
-      </Text>
+      <AnimatedInView id="experience_title" animationType="pulse">
+        <Text as="h3" size="title" id="experience_title">
+          {translate("title")}
+        </Text>
+      </AnimatedInView>
       <div className={styles.timeline_container}>
         <Timeline>
           {experiences.map(item => (
