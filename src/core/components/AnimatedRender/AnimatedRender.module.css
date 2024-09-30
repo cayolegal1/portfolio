@@ -17,6 +17,9 @@
     animation-name: bounceInDown;
 }
 
+.slideInLeft {
+    animation-name: slideInLeft;
+}
 
 @keyframes fadeInLeft {
     from {
@@ -41,6 +44,7 @@
 }
 
 @keyframes bounceInDown {
+
     from,
     60%,
     75%,
@@ -70,5 +74,18 @@
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0) scaleY(1);
+    }
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
     }
 }
