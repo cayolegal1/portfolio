@@ -10,7 +10,7 @@ import styles from "./NavToggleLanguage.module.css";
 const languages = [
   { label: "english", locale: LOCALES.ENGLISH, flag: "🇺🇸" },
   { label: "spanish", locale: LOCALES.SPANISH, flag: "🇪🇸" },
-  { label: "portuguese", locale: LOCALES.PORTUGUES, flag: "🇧🇷" },
+  { label: "portuguese", locale: LOCALES.PORTUGUES, flag: "🇵🇹" },
 ] as const;
 
 export default function NavToggleLanguage({
