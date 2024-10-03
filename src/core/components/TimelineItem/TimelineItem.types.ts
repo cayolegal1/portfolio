@@ -4,5 +4,6 @@ import type {
 } from "../TimelineContent/TimelineContent.types";
 
 export type TimelineItemProps = HTMLAttributes<HTMLLIElement> & {
+  active: boolean;
   experience: Experience;
 };

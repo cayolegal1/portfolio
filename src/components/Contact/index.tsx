@@ -14,7 +14,8 @@ export default function Contact() {
       <AnimatedInView
         animationType="slideInUp"
         className={styles.form_container}
-        id="contact_form"
+        id="contact_title"
+        useId={false}
       >
         <ContactForm />
       </AnimatedInView>
