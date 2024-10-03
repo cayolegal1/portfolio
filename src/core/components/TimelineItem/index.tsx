@@ -10,7 +10,7 @@ export default function TimelineItem({
   return (
     <li {...props} className={styles.timeline_item_container}>
       <div className={styles.timeline_item}>
-        <span className={active ? styles.active : ""}>•</span>
+        <span className={active ? styles.active : ""} />
         <TimelineContent content={experience} />
       </div>
     </li>
