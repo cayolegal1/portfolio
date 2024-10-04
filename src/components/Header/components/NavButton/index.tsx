@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useState, useCallback } from "react";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import MenuIcon from "@/core/components/Icons/MenuIcon";
