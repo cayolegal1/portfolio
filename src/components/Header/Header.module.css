@@ -10,8 +10,8 @@
     position: fixed;
     right: 0;
     top: 0;
-    transition: margin-right 250ms ease-in-out;
-    width: 65%;
+    transition: opacity 250ms ease-in-out;
+    width: 16.0rem;
     z-index: 3;
 }
 
