@@ -28,7 +28,7 @@ const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
             height: "23px",
             viewBox: "0 -960 960 960",
           }}
-          color="white"
+          gradientId="expand_contact"
         />
       </label>
       <div className={styles.section_dropdown}>{children}</div>
