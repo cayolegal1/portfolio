@@ -1,8 +1,9 @@
 import TextGradient from "../TextGradient";
 import type { TextProps, TextSize } from "./Text.types";
 import styles from "./Text.module.css";
+import { ElementType } from "react";
 
-export default function Text({
+export default function Text<T extends ElementType>({
   as: Component = "span",
   centered = true,
   children,
@@ -10,7 +11,7 @@ export default function Text({
   size = "xl",
   variant = "normal",
   ...props
-}: TextProps): JSX.Element {
+}: TextProps<T>): JSX.Element {
   const sizeVariant: Record<TextSize, string> = {
     xl: styles.xl,
     title: styles.title,

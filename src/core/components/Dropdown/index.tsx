@@ -18,8 +18,15 @@ const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
         id={checkboxId}
         type="checkbox"
       />
-      <label htmlFor={checkboxId} className={styles.label}>
-        <Text variant="gradient" inHover>
+      <div className={styles.label_container}>
+        <Text
+          as="label"
+          className={styles.label}
+          htmlFor={checkboxId}
+          inHover
+          size="description"
+          variant="gradient"
+        >
           {title}
         </Text>
         <ExpandIcon
@@ -29,8 +36,9 @@ const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
             viewBox: "0 -960 960 960",
           }}
           gradientId="expand_contact"
+          color="white"
         />
-      </label>
+      </div>
       <div className={styles.section_dropdown}>{children}</div>
     </div>
   );

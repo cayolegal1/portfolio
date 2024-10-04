@@ -1,3 +1,4 @@
+import React from "react";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import NavItem from "./components/NavItem";
 import NavToggleLanguage from "./components/NavToggleLanguage";

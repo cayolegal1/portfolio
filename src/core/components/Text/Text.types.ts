@@ -1,14 +1,28 @@
-import type { ElementType, HTMLAttributes, ReactNode } from "react";
+import type {
+  ElementType,
+  HTMLAttributes,
+  LabelHTMLAttributes,
+  ReactNode,
+} from "react";
 import type { TextGradientProps } from "../TextGradient/TextGradient.types";
 
 export type TextVariant = "normal" | "gradient";
-export type TextSize = "xl" | "title" | "subtitle" | "text" | "description" | "caption";
+export type TextSize =
+  | "xl"
+  | "title"
+  | "subtitle"
+  | "text"
+  | "description"
+  | "caption";
 
-export type TextProps = HTMLAttributes<HTMLElement> &
-  TextGradientProps & {
-    as?: ElementType;
-    children: ReactNode;
-    variant?: TextVariant;
-    size?: TextSize;
-    centered?: boolean;
-  };
+type BaseTextProps<T extends ElementType> = TextGradientProps & {
+  as?: T;
+  children: ReactNode;
+  variant?: TextVariant;
+  size?: TextSize;
+  centered?: boolean;
+};
+
+export type TextProps<T extends ElementType> = T extends "label"
+  ? BaseTextProps<T> & LabelHTMLAttributes<HTMLLabelElement>
+  : BaseTextProps<T> & HTMLAttributes<HTMLElement>;

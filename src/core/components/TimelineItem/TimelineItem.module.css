@@ -16,7 +16,6 @@
     width: 0;
 }
 
-
 .timeline_item span {
     background: var(--gradient-color);
     border-radius: 50%;
@@ -29,7 +28,7 @@
 }
 
 .active {
-  animation: pulse_animation 1.5s infinite;
+    animation: pulse_animation 1.5s infinite;
 }
 
 @keyframes pulse_animation {
