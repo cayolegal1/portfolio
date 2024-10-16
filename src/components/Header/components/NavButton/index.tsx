@@ -12,11 +12,7 @@ export default function NavButton() {
   const handleClick = useCallback(() => {
     const element = document.getElementById("header");
     if (element) {
-      if (element.classList.contains("navbar__hidden")) {
-        element.classList.remove("navbar__hidden");
-      } else {
-        element.classList.add("navbar__hidden");
-      }
+      element.classList.toggle("navbar__hidden");
     }
   }, []);
 
