@@ -60,7 +60,7 @@ button {
 
 @media (prefers-color-scheme: light) {
   html {
-    color-scheme: light;
+    color-scheme: dark;
 
   }
 }
