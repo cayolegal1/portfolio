@@ -8,11 +8,11 @@ export default function TimelineItem({
   ...props
 }: TimelineItemProps): JSX.Element {
   return (
-    <li {...props} className={styles.timeline_item_container}>
+    <div {...props} className={styles.timeline_item_container}>
       <div className={styles.timeline_item}>
         <span className={active ? styles.active : ""} />
         <TimelineContent content={experience} />
       </div>
-    </li>
+    </div>
   );
 }
