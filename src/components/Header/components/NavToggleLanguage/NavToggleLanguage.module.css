@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.flag_container {
+  transform: translateY(0.5px);
+}
+
 .language_item:hover {
   opacity: 0.7;
 }
