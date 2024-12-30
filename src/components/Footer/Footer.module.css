@@ -1,7 +1,16 @@
 .footer_section {
   align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.0rem;
+  margin-top: 1rem;
   width: 100%;
+}
+
+@media (min-width: 380px) {
+  .footer_section {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+  }
 }

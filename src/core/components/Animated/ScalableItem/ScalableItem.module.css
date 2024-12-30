@@ -1,0 +1,7 @@
+.scalable_item {
+  transition: 0.5s;
+}
+
+.scalable_item:hover {
+  transform: scale(1.05);
+}
