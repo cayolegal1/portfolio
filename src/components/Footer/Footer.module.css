@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 1rem;
   margin-bottom: 3.0rem;
   padding-inline: var(--padding-inline);
 }
