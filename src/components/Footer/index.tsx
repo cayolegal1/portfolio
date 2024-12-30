@@ -12,8 +12,8 @@ export default function Footer() {
     <Section withSeparator={false} id={SECTIONS.FOOTER}>
       <AnimatedInView
         animationType="slideInUp"
-        id={SECTIONS.FOOTER}
         className={styles.footer_section}
+        id={SECTIONS.FOOTER}
       >
         <FooterItem href={data.location_url} icon={<LocationIcon />}>
           {data.location}

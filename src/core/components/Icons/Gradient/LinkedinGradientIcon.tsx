@@ -1,8 +1,8 @@
-import SvgGradient from "../SvgGradient";
+import SvgGradient from "../../SvgGradient";
 
 const gradientId = "linkedin_gradient";
 
-export default function LinkedinIcon(): JSX.Element {
+export default function LinkedinGradientIcon(): JSX.Element {
   return (
     <SvgGradient
       properties={{ width: "5.5rem", height: "5rem", viewBox: "0 0 256 250" }}
@@ -16,7 +16,6 @@ export default function LinkedinIcon(): JSX.Element {
         fontSize="none"
         textAnchor="none"
         style={{ mixBlendMode: "normal" }}
-        
       >
         <g transform="scale(4,4)">
           <path

@@ -1,8 +1,8 @@
-import SvgGradient from "../SvgGradient";
+import SvgGradient from "../../SvgGradient";
 
 const gradientId = "github_gradient";
 
-export default function GitHubIcon(): JSX.Element {
+export default function GitHubGradientIcon(): JSX.Element {
   return (
     <SvgGradient
       properties={{ width: "4rem", height: "4rem", viewBox: "0 0 256 250" }}

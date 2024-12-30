@@ -1,6 +1,6 @@
 "use client";
 import Text from "../Text";
-import ExpandIcon from "../Icons/ExpandIcon";
+import ExpandGradientIcon from "../Icons/Gradient/ExpandGradientIcon";
 import type { DropdownProps } from "./Dropdown.types";
 import styles from "./Dropdown.module.css";
 import { useDropdownClick } from "@/core/hooks/useDropdownClick";
@@ -29,7 +29,7 @@ const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
         >
           {title}
         </Text>
-        <ExpandIcon
+        <ExpandGradientIcon
           properties={{
             width: "23px",
             height: "23px",

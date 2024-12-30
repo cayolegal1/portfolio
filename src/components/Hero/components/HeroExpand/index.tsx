@@ -1,6 +1,6 @@
 "use client";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
-import ExpandIcon from "@/core/components/Icons/ExpandIcon";
+import ExpandGradientIcon from "@/core/components/Icons/Gradient/ExpandGradientIcon";
 import styles from "./HeroExpand.module.css";
 
 export default function HeroExpand(): JSX.Element {
@@ -17,7 +17,7 @@ export default function HeroExpand(): JSX.Element {
       className={styles.expand_container}
       onClick={scrollToNextSection}
     >
-      <ExpandIcon />
+      <ExpandGradientIcon />
     </AnimatedRender>
   );
 }
