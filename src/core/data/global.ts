@@ -1,8 +1,9 @@
 export const SECTIONS = {
-  HOME: "hero",
-  EXPERIENCE: "experience",
-  PROYECTS: "proyects",
-  CONTACT: "contact",
   ABOUT: "about",
+  CONTACT: "contact",
+  EXPERIENCE: "experience",
+  FOOTER: "footer",
+  HOME: "hero",
   LANGUAGE: "language",
+  PROYECTS: "proyects",
 } as const;

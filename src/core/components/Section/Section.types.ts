@@ -1,6 +1,7 @@
-import type { HTMLAttributes, ReactNode } from "react";
+import type { HTMLAttributes, ReactNode, ElementType } from "react";
 
-export type SectionProps = HTMLAttributes<HTMLDivElement> & {
+export type SectionProps = HTMLAttributes<HTMLElement> & {
   children: ReactNode;
   withSeparator?: boolean;
-}
+  as?: ElementType;
+};

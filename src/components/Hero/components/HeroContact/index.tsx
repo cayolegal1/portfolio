@@ -1,14 +1,22 @@
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
-import GitHubIcon from "@/core/components/Icons/GitHubIcon";
-import LinkedinIcon from "@/core/components/Icons/LinkedinIcon";
+import GitHubGradientIcon from "@/core/components/Icons/Gradient/GitHubGradientIcon";
+import LinkedinGradientIcon from "@/core/components/Icons/Gradient/LinkedinGradientIcon";
 import styles from "./HeroContact.module.css";
 import data from "@/core/data/user-info.json";
 
 const { github_url, linkedin_url } = data;
 
 const contactLinks = [
-  { ariaLabel: "Visit my repository on github", href: github_url, icon: <GitHubIcon /> },
-  { ariaLabel: "Visit my profile on LinkedIn", href: linkedin_url, icon: <LinkedinIcon /> },
+  {
+    ariaLabel: "Visit my repository on github",
+    href: github_url,
+    icon: <GitHubGradientIcon />,
+  },
+  {
+    ariaLabel: "Visit my profile on LinkedIn",
+    href: linkedin_url,
+    icon: <LinkedinGradientIcon />,
+  },
 ];
 
 export default function HeroContact(): JSX.Element {

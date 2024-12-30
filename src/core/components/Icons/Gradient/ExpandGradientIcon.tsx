@@ -1,16 +1,16 @@
 import { SVGAttributes } from "react";
-import SvgGradient from "../SvgGradient";
+import SvgGradient from "../../SvgGradient";
 
 const defaultGradientId = "expand_gradient";
 
-export default function ExpandIcon({
+export default function ExpandGradientIcon({
   properties,
   gradientId = defaultGradientId,
   color = "",
 }: {
   properties?: SVGAttributes<SVGSVGElement>;
-  gradientId?: string,
-  color?: string,
+  gradientId?: string;
+  color?: string;
 }): JSX.Element {
   return (
     <SvgGradient

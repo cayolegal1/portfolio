@@ -13,7 +13,12 @@ export default function AnimatedInView({
 }: AnimatedInViewProps): JSX.Element {
   const isInView = useInView(id, once);
   return (
-    <AnimatedRender {...props} animate={isInView} delay={delay} id={useId ? id : ""}>
+    <AnimatedRender
+      {...props}
+      animate={isInView}
+      delay={delay}
+      id={useId ? id : undefined}
+    >
       {children}
     </AnimatedRender>
   );
