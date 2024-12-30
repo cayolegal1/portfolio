@@ -68,5 +68,8 @@
     "email_greeting": "Hola Cayo, mi nombre es",
     "email_reason": "Te escribo por lo siguiente",
     "email_goodbye": "Saludos"
+  },
+  "Footer": {
+    "copyright": "Todos los derechos reservados"
   }
 }
