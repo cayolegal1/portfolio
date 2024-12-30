@@ -40,6 +40,7 @@
 }
 
 .input_container input:focus~label,
+.input_container input:-webkit-autofill~label,
 .input_container textarea:focus~label,
 .input_container input:not(:placeholder-shown)~label,
 .input_container textarea:not(:placeholder-shown)~label {
