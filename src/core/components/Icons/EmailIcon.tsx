@@ -1,4 +1,4 @@
-export default function EmailIcon() {
+export default function EmailIcon(): JSX.Element {
   return (
     <svg
       fill="none"

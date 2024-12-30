@@ -1,4 +1,4 @@
-export default function LocationIcon() {
+export default function LocationIcon(): JSX.Element {
   return (
     <svg
       fill="#ffff"

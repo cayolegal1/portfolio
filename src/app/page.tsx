@@ -15,8 +15,8 @@ export default function App() {
         <Hero />
         <Experience />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
       <Toast />
     </>
   );
