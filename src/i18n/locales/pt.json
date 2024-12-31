@@ -20,33 +20,40 @@
     },
     "Experience": {
       "title": "Experiência profissional",
-      "length": "4",
+      "length": "5",
       "0": {
-        "id": 0,
-        "position": "Desenvolvedor Móvel",
-        "company": "Bebidas do Paraguai",
-        "from_date": "Atualmente",
-        "description": "Desenvolvimento de um aplicativo móvel de e-commerce de bebidas com React Native e TypeScript seguindo a metodologia ágil Scrum."
+        "id": "0",
+        "company": "Bepsa",
+        "position": "Desenvolvedor FrontEnd",
+        "from_date": "Novembro de 2024 - Atualmente",
+        "description": "Sou responsável por facilitar o desenvolvimento para outras equipes por meio da criação de bibliotecas internas, da manutenção de padrões de qualidade, da implementação de boas práticas e da elaboração de documentação técnica com React e Vite, utilizando Scrum como metodologia ágil."
       },
       "1": {
         "id": 1,
-        "position": "Desenvolvedor FrontEnd",
-        "company": "Mega Digital",
-        "from_date": "Maio de 2023",
-        "description": "Desenvolvimento de uma plataforma web empresarial que automatiza o envio de cobranças, gerencia equipes de trabalho e fornece métricas, construída com Next.js. Desenvolvimento de um aplicativo móvel de suporte ao cliente em tempo real usando React Native e Socket.IO."
+        "position": "Desenvolvedor Móvel",
+        "company": "Bebidas do Paraguai",
+        "from_date": "Outubro de 2023 - Novembro de 2024",
+        "description": "Desenvolvimento de um aplicativo móvel de e-commerce de bebidas com React Native e TypeScript seguindo a metodologia ágil Scrum."
       },
       "2": {
         "id": 2,
-        "company": "Innovatica",
         "position": "Desenvolvedor FrontEnd",
-        "from_date": "Outubro de 2022",
-        "description": "Fábrica de software sob medida para clientes dos EUA com React e React Native. Criação de componentes reutilizáveis seguindo designs do Figma."
+        "company": "Mega Digital",
+        "from_date": "Maio de 2023 - Outubro de 2023",
+        "description": "Desenvolvimento de uma plataforma web empresarial que automatiza o envio de cobranças, gerencia equipes de trabalho e fornece métricas, construída com Next.js. Desenvolvimento de um aplicativo móvel de suporte ao cliente em tempo real usando React Native e Socket.IO."
       },
       "3": {
         "id": 3,
+        "company": "Innovatica",
+        "position": "Desenvolvedor FrontEnd",
+        "from_date": "Outubro de 2022 - Maio de 2023",
+        "description": "Fábrica de software sob medida para clientes dos EUA com React e React Native. Criação de componentes reutilizáveis seguindo designs do Figma."
+      },
+      "4": {
+        "id": 4,
         "company": "Banco Continental",
         "position": "Desenvolvedor de Software",
-        "from_date": "Julho de 2022",
+        "from_date": "Julho de 2022 - Outubro de 2022",
         "description": "Desenvolvimento de software bancário empresarial usando .NET Core e SQL."
       }
     },
