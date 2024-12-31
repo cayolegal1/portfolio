@@ -12,14 +12,14 @@
   height: 3.0rem;
 }
 
-@media (min-width: 1400px) {
-  .section_container {
-    max-width: 110.0rem;
-  }
-}
-
 @media (min-width: 550px) {
   .separator {
     height: 7.0rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section_container {
+    max-width: 110.0rem;
   }
 }

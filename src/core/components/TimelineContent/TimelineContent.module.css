@@ -30,7 +30,7 @@
 
 @media (min-width: 800px) {
     .content_container {
-        grid-template-columns: 50% 50%;
-        column-gap: 10%;
+      grid-template-columns: 50% 50%;
+      column-gap: 10%;
     }
 }
