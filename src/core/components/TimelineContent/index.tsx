@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Text from "../Text";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
-import Image from "next/image";
 
 export default function TimelineContent({
   content,
@@ -20,7 +20,13 @@ export default function TimelineContent({
             height={20}
             unoptimized
           />
-          <Text as="h4" size="description" centered={false}>
+          <Text
+            as="h4"
+            centered={false}
+            inHover
+            size="description"
+            variant="gradient"
+          >
             {content.company}
           </Text>
         </a>
