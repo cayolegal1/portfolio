@@ -10,6 +10,12 @@
   display: flex;
   gap: 1.0rem;
   margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+
+.content_container a:hover {
+  transform: scale(1.011);
 }
 
 .content_container a img {

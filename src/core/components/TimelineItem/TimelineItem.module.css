@@ -3,7 +3,7 @@
 }
 
 .timeline_item {
-    margin-inline: 4.8rem;
+    margin-inline: 2.5rem;
     padding-bottom: 7.0rem;
 }
 
@@ -41,4 +41,17 @@
         transform: scale(1);
         box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
     }
+}
+
+@media (min-width: 330px) {
+    .timeline_item {
+        margin-inline: 4.0rem;
+    }
+}
+
+@media (min-width: 550px) {
+    .timeline_item {
+        margin-inline: 4.8rem;
+    }
+    
 }
