@@ -1,6 +1,7 @@
 import Text from "../Text";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
+import Image from "next/image";
 
 export default function TimelineContent({
   content,
@@ -11,16 +12,25 @@ export default function TimelineContent({
         <Text as="h3" size="subtitle" variant="gradient" centered={false}>
           {content.position}
         </Text>
-        <Text as="h4" size="description" centered={false}>
-          {content.company}
-        </Text>
+        <a href={content.company_url} target="_blank">
+          <Image
+            src={content.company_logo}
+            alt={`${content.company}_logo`}
+            width={20}
+            height={20}
+            unoptimized
+          />
+          <Text as="h4" size="description" centered={false}>
+            {content.company}
+          </Text>
+        </a>
         <Text as="time" size="caption" centered={false}>
           {content.from_date}
         </Text>
       </div>
-        <Text as="p" size="description" centered={false}>
-          {content.description}
-        </Text>
+      <Text as="p" size="description" centered={false}>
+        {content.description}
+      </Text>
     </div>
   );
 }
