@@ -11,11 +11,11 @@ export const technologies: TechnologyHelper = {
     name: "CSS",
     logo_path: `${path}/css.svg`,
   },
-  js: {
+  javascript: {
     name: "JavaScript",
     logo_path: `${path}/js.svg`,
   },
-  ts: {
+  typescript: {
     name: "TypeScript",
     logo_path: `${path}/ts.svg`,
   },
@@ -23,7 +23,7 @@ export const technologies: TechnologyHelper = {
     name: "React",
     logo_path: `${path}/react.svg`,
   },
-  nextjs: {
+  next_js: {
     name: "NextJS",
     logo_path: `${path}/next.svg`,
   },
@@ -35,27 +35,27 @@ export const technologies: TechnologyHelper = {
     name: "Zustand",
     logo_path: `${path}/zustand.png`,
   },
-  nodejs: {
+  node_js: {
     name: "NodeJS",
     logo_path: `${path}/node.svg`,
   },
   express: {
-    name: "ExpressJS",
+    name: "Express",
     logo_path: `${path}/express.svg`,
   },
   vite: {
-    name: "vite",
+    name: "Vite",
     logo_path: `${path}/vite.svg`,
   },
   react_query: {
     name: "React Query",
     logo_path: `${path}/react_query.svg`,
   },
-  tailwindcss: {
+  tailwind_css: {
     name: "Tailwind CSS",
     logo_path: `${path}/tailwind.svg`,
   },
-  materialui: {
+  material_ui: {
     name: "Material UI",
     logo_path: `${path}/material_ui.svg`,
   },

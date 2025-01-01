@@ -1,3 +1,5 @@
+import { Technology } from "@/core/types/technology";
+
 export type Experience = {
   id: string;
   position: string;
@@ -6,6 +8,7 @@ export type Experience = {
   company_logo: string;
   from_date: string;
   description: string;
+  technologies: Technology[];
 };
 
 export type TimelineContentProps = {

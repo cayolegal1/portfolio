@@ -6,7 +6,9 @@ export default function Chip({ icon, label }: ChipProps): JSX.Element {
   return (
     <div className={styles.chip_container}>
       {icon}
-      <Text size="caption">{label}</Text>
+      <Text size="caption" as="p" variant="gradient" inHover>
+        {label}
+      </Text>
     </div>
   );
 }

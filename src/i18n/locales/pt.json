@@ -28,7 +28,8 @@
         "company_logo": "/company_logos/bepsa.webp",
         "position": "Desenvolvedor FrontEnd",
         "from_date": "Novembro de 2024 - Atualmente",
-        "description": "Sou responsável por facilitar o desenvolvimento para outras equipes por meio da criação de bibliotecas internas, da manutenção de padrões de qualidade, da implementação de boas práticas e da elaboração de documentação técnica com React e Vite, utilizando Scrum como metodologia ágil."
+        "description": "Sou responsável por facilitar o desenvolvimento para outras equipes por meio da criação de bibliotecas internas, da manutenção de padrões de qualidade, da implementação de boas práticas e da elaboração de documentação técnica com React e Vite, utilizando Scrum como metodologia ágil.",
+        "technologies": "typescript,react,tailwind_css,vite,git"
       },
       "1": {
         "id": 1,
@@ -37,7 +38,8 @@
         "company_url": "https://www.facebook.com/profile.php?id=100063883334434",
         "company_logo": "/company_logos/bdp.webp",
         "from_date": "Outubro de 2023 - Novembro de 2024",
-        "description": "Desenvolvimento de um aplicativo móvel de e-commerce de bebidas com React Native e TypeScript seguindo a metodologia ágil Scrum."
+        "description": "Desenvolvimento de um aplicativo móvel de e-commerce de bebidas com React Native e TypeScript seguindo a metodologia ágil Scrum.",
+        "technologies": "typescript,react,react_native,zustand,react_query,git"
       },
       "2": {
         "id": 2,
@@ -46,7 +48,8 @@
         "company_url": "https://www.megadigital.com.py/",
         "company_logo": "/company_logos/mega_digital.webp",
         "from_date": "Maio de 2023 - Outubro de 2023",
-        "description": "Desenvolvimento de uma plataforma web empresarial que automatiza o envio de cobranças, gerencia equipes de trabalho e fornece métricas, construída com Next.js. Desenvolvimento de um aplicativo móvel de suporte ao cliente em tempo real usando React Native e Socket.IO."
+        "description": "Desenvolvimento de uma plataforma web empresarial que automatiza o envio de cobranças, gerencia equipes de trabalho e fornece métricas, construída com Next.js. Desenvolvimento de um aplicativo móvel de suporte ao cliente em tempo real usando React Native e Socket.IO.",
+        "technologies": "javascript,react,react_native,next_js,material_ui,git"
       },
       "3": {
         "id": 3,
@@ -55,7 +58,8 @@
         "company_logo": "/company_logos/innovatica.webp",
         "position": "Desenvolvedor FrontEnd",
         "from_date": "Outubro de 2022 - Maio de 2023",
-        "description": "Fábrica de software sob medida para clientes dos EUA com React e React Native. Criação de componentes reutilizáveis seguindo designs do Figma."
+        "description": "Fábrica de software sob medida para clientes dos EUA com React e React Native. Criação de componentes reutilizáveis seguindo designs do Figma.",
+        "technologies": "javascript,react,react_native,material_ui,git"
       },
       "4": {
         "id": 4,
@@ -64,7 +68,8 @@
         "company_logo": "/company_logos/clt.webp",
         "position": "Desenvolvedor de Software",
         "from_date": "Julho de 2022 - Outubro de 2022",
-        "description": "Desenvolvimento de software bancário empresarial usando .NET Core e SQL."
+        "description": "Desenvolvimento de software bancário empresarial usando .NET Core e SQL.",
+        "technologies": ""
       }
     },
     "Contact": {

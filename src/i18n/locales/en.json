@@ -28,7 +28,8 @@
       "company_logo": "/company_logos/bepsa.webp",
       "position": "Frontend Developer",
       "from_date": "November 2024 - Actually",
-      "description": "I am responsible for facilitating development for other teams through the creation of internal libraries, maintaining quality standards, implementing best practices, and producing technical documentation with React and Vite, using Scrum as an agile methodology."
+      "description": "I am responsible for facilitating development for other teams through the creation of internal libraries, maintaining quality standards, implementing best practices, and producing technical documentation with React and Vite, using Scrum as an agile methodology.",
+      "technologies": "typescript,react,tailwind_css,vite,git"
     },
     "1": {
       "id": 1,
@@ -37,7 +38,8 @@
       "company_logo": "/company_logos/bdp.webp",
       "position": "Mobile Developer",
       "from_date": "October 2023 - November 2024",
-      "description": "Development of a beverage e-commerce mobile application with React Native and TypeScript following the agile Scrum methodology."
+      "description": "Development of a beverage e-commerce mobile application with React Native and TypeScript following the agile Scrum methodology.",
+      "technologies": "typescript, react, react_native, zustand, react_query, git"
     },
     "2": {
       "id": 2,
@@ -46,7 +48,8 @@
       "company_logo": "/company_logos/mega_digital.webp",
       "position": "Frontend Developer",
       "from_date": "May 2023 - October 2023",
-      "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js.Development of a real-time customer support mobile app using React Native and Socket.IO." 
+      "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js. Development of a real-time customer support mobile app using React Native and Socket.IO.",
+      "technologies": "javascript,react,react_native,next_js,material_ui,git"
     },
     "3": {
       "id": 3,
@@ -55,7 +58,8 @@
       "company_logo": "/company_logos/innovatica.webp",
       "position": "Frontend Developer",
       "from_date": "October 2022 - May 2023",
-      "description": "Custom software development for USA clients using React and React Native. Creation of reusable components following Figma designs."
+      "description": "Custom software development for USA clients using React and React Native. Creation of reusable components following Figma designs.",
+      "technologies": "javascript,react,react_native,material_ui,git"
     },
     "4": {
       "id": 4,
@@ -64,7 +68,8 @@
       "company_logo": "/company_logos/clt.webp",
       "position": "Software Developer",
       "from_date": "July 2022 - October 2022",
-      "description": "Development of enterprise banking software using .NET Core and SQL."
+      "description": "Development of enterprise banking software using .NET Core and SQL.",
+      "technologies": ""
     }
   },
   "Contact": {

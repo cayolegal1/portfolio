@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { technologies } from "../data/technologies";
 
 export const useExperienceTranslation = () => {
   const translate = useTranslations("Experience");
@@ -12,6 +13,13 @@ export const useExperienceTranslation = () => {
       position: translate(`${index}.position` as any),
       from_date: translate(`${index}.from_date` as any),
       description: translate(`${index}.description` as any),
+      technologies: translate(`${index}.technologies` as any)
+        .split(",")
+        .filter(Boolean)
+        .map(tech => ({
+          name: technologies[tech].name,
+          logo_path: technologies[tech].logo_path,
+        })),
     };
   });
 

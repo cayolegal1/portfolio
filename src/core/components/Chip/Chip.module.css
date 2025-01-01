@@ -1,6 +1,8 @@
 .chip_container {
-  padding: 1.0rem;
-  border: 1px solid var(--text-color);
+  align-items: center;
   border-radius: 50px;
-  width: 100%;
+  border: 1px solid var(--text-color);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1.0rem;
 }
