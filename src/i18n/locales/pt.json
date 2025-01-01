@@ -59,7 +59,7 @@
         "position": "Desenvolvedor FrontEnd",
         "from_date": "Outubro de 2022 - Maio de 2023",
         "description": "Fábrica de software sob medida para clientes dos EUA com React e React Native. Criação de componentes reutilizáveis seguindo designs do Figma.",
-        "technologies": "javascript,react,react_native,material_ui,git"
+        "technologies": "javascript,react,react_native,material_ui,docker,git"
       },
       "4": {
         "id": 4,
