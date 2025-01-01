@@ -49,7 +49,7 @@
         "company_logo": "/company_logos/mega_digital.webp",
         "from_date": "Maio de 2023 - Outubro de 2023",
         "description": "Desenvolvimento de uma plataforma web empresarial que automatiza o envio de cobranças, gerencia equipes de trabalho e fornece métricas, construída com Next.js. Desenvolvimento de um aplicativo móvel de suporte ao cliente em tempo real usando React Native e Socket.IO.",
-        "technologies": "javascript,react,react_native,next_js,material_ui,git"
+        "technologies": "javascript,react,react_native,next_js,socket_io,material_ui,git"
       },
       "3": {
         "id": 3,
@@ -69,7 +69,7 @@
         "position": "Desenvolvedor de Software",
         "from_date": "Julho de 2022 - Outubro de 2022",
         "description": "Desenvolvimento de software bancário empresarial usando .NET Core e SQL.",
-        "technologies": ""
+        "technologies": ".net,sql"
       }
     },
     "Contact": {

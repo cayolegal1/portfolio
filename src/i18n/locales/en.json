@@ -49,7 +49,7 @@
       "position": "Frontend Developer",
       "from_date": "May 2023 - October 2023",
       "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js. Development of a real-time customer support mobile app using React Native and Socket.IO.",
-      "technologies": "javascript,react,react_native,next_js,material_ui,git"
+      "technologies": "javascript,react,react_native,next_js,socket_io,material_ui,git"
     },
     "3": {
       "id": 3,
@@ -69,7 +69,7 @@
       "position": "Software Developer",
       "from_date": "July 2022 - October 2022",
       "description": "Development of enterprise banking software using .NET Core and SQL.",
-      "technologies": ""
+      "technologies": ".net,sql"
     }
   },
   "Contact": {

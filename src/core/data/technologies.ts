@@ -43,6 +43,14 @@ export const technologies: TechnologyHelper = {
     name: "Express",
     logo_path: `${path}/express.svg`,
   },
+  ".net": {
+    name: ".NET",
+    logo_path: `${path}/net.svg`,
+  },
+  sql: {
+    name: "SQL",
+    logo_path: `${path}/sql.svg`,
+  },
   vite: {
     name: "Vite",
     logo_path: `${path}/vite.svg`,
@@ -58,6 +66,10 @@ export const technologies: TechnologyHelper = {
   material_ui: {
     name: "Material UI",
     logo_path: `${path}/material_ui.svg`,
+  },
+  socket_io: {
+    name: "Socket.IO",
+    logo_path: `${path}/socket_io.svg`,
   },
   jest: {
     name: "Jest",
