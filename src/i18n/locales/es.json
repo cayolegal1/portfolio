@@ -25,7 +25,7 @@
       "id": "0",
       "company": "Bepsa",
       "company_url": "https://www.bepsa.com.py/",
-      "company_logo": "/bepsa.webp",
+      "company_logo": "/company_logos/bepsa.webp",
       "position": "Desarrollador FrontEnd",
       "from_date": "Noviembre 2024 - Actualmente",
       "description": "Me encargo de facilitar el desarrollo a otros equipos mediante la creación de librerías internas, el mantenimiento de estándares de calidad, la implementación de buenas prácticas y la elaboración de documentación técnica con React y Vite usando Scrum como metolodía ágil."
@@ -34,7 +34,7 @@
       "id": 1,
       "position": "Desarrollador Móvil",
       "company_url": "https://www.facebook.com/profile.php?id=100063883334434",
-      "company_logo": "/bdp.webp",
+      "company_logo": "/company_logos/bdp.webp",
       "company": "Bebidas del Paraguay",
       "from_date": "Octubre 2023 - Noviembre 2024",
       "description": "Desarrollo de aplicación móvil ecommerce con React Native y TypeScript siguiendo la metodología ágil Scrum."
@@ -44,7 +44,7 @@
       "position": "Desarrollador FrontEnd",
       "company": "Mega Digital",
       "company_url": "https://www.megadigital.com.py/",
-      "company_logo": "/mega_digital.webp",
+      "company_logo": "/company_logos/mega_digital.webp",
       "from_date": "Mayo 2023 - Octubre 2023",
       "description": "Desarrollo de plataforma web empresarial que permite automatizar envío de cobranzas, gestionar equipos de trabajo y ver métricas desarrollado en Next.js. Desarrollo de aplicación móvil de atención al cliente en tiempo real con React Native y Socket.IO."
     },
@@ -53,7 +53,7 @@
       "company": "Innovatica",
       "position": "Desarrollador FrontEnd",
       "company_url": "https://innovatica.com.py/",
-      "company_logo": "/innovatica.webp",
+      "company_logo": "/company_logos/innovatica.webp",
       "from_date": "Octubre 2022 - Mayo 2023",
       "description": "Fábrica de software a medida para clientes de EE. UU. con React y React Native. Creación de componentes reutilizables siguiendo diseños de Figma."
     },
@@ -61,7 +61,7 @@
       "id": 4,
       "company": "Cabaña Los Troncos",
       "company_url": "https://www.clt.com.py/",
-      "company_logo": "/clt.webp",
+      "company_logo": "/company_logos/clt.webp",
       "position": "Desarrollador de Software",
       "from_date": "Julio 2022 - Octubre 2022",
       "description": "Desarrollo de software empresarial bancario usando .NET Core y SQL."
