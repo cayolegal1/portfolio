@@ -2,20 +2,31 @@ import Image from "next/image";
 import Text from "../Text";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
+import Chip from "../Chip";
 
 export default function TimelineContent({
   content,
 }: TimelineContentProps): JSX.Element {
+  const {
+    company,
+    company_logo,
+    company_url,
+    description,
+    from_date,
+    position,
+    technologies,
+  } = content;
+
   return (
     <div className={styles.content_container}>
       <div>
         <Text as="h3" size="subtitle" variant="gradient" centered={false}>
-          {content.position}
+          {position}
         </Text>
-        <a href={content.company_url} target="_blank">
+        <a href={company_url} target="_blank">
           <Image
-            src={content.company_logo}
-            alt={`${content.company}_logo`}
+            src={company_logo}
+            alt={`${company}_logo`}
             width={20}
             height={20}
             unoptimized
@@ -27,16 +38,37 @@ export default function TimelineContent({
             size="description"
             variant="gradient"
           >
-            {content.company}
+            {company}
           </Text>
         </a>
         <Text as="time" size="caption" centered={false}>
-          {content.from_date}
+          {from_date}
         </Text>
       </div>
-      <Text as="p" size="description" centered={false}>
-        {content.description}
-      </Text>
+      <div>
+        <Text as="p" size="description" centered={false}>
+          {description}
+        </Text>
+        {technologies.length > 0 && (
+          <div className={styles.tech_container}>
+            {technologies.map(tech => (
+              <Chip
+                key={tech.name}
+                icon={
+                  <Image
+                    src={tech.logo_path as string}
+                    alt={tech.name}
+                    width={14}
+                    height={14}
+                    unoptimized
+                  />
+                }
+                label={tech.name}
+              />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

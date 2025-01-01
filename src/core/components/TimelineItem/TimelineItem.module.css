@@ -3,7 +3,7 @@
 }
 
 .timeline_item {
-    margin-inline: 2.5rem;
+    margin-left: 2.5rem;
     padding-bottom: 7.0rem;
 }
 
@@ -45,12 +45,13 @@
 
 @media (min-width: 330px) {
     .timeline_item {
-        margin-inline: 4.0rem;
+        margin-left: 3.0rem;
     }
 }
 
 @media (min-width: 550px) {
     .timeline_item {
+        margin-left: 0;
         margin-inline: 4.8rem;
     }
     

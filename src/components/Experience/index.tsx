@@ -16,18 +16,14 @@ export default function Experience(): JSX.Element {
       <AnimatedTitle id="experience_title">{translate("title")}</AnimatedTitle>
       <div className={styles.timeline_container}>
         <Timeline>
-          {experiences.map((item, index) => (
+          {experiences.map((experience, index) => (
             <AnimatedInView
-              as="li"
-              key={item.id}
               animationType="fadeInDown"
-              id={item.id}
+              as="li"
+              id={experience.id}
+              key={experience.id}
             >
-              <TimelineItem
-                active={index === 0}
-                experience={item}
-                key={item.id}
-              />
+              <TimelineItem active={index === 0} experience={experience} />
             </AnimatedInView>
           ))}
         </Timeline>

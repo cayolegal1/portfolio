@@ -1,0 +1,8 @@
+.chip_container {
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid var(--text-color);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1.0rem;
+}

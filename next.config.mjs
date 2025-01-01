@@ -13,7 +13,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'",
           },
           {
             key: "X-Content-Type-Options",
