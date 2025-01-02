@@ -31,10 +31,6 @@ export const technologies: TechnologyHelper = {
     name: "React Native",
     logo_path: `${path}/rn.svg`,
   },
-  zustand: {
-    name: "Zustand",
-    logo_path: `${path}/zustand.png`,
-  },
   node_js: {
     name: "NodeJS",
     logo_path: `${path}/node.svg`,
@@ -43,9 +39,9 @@ export const technologies: TechnologyHelper = {
     name: "Express",
     logo_path: `${path}/express.svg`,
   },
-  vite: {
-    name: "Vite",
-    logo_path: `${path}/vite.svg`,
+  zustand: {
+    name: "Zustand",
+    logo_path: `${path}/zustand.png`,
   },
   react_query: {
     name: "React Query",
@@ -68,8 +64,12 @@ export const technologies: TechnologyHelper = {
     logo_path: `${path}/jest.svg`,
   },
   testing_library: {
-    name: "React Testing Library",
+    name: "Testing Library",
     logo_path: `${path}/testing_library.svg`,
+  },
+  vite: {
+    name: "Vite",
+    logo_path: `${path}/vite.svg`,
   },
   vitest: {
     name: "Vitest",

@@ -1,9 +1,9 @@
 import React from "react";
+import { getLocale } from "next-intl/server";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import NavItem from "./components/NavItem";
 import NavToggleLanguage from "./components/NavToggleLanguage";
 import NavButton from "./components/NavButton";
-import { getLocale } from "next-intl/server";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./Header.module.css";
 
@@ -11,6 +11,7 @@ const headers = [
   { title: "home", href: SECTIONS.HOME },
   { title: "experience", href: SECTIONS.EXPERIENCE },
   // { title: "proyects", href: SECTIONS.PROYECTS },
+  { title: "technologies", href: SECTIONS.TECHNOLOGIES },
   // { title: "about_me", href: SECTIONS.ABOUT },
   { title: "contact", href: SECTIONS.CONTACT },
   { title: "language", href: SECTIONS.LANGUAGE },

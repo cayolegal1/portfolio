@@ -1,14 +1,15 @@
 {
     "Header": {
-      "home": "Início",
-      "experience": "Experiência",
-      "proyects": "Projetos",
       "about_me": "Sobre mim",
       "contact": "Contato",
-      "language": "Idioma",
       "english": "Inglês",
+      "experience": "Experiência",
+      "home": "Início",
+      "language": "Idioma",
+      "portuguese": "Português",
+      "proyects": "Projetos",
       "spanish": "Espanhol",
-      "portuguese": "Português"
+      "technologies": "Tecnologías"
     },
     "Hero": {
       "greeting": "Olá",

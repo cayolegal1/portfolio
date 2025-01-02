@@ -6,13 +6,14 @@ type NavType =
   | "proyects"
   | "about_me"
   | "contact"
-  | "language";
+  | "language"
+  | "technologies";
 
 export type NavItem = {
   title: MessageKeys<"Header", NavType>;
   href: string;
-}
+};
 
 export type NavItemProps = {
   item: NavItem;
-}
+};

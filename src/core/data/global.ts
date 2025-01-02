@@ -6,4 +6,5 @@ export const SECTIONS = {
   HOME: "hero",
   LANGUAGE: "language",
   PROYECTS: "proyects",
+  TECHNOLOGIES: "technologies",
 } as const;
