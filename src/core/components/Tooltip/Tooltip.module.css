@@ -33,5 +33,5 @@
 .tooltip_container:hover .tooltip_text {
     visibility: visible;
     opacity: 1;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -100%);
 }
