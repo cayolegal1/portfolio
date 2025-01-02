@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
+import Technologies from "@/components/Technologies";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Toast from "@/core/components/Toast";
@@ -14,6 +15,7 @@ export default function App() {
       <main className={styles.main}>
         <Hero />
         <Experience />
+        <Technologies />
         <Contact />
       </main>
       <Footer />

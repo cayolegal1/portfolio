@@ -1,0 +1,25 @@
+.technologies_container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 4.0rem;
+}
+
+.technologies_container img {
+  max-width: 4.0rem;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 550px) {
+  .technologies_container {
+    justify-content: initial;
+    margin-inline: 4.8rem;
+  }
+
+  .technologies_container img {
+    max-width: 100%;
+  }
+}
