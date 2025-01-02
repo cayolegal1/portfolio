@@ -46,11 +46,6 @@ export default async function RootLayout({
     <html lang={locale}>
       <Head>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
-        <link
-          href={`https://www.googletagmanager.com/gtag/js?id=${ENV.GOOGLE_ANALYTICS_ID}`}
-          rel="preload"
-          as="script"
-        />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </Head>
       <body className={inter.className}>
