@@ -1,8 +1,8 @@
 import Image from "next/image";
+import Chip from "../Chip";
 import Text from "../Text";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
-import Chip from "../Chip";
 
 export default function TimelineContent({
   content,
