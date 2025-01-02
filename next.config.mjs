@@ -16,6 +16,10 @@ const nextConfig = {
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'",
           },
           {
+            key: "Cache-Control",
+            value: "public, max-age=3600",
+          },
+          {
             key: "X-Content-Type-Options",
             value: "nosniff",
           },
