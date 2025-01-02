@@ -51,6 +51,7 @@ export default async function RootLayout({
           rel="preload"
           as="script"
         />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </Head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
