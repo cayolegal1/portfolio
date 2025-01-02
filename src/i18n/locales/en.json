@@ -73,6 +73,9 @@
       "technologies": ".net,sql"
     }
   },
+  "Technologies": {
+    "title": "My Tech Stack"
+  },
   "Contact": {
     "title": "Contact me",
     "full_name": "Fullname",

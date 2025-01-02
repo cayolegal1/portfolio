@@ -73,6 +73,9 @@
       "technologies": ".net,sql"
     }
   },
+  "Technologies": {
+    "title": "Tecnologías"
+  },
   "Contact": {
     "title": "Contactame",
     "full_name": "Nombre completo",

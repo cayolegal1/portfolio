@@ -9,11 +9,11 @@ import styles from "./Technologies.module.css";
 import { useTranslations } from "next-intl";
 
 export default function Technologies(): JSX.Element {
-  const translate = useTranslations("Header");
+  const translate = useTranslations("Technologies");
   return (
     <Section id={SECTIONS.TECHNOLOGIES}>
       <AnimatedTitle id="technologies_title">
-        {translate("technologies")}
+        {translate("title")}
       </AnimatedTitle>
 
       <AnimatedInView
