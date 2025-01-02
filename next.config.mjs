@@ -17,7 +17,7 @@ const nextConfig = {
           },
           {
             key: "Cache-Control",
-            value: "s-max-age=3600",
+            value: "no-store",
           },
           {
             key: "CDN-Cache-Control",
