@@ -20,14 +20,6 @@ const nextConfig = {
             value: "no-store",
           },
           {
-            key: "CDN-Cache-Control",
-            value: "max-age=3600",
-          },
-          {
-            key: "Vercel-CDN-Cache-Control",
-            value: "max-age=3600",
-          },
-          {
             key: "X-Content-Type-Options",
             value: "nosniff",
           },
