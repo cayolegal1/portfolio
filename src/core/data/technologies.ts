@@ -41,7 +41,7 @@ export const technologies: TechnologyHelper = {
   },
   zustand: {
     name: "Zustand",
-    logo_path: `${path}/zustand.png`,
+    logo_path: `${path}/zustand.webp`,
   },
   react_query: {
     name: "React Query",

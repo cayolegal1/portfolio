@@ -17,7 +17,15 @@ const nextConfig = {
           },
           {
             key: "Cache-Control",
-            value: "public, max-age=3600",
+            value: "s-max-age=3600",
+          },
+          {
+            key: "CDN-Cache-Control",
+            value: "max-age=3600",
+          },
+          {
+            key: "Vercel-CDN-Cache-Control",
+            value: "max-age=3600",
           },
           {
             key: "X-Content-Type-Options",
