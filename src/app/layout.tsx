@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
@@ -43,6 +44,14 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
+      <Head>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
+        <link
+          href={`https://www.googletagmanager.com/gtag/js?id=${ENV.GOOGLE_ANALYTICS_ID}`}
+          rel="preload"
+          as="script"
+        />
+      </Head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
