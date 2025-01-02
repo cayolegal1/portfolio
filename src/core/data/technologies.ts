@@ -43,14 +43,6 @@ export const technologies: TechnologyHelper = {
     name: "Express",
     logo_path: `${path}/express.svg`,
   },
-  ".net": {
-    name: ".NET",
-    logo_path: `${path}/net.svg`,
-  },
-  sql: {
-    name: "SQL",
-    logo_path: `${path}/sql.svg`,
-  },
   vite: {
     name: "Vite",
     logo_path: `${path}/vite.svg`,
@@ -86,6 +78,21 @@ export const technologies: TechnologyHelper = {
   git: {
     name: "Git",
     logo_path: `${path}/git.svg`,
+  },
+};
+
+export const unspecializedTech: TechnologyHelper = {
+  ".net": {
+    name: ".NET",
+    logo_path: `${path}/net.svg`,
+  },
+  sql: {
+    name: "SQL",
+    logo_path: `${path}/sql.svg`,
+  },
+  docker: {
+    name: "Docker",
+    logo_path: `${path}/docker.svg`,
   },
 };
 
