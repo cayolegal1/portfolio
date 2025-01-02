@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import ProductionScripts from "@/components/ProductionScripts";
 import data from "@/core/data/user-info.json";
 import ENV from "@/core/config/env";
 import "./globals.css";
@@ -48,7 +48,7 @@ export default async function RootLayout({
           {children}
         </NextIntlClientProvider>
       </body>
-      <GoogleAnalytics gaId={ENV.GOOGLE_ANALYTICS_ID} />
+      {ENV.IS_PROD && <ProductionScripts />}
     </html>
   );
 }
