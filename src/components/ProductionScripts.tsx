@@ -13,7 +13,7 @@ export default function ProductionScripts(): JSX.Element {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', ${ENV.GOOGLE_ANALYTICS_ID});
+              gtag('config', "${ENV.GOOGLE_ANALYTICS_ID}");
             `}
       </Script>
     </>
