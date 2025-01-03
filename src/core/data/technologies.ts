@@ -3,7 +3,7 @@ import type { Technology, TechnologyHelper } from "../types/technology";
 
 const logo_path = "/tech_logos";
 
-export const technologies: TechnologyHelper = {
+export const technologies: TechnologyHelper = Object.freeze({
   [TECH.HTML]: {
     name: "HTML",
     logo_path: `${logo_path}/html.svg`,
@@ -80,9 +80,9 @@ export const technologies: TechnologyHelper = {
     name: "Git",
     logo_path: `${logo_path}/git.svg`,
   },
-};
+});
 
-export const unspecializedTech: TechnologyHelper = {
+export const unspecializedTech: TechnologyHelper = Object.freeze({
   [TECH.NET]: {
     name: ".NET",
     logo_path: `${logo_path}/net.svg`,
@@ -95,6 +95,6 @@ export const unspecializedTech: TechnologyHelper = {
     name: "Docker",
     logo_path: `${logo_path}/docker.svg`,
   },
-};
+});
 
 export const technologiesList: Technology[] = Object.values(technologies);

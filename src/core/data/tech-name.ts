@@ -1,4 +1,4 @@
-export const TECH = {
+export const TECH = Object.freeze({
   HTML: "html",
   CSS: "css",
   JS: "javascript",
@@ -21,4 +21,4 @@ export const TECH = {
   NET: ".net",
   SQL: "sql",
   DOCKER: "docker",
-} as const;
+});
