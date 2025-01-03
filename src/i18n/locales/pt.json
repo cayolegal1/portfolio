@@ -40,7 +40,7 @@
         "company_logo": "/company_logos/bdp.webp",
         "from_date": "Outubro de 2023 - Novembro de 2024",
         "description": "Desenvolvimento de um aplicativo móvel de e-commerce de bebidas com React Native e TypeScript seguindo a metodologia ágil Scrum.",
-        "technologies": "typescript,react,react_native,zustand,react_query,git"
+        "technologies": "typescript,react,react_native,zustand,react_query,jest,testing_library,git"
       },
       "2": {
         "id": 2,

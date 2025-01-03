@@ -40,7 +40,7 @@
       "position": "Mobile Developer",
       "from_date": "October 2023 - November 2024",
       "description": "Development of a beverage e-commerce mobile application with React Native and TypeScript following the agile Scrum methodology.",
-      "technologies": "typescript,react,react_native,zustand,react_query,git"
+      "technologies": "typescript,react,react_native,zustand,react_query,jest,testing_library,git"
     },
     "2": {
       "id": 2,

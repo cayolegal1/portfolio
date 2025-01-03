@@ -1,98 +1,99 @@
+import { TECH } from "./tech-name";
 import type { Technology, TechnologyHelper } from "../types/technology";
 
-const path = "/tech_logos";
+const logo_path = "/tech_logos";
 
 export const technologies: TechnologyHelper = {
-  html: {
+  [TECH.HTML]: {
     name: "HTML",
-    logo_path: `${path}/html.svg`,
+    logo_path: `${logo_path}/html.svg`,
   },
-  css: {
+  [TECH.CSS]: {
     name: "CSS",
-    logo_path: `${path}/css.svg`,
+    logo_path: `${logo_path}/css.svg`,
   },
-  javascript: {
+  [TECH.JS]: {
     name: "JavaScript",
-    logo_path: `${path}/js.svg`,
+    logo_path: `${logo_path}/js.svg`,
   },
-  typescript: {
+  [TECH.TS]: {
     name: "TypeScript",
-    logo_path: `${path}/ts.svg`,
+    logo_path: `${logo_path}/ts.svg`,
   },
-  react: {
+  [TECH.REACT]: {
     name: "React",
-    logo_path: `${path}/react.svg`,
+    logo_path: `${logo_path}/react.svg`,
   },
-  next_js: {
+  [TECH.NEXT]: {
     name: "NextJS",
-    logo_path: `${path}/next.svg`,
+    logo_path: `${logo_path}/next.svg`,
   },
-  react_native: {
+  [TECH.REACT_NATIVE]: {
     name: "React Native",
-    logo_path: `${path}/rn.svg`,
+    logo_path: `${logo_path}/rn.svg`,
   },
-  node_js: {
+  [TECH.NODE]: {
     name: "NodeJS",
-    logo_path: `${path}/node.svg`,
+    logo_path: `${logo_path}/node.svg`,
   },
-  express: {
+  [TECH.EXPRESS]: {
     name: "Express",
-    logo_path: `${path}/express.svg`,
+    logo_path: `${logo_path}/express.svg`,
   },
-  zustand: {
+  [TECH.ZUSTAND]: {
     name: "Zustand",
-    logo_path: `${path}/zustand.webp`,
+    logo_path: `${logo_path}/zustand.webp`,
   },
-  react_query: {
+  [TECH.REACT_QUERY]: {
     name: "React Query",
-    logo_path: `${path}/react_query.svg`,
+    logo_path: `${logo_path}/react_query.svg`,
   },
-  tailwind_css: {
+  [TECH.TAILWIND]: {
     name: "Tailwind CSS",
-    logo_path: `${path}/tailwind.svg`,
+    logo_path: `${logo_path}/tailwind.svg`,
   },
-  material_ui: {
+  [TECH.MATERIAL_UI]: {
     name: "Material UI",
-    logo_path: `${path}/material_ui.svg`,
+    logo_path: `${logo_path}/material_ui.svg`,
   },
-  socket_io: {
+  [TECH.SOCKET_IO]: {
     name: "Socket.IO",
-    logo_path: `${path}/socket_io.svg`,
+    logo_path: `${logo_path}/socket_io.svg`,
   },
-  jest: {
+  [TECH.JEST]: {
     name: "Jest",
-    logo_path: `${path}/jest.svg`,
+    logo_path: `${logo_path}/jest.svg`,
   },
-  testing_library: {
+  [TECH.TESTING_LIBRARY]: {
     name: "Testing Library",
-    logo_path: `${path}/testing_library.svg`,
+    logo_path: `${logo_path}/testing_library.svg`,
   },
-  vite: {
+  [TECH.VITE]: {
     name: "Vite",
-    logo_path: `${path}/vite.svg`,
+    logo_path: `${logo_path}/vite.svg`,
   },
-  vitest: {
+  [TECH.VITEST]: {
     name: "Vitest",
-    logo_path: `${path}/vitest.svg`,
+    logo_path: `${logo_path}/vitest.svg`,
   },
-  git: {
+  [TECH.GIT]: {
     name: "Git",
-    logo_path: `${path}/git.svg`,
+    logo_path: `${logo_path}/git.svg`,
   },
 };
 
 export const unspecializedTech: TechnologyHelper = {
-  ".net": {
+  [TECH.NET]: {
     name: ".NET",
-    logo_path: `${path}/net.svg`,
+    logo_path: `${logo_path}/net.svg`,
   },
-  sql: {
+  [TECH.SQL]: {
     name: "SQL",
-    logo_path: `${path}/sql.svg`,
+    logo_path: `${logo_path}/sql.svg`,
   },
-  docker: {
+  [TECH.DOCKER]: {
     name: "Docker",
-    logo_path: `${path}/docker.svg`,
+    logo_path: `${logo_path}/docker.svg`,
   },
 };
 
