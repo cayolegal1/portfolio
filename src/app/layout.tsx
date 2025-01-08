@@ -50,7 +50,7 @@ export default async function RootLayout({
       <head>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <meta property="og:title" content="Cayo Legal Developer" />
+        <meta property="og:title" content="Cayo Legal" />
         <meta property="og:description" content={websiteDescription} />
         <meta property="og:image" content={websiteImage} />
         <meta property="og:image:secure_url" content={websiteImage} />
