@@ -53,6 +53,8 @@ export default async function RootLayout({
         <meta property="og:title" content="Cayo Legal Developer" />
         <meta property="og:description" content={websiteDescription} />
         <meta property="og:image" content={websiteImage} />
+        <meta property="og:image:secure_url" content={websiteImage} />
+        <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:alt" content="Cayo Legal image" />
         <meta property="og:locale" content="es_ES" />
         <meta property="og:locale:alternate" content="en_ES" />
