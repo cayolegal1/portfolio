@@ -15,7 +15,7 @@ const inter = Nunito({ subsets: ["latin"], weight: "500" });
 const websiteDescription =
   "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas";
 
-const websiteImage = "https://cayolegal.vercel.app/og_image.webp";
+const websiteImage = "https://cayolegal.vercel.app/social-img.webp";
 
 export const metadata: Metadata = {
   title: `${name} - Software Developer`,
