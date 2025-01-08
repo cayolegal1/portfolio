@@ -15,8 +15,7 @@ const inter = Nunito({ subsets: ["latin"], weight: "500" });
 const websiteDescription =
   "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas";
 
-const websiteImage =
-  "https://scontent.faep6-2.fna.fbcdn.net/v/t39.30808-1/384476305_6915859838496503_1541717542816996227_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEPl_68RfOrnAmyTTQBxgqR9_KodScpQDf38qh1JylAN-l_yhtx7iwHZBx5ZiER3V4klGCl47X-aFT1cizfkVqF&_nc_ohc=xp998jqrZWkQ7kNvgFDBXXp&_nc_oc=Adjt-iIi7IpugvJkwHXEUgOJ8S98Cpd2IJ0NyGNGKInHP6g0LhYoR46wawH7vhtOqVA&_nc_zt=24&_nc_ht=scontent.faep6-2.fna&_nc_gid=AT-kE-NTZJkCCwN-GwuShZ2&oh=00_AYAM4PhtLuhSyrqHTsVuDhzp1Lg60j-h9J4mo3cjRFIfFA&oe=67839A7A";
+const websiteImage = "/og_image.webp";
 
 export const metadata: Metadata = {
   title: `${name} - Software Developer`,
