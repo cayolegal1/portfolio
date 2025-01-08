@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Head from "next/head";
 import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
@@ -49,7 +48,7 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <Head>
+      <head>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <meta property="og:title" content="Cayo Legal Developer" />
@@ -66,7 +65,7 @@ export default async function RootLayout({
         <meta name="twitter:description" content={websiteDescription} />
         <meta name="twitter:image" content={websiteImage} />
         <meta name="twitter:card" content={websiteImage} />
-      </Head>
+      </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
