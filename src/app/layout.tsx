@@ -69,7 +69,7 @@ export default async function RootLayout({
         <meta name="twitter:image" content={websiteImage} />
         <meta name="twitter:site" content={websiteUrl} />
         <meta name="twitter:creator" content="@cayo_legal" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="app" />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
