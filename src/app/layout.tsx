@@ -64,9 +64,6 @@ export default async function RootLayout({
         <meta property="og:site_name" content="Cayo Legal" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cayolegal.vercel.app" />
-        <meta name="twitter:title" content="Cayo Legal" />
-        <meta name="twitter:description" content={websiteDescription} />
-        <meta name="twitter:image" content={websiteImage} />
         <meta name="twitter:site" content={websiteUrl} />
         <meta name="twitter:creator" content="@cayo_legal" />
         <meta name="twitter:card" content="app" />
