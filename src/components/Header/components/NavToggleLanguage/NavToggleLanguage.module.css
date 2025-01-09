@@ -12,7 +12,7 @@
 }
 
 .flag_container {
-  transform: translateY(0.5px);
+  transform: translateY(1px);
 }
 
 .language_item:hover {
