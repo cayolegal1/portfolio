@@ -62,11 +62,10 @@ export default async function RootLayout({
         <meta property="og:locale:alternate" content="en_ES" />
         <meta property="og:locale:alternate" content="pt_BR" />
         <meta property="og:site_name" content="Cayo Legal" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
         <meta property="og:url" content="https://cayolegal.vercel.app" />
         <meta name="twitter:site" content={websiteUrl} />
         <meta name="twitter:creator" content="@cayo_legal" />
-        <meta name="twitter:card" content="app" />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
