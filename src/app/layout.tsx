@@ -12,6 +12,8 @@ const { name } = data;
 
 const inter = Nunito({ subsets: ["latin"], weight: "500" });
 
+const websiteUrl = "https://cayolegal.vercel.app";
+
 const websiteDescription =
   "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas";
 
@@ -64,7 +66,9 @@ export default async function RootLayout({
         <meta name="twitter:title" content="Cayo Legal Developer" />
         <meta name="twitter:description" content={websiteDescription} />
         <meta name="twitter:image" content={websiteImage} />
-        <meta name="twitter:card" content={websiteImage} />
+        <meta name="twitter:site" content={websiteUrl} />
+        <meta name="twitter:creator" content="@cayo_legal" />
+        <meta name="twitter:card" content="summary_large_image" />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
