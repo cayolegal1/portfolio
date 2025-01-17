@@ -4,7 +4,7 @@ import { supportedLocales, defaultLocale } from "../i18n/settings";
 
 export const toggleLanguage = async (formData: FormData) => {
   const cookieStore = cookies();
-  const cookieLocale =  cookieStore.get("locale")?.value;
+  const cookieLocale = cookieStore.get("locale")?.value;
   const locale = formData.get("locale") as string;
 
   if (
@@ -13,6 +13,7 @@ export const toggleLanguage = async (formData: FormData) => {
     supportedLocales.includes(locale)
   ) {
     cookieStore.set("locale", locale);
+
     return {
       changed: true,
     };
