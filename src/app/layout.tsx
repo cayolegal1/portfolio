@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "typescript",
     "react",
     "react native",
-    "nextjs",
+    "next js",
     "developer portfolio",
     name,
   ],
