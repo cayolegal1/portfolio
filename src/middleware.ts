@@ -1,12 +1,12 @@
-import { NextResponse } from "next/server";
-import {} from "@/i18n/utils";
+import { NextRequest, NextResponse } from "next/server";
+import { setCookieLocaleFromBrowser } from "@/i18n/utils";
 
-export function middleware() {
+export function middleware(request: NextRequest) {
   const response = NextResponse.next();
-  // const cookieLocale = request.cookies.get("locale")?.value;
-  // if (!cookieLocale) {
-  //   setCookieLocaleFromBrowser(request, response);
-  // }
+  const cookieLocale = request.cookies.get("locale")?.value;
+  if (!cookieLocale) {
+    setCookieLocaleFromBrowser(request, response);
+  }
 
   return response;
 }
