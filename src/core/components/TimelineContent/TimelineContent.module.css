@@ -29,6 +29,7 @@
 
 .tech_container {
   align-items: center;
+  cursor: default;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
