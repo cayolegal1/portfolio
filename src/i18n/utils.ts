@@ -28,6 +28,11 @@ export function setCookieLocaleFromBrowser(
   const isLocaleValid =
     browserLocale && supportedLocales.includes(browserLocale);
   if (isLocaleValid) {
-    response.cookies.set("locale", browserLocale);
+    response.cookies.set("locale", browserLocale, {
+      httpOnly: true,
+      priority: "high",
+      sameSite: "strict",
+      secure: true,
+    });
   }
 }
