@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import ProductionScripts from "@/components/ProductionScripts";
 import data from "@/core/data/user-info.json";
+import { websiteUrl } from "@/core/data/global";
 import ENV from "@/core/config/env";
 import "./globals.css";
 import "./custom.css";
@@ -11,8 +12,6 @@ import "./custom.css";
 const { name } = data;
 
 const inter = Nunito({ subsets: ["latin"], weight: "500" });
-
-const websiteUrl = "https://cayolegal.vercel.app";
 
 const websiteDescription =
   "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas";

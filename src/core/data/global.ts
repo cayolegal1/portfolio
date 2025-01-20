@@ -8,3 +8,5 @@ export const SECTIONS = {
   PROYECTS: "proyects",
   TECHNOLOGIES: "technologies",
 } as const;
+
+export const websiteUrl = "https://cayolegal.vercel.app";
