@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /_next/
-Disallow: /api/
-Disallow: /public/
-Disallow: /private/
-Disallow: /*.map$
-Sitemap: https://cayolegal.vercel.app/sitemap.xml
