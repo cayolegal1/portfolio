@@ -16,7 +16,7 @@ const inter = Nunito({ subsets: ["latin"], weight: "500" });
 const websiteDescription =
   "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas";
 
-const websiteImage = "https://cayolegal.vercel.app/social-img.webp";
+const websiteOgImage = `${websiteUrl}/social-img.webp`;
 
 export const metadata: Metadata = {
   title: `${name} - Software Developer`,
@@ -53,8 +53,8 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <meta property="og:title" content="Cayo Legal" />
         <meta property="og:description" content={websiteDescription} />
-        <meta property="og:image" content={websiteImage} />
-        <meta property="og:image:secure_url" content={websiteImage} />
+        <meta property="og:image" content={websiteOgImage} />
+        <meta property="og:image:secure_url" content={websiteOgImage} />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:alt" content="Cayo Legal image" />
         <meta property="og:locale" content="es_ES" />
