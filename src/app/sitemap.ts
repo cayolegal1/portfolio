@@ -19,10 +19,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }),
   );
 
-  return routesData.map(({ route, lastModified }) => ({
-    changeFrequency: "weekly",
-    lastModified,
-    priority: 1.0,
-    url: `${websiteUrl}${route}`,
-  }));
+  return routesData
+    .filter(({ route }) => !route.includes("layout.tsx"))
+    .map(({ route, lastModified }) => ({
+      changeFrequency: "weekly",
+      lastModified,
+      priority: 1.0,
+      url: `${websiteUrl}/${route}`,
+    }));
 }
