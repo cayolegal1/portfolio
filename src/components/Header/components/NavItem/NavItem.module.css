@@ -15,7 +15,7 @@
 
 @media (min-width: 550px) {
     .nav_link span::after {
-        border-bottom: 2px solid var(--text-color);
+        border-bottom: 2px solid var(--gradient-color);
         border-radius: 10px;
         content: '';
         display: block;

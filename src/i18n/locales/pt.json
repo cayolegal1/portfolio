@@ -93,7 +93,11 @@
       "error_message_body": "Por favor, tente novamente mais tarde",
       "email_greeting": "Oi Cayo, meu nome e",
       "email_reason": "Estou escrevendo para você para o seguinte",
-      "email_goodbye": "Saudações"
+      "email_goodbye": "Saudações",
+      "meeting_title": "Agende uma reunião comigo",
+      "meeting_text": "Me conte sua ideia",
+      "location": "Endereço",
+      "phone": "Telefone"
     },
     "Footer": {
       "copyright": "Todos os direitos reservados"

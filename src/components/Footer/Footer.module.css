@@ -16,6 +16,5 @@
 .footer_items_container {
   align-items: center;
   display: flex;
-  flex-direction: column;
   gap: 1.0rem;
 }

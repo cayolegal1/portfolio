@@ -5,8 +5,6 @@ import FooterItem from "./components/FooterItem";
 import Copyright from "./components/Copyright";
 
 // icons
-import LocationIcon from "@/core/components/Icons/LocationIcon";
-import EmailIcon from "@/core/components/Icons/EmailIcon";
 import GitHubIcon from "@/core/components/Icons/GithubIcon";
 import LinkedinIcon from "@/core/components/Icons/LinkedinIcon";
 
@@ -19,8 +17,6 @@ import styles from "./Footer.module.css";
 const personalData = [
   { content: "GitHub", href: data.github_url, icon: <GitHubIcon /> },
   { content: "LinkedIn", href: data.linkedin_url, icon: <LinkedinIcon /> },
-  { content: data.location, href: data.location_url, icon: <LocationIcon /> },
-  { content: data.email, href: `mailto:${data.email}`, icon: <EmailIcon /> },
 ];
 
 export default function Footer() {
@@ -38,8 +34,8 @@ export default function Footer() {
               {info.content}
             </FooterItem>
           ))}
-          <Copyright />
         </div>
+        <Copyright />
       </AnimatedInView>
     </Section>
   );

@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* sizes */
 .xl {
     font-size: clamp(2.6rem, 2.5vw, 3.6rem);
 }

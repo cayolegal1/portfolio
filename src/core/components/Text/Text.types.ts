@@ -21,6 +21,7 @@ type BaseTextProps<T extends ElementType> = TextGradientProps & {
   variant?: TextVariant;
   size?: TextSize;
   centered?: boolean;
+  uppercase?: boolean;
 };
 
 export type TextProps<T extends ElementType> = T extends "label"
