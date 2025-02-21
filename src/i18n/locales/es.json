@@ -60,7 +60,7 @@
       "company_logo": "/company_logos/innovatica.webp",
       "from_date": "Octubre 2022 - Mayo 2023",
       "description": "Fábrica de software a medida para clientes de EE. UU. con React y React Native. Creación de componentes reutilizables siguiendo diseños de Figma.",
-      "technologies": "javascript,react,react_native,material_ui,docker,git"
+      "technologies": "javascript,react,react_native,material_ui,docker,git,figma"
     },
     "4": {
       "id": 4,

@@ -21,4 +21,5 @@ export const TECH = Object.freeze({
   NET: ".net",
   SQL: "sql",
   DOCKER: "docker",
+  FIGMA: "figma",
 });

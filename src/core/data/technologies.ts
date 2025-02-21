@@ -95,6 +95,10 @@ export const unspecializedTech: TechnologyHelper = Object.freeze({
     name: "Docker",
     logo_path: `${logo_path}/docker.svg`,
   },
+  [TECH.FIGMA]: {
+    name: "Figma",
+    logo_path: `${logo_path}/figma.svg`,
+  },
 });
 
 export const technologiesList: Technology[] = Object.values(technologies);
