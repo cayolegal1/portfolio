@@ -93,7 +93,11 @@
     "error_message_body": "Please try again later",
     "email_greeting": "Hi Cayo, my name is",
     "email_reason": "I am writing to you for the following",
-    "email_goodbye": "Best regards"
+    "email_goodbye": "Best regards",
+    "meeting_title": "Schedule a meet with me",
+    "meeting_text": "Tell me your idea",
+    "location": "Address",
+    "phone": "Phone number"
   },
   "Footer": {
     "copyright": "All rights reserved"

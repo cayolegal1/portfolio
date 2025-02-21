@@ -13,6 +13,7 @@
       var(--third-gradient-color),
       var(--fourth-gradient-color));
   --gradient-color: #2e8ee4;
+  --button-color: #1269b6;
 }
 
 * {

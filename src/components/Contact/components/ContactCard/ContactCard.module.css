@@ -1,0 +1,29 @@
+.card_container {
+    align-items: center;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    gap: 1.0rem;
+    padding: 2.0rem 2.0rem 2.0rem;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.card_container_icon {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.0rem;
+}
+
+.card_container_icon svg {
+    fill: var(--button-color);
+    stroke: none;
+}
+.card_container_icon svg path {
+    fill: var(--button-color);
+}
+
+.card_container:hover {
+    opacity: 0.9
+}

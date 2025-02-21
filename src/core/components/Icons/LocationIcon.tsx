@@ -1,12 +1,12 @@
 export default function LocationIcon(): JSX.Element {
   return (
     <svg
-      fill="#ffff"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       width="20px"
       height="20px"
       viewBox="0 0 395.71 395.71"
-      stroke="#ffff"
+      stroke="currentColor"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
