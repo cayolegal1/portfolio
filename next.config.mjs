@@ -8,24 +8,6 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/company_logos/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/tech_logos/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
         source: "/:path*",
         headers: [
           {
@@ -35,7 +17,7 @@ const nextConfig = {
           },
           {
             key: "Cache-Control",
-            value: "no-store",
+            value: "s-maxage=1, stale-while-revalidate=59",
           },
           {
             key: "X-Content-Type-Options",
