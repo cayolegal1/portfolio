@@ -8,7 +8,16 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(tech_logos|company_logos)/:path*",
+        source: "/company_logos/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/tech_logos/:path*",
         headers: [
           {
             key: "Cache-Control",
