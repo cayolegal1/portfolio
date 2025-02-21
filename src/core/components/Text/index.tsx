@@ -9,6 +9,7 @@ export default function Text<T extends ElementType>({
   children,
   className = "",
   size = "xl",
+  uppercase = false,
   variant = "normal",
   ...props
 }: TextProps<T>): JSX.Element {
@@ -18,7 +19,7 @@ export default function Text<T extends ElementType>({
     subtitle: styles.subtitle,
     text: styles.text_size,
     description: styles.description,
-    caption: styles.caption
+    caption: styles.caption,
   };
 
   if (variant === "gradient") {
@@ -26,7 +27,7 @@ export default function Text<T extends ElementType>({
       <TextGradient
         {...props}
         as={Component}
-        className={`${styles.text} ${sizeVariant[size]} ${centered && styles.centered} ${className}`}
+        className={`${styles.text} ${sizeVariant[size]} ${centered && styles.centered} ${uppercase && styles.uppercase} ${className}`}
       >
         {children}
       </TextGradient>
@@ -36,7 +37,7 @@ export default function Text<T extends ElementType>({
   return (
     <Component
       {...props}
-      className={`${styles.text} ${sizeVariant[size]} ${centered && styles.centered} ${className}`}
+      className={`${styles.text} ${sizeVariant[size]} ${centered && styles.centered} ${uppercase && styles.uppercase} ${className}`}
     >
       {children}
     </Component>

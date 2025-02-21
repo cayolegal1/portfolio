@@ -1,0 +1,12 @@
+.animated_title::after {
+    background-color: var(--gradient-color);
+    bottom: -3px;
+    content: "";
+    height: 4px;
+    left: 0;
+    margin-left: 3px;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    z-index: -1;
+}
