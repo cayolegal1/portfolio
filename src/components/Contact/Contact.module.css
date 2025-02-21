@@ -20,7 +20,7 @@
   }  
 }
 
-@media (min-width: 875px) {
+@media (min-width: 915px) {
   .cards_container {
     gap: 3.0rem;
     margin-block: 2.0rem;
