@@ -40,7 +40,7 @@
       "company": "Bebidas del Paraguay",
       "from_date": "Octubre 2023 - Noviembre 2024",
       "description": "Desarrollo de aplicación móvil ecommerce con React Native y TypeScript siguiendo la metodología ágil Scrum.",
-      "technologies": "typescript,react,react_native,zustand,react_query,jest,testing_library,git"
+      "technologies": "typescript,react,tailwind_css,auth0,vite,vitest,testing_library,git"
     },
     "2": {
       "id": 2,
