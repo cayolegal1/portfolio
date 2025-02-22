@@ -22,4 +22,5 @@ export const TECH = Object.freeze({
   SQL: "sql",
   DOCKER: "docker",
   FIGMA: "figma",
+  AUTH0: "auth0",
 });

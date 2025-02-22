@@ -30,7 +30,7 @@
       "position": "Desarrollador FrontEnd",
       "from_date": "Noviembre 2024 - Actualmente",
       "description": "Me encargo de facilitar el desarrollo a otros equipos mediante la creación de librerías internas, el mantenimiento de estándares de calidad, la implementación de buenas prácticas y la elaboración de documentación técnica con React y Vite usando Scrum como metolodía ágil.",
-      "technologies": "typescript,react,tailwind_css,vite,vitest,testing_library,git"
+      "technologies": "typescript,react,tailwind_css,auth0,vite,vitest,testing_library,git"
     },
     "1": {
       "id": 1,
