@@ -74,11 +74,6 @@ export const technologies: TechnologyHelper = Object.freeze({
     logo_path: `${logo_path}/socket_io.svg`,
     url: "https://socket.io/",
   },
-  [TECH.AUTH0]: {
-    name: "Auth0",
-    logo_path: `${logo_path}/auth0.svg`,
-    url: "https://auth0.com",
-  },
   [TECH.JEST]: {
     name: "Jest",
     logo_path: `${logo_path}/jest.svg`,
@@ -118,6 +113,11 @@ export const unspecializedTech: TechnologyHelper = Object.freeze({
   [TECH.DOCKER]: {
     name: "Docker",
     logo_path: `${logo_path}/docker.svg`,
+  },
+  [TECH.AUTH0]: {
+    name: "Auth0",
+    logo_path: `${logo_path}/auth0.svg`,
+    url: "https://auth0.com",
   },
   [TECH.FIGMA]: {
     name: "Figma",
