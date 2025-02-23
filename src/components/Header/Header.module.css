@@ -13,6 +13,7 @@
     transition: all .4s;
     width: 18.0rem;
     z-index: 3;
+    will-change: right;
 }
 
 .nav {
