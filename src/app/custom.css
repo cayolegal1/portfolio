@@ -1,6 +1,6 @@
 body .navbar__hidden {
     box-shadow: none;
-    right: -80%;
+    right: -100%;
 }
 
 .toast__visible {
