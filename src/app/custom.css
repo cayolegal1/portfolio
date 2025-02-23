@@ -14,7 +14,7 @@ body .navbar__hidden {
 }
 
 @media (min-width: 550px) {
-    .navbar__hidden {
+    body .navbar__hidden {
         right: 0;
     }
 }
