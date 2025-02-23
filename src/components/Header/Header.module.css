@@ -10,7 +10,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    transition: all 300ms ease-in-out;
+    transition: all .4s;
     width: 18.0rem;
     z-index: 3;
 }
