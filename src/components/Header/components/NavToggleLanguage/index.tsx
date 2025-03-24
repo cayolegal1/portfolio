@@ -27,12 +27,8 @@ export default function NavToggleLanguage({
   title,
 }: NavToggleLanguageProps): JSX.Element {
   const translate = useTranslations("Header");
-  const formAction = async (data: FormData) => {
-    const action = await toggleLanguage(data);
-    if (action.changed) {
-      window.scrollTo({ behavior: "instant", top: 0 });
-      location.reload();
-    }
+  const formAction = (data: FormData) => {
+    toggleLanguage(data);
   };
 
   return (
