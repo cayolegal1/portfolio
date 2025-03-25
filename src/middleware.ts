@@ -8,6 +8,8 @@ export function middleware(request: NextRequest) {
     setCookieLocaleFromBrowser(request, response);
   }
 
+  response.headers.set("Cache-Control", "max-age=3600");
+
   return response;
 }
 
