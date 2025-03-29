@@ -1,17 +1,12 @@
 "use server";
 import { cookies } from "next/headers";
-import { supportedLocales, defaultLocale } from "../i18n/settings";
+import { supportedLocales } from "../i18n/settings";
 
 export const toggleLanguage = async (formData: FormData) => {
   const cookieStore = cookies();
   const cookieLocale = cookieStore.get("locale")?.value;
   const locale = formData.get("locale") as string;
-  const isUsingDefaultLocale = !cookieLocale && locale === defaultLocale;
-  if (
-    !isUsingDefaultLocale &&
-    cookieLocale !== locale &&
-    supportedLocales.includes(locale)
-  ) {
+  if (cookieLocale !== locale && supportedLocales.includes(locale)) {
     cookieStore.set("locale", locale);
 
     return {
