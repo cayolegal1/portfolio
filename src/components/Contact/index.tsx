@@ -34,7 +34,7 @@ export const contactCards: TContactCard[] = [
   },
   {
     title: "location",
-    text: `${data.location} - ${data.neighborhood}`,
+    text: `${data.location} - ${data.country}`,
     href: data.location_url,
     icon: <LocationIcon />,
   },
