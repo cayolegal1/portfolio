@@ -7,7 +7,7 @@ import AnimatedType from "@/core/components/Animated/AnimatedType";
 import styles from "./HeroSkills.module.css";
 import gradient from "@/core/components/TextGradient/TextGradient.module.css";
 
-const delay = 1800;
+const delay = 2000;
 export default function HeroSkills() {
   const translate = useTranslations("Hero");
   const [isRendered, setIsRendered] = useState(false);
