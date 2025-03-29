@@ -13,7 +13,7 @@ export default function HeroExpand(): JSX.Element {
   return (
     <AnimatedRender
       animationType="bounceInDown"
-      delay="2.8s"
+      delay="2.5s"
       className={styles.expand_container}
       onClick={scrollToNextSection}
     >
