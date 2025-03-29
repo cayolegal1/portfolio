@@ -23,7 +23,7 @@ export default function HeroContact(): JSX.Element {
   return (
     <AnimatedRender
       animationType="fadeInDown"
-      delay="2.8s"
+      delay="2.3s"
       className={styles.social_media_container}
     >
       {contactLinks.map(source => (
