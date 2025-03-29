@@ -1,45 +1,32 @@
 "use client";
 import React from "react";
-import { useState, useCallback } from "react";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import MenuIcon from "@/core/components/Icons/MenuIcon";
 import CloseIcon from "@/core/components/Icons/CloseIcon";
+import { useNavBarToggle } from "@/core/hooks/useNavBarToggle";
 import styles from "./NavButton.module.css";
 
 export default function NavButton() {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleClick = useCallback(() => {
-    const element = document.getElementById("header");
-    if (element) {
-      element.classList.toggle("navbar__hidden");
-    }
-  }, []);
+  const { toggleMobileNavbar, isNavBarExpanded } = useNavBarToggle();
 
   return (
     <>
       <AnimatedRender
         animationType="fadeInDown"
-        aria-label={isExpanded ? "Cerrar menú" : "Abrir menú"}
+        aria-label={isNavBarExpanded ? "Cerrar menú" : "Abrir menú"}
         as="button"
         className={styles.button}
         delay="2.8s"
-        onClick={() => {
-          setIsExpanded(prev => !prev);
-          handleClick();
-        }}
+        onClick={toggleMobileNavbar}
       >
-        {isExpanded ? <CloseIcon /> : <MenuIcon />}
+        {isNavBarExpanded ? <CloseIcon /> : <MenuIcon />}
       </AnimatedRender>
       <div
         className={`
           ${styles.overlay} 
-          ${isExpanded && styles.overlay__active}
+          ${isNavBarExpanded && styles.overlay__active}
         `}
-        onClick={() => {
-          setIsExpanded(prev => !prev);
-          handleClick();
-        }}
+        onClick={toggleMobileNavbar}
       />
     </>
   );
