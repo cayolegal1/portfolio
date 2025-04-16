@@ -1,0 +1,30 @@
+.hamburguer .line {
+  transition: y 200ms ease-in 200ms, rotate 200ms ease-in, opacity 0ms 200ms;
+  transform-origin: center;
+}
+
+.hamburguer[aria-expanded="true"] .line {
+  transition: y 200ms ease-in, rotate 200ms ease-in 200ms, opacity 0ms 200ms;
+}
+
+.hamburguer[aria-expanded="true"] :is(.top, .bottom) {
+  y: 45;
+}
+
+.hamburguer[aria-expanded="true"] .top {
+  rotate: 45deg;
+}
+
+.hamburguer[aria-expanded="true"] .middle {
+  opacity: 0;
+}
+
+.hamburguer[aria-expanded="true"] .bottom {
+  rotate: -45deg;
+}
+
+@media (min-width: 550px) {
+  .hamburguer {
+    display: none;
+  }
+}
