@@ -1,6 +1,5 @@
 body .navbar__hidden {
-    box-shadow: none;
-    right: -100%;
+    transform: translateX(100%);
 }
 
 .toast__visible {
@@ -16,5 +15,6 @@ body .navbar__hidden {
 @media (min-width: 550px) {
     body .navbar__hidden {
         right: 0;
+        transform: none;
     }
 }
