@@ -2,8 +2,6 @@
 import React from "react";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import NavHamburguer from "../NavHamburguer";
-// import MenuIcon from "@/core/components/Icons/MenuIcon";
-// import CloseIcon from "@/core/components/Icons/CloseIcon";
 import { useNavBarToggle } from "@/core/hooks/useNavBarToggle";
 import styles from "./NavButton.module.css";
 
