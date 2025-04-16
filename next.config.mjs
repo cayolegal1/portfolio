@@ -14,7 +14,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com blob:; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'",
           },
           {
             key: "Cache-Control",
