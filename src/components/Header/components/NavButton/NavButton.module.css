@@ -18,7 +18,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity var(--transition-time) ease-in-out;
   width: 100vw;
   z-index: 2;
 }

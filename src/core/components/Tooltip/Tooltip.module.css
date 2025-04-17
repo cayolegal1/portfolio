@@ -14,7 +14,7 @@
     text-align: center;
     top: -10px;
     transform: translate(-50%, 10%);
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-time) ease-in-out;
     visibility: hidden;
     z-index: 1;
 }

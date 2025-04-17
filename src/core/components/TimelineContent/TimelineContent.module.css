@@ -10,7 +10,7 @@
   display: flex;
   gap: 1.0rem;
   margin-bottom: 0.5rem;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-time) ease-in-out;
   width: fit-content;
 }
 

@@ -1,5 +1,5 @@
 .scalable_item {
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-time) ease-in-out;
 }
 
 .scalable_item:hover {

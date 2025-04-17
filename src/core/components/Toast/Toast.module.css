@@ -6,7 +6,7 @@
     position: fixed;
     right: 0;
     top: 16px;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity var(--transition-time) ease-in-out, transform var(--transition-time) ease-in-out;
     width: 100%;
     z-index: 11;
 }
