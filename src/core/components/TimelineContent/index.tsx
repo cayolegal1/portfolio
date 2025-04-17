@@ -59,6 +59,7 @@ export default function TimelineContent({
                 id={`${company}_${position}_${tech.name}`}
                 key={`${company}_${position}_${tech.name}`}
                 delay={`${index * ANIMATION_LIST_DELAY}ms`}
+                observerConfig={{ threshold: [0.1] }}
               >
                 <Chip
                   icon={
