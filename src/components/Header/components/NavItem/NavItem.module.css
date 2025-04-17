@@ -2,6 +2,8 @@
     color: var(--text-color);
     cursor: pointer;
     display: block;
+    margin-left: var(--nav-mobile-spacing);
+    margin-bottom: var(--nav-mobile-spacing);
     padding: 0.5rem;
     position: relative;
 }
@@ -14,6 +16,12 @@
 
 
 @media (min-width: 550px) {
+
+    .nav_link {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
     .nav_link span::after {
         border-bottom: 2px solid var(--gradient-color);
         border-radius: 10px;

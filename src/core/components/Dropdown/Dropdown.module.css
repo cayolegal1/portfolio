@@ -1,5 +1,5 @@
 .dropdown_container {
-  margin-left: 1.8rem;
+  margin-left: var(--nav-mobile-spacing);
   max-width: 100%;
   padding: 0.5rem;
   position: relative;
@@ -13,7 +13,6 @@
 .label_container {
   align-items: center;
   display: flex;
-  justify-content: center;
 }
 
 .label {

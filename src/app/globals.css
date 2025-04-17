@@ -14,6 +14,7 @@
       var(--fourth-gradient-color));
   --gradient-color: #2e8ee4;
   --button-color: #1269b6;
+  --nav-mobile-spacing: 4rem;
 }
 
 * {
