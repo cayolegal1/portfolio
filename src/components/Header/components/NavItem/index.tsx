@@ -1,13 +1,15 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Text from "@/core/components/Text";
-import { useInView } from "@/core/hooks/useInView";
 import type { NavItemProps } from "./NavItem.types";
 import styles from "./NavItem.module.css";
 
-export default function NavItem({ item }: NavItemProps): JSX.Element {
+export default function NavItem({
+  item,
+  active,
+  ...props
+}: NavItemProps): JSX.Element {
   const translate = useTranslations("Header");
-  const isInView = useInView(item.href);
   const title = translate(item.title);
 
   const scrollToSection = () => {
@@ -18,8 +20,12 @@ export default function NavItem({ item }: NavItemProps): JSX.Element {
   };
 
   return (
-    <button className={styles.nav_link} onClick={scrollToSection}>
-      <Text variant="gradient" inHover={!isInView}>
+    <button
+      {...props}
+      className={`${styles.nav_link} nav_item`}
+      onClick={scrollToSection}
+    >
+      <Text variant="gradient" inHover={!active}>
         {title}
       </Text>
     </button>

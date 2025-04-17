@@ -2,6 +2,11 @@ body .navbar__hidden {
     transform: translateX(100%);
 }
 
+body.menu_open .nav_item {
+    opacity: 0;
+    animation: NavAnimation 0.3s ease-in-out 0s forwards;
+}
+
 .toast__visible {
     opacity: 1;
     transform: translateY(0) scale(99%);
@@ -16,5 +21,20 @@ body .navbar__hidden {
     body .navbar__hidden {
         right: 0;
         transform: none;
+    }
+
+    .nav_item {
+        animation: none;
+    }
+}
+
+@keyframes NavAnimation {
+    from {
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }

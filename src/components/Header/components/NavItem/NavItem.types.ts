@@ -1,4 +1,5 @@
 import type { MessageKeys } from "next-intl";
+import { HTMLAttributes } from "react";
 
 type NavType =
   | "home"
@@ -14,6 +15,7 @@ export type NavItem = {
   href: string;
 };
 
-export type NavItemProps = {
+export type NavItemProps = HTMLAttributes<HTMLButtonElement> & {
   item: NavItem;
+  active: boolean;
 };

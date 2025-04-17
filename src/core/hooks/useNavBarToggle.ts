@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-const MOBILE_BREAKPOINT = 550;
+import { MOBILE_BREAKPOINT } from "../data/global";
 
 export const useNavBarToggle = () => {
   const [isNavBarExpanded, setIsNavBarExpanded] = useState(false);
@@ -9,6 +8,7 @@ export const useNavBarToggle = () => {
     const element = document.getElementById("header");
     if (element) {
       element.classList.toggle("navbar__hidden");
+      document.body.classList.toggle("menu_open");
       setIsNavBarExpanded(prev => !prev);
     }
   };

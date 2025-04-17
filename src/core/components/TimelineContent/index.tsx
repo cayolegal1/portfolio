@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Chip from "../Chip";
 import Text from "../Text";
+import AnimatedInView from "../Animated/AnimatedInView";
+import { ANIMATION_LIST_DELAY } from "@/core/data/global";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
-import AnimatedInView from "../Animated/AnimatedInView";
 
 export default function TimelineContent({
   content,
@@ -57,7 +58,7 @@ export default function TimelineContent({
                 animationType="slideInUp"
                 id={`${company}_${position}_${tech.name}`}
                 key={`${company}_${position}_${tech.name}`}
-                delay={`${index * 200}ms`}
+                delay={`${index * ANIMATION_LIST_DELAY}ms`}
               >
                 <Chip
                   icon={
