@@ -3,6 +3,7 @@ import Chip from "../Chip";
 import Text from "../Text";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
+import AnimatedInView from "../Animated/AnimatedInView";
 
 export default function TimelineContent({
   content,
@@ -51,20 +52,26 @@ export default function TimelineContent({
         </Text>
         {technologies.length > 0 && (
           <div className={styles.tech_container}>
-            {technologies.map(tech => (
-              <Chip
-                key={tech.name}
-                icon={
-                  <Image
-                    src={tech.logo_path as string}
-                    alt={tech.name}
-                    width={14}
-                    height={14}
-                    unoptimized
-                  />
-                }
-                label={tech.name}
-              />
+            {technologies.map((tech, index) => (
+              <AnimatedInView
+                animationType="slideInUp"
+                id={`${company}_${position}_${tech.name}`}
+                key={`${company}_${position}_${tech.name}`}
+                delay={`${index * 200}ms`}
+              >
+                <Chip
+                  icon={
+                    <Image
+                      src={tech.logo_path as string}
+                      alt={tech.name}
+                      width={14}
+                      height={14}
+                      unoptimized
+                    />
+                  }
+                  label={tech.name}
+                />
+              </AnimatedInView>
             ))}
           </div>
         )}
