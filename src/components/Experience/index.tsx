@@ -18,7 +18,7 @@ export default function Experience(): JSX.Element {
         <Timeline>
           {experiences.map((experience, index) => (
             <AnimatedInView
-              animationType="fadeInDown"
+              animationType="slideInUp"
               as="li"
               id={experience.id}
               key={experience.id}
