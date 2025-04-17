@@ -2,9 +2,11 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
   justify-content: center;
+  margin-bottom: 4.0rem;
   margin-top: 4.0rem;
+  row-gap: 4.5rem;
 }
 
 .technologies_container img {
@@ -17,6 +19,7 @@
   .technologies_container {
     justify-content: initial;
     margin-inline: 4.8rem;
+    margin-bottom: 0;
   }
 
   .technologies_container img {

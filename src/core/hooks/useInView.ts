@@ -16,7 +16,7 @@ export const useInView = (href: string, once: boolean | undefined = false) => {
     observerRef.current = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
-      threshold: [0.5, 1.0],
+      threshold: [0.4, 0.5, 1.0],
     });
 
     observerRef.current.observe(section);
