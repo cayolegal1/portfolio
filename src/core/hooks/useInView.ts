@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 
-export const useInView = (href: string, once: boolean | undefined = false) => {
+export const useInView = (
+  href: string,
+  once: boolean | undefined = false,
+  observerConfig?: Partial<IntersectionObserverInit>,
+) => {
   const [isInView, setIsInView] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
@@ -14,9 +18,9 @@ export const useInView = (href: string, once: boolean | undefined = false) => {
     };
 
     observerRef.current = new IntersectionObserver(callback, {
-      root: null,
-      rootMargin: "0px",
-      threshold: [0.5, 1.0],
+      root: observerConfig?.root || null,
+      rootMargin: observerConfig?.rootMargin || "0px",
+      threshold: observerConfig?.threshold || [0.5, 1.0],
     });
 
     observerRef.current.observe(section);

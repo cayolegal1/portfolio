@@ -9,9 +9,10 @@ export default function AnimatedInView({
   id = "",
   once = true,
   useId = true,
+  observerConfig = {},
   ...props
 }: AnimatedInViewProps): JSX.Element {
-  const isInView = useInView(id, once);
+  const isInView = useInView(id, once, observerConfig);
   return (
     <AnimatedRender
       {...props}

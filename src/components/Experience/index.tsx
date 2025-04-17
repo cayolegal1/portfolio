@@ -22,6 +22,9 @@ export default function Experience(): JSX.Element {
               as="li"
               id={experience.id}
               key={experience.id}
+              observerConfig={{
+                threshold: [0.2],
+              }}
             >
               <TimelineItem active={index === 0} experience={experience} />
             </AnimatedInView>
