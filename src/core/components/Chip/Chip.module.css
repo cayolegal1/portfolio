@@ -4,5 +4,14 @@
   border: 1px solid var(--text-color);
   display: flex;
   gap: 0.5rem;
+  transition: border var(--transition-time);
   padding: 0.5rem 1.0rem;
+}
+
+.chip_container:hover {
+  border: 1px solid var(--gradient-color);
+}
+
+.chip_container:hover p {
+  color: var(--gradient-color);
 }
