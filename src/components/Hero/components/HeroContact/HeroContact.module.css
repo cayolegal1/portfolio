@@ -1,8 +1,7 @@
 .social_media_container {
   align-items: center;
   display: flex;
-  position: absolute;
-  bottom: 10.0rem;
+  margin-top: 1.0rem;
 }
 
 .social_media_icon {
@@ -12,10 +11,4 @@
 
 .social_media_icon:hover {
   transform: translateY(5px);
-}
-
-@media (min-height: 620px) {
-  .social_media_container {
-    bottom: 20.0rem
-  }
 }
