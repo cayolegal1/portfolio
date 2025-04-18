@@ -1,9 +1,10 @@
 .button {
+  height: 3rem;
   position: fixed;
-  right: 25px;
-  top: 25px;
+  right: 10px;
+  top: 20px;
   visibility: visible;
-  width: 21px;
+  width: 4rem;
   z-index: 4;
 }
 
