@@ -18,6 +18,8 @@ const websiteDescription =
 
 const websiteOgImage = `${websiteUrl}/social-img.webp`;
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: `${name} - Software Developer`,
   description: websiteDescription,
