@@ -11,6 +11,7 @@ import styles from "./page.module.css";
 export default function App() {
   return (
     <>
+      {/* @ts-expect-error Server Component */}
       <Header />
       <main className={styles.main}>
         <Hero />

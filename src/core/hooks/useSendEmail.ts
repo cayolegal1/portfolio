@@ -1,8 +1,6 @@
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { useTranslations } from "next-intl";
 import { notifySuccess, notifyError } from "../utils/toast";
-import ENV from "../config/env";
 
 export const useSendEmail = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -14,12 +12,10 @@ export const useSendEmail = () => {
     { onSuccess, onError }: { onSuccess: () => void; onError: () => void },
   ) => {
     try {
-      const response = await emailjs.sendForm(
-        ENV.EMAIL_SERVICE_ID,
-        ENV.EMAIL_TEMPLATE_ID,
-        form,
-        { publicKey: ENV.EMAILJS_PUBLIC_KEY },
-      );
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
 
       if (response.status === 200) onSuccess();
       else onError();
