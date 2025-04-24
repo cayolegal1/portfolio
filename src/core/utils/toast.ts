@@ -16,8 +16,8 @@ const notify = (
   if (toast && toast_title && toast_body && toast_icon) {
     toast_title.textContent = title;
     toast_body.textContent = message;
-    toast.classList.replace("toast__hidden", "toast__visible");
     toast_icon.setAttribute("data-state", variant);
+    toast.classList.replace("toast__hidden", "toast__visible");
 
     setTimeout(() => {
       toast.classList.replace("toast__visible", "toast__hidden");
