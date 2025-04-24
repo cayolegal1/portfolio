@@ -27,12 +27,20 @@
     padding: 0.5rem 1rem;
 }
 
-.toast_image {
+.toast_icon {
     background-color: green;
     border-radius: 20%;
     height: 16px;
     margin-right: 0.5rem;
     width: 16px;
+}
+
+.toast_icon[data-state="success"] {
+    background-color: green;
+}
+
+.toast_icon[data-state="error"] {
+    background-color: red;
 }
 
 .toast_title {
