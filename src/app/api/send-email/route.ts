@@ -3,9 +3,10 @@ import { getTranslations } from "next-intl/server";
 import ENV from "@/core/config/env";
 import data from "@/core/data/user-info.json";
 
-const getEmailHiddenValues = async () => {
+const getEmailValues = async (values: object) => {
   const translate = await getTranslations("Contact");
   return {
+    ...values,
     email_goodbye: translate("email_goodbye"),
     email_greeting: translate("email_greeting"),
     email_reason: translate("email_reason"),
@@ -27,7 +28,7 @@ export async function POST(request: NextRequest) {
           service_id: ENV.EMAIL_SERVICE_ID,
           template_id: ENV.EMAIL_TEMPLATE_ID,
           user_id: ENV.EMAILJS_PUBLIC_KEY,
-          template_params: { ...(await getEmailHiddenValues()), ...data },
+          template_params: await getEmailValues(data),
         }),
       },
     );
