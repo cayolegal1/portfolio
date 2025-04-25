@@ -17,8 +17,11 @@ export const useSendEmail = () => {
         body: JSON.stringify(Object.fromEntries(new FormData(form))),
       });
 
-      if (response.status === 200) onSuccess();
-      else onError();
+      if (response.status === 200) {
+        onSuccess();
+      } else {
+        onError();
+      }
     } catch (err) {
       console.error(err);
       onError();

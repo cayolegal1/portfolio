@@ -14,6 +14,8 @@ export const useNavBarToggle = () => {
   };
 
   useEffect(() => {
+    if (typeof window === "undefined" || !document) return;
+
     const listener = () => {
       if (window.innerWidth >= MOBILE_BREAKPOINT && isNavBarExpanded) {
         toggleMobileNavbar();

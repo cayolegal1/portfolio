@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 export const useDropdownClick = (inputId: string, containerId: string) => {
   useEffect(() => {
+    if (typeof window === "undefined" || !document) return;
+
     const input = document.getElementById(inputId) as HTMLInputElement | null;
     const container = document.getElementById(containerId);
 
