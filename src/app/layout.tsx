@@ -3,6 +3,7 @@ import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import ProductionScripts from "@/components/ProductionScripts";
+import JsonLDScript from "@/components/JsonLdScript";
 import data from "@/core/data/user-info.json";
 import ENV from "@/core/config/env";
 import "./globals.css";
@@ -20,11 +21,12 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir="ltr">
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta charSet="utf-8" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charSet="utf-8" />
+        <JsonLDScript />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
@@ -69,7 +71,6 @@ export async function generateMetadata(): Promise<Metadata> {
       "software developers in paraguay",
       "software devs in paraguay",
       "i want a website",
-      name,
     ],
     abstract: description,
     generator: "Next.js",
