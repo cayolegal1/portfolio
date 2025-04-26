@@ -82,7 +82,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ],
     abstract: description,
     generator: "Next.js",
-    applicationName: websiteTitle,
+    applicationName: name,
     publisher: name,
     creator: name,
     category: "Software Developer",
@@ -133,7 +133,15 @@ export async function generateMetadata(): Promise<Metadata> {
     twitter: {
       creator: "@cayo_legal",
       description,
-      images: [websiteOgImage],
+      images: [
+        {
+          alt: `${name} image`,
+          secureUrl: websiteOgImage,
+          type: "image/webp",
+          url: websiteOgImage,
+          username: name,
+        },
+      ],
       site: data.website_url,
       title: websiteTitle,
     },
