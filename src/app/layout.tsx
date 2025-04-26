@@ -41,7 +41,7 @@ export default async function RootLayout({
 const { name, linkedin_url, country } = data;
 const websiteTitle = `${name} - Software Developer`;
 const websiteOgImage = `${data.website_url}/social-img.webp`;
-const websiteFavicon = `${data.website_url}/favicon.ico`;
+const websiteFavicon = "/favicon.ico";
 
 export async function generateMetadata(): Promise<Metadata> {
   const translate = await getTranslations("Metadata");
