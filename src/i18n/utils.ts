@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { headers } from "next/headers";
-import { supportedLocales } from "./settings";
+import { cookies, headers } from "next/headers";
+import { defaultLocale, supportedLocales } from "./settings";
 
 export function parseBrowserLocale(headerLang: string | null) {
   if (!headerLang) return null;
@@ -17,6 +17,17 @@ export function getBrowserLocale() {
   const browserLocaleHeader = headersList.get("accept-language");
   const browserLocale = parseBrowserLocale(browserLocaleHeader);
   return browserLocale;
+}
+
+export function getLocale() {
+  const browserLocale = getBrowserLocale();
+  const cookieLocale = cookies().get("locale")?.value;
+  const locale = cookieLocale || browserLocale || defaultLocale;
+  const responseLocale = !supportedLocales.includes(locale)
+    ? defaultLocale
+    : locale;
+
+  return responseLocale;
 }
 
 export function setCookieLocaleFromBrowser(

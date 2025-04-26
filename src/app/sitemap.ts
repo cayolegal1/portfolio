@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import glob from "fast-glob";
 import fs from "fs/promises";
 import path from "path";
-import { websiteUrl } from "@/core/data/global";
+import data from "@/core/data/user-info.json";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = await glob("**/*.tsx", { cwd: "src/app" });
@@ -20,11 +20,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   return routesData
-    .filter(({ route }) => !route.includes("layout.tsx"))
+    .filter(
+      ({ route }) =>
+        !route.includes("layout.tsx") || !route.includes("global-error.tsx"),
+    )
     .map(({ route, lastModified }) => ({
       changeFrequency: "weekly",
       lastModified,
       priority: 1.0,
-      url: `${websiteUrl}/${route}`,
+      url: `${data.website_url}/${route}`,
     }));
 }

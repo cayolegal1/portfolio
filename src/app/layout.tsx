@@ -1,43 +1,14 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import ProductionScripts from "@/components/ProductionScripts";
 import data from "@/core/data/user-info.json";
-import { websiteUrl } from "@/core/data/global";
 import ENV from "@/core/config/env";
 import "./globals.css";
 import "./custom.css";
 
-const { name } = data;
-
 const inter = Nunito({ subsets: ["latin"], weight: "500" });
-
-const websiteDescription =
-  "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas";
-
-const websiteOgImage = `${websiteUrl}/social-img.webp`;
-
-export const metadata: Metadata = {
-  title: `${name} - Software Developer`,
-  description: websiteDescription,
-  keywords: [
-    "desarrollador de software",
-    "desarrollador web",
-    "desarrollador movil",
-    "software development",
-    "frontend developer",
-    "mobile developer",
-    "javascript",
-    "typescript",
-    "react",
-    "react native",
-    "nextjs",
-    "developer portfolio",
-    name,
-  ],
-  creator: name,
-};
 
 export default async function RootLayout({
   children,
@@ -45,26 +16,19 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
   return (
-    <html lang={locale}>
+    <html lang={locale} dir="ltr">
       <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+        />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <meta property="og:title" content="Cayo Legal - Software Dev" />
-        <meta property="og:description" content={websiteDescription} />
-        <meta property="og:image" content={websiteOgImage} />
-        <meta property="og:image:secure_url" content={websiteOgImage} />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:alt" content="Cayo Legal image" />
-        <meta property="og:locale" content="es_ES" />
-        <meta property="og:locale:alternate" content="en_ES" />
-        <meta property="og:locale:alternate" content="pt_BR" />
-        <meta property="og:site_name" content="Cayo Legal" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={websiteUrl} />
-        <meta name="twitter:site" content={websiteUrl} />
-        <meta name="twitter:creator" content="@cayo_legal" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
@@ -74,4 +38,99 @@ export default async function RootLayout({
       {ENV.IS_PROD && <ProductionScripts />}
     </html>
   );
+}
+
+const { name, linkedin_url, country } = data;
+const websiteTitle = `${name} - Software Developer`;
+const websiteOgImage = `${data.website_url}/social-img.webp`;
+const websiteFavicon = `${data.website_url}/favicon.ico`;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const translate = await getTranslations("Metadata");
+  const description = translate("description");
+  return {
+    title: websiteTitle,
+    description,
+    keywords: [
+      "desarrollador de software",
+      "desarrollador web",
+      "desarrollador movil",
+      "sofware developer",
+      "software engineer",
+      "web applications",
+      "freelancers",
+      "freelancers developers",
+      "freelancers software engineers",
+      "freelancers fullstack developers",
+      "software development",
+      "frontend developer",
+      "mobile developer",
+      "software engineers",
+      "javascript",
+      "typescript",
+      "react",
+      "react native",
+      "nextjs",
+      "developer portfolio",
+      "fullstack developers",
+      name,
+    ],
+    abstract: description,
+    generator: "Next.js",
+    applicationName: websiteTitle,
+    publisher: name,
+    creator: name,
+    category: "Software Developer",
+    authors: {
+      name,
+      url: linkedin_url,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: false,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1,
+      },
+    },
+    icons: {
+      apple: websiteFavicon,
+      icon: websiteFavicon,
+      shortcut: websiteFavicon,
+    },
+    alternates: {
+      canonical: data.website_url,
+    },
+    openGraph: {
+      alternateLocale: ["en_US", "pt_BR", "es_MX", "en_GB"],
+      countryName: country,
+      description,
+      images: [
+        {
+          alt: `${name} image`,
+          secureUrl: websiteOgImage,
+          type: "image/webp",
+          url: websiteOgImage,
+          username: name,
+        },
+      ],
+      locale: "es_ES",
+      siteName: websiteTitle,
+      title: websiteTitle,
+      type: "article",
+      url: data.website_url,
+    },
+    twitter: {
+      creator: "@cayo_legal",
+      description,
+      images: [websiteOgImage],
+      site: data.website_url,
+      title: websiteTitle,
+    },
+  };
 }

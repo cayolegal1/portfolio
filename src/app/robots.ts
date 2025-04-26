@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { websiteUrl } from "@/core/data/global";
+import data from "@/core/data/user-info.json";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: `${websiteUrl}/sitemap.xml`,
+    sitemap: `${data.website_url}/sitemap.xml`,
   };
 }

@@ -1,19 +1,11 @@
-import { cookies } from "next/headers";
 import { getRequestConfig } from "next-intl/server";
-import { defaultLocale, supportedLocales } from "./settings";
-import { getBrowserLocale } from "./utils";
+import { getLocale } from "./utils";
 
 export default getRequestConfig(async () => {
-  const browserLocale = getBrowserLocale();
-  const cookieLocale = cookies().get("locale")?.value;
-  const locale = cookieLocale || browserLocale || defaultLocale;
-  const responseLocale = !supportedLocales.includes(locale)
-    ? defaultLocale
-    : locale;
-
+  const locale = getLocale();
   return {
     locale,
-    messages: (await import(`./locales/${responseLocale}.json`)).default,
+    messages: (await import(`./locales/${locale}.json`)).default,
     timeZone: "America/Asuncion",
   };
 });
