@@ -10,7 +10,7 @@ export default function Toast() {
       >
         <div className={styles.toast_header}>
           <span className={styles.toast_icon} id="toast_icon" />
-          <strong className={styles.toast_title} id="toast_title"></strong>
+          <p className={styles.toast_title} id="toast_title"></p>
         </div>
         <div className={styles.toast_body} id="toast_body"></div>
       </div>

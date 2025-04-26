@@ -24,15 +24,13 @@ export default function Technologies(): JSX.Element {
       >
         {technologiesList.map(tech => (
           <Tooltip tooltip={tech.name} key={tech.name}>
-            <a href={tech.url} target="_blank">
-              <Image
-                alt={`${tech.name} logo`}
-                height={45}
-                src={tech.logo_path}
-                unoptimized
-                width={45}
-              />
-            </a>
+            <Image
+              alt={`${tech.name} logo`}
+              height={45}
+              src={tech.logo_path}
+              unoptimized
+              width={45}
+            />
           </Tooltip>
         ))}
       </AnimatedInView>
