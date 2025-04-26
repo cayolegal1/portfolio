@@ -41,7 +41,6 @@ export default async function RootLayout({
 const { name, linkedin_url, country } = data;
 const websiteTitle = `${name} - Software Developer`;
 const websiteOgImage = `${data.website_url}/social-img.webp`;
-const websiteFavicon = "/favicon.ico";
 
 export async function generateMetadata(): Promise<Metadata> {
   const translate = await getTranslations("Metadata");
@@ -94,11 +93,6 @@ export async function generateMetadata(): Promise<Metadata> {
         "max-image-preview": "large",
         "max-video-preview": -1,
       },
-    },
-    icons: {
-      apple: websiteFavicon,
-      icon: websiteFavicon,
-      shortcut: websiteFavicon,
     },
     alternates: {
       canonical: data.website_url,
