@@ -21,6 +21,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir="ltr">
       <head>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta charSet="utf-8" />
