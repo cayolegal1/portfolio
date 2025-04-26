@@ -25,7 +25,7 @@ export default function TimelineContent({
         <Text as="h3" size="subtitle" variant="gradient" centered={false}>
           {position}
         </Text>
-        <a href={company_url} target="_blank">
+        <a href={company_url} target="_blank" rel="noopener noreferrer">
           <Image
             src={company_logo}
             alt={`${company}_logo`}

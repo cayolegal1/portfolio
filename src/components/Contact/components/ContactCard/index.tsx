@@ -9,7 +9,12 @@ export default function ContactCard({
   href,
 }: ContactCardProps): JSX.Element {
   return (
-    <a className={styles.card_container} href={href} target="_blank">
+    <a
+      className={styles.card_container}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className={styles.card_container_icon}>{icon}</div>
       <div>
         <Text size="description" as="p" uppercase centered={false}>

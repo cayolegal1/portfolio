@@ -33,6 +33,7 @@ export default function HeroContact(): JSX.Element {
           href={source.href}
           key={source.href}
           target="_blank"
+          rel="noopener noreferrer"
         >
           {source.icon}
         </a>

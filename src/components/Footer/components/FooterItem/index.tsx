@@ -10,7 +10,7 @@ export default function FooterItem({
 }: FooterItemProps): JSX.Element {
   return (
     <ScalableItem>
-      <a target="_blank" href={href}>
+      <a target="_blank" href={href} rel="noopener noreferrer">
         <div className={styles.footer_item}>
           {icon}
           <Text size="caption" variant="gradient" inHover>
