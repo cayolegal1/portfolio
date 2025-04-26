@@ -14,7 +14,7 @@ export default function JsonLDScript() {
           name: data.name,
           jobTitle: "Software Developer",
           url: data.website_url,
-          image: "https://tu-sitio.com/social-img.webp", // El mismo OG si prefieres
+          image: `${data.website_url}/social-img.webp`,
           sameAs: [data.linkedin_url, data.github_url],
           address: {
             "@type": "PostalAddress",
