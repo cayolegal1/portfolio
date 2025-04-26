@@ -24,7 +24,7 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta charSet="utf-8" />
         <JsonLDScript />
       </head>

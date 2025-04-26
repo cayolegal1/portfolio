@@ -32,6 +32,7 @@ export default function TimelineContent({
             width={20}
             height={20}
             unoptimized
+            loading="lazy"
           />
           <Text
             as="h4"
@@ -69,6 +70,7 @@ export default function TimelineContent({
                       src={tech.logo_path as string}
                       title={tech.name}
                       unoptimized
+                      loading="lazy"
                       width={14}
                     />
                   }

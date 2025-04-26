@@ -30,6 +30,7 @@ export default function Technologies(): JSX.Element {
               src={tech.logo_path}
               title={tech.name}
               unoptimized
+              loading="lazy"
               width={45}
             />
           </Tooltip>
