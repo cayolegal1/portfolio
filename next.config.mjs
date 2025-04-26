@@ -1,10 +1,10 @@
 import { withSentryConfig } from "@sentry/nextjs";
-/** @type {import('next').NextConfig} */
 import bundleAnalyzer from "@next/bundle-analyzer";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   async headers() {
     return [
@@ -34,6 +34,14 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ["react-typed"],
+  },
+  optimizeFonts: true,
+  poweredByHeader: false,
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.optimization.splitChunks.maxSize = 30000;
+    }
+    return config;
   },
 };
 
