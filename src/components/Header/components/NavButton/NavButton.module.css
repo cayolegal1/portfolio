@@ -5,7 +5,7 @@
   top: 20px;
   visibility: visible;
   width: 4rem;
-  z-index: 4;
+  z-index: 10;
 }
 
 .overlay {
@@ -21,7 +21,7 @@
   top: 0;
   transition: opacity var(--transition-time) ease-in-out;
   width: 100vw;
-  z-index: 2;
+  z-index: 5;
 }
 
 .overlay__active {

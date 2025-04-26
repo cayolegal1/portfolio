@@ -8,7 +8,7 @@
     top: 16px;
     transition: opacity var(--transition-time) ease-in-out, transform var(--transition-time) ease-in-out;
     width: 100%;
-    z-index: 11;
+    z-index: 5;
 }
 
 .toast {
