@@ -7,7 +7,7 @@ export default function ScrollIndicator() {
   return (
     <div
       className={styles.progress_bar}
-      style={{ width: `${scrollProgress}%` }}
+      style={{ transform: `scaleX(${scrollProgress / 100})` }}
     />
   );
 }
