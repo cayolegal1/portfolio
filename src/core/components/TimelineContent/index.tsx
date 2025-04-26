@@ -64,11 +64,12 @@ export default function TimelineContent({
                 <Chip
                   icon={
                     <Image
-                      src={tech.logo_path as string}
                       alt={tech.name}
-                      width={14}
                       height={14}
+                      src={tech.logo_path as string}
+                      title={tech.name}
                       unoptimized
+                      width={14}
                     />
                   }
                   label={tech.name}

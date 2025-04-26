@@ -28,6 +28,7 @@ export default function Technologies(): JSX.Element {
               alt={`${tech.name} logo`}
               height={45}
               src={tech.logo_path}
+              title={tech.name}
               unoptimized
               width={45}
             />
