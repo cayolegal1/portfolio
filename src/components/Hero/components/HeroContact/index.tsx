@@ -4,6 +4,8 @@ import LinkedinGradientIcon from "@/core/components/Icons/Gradient/LinkedinGradi
 import styles from "./HeroContact.module.css";
 import data from "@/core/data/user-info.json";
 
+import type { JSX } from "react";
+
 const { github_url, linkedin_url } = data;
 
 const contactLinks = [

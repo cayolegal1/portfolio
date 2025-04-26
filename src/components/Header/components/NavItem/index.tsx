@@ -1,8 +1,10 @@
-"use client";
+"use client";;
 import { useTranslations } from "next-intl";
 import Text from "@/core/components/Text";
 import type { NavItemProps } from "./NavItem.types";
 import styles from "./NavItem.module.css";
+
+import type { JSX } from "react";
 
 export default function NavItem({
   item,

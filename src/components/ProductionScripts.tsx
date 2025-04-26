@@ -1,3 +1,4 @@
+import { type JSX } from "react";
 import Script from "next/script";
 import ENV from "@/core/config/env";
 

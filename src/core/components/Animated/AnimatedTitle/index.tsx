@@ -3,6 +3,8 @@ import Text from "@/core/components/Text";
 import styles from "./AnimatedTitle.module.css";
 import type { AnimatedTitleProps } from "./AnimatedTitle.types";
 
+import type { JSX } from "react";
+
 export default function AnimatedTitle({
   children,
   id,

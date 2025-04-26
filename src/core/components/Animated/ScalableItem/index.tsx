@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type JSX } from "react";
 import type { ScalableItemProps } from "./ScalableItem.types";
 import styles from "./ScalableItem.module.css";
 

@@ -1,3 +1,4 @@
+import { type JSX } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Section from "@/core/components/Section";

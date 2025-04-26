@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 export default function EmailIcon(): JSX.Element {
   return (
     <svg

@@ -1,5 +1,7 @@
 import SvgGradient from "../../SvgGradient";
 
+import type { JSX } from "react";
+
 const gradientId = "github_gradient";
 
 export default function GitHubGradientIcon(): JSX.Element {

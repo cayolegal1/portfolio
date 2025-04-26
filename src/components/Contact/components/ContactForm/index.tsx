@@ -1,5 +1,5 @@
 "use client";
-import { FormEvent } from "react";
+import { FormEvent, type JSX } from "react";
 import Input from "@/core/components/Input";
 import Button from "@/core/components/Button";
 import Loader from "@/core/components/Loader";

@@ -1,9 +1,11 @@
-"use client";
+"use client";;
 import Text from "../Text";
 import ExpandGradientIcon from "../Icons/Gradient/ExpandGradientIcon";
 import type { DropdownProps } from "./Dropdown.types";
 import styles from "./Dropdown.module.css";
 import { useDropdownClick } from "@/core/hooks/useDropdownClick";
+
+import type { JSX } from "react";
 
 const checkboxId = "checkbox_dropdown";
 const containerId = "dropdown_container";

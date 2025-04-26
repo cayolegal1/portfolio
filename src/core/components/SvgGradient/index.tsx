@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, type JSX } from "react";
 import type { SvgGradientProps } from "./SvgGradient.types";
 import styles from "./SvgGradient.module.css";
 

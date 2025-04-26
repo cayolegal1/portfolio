@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode, JSX } from "react";
 
 export type FooterItemProps = {
   icon: JSX.Element;

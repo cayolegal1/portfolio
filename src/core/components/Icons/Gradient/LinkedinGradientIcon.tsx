@@ -1,5 +1,7 @@
 import SvgGradient from "../../SvgGradient";
 
+import type { JSX } from "react";
+
 const gradientId = "linkedin_gradient";
 
 export default function LinkedinGradientIcon(): JSX.Element {

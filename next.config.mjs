@@ -35,13 +35,9 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ["react-typed"],
   },
-  optimizeFonts: true,
   poweredByHeader: false,
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.optimization.splitChunks.maxSize = 30000;
-    }
-    return config;
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 

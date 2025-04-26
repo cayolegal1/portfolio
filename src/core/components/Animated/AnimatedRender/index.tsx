@@ -4,6 +4,8 @@ import type {
 } from "./AnimatedRender.types";
 import styles from "./AnimatedRender.module.css";
 
+import type { JSX } from "react";
+
 export default function AnimatedRender({
   animate = true,
   animationType = "fadeInLeft",

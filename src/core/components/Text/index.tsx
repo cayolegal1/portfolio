@@ -1,4 +1,4 @@
-import type { ElementType } from "react";
+import type { ElementType, JSX } from "react";
 import TextGradient from "../TextGradient";
 import type { TextProps, TextSize } from "./Text.types";
 import styles from "./Text.module.css";

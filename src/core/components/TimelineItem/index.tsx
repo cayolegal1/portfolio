@@ -2,6 +2,8 @@ import TimelineContent from "../TimelineContent";
 import type { TimelineItemProps } from "./TimelineItem.types";
 import styles from "./TimelineItem.module.css";
 
+import type { JSX } from "react";
+
 export default function TimelineItem({
   active,
   experience,

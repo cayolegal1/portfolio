@@ -1,6 +1,8 @@
 import type { InputProps } from "./Input.types";
 import styles from "./Input.module.css";
 
+import type { JSX } from "react";
+
 export default function Input({
   label,
   variant,

@@ -1,9 +1,14 @@
+// next
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, getLocale } from "next-intl/server";
+
+// components
 import ProductionScripts from "@/components/ProductionScripts";
 import JsonLDScript from "@/components/JsonLdScript";
+
+// core
 import data from "@/core/data/user-info.json";
 import ENV from "@/core/config/env";
 import "./globals.css";
@@ -18,6 +23,7 @@ export default async function RootLayout({
 }>) {
   const locale = await getLocale();
   const messages = await getMessages({ locale });
+
   return (
     <html lang={locale} dir="ltr">
       <head>
@@ -132,5 +138,3 @@ export async function generateMetadata(): Promise<Metadata> {
     },
   };
 }
-
-export const dynamic = "force-static";

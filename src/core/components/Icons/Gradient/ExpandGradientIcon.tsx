@@ -1,4 +1,4 @@
-import { SVGAttributes } from "react";
+import { SVGAttributes, type JSX } from "react";
 import SvgGradient from "../../SvgGradient";
 
 const defaultGradientId = "expand_gradient";

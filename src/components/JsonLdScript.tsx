@@ -1,7 +1,8 @@
 import Script from "next/script";
 import data from "@/core/data/user-info.json";
+import { JSX } from "react";
 
-export default function JsonLDScript() {
+export default function JsonLDScript(): JSX.Element {
   return (
     <Script
       id="json-ld-person"

@@ -1,6 +1,8 @@
 import type { SectionProps } from "./Section.types";
 import styles from "./Section.module.css";
 
+import type { JSX } from "react";
+
 export default function Section({
   as: Component = "section",
   children,

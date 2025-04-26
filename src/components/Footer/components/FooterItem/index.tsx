@@ -3,6 +3,8 @@ import ScalableItem from "@/core/components/Animated/ScalableItem";
 import type { FooterItemProps } from "./FooterItem.types";
 import styles from "./FooterItem.module.css";
 
+import type { JSX } from "react";
+
 export default function FooterItem({
   children,
   href,

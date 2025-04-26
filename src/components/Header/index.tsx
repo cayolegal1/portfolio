@@ -1,7 +1,7 @@
-import React from "react";
-import { getLocale } from "next-intl/server";
+import React, { JSX, ReactElement } from "react";
 import NavButton from "./components/NavButton";
 import HeaderContent from "./components/HeaderContent";
+import { getLocale } from "@/i18n/utils";
 import { SECTIONS } from "@/core/data/global";
 import { NavItem } from "./components/NavItem/NavItem.types";
 
@@ -15,7 +15,7 @@ const headers = [
   { title: "language", href: SECTIONS.LANGUAGE },
 ];
 
-export default async function Header() {
+export default async function Header(): Promise<ReactElement<unknown>> {
   const currentLocale = await getLocale();
   return (
     <>

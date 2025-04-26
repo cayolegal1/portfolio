@@ -1,6 +1,8 @@
 import type { TextGradientProps } from "./TextGradient.types";
 import styles from "./TextGradient.module.css";
 
+import type { JSX } from "react";
+
 export default function TextGradient({
   as: Component = "span",
   children,

@@ -4,6 +4,8 @@ import Text from "@/core/components/Text";
 import HeroSkills from "../HeroSkills";
 import data from "@/core/data/user-info.json";
 
+import type { JSX } from "react";
+
 export default function HeroPresentation(): JSX.Element {
   const translate = useTranslations("Hero");
   const { name } = data;

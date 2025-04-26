@@ -2,6 +2,8 @@ import Text from "@/core/components/Text";
 import styles from "./ContactCard.module.css";
 import { ContactCardProps } from "./ContactCard.types";
 
+import type { JSX } from "react";
+
 export default function ContactCard({
   icon,
   text,

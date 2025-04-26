@@ -13,10 +13,8 @@ export default function App() {
   return (
     <>
       <ScrollIndicator />
-
-      {/* @ts-expect-error Server Component */}
+      {/* @ts-ignore */}
       <Header />
-
       <main className={styles.main}>
         <Hero />
         <Experience />

@@ -12,16 +12,17 @@ export function parseBrowserLocale(headerLang: string | null) {
   }
 }
 
-export function getBrowserLocale() {
-  const headersList = headers();
+export async function getBrowserLocale() {
+  const headersList = await headers();
   const browserLocaleHeader = headersList.get("accept-language");
   const browserLocale = parseBrowserLocale(browserLocaleHeader);
   return browserLocale;
 }
 
-export function getLocale() {
-  const browserLocale = getBrowserLocale();
-  const cookieLocale = cookies().get("locale")?.value;
+export async function getLocale() {
+  const browserLocale = await getBrowserLocale();
+  const cookieStore = await cookies();
+  const cookieLocale = cookieStore.get("locale")?.value;
   const locale = cookieLocale || browserLocale || defaultLocale;
   const responseLocale = !supportedLocales.includes(locale)
     ? defaultLocale

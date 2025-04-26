@@ -6,6 +6,8 @@ import { ANIMATION_LIST_DELAY } from "@/core/data/global";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
 
+import type { JSX } from "react";
+
 export default function TimelineContent({
   content,
 }: TimelineContentProps): JSX.Element {

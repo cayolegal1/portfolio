@@ -12,6 +12,8 @@ import {
 } from "@/core/components/Icons/FlagsIcons";
 import styles from "./NavToggleLanguage.module.css";
 
+import type { JSX } from "react";
+
 const languages = [
   { label: "english", locale: LOCALES.ENGLISH, flag: <USAFlag /> },
   { label: "spanish", locale: LOCALES.SPANISH, flag: <SpainFlag /> },
@@ -34,7 +36,7 @@ export default function NavToggleLanguage({
   return (
     <Dropdown title={translate(title as "language")}>
       {languages.map(language => (
-        <form action={formAction as any} key={language.locale}>
+        <form action={formAction} key={language.locale}>
           <input type="hidden" name="locale" value={language.locale} />
           <button type="submit" className={styles.language_item}>
             <div className={styles.flag_container}>{language.flag}</div>

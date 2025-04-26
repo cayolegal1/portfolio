@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 export default function LinkedinIcon(): JSX.Element {
   return (
     <svg

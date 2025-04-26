@@ -1,6 +1,8 @@
 import type { NavHamburguerProps } from "./NavHamburguer.types";
 import styles from "./NavHamburguer.module.css";
 
+import type { JSX } from "react";
+
 export default function NavHamburguer({
   expanded,
 }: NavHamburguerProps): JSX.Element {

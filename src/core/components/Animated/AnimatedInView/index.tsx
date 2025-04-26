@@ -1,7 +1,9 @@
-"use client";
+"use client";;
 import AnimatedRender from "../AnimatedRender";
 import { useInView } from "@/core/hooks/useInView";
 import type { AnimatedInViewProps } from "./AnimatedInView.types";
+
+import type { JSX } from "react";
 
 export default function AnimatedInView({
   children,
