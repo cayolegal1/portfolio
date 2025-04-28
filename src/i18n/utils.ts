@@ -42,6 +42,7 @@ export function setCookieLocaleFromBrowser(
   if (isLocaleValid) {
     response.cookies.set("locale", browserLocale, {
       httpOnly: true,
+      path: "/",
       priority: "high",
       sameSite: "strict",
       secure: true,
