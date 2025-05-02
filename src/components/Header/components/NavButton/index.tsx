@@ -13,6 +13,7 @@ export default function NavButton() {
       <AnimatedRender
         animationType="fadeInDown"
         aria-label={isNavBarExpanded ? "Cerrar menú" : "Abrir menú"}
+        aria-roledescription="Botón para abrir o cerrar menú de navegación"
         as="button"
         className={styles.button}
         delay="2.8s"

@@ -9,9 +9,10 @@ export default function NavHamburguer({
   return (
     <div
       className={`${styles.hamburguer}`}
+      role="button"
+      aria-controls="main navigation"
       aria-expanded={expanded}
       aria-label={expanded ? "Cerrar menú" : "Abrir menú"}
-      aria-roledescription="Botón para abrir o cerrar menú de navegación"
     >
       <span className={`${styles.bar} ${styles.top}`}></span>
       <span className={`${styles.bar} ${styles.middle}`}></span>
