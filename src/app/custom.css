@@ -28,6 +28,34 @@ body.menu_open .nav_item {
     }
 }
 
+@media (min-width: 390px) {
+    .title {
+        position: relative;
+
+    }
+
+    .title::after {
+        background-color: var(--gradient-color);
+        border-radius: 3px;
+        bottom: -3px;
+        content: "";
+        height: 4px;
+        left: 0;
+        margin-left: 1px;
+        position: absolute;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.6s ease-out;
+        width: 40px;
+        z-index: -1;
+    }
+
+    .visible .title::after {
+        transform: scaleX(1);
+    }
+}
+
+
 @keyframes NavAnimation {
     from {
         transform: translate3d(-50%, 0, 0);
