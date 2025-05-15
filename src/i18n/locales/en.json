@@ -103,6 +103,7 @@
     "phone": "Phone number"
   },
   "Footer": {
-    "copyright": "All rights reserved"
+    "copyright": "All rights reserved",
+    "footer_stack": "Developed in"
   }
 }

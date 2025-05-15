@@ -3,6 +3,7 @@ import Section from "@/core/components/Section";
 import AnimatedInView from "@/core/components/Animated/AnimatedInView";
 import FooterItem from "./components/FooterItem";
 import Copyright from "./components/Copyright";
+import FooterStack from "./components/FooterStack";
 
 // icons
 import GitHubIcon from "@/core/components/Icons/GithubIcon";
@@ -35,6 +36,7 @@ export default function Footer() {
             </FooterItem>
           ))}
         </div>
+        <FooterStack />
         <Copyright />
       </AnimatedInView>
     </Section>
