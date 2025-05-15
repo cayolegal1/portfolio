@@ -33,7 +33,7 @@
       "position": "Frontend Developer",
       "from_date": "November 2024 - Actually",
       "description": "I am responsible for facilitating development for other teams through the creation of internal libraries, maintaining quality standards, implementing best practices, and producing technical documentation with React and Vite, using Scrum as an agile methodology.",
-      "technologies": "typescript,react,tailwind_css,auth0,vite,vitest,testing_library,git"
+      "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,vitest,testing_library,storybook,gitlab,git"
     },
     "1": {
       "id": 1,
