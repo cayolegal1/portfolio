@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import Text from "../Text";
 import ExpandGradientIcon from "../Icons/Gradient/ExpandGradientIcon";
 import type { DropdownProps } from "./Dropdown.types";

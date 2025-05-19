@@ -1,9 +1,8 @@
-"use client";;
+"use client";
+import type { JSX } from "react";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import ExpandGradientIcon from "@/core/components/Icons/Gradient/ExpandGradientIcon";
 import styles from "./HeroExpand.module.css";
-
-import type { JSX } from "react";
 
 export default function HeroExpand(): JSX.Element {
   const scrollToNextSection = () => {
