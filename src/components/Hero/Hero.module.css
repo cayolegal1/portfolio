@@ -1,4 +1,5 @@
 .hero_container {
+  content-visibility: visible;
   min-height: 100vh;
   padding-bottom: 5rem;
 }

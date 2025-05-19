@@ -1,4 +1,6 @@
 .section_container {
+  content-visibility: auto;
+  contain-intrinsic-inline-size: 1000px;
   align-items: center;
   display: flex;
   flex-direction: column;
