@@ -1,3 +1,5 @@
+"use client";
+import { useState, type JSX } from "react";
 import Image from "next/image";
 import Chip from "../Chip";
 import Text from "../Text";
@@ -5,8 +7,6 @@ import AnimatedInView from "../Animated/AnimatedInView";
 import { ANIMATION_LIST_DELAY } from "@/core/data/global";
 import type { TimelineContentProps } from "./TimelineContent.types";
 import styles from "./TimelineContent.module.css";
-
-import type { JSX } from "react";
 
 export default function TimelineContent({
   content,
@@ -20,11 +20,17 @@ export default function TimelineContent({
     position,
     technologies,
   } = content;
-
+  const [isVisible, setIsVisible] = useState(false);
   return (
     <div className={styles.content_container}>
       <div>
-        <Text as="h3" size="subtitle" variant="gradient" centered={false}>
+        <Text
+          as="h3"
+          size="subtitle"
+          variant="gradient"
+          centered={false}
+          onClick={() => setIsVisible(!isVisible)}
+        >
           {position}
         </Text>
         <a href={company_url} target="_blank" rel="noopener noreferrer">

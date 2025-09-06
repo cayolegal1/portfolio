@@ -10,6 +10,11 @@ export const useDropdownClick = (inputId: string, containerId: string) => {
     if (input && container) {
       const listener = (event: MouseEvent) => {
         const isClickedInside = container.contains(event.target as Node);
+
+        /* 
+          If the click is outside from the dropdown and the input is checked, 
+          uncheck the input (close dropdown)
+        */
         if (input.checked && !isClickedInside) {
           input.checked = false;
         } else if (isClickedInside) {
