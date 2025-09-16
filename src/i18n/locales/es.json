@@ -22,6 +22,10 @@
     "of_software": "de Software",
     "of_apps": "de Apps"
   },
+  "Projects": {
+    "title": "De idea a realidad",
+    "subtitle": "Estos son algunos de mis proyectos destacados"
+  },
   "Experience": {
     "title": "Experiencia laboral",
     "length": "5",
@@ -33,7 +37,7 @@
       "position": "Desarrollador FrontEnd",
       "from_date": "Noviembre 2024 - Actualmente",
       "description": "Me encargo de facilitar el desarrollo a otros equipos mediante la creación de librerías internas, el mantenimiento de estándares de calidad, la implementación de buenas prácticas y la elaboración de documentación técnica con React y Vite usando Scrum como metolodía ágil.",
-     "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
+      "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
     },
     "1": {
       "id": 1,
