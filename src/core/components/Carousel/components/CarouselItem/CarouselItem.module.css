@@ -1,0 +1,7 @@
+.carousel_item {
+  flex-shrink: 0; /* keep the item’s size, don’t let it shrink */
+  margin-right: 2rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+}
