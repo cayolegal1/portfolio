@@ -1,0 +1,24 @@
+.carousel_button {
+  align-items: center;
+  background-color: var(--gradient-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.carousel_button_left {
+  transform: translateX(10px);
+}
+
+.carousel_button_right {
+  transform: translateX(-10px);
+}
+
+.carousel_icon_left {
+  transform: rotate(90deg);
+}
+
+.carousel_icon_right {
+  transform: rotate(-90deg);
+}

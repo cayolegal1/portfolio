@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
+import type { ReactNode, HTMLAttributes } from "react";
 
-export type CarouselItemProps = {
+export type CarouselItemProps = HTMLAttributes<HTMLLIElement> & {
   children: ReactNode;
 };

@@ -1,9 +1,18 @@
-.carousel {
+.carousel_container {
+  align-items: center;
   display: flex;
-  gap: 4vw;
+  gap: 0.5rem;
+  justify-content: center;
   max-width: 30rem;
+  width: 100%;
+}
+
+.carousel {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  max-width: 20rem;
   overflow-x: auto;
-  padding: 2rem;
   scroll-snap-type: x mandatory;
   width: 100%;
 }
