@@ -54,6 +54,30 @@ export default function Projects() {
               }}
             />
           </CarouselItem>
+          <CarouselItem className={styles.image}>
+            <img
+              src="/la_barra_assets/image_1.webp"
+              loading="lazy"
+              style={{
+                maxWidth: "20rem",
+                maxHeight: "20rem",
+                borderRadius: "10px",
+                width: "100%",
+              }}
+            />
+          </CarouselItem>
+          <CarouselItem className={styles.image}>
+            <img
+              src="/la_barra_assets/image_2.webp"
+              loading="lazy"
+              style={{
+                maxWidth: "20rem",
+                maxHeight: "20rem",
+                borderRadius: "10px",
+                width: "100%",
+              }}
+            />
+          </CarouselItem>
         </Carousel>
       </div>
     </Section>
