@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "description": "Desarrollador Frontend especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas"
+    "description": "Desarrollador de Software especializado en React y Next. Experto en crear interfaces modernas y optimizadas, con conocimientos de backend para soluciones completas"
   },
   "Header": {
     "about_me": "Sobre mi",
@@ -30,10 +30,10 @@
       "company": "Bepsa",
       "company_url": "https://www.bepsa.com.py/",
       "company_logo": "/company_logos/bepsa.webp",
-      "position": "Desarrollador FrontEnd",
+      "position": "Desarrollador de Software",
       "from_date": "Noviembre 2024 - Actualmente",
       "description": "Me encargo de facilitar el desarrollo a otros equipos mediante la creación de librerías internas, el mantenimiento de estándares de calidad, la implementación de buenas prácticas y la elaboración de documentación técnica con React y Vite usando Scrum como metolodía ágil.",
-     "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
+      "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
     },
     "1": {
       "id": 1,
@@ -47,7 +47,7 @@
     },
     "2": {
       "id": 2,
-      "position": "Desarrollador FrontEnd",
+      "position": "Desarrollador de Software",
       "company": "Mega Digital",
       "company_url": "https://www.megadigital.com.py/",
       "company_logo": "/company_logos/mega_digital.webp",
@@ -58,7 +58,7 @@
     "3": {
       "id": 3,
       "company": "Innovatica",
-      "position": "Desarrollador FrontEnd",
+      "position": "Desarrollador de Software",
       "company_url": "https://innovatica.com.py/",
       "company_logo": "/company_logos/innovatica.webp",
       "from_date": "Octubre 2022 - Mayo 2023",
