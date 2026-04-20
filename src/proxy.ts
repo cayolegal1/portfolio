@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { setCookieLocaleFromBrowser } from "@/i18n/utils";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const response = NextResponse.next();
   const cookieLocale = request.cookies.get("locale")?.value;
   if (!cookieLocale) {

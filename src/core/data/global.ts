@@ -5,7 +5,7 @@ export const SECTIONS = {
   FOOTER: "footer",
   HOME: "hero",
   LANGUAGE: "language",
-  PROYECTS: "proyects",
+  PROJECTS: "projects",
   TECHNOLOGIES: "technologies",
 } as const;
 

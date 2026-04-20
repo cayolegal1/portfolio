@@ -16,7 +16,6 @@ export default function LinkedinGradientIcon(): JSX.Element {
         fontFamily="none"
         fontWeight="none"
         fontSize="none"
-        textAnchor="none"
         style={{ mixBlendMode: "normal" }}
       >
         <g transform="scale(4,4)">

@@ -7,7 +7,7 @@ import styles from "./HeroExpand.module.css";
 
 export default function HeroExpand(): JSX.Element {
   const scrollToNextSection = () => {
-    const section = document.getElementById(SECTIONS.PROYECTS);
+    const section = document.getElementById(SECTIONS.PROJECTS);
     if (section) {
       section.scrollIntoView(true);
     }

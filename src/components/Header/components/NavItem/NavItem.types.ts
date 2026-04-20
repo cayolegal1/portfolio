@@ -4,7 +4,7 @@ import { HTMLAttributes } from "react";
 type NavType =
   | "home"
   | "experience"
-  | "proyects"
+  | "projects"
   | "about_me"
   | "contact"
   | "language"

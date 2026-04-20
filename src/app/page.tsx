@@ -18,7 +18,7 @@ export default function App() {
       <Header />
       <main className={styles.main}>
         <Hero />
-        <Projects />
+        {/* <Projects /> */}
         <Experience />
         <Technologies />
         <Contact />

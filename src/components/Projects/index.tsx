@@ -11,7 +11,7 @@ import CarouselItem from "@/core/components/Carousel/components/CarouselItem";
 export default function Projects() {
   const translate = useTranslations("Projects");
   return (
-    <Section id={SECTIONS.PROYECTS}>
+    <Section id={SECTIONS.PROJECTS}>
       <AnimatedTitle id="projects_title">{translate("title")}</AnimatedTitle>
       <AnimatedInView
         animationType="fadeInDown"

@@ -36,9 +36,6 @@ const nextConfig = {
     optimizePackageImports: ["react-typed"],
   },
   poweredByHeader: false,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 
 const withBundleAnalyzer = bundleAnalyzer({
