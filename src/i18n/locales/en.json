@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "description": "Frontend developer specializing in React and Next. Expert in creating modern and optimized interfaces, with backend knowledge for complete solutions."
+    "description": "Software Developer specializing in React and Next. Expert in creating modern and optimized interfaces, with backend knowledge for complete solutions."
   },
   "Header": {
     "about_me": "About me",
@@ -34,7 +34,7 @@
       "company": "Bepsa",
       "company_url": "https://www.bepsa.com.py/",
       "company_logo": "/company_logos/bepsa.webp",
-      "position": "Frontend Developer",
+      "position": "Software Developer",
       "from_date": "November 2024 - Actually",
       "description": "I am responsible for facilitating development for other teams through the creation of internal libraries, maintaining quality standards, implementing best practices, and producing technical documentation with React and Vite, using Scrum as an agile methodology.",
       "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
@@ -54,7 +54,7 @@
       "company": "Mega Digital",
       "company_url": "https://www.megadigital.com.py/",
       "company_logo": "/company_logos/mega_digital.webp",
-      "position": "Frontend Developer",
+      "position": "Software Developer",
       "from_date": "May 2023 - October 2023",
       "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js. Development of a real-time customer support mobile app using React Native and Socket.IO.",
       "technologies": "javascript,react,react_native,next_js,socket_io,material_ui,git"
@@ -64,7 +64,7 @@
       "company": "Innovatica",
       "company_url": "https://innovatica.com.py/",
       "company_logo": "/company_logos/innovatica.webp",
-      "position": "Frontend Developer",
+      "position": "Software Developer",
       "from_date": "October 2022 - May 2023",
       "description": "Custom software development for USA clients using React and React Native. Creation of reusable components following Figma designs.",
       "technologies": "javascript,react,react_native,material_ui,docker,git,figma"

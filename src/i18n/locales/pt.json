@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "description": "Desenvolvedor frontend especializado em React e Next. Especialista em criação de interfaces modernas e otimizadas, com conhecimento de backend para soluções completas."
+    "description": "Desenvolvedor de Software especializado em React e Next. Especialista em criação de interfaces modernas e otimizadas, com conhecimento de backend para soluções completas."
   },
   "Header": {
     "about_me": "Sobre mim",
@@ -22,10 +22,6 @@
     "of_software": "de Software",
     "of_apps": "de Apps"
   },
-  "Projects": {
-    "title": "Da ideia à realidade",
-    "subtitle": "Estes são alguns dos meus projetos em destaque"
-  },
   "Experience": {
     "title": "Experiência",
     "length": "5",
@@ -34,7 +30,7 @@
       "company": "Bepsa",
       "company_url": "https://www.bepsa.com.py/",
       "company_logo": "/company_logos/bepsa.webp",
-      "position": "Desenvolvedor FrontEnd",
+      "position": "Desenvolvedor de Software",
       "from_date": "Novembro de 2024 - Atualmente",
       "description": "Sou responsável por facilitar o desenvolvimento para outras equipes por meio da criação de bibliotecas internas, da manutenção de padrões de qualidade, da implementação de boas práticas e da elaboração de documentação técnica com React e Vite, utilizando Scrum como metodologia ágil.",
       "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
@@ -51,7 +47,7 @@
     },
     "2": {
       "id": 2,
-      "position": "Desenvolvedor FrontEnd",
+      "position": "Desenvolvedor de Software",
       "company": "Mega Digital",
       "company_url": "https://www.megadigital.com.py/",
       "company_logo": "/company_logos/mega_digital.webp",
@@ -64,7 +60,7 @@
       "company": "Innovatica",
       "company_url": "https://innovatica.com.py/",
       "company_logo": "/company_logos/innovatica.webp",
-      "position": "Desenvolvedor FrontEnd",
+      "position": "Desenvolvedor de Software",
       "from_date": "Outubro de 2022 - Maio de 2023",
       "description": "Fábrica de software sob medida para clientes dos EUA com React e React Native. Criação de componentes reutilizáveis seguindo designs do Figma.",
       "technologies": "javascript,react,react_native,material_ui,docker,git,figma"

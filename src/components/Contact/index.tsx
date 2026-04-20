@@ -5,7 +5,6 @@ import AnimatedInView from "@/core/components/Animated/AnimatedInView";
 import ContactForm from "./components/ContactForm";
 import ContactCard from "./components/ContactCard";
 import { SECTIONS } from "@/core/data/global";
-import PhoneIcon from "@/core/components/Icons/PhoneIcon";
 import EmailIcon from "@/core/components/Icons/EmailIcon";
 import LocationIcon from "@/core/components/Icons/LocationIcon";
 import MeetIcon from "@/core/components/Icons/MeetIcon";
@@ -25,12 +24,6 @@ export const contactCards: TContactCard[] = [
     text: data.email,
     href: `mailto:${data.email}`,
     icon: <EmailIcon />,
-  },
-  {
-    title: "phone",
-    text: data.phone,
-    href: `tel: ${data.phone}`,
-    icon: <PhoneIcon />,
   },
   {
     title: "location",

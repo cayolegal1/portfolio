@@ -32,6 +32,10 @@ export default async function RootLayout({
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Software Developer specializing in fullstack development with React, Next.js, Node.js, and SQL. Experienced in building modern user interfaces and robust backend systems for scalable, end-to-end solutions."
+        />
         <JsonLDScript />
       </head>
       <body className={inter.className}>
