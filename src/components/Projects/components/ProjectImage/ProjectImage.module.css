@@ -15,12 +15,13 @@
   left: 0;
   margin: auto;
   max-height: max-content;
-  max-width: 60rem;
+  max-width: 50rem;
   position: absolute;
   right: 0;
   top: -25%;
-  transition: all 500ms;
-  width: 90vw;
+  transition: transform 400ms;
+  transform: scale(1.1);
+  width: 80%;
   z-index: 100;
 }
 
