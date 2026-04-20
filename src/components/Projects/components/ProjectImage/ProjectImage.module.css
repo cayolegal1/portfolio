@@ -3,8 +3,8 @@
   cursor: pointer;
   max-height: 20rem;
   max-width: 20rem;
+  transition: transform 350ms;
   width: 100%;
-  transition: all 500ms;
 }
 
 .full-screen {
@@ -19,15 +19,16 @@
   position: absolute;
   right: 0;
   top: -25%;
-  transition: transform 400ms;
   transform: scale(1.1);
-  width: 80%;
+  transition: transform 350ms;
+  width: 80vw;
   z-index: 100;
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
+  cursor: pointer;
   height: 100vh;
   inset: 0;
   left: 0;
