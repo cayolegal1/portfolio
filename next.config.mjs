@@ -34,7 +34,6 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ["react-typed"],
-    viewTransition: true,
   },
   poweredByHeader: false,
 };
