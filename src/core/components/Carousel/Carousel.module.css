@@ -20,3 +20,8 @@
 .carousel::-webkit-scrollbar {
   display: none;
 }
+
+.carousel_container:fullscreen {
+  background-color: red;
+  margin-inline: 200px;
+}

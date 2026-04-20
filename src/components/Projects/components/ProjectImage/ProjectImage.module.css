@@ -1,0 +1,39 @@
+.image {
+  border-radius: 10px;
+  cursor: pointer;
+  max-height: 20rem;
+  max-width: 20rem;
+  width: 100%;
+  transition: all 500ms;
+}
+
+.full-screen {
+  border-radius: 20px;
+  bottom: 0;
+  height: 60rem;
+  inset: 0;
+  left: 0;
+  margin: auto;
+  max-height: max-content;
+  max-width: 60rem;
+  position: absolute;
+  right: 0;
+  top: -25%;
+  transition: all 500ms;
+  width: 90vw;
+  z-index: 100;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  height: 100vh;
+  inset: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 500ms;
+  z-index: 10;
+}
