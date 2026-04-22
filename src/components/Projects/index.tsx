@@ -7,11 +7,16 @@ import { SECTIONS } from "@/core/data/global";
 import styles from "./Projects.module.css";
 import Carousel from "@/core/components/Carousel";
 import CarouselItem from "@/core/components/Carousel/components/CarouselItem";
+import ProjectImage from "./components/ProjectImage";
 
 export default function Projects() {
   const translate = useTranslations("Projects");
   return (
-    <Section id={SECTIONS.PROJECTS}>
+    <Section
+      id={SECTIONS.PROJECTS}
+      className={styles.container}
+      improvePerformance={false}
+    >
       <AnimatedTitle id="projects_title">{translate("title")}</AnimatedTitle>
       <AnimatedInView
         animationType="fadeInDown"
@@ -30,54 +35,11 @@ export default function Projects() {
       </AnimatedInView>
       <div className={styles.projects_section}>
         <Carousel>
-          <CarouselItem className={styles.image}>
-            <img
-              src="/la_barra_assets/image_1.webp"
-              loading="lazy"
-              style={{
-                maxWidth: "20rem",
-                maxHeight: "20rem",
-                borderRadius: "10px",
-                width: "100%",
-              }}
-            />
-          </CarouselItem>
-          <CarouselItem className={styles.image}>
-            <img
-              src="/la_barra_assets/image_2.webp"
-              loading="lazy"
-              style={{
-                maxWidth: "20rem",
-                maxHeight: "20rem",
-                borderRadius: "10px",
-                width: "100%",
-              }}
-            />
-          </CarouselItem>
-          <CarouselItem className={styles.image}>
-            <img
-              src="/la_barra_assets/image_1.webp"
-              loading="lazy"
-              style={{
-                maxWidth: "20rem",
-                maxHeight: "20rem",
-                borderRadius: "10px",
-                width: "100%",
-              }}
-            />
-          </CarouselItem>
-          <CarouselItem className={styles.image}>
-            <img
-              src="/la_barra_assets/image_2.webp"
-              loading="lazy"
-              style={{
-                maxWidth: "20rem",
-                maxHeight: "20rem",
-                borderRadius: "10px",
-                width: "100%",
-              }}
-            />
-          </CarouselItem>
+          {[1, 2].map((item, index) => (
+            <CarouselItem className={styles.image} key={index}>
+              <ProjectImage src={`/la_barra_assets/image_${index + 1}.webp`} />
+            </CarouselItem>
+          ))}
         </Carousel>
       </div>
     </Section>

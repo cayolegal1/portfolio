@@ -4,4 +4,5 @@ export type SectionProps = HTMLAttributes<HTMLElement> & {
   children: ReactNode;
   withSeparator?: boolean;
   as?: ElementType;
+  improvePerformance?: boolean;
 };

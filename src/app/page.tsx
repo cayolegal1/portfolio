@@ -1,7 +1,5 @@
-import React from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Technologies from "@/components/Technologies";
 import Contact from "@/components/Contact";
@@ -14,11 +12,9 @@ export default function App() {
   return (
     <>
       <ScrollIndicator />
-      {/* @ts-ignore */}
       <Header />
       <main className={styles.main}>
         <Hero />
-        {/* <Projects /> */}
         <Experience />
         <Technologies />
         <Contact />

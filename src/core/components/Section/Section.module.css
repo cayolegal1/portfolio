@@ -1,27 +1,30 @@
 .section_container {
-  content-visibility: auto;
-  contain-intrinsic-inline-size: 1000px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-inline: auto;
-  max-width: 90.0rem;
+  max-width: 90rem;
   width: 100%;
 }
 
+.performance {
+  content-visibility: auto;
+  contain-intrinsic-inline-size: 1000px;
+}
+
 .separator {
-  height: 3.0rem;
+  height: 3rem;
 }
 
 @media (min-width: 550px) {
   .separator {
-    height: 7.0rem;
+    height: 7rem;
   }
 }
 
 @media (min-width: 1400px) {
   .section_container {
-    max-width: 110.0rem;
+    max-width: 110rem;
   }
 }
