@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>View Transition Test</title>
+    <style>
+      img {
+        width: 200px;
+        border-radius: 8px;
+        cursor: pointer;
+        height: auto;
+        view-transition-name: demo;
+      }
+      .fullscreen {
+        position: fixed;
+        inset: 0;
+        margin: auto;
+        width: auto;
+        height: auto;
+        border-radius: 20px;
+        view-transition-name: demo;
+        transform: scale(1.2);
+        transition: all 1.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="thumb"
+      src="https://avatars.githubusercontent.com/u/73796018?v=4"
+    />
+    <script>
+      const img = document.getElementById("thumb");
+      let fullscreen = false;
+
+      img.addEventListener("click", () => {
+        document.startViewTransition(() => {
+          fullscreen = !fullscreen;
+          if (fullscreen) {
+            img.classList.add("fullscreen");
+          } else {
+            img.classList.remove("fullscreen");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
