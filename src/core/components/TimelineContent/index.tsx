@@ -39,7 +39,6 @@ export default function TimelineContent({
             alt={`${company}_logo`}
             width={20}
             height={20}
-            unoptimized
             loading="lazy"
           />
           <Text
@@ -77,7 +76,6 @@ export default function TimelineContent({
                       height={14}
                       src={tech.logo_path as string}
                       title={tech.name}
-                      unoptimized
                       loading="lazy"
                       width={14}
                     />

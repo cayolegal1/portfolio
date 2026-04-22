@@ -3,11 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./ProjectImage.module.css";
 import type { ProjectImageProps } from "./ProjectImage.types";
 
-export default function ProjectImage({
-  projectName,
-  index,
-  ...props
-}: ProjectImageProps) {
+export default function ProjectImage({ ...props }: ProjectImageProps) {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -49,8 +45,6 @@ export default function ProjectImage({
       document.removeEventListener("click", handleClick);
     };
   }, [isFullScreen]);
-
-  console.log(isFullScreen);
 
   return (
     <>

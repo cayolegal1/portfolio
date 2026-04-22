@@ -34,19 +34,10 @@ export default function Projects() {
         </Text>
       </AnimatedInView>
       <div className={styles.projects_section}>
-        {/* <ProjectImage
-          index={1}
-          projectName="labarra"
-          src={`/la_barra_assets/image_${1}.webp`}
-        /> */}
         <Carousel>
           {[1, 2].map((item, index) => (
             <CarouselItem className={styles.image} key={index}>
-              <ProjectImage
-                index={index}
-                projectName="labarra"
-                src={`/la_barra_assets/image_${index + 1}.webp`}
-              />
+              <ProjectImage src={`/la_barra_assets/image_${index + 1}.webp`} />
             </CarouselItem>
           ))}
         </Carousel>

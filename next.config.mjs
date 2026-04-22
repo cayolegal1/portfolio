@@ -36,6 +36,9 @@ const nextConfig = {
     optimizePackageImports: ["react-typed"],
   },
   poweredByHeader: false,
+  images: {
+    minimumCacheTTL: 31536000,
+  },
 };
 
 const withBundleAnalyzer = bundleAnalyzer({

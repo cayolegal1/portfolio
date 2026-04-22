@@ -28,10 +28,9 @@ export default function Technologies(): JSX.Element {
             <Image
               alt={`${tech.name} logo`}
               height={45}
+              loading="lazy"
               src={tech.logo_path}
               title={tech.name}
-              unoptimized
-              loading="lazy"
               width={45}
             />
           </Tooltip>
