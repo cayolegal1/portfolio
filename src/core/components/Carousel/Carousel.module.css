@@ -11,7 +11,7 @@
   align-items: center;
   display: flex;
   gap: 1rem;
-  max-width: var(--carousel-max-width);
+  max-width: var(--project-max-width);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   width: 100%;

@@ -11,8 +11,7 @@ export const useCarousel = () => {
     if (!el) return;
 
     const isAtStart = el.scrollLeft <= 0;
-    const isAtEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth;
-
+    const isAtEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 10; // Adding a small threshold to account for potential rounding issues
     setCanScrollLeft(!isAtStart);
     setCanScrollRight(!isAtEnd);
   };

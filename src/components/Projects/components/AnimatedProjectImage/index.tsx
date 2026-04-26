@@ -2,12 +2,12 @@
 import { useState, useEffect, type JSX } from "react";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import { useInView } from "@/core/hooks/useInView";
-import type { AnimatedProjectImageInViewProps } from "./AnimatedProjectImage.types";
-import styles from "./AnimatedProjectImage.module.css";
+import type { AnimatedProjectImageInViewProps } from "./AnimatedProjectCard.types";
+import styles from "./AnimatedProjectCard.module.css";
 
 const ANIMATION_COMPLETION_DELAY_MS = 800;
 
-export default function AnimatedProjectImageInView({
+export default function AnimatedProjectCard({
   children,
   id,
 }: AnimatedProjectImageInViewProps): JSX.Element {
