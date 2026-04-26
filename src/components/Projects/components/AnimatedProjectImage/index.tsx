@@ -2,13 +2,8 @@
 import { useState, useEffect, type JSX } from "react";
 import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import { useInView } from "@/core/hooks/useInView";
+import type { AnimatedProjectImageInViewProps } from "./AnimatedProjectImage.types";
 import styles from "./AnimatedProjectImage.module.css";
-
-type AnimatedProjectImageInViewProps = {
-  id: string;
-  className?: string;
-  children: React.ReactNode;
-};
 
 const ANIMATION_COMPLETION_DELAY_MS = 800;
 

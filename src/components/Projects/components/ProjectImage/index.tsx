@@ -1,9 +1,11 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type JSX } from "react";
 import styles from "./ProjectImage.module.css";
 import type { ProjectImageProps } from "./ProjectImage.types";
 
-export default function ProjectImage({ ...props }: ProjectImageProps) {
+export default function ProjectImage({
+  ...props
+}: ProjectImageProps): JSX.Element {
   const [isBigPictureMode, setIsBigPictureMode] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 

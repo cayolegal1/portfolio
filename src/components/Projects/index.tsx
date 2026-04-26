@@ -1,3 +1,4 @@
+import { type JSX } from "react";
 import { useTranslations } from "next-intl";
 import Section from "@/core/components/Section";
 import AnimatedTitle from "@/core/components/Animated/AnimatedTitle";
@@ -7,7 +8,7 @@ import ProjectList from "./components/ProjectList";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./Projects.module.css";
 
-export default function Projects() {
+export default function Projects(): JSX.Element {
   const translate = useTranslations("Projects");
   return (
     <Section

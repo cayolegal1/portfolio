@@ -16,13 +16,13 @@ export const useExperienceTranslation = () => {
   const experiences = arr.map((_, index) => {
     return {
       id: `experience_${index}`,
-      company: translate(`${index}.company` as any),
-      company_url: translate(`${index}.company_url` as any),
-      company_logo: translate(`${index}.company_logo` as any),
-      position: translate(`${index}.position` as any),
-      from_date: translate(`${index}.from_date` as any),
-      description: translate(`${index}.description` as any),
-      technologies: translate(`${index}.technologies` as any)
+      company: translate(`${index}.company` as string),
+      company_url: translate(`${index}.company_url` as string),
+      company_logo: translate(`${index}.company_logo` as string),
+      position: translate(`${index}.position` as string),
+      from_date: translate(`${index}.from_date` as string),
+      description: translate(`${index}.description` as string),
+      technologies: translate(`${index}.technologies` as string)
         .split(",")
         .filter(Boolean)
         .map(tech => getTechnology(tech)),

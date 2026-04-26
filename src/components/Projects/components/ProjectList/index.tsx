@@ -1,3 +1,4 @@
+import { type JSX } from "react";
 import Carousel from "@/core/components/Carousel";
 import CarouselItem from "@/core/components/Carousel/components/CarouselItem";
 import ProjectImage from "../ProjectImage";
@@ -5,7 +6,7 @@ import AnimatedProjectImageInView from "../AnimatedProjectImage";
 import { projects } from "@/core/data/projects";
 import styles from "./ProjectList.module.css";
 
-export default function ProjectList() {
+export default function ProjectList(): JSX.Element {
   return (
     <div className={styles.container}>
       {projects.map(project => (

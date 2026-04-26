@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { useTranslations } from "next-intl";
 import Section from "@/core/components/Section";
 import AnimatedTitle from "@/core/components/Animated/AnimatedTitle";
@@ -7,8 +8,6 @@ import TimelineItem from "@/core/components/TimelineItem";
 import { useExperienceTranslation } from "@/core/hooks/useExperienceTranslation";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./Experience.module.css";
-
-import type { JSX } from "react";
 
 export default function Experience(): JSX.Element {
   const translate = useTranslations("Experience");
