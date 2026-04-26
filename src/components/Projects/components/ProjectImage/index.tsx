@@ -7,7 +7,7 @@ export default function ProjectImage({ ...props }: ProjectImageProps) {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
-  const toggle = () => {
+  const toggleFullScreen = () => {
     if (!imgRef.current) {
       return;
     }
@@ -22,7 +22,7 @@ export default function ProjectImage({ ...props }: ProjectImageProps) {
   };
 
   useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
+    const handleOutsideClick = (e: MouseEvent) => {
       if (!imgRef.current) return;
 
       const isWithFullScreenClass = imgRef.current.classList.contains(
@@ -39,10 +39,10 @@ export default function ProjectImage({ ...props }: ProjectImageProps) {
       imgRef.current.classList.remove(styles["full-screen"]);
     };
 
-    document.addEventListener("click", handleClick);
+    document.addEventListener("click", handleOutsideClick);
 
     return () => {
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener("click", handleOutsideClick);
     };
   }, [isFullScreen]);
 
@@ -52,7 +52,7 @@ export default function ProjectImage({ ...props }: ProjectImageProps) {
         {...props}
         ref={imgRef}
         loading="lazy"
-        onClick={toggle}
+        onClick={toggleFullScreen}
         className={styles.image}
       />
 
