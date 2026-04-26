@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 export const useCarousel = () => {
   const carouselRef = useRef<HTMLUListElement | null>(null);
 
-  const [canScrollLeft, setCanScrollLeft] = useState(true);
-  const [canScrollRight, setCanScrollRight] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   const checkPosition = () => {
     const el = carouselRef.current;
@@ -35,7 +35,6 @@ export const useCarousel = () => {
     const el = carouselRef.current;
     if (!el || typeof window === "undefined") return;
 
-    checkPosition();
     el.addEventListener("scroll", checkPosition);
 
     return () => {

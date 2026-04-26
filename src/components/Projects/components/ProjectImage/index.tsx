@@ -4,7 +4,7 @@ import styles from "./ProjectImage.module.css";
 import type { ProjectImageProps } from "./ProjectImage.types";
 
 export default function ProjectImage({ ...props }: ProjectImageProps) {
-  const [isFullScreen, setIsFullScreen] = useState(false);
+  const [isBigPictureMode, setIsBigPictureMode] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function ProjectImage({ ...props }: ProjectImageProps) {
       if (!imgRef.current) return;
 
       if (!imgRef.current.contains(e.target as Node)) {
-        setIsFullScreen(false);
+        setIsBigPictureMode(false);
       }
     };
 
@@ -28,13 +28,13 @@ export default function ProjectImage({ ...props }: ProjectImageProps) {
         {...props}
         ref={imgRef}
         loading="lazy"
-        onClick={() => setIsFullScreen(prev => !prev)}
+        onClick={() => setIsBigPictureMode(prev => !prev)}
         className={`${styles.image} ${
-          isFullScreen ? styles["full-screen"] : ""
-        }`}
+          isBigPictureMode ? styles.big_picture : ""
+        }`.trim()}
       />
 
-      <div className={isFullScreen ? styles.overlay : ""} />
+      <div className={isBigPictureMode ? styles.overlay : ""} />
     </>
   );
 }

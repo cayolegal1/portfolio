@@ -19,7 +19,7 @@ export default function AnimatedInView({
     <AnimatedRender
       {...props}
       animate={isInView}
-      className={`${isInView && "visible"} ${className ? className : ""}`}
+      className={`${isInView ? "visible" : ""} ${className ? className : ""}`.trim()}
       delay={delay}
       id={useId ? id : undefined}
     >

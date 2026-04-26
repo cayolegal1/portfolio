@@ -1,0 +1,5 @@
+.container {
+  pointer-events: none;
+  animation-duration: 0.8s;
+  cursor: default;
+}
