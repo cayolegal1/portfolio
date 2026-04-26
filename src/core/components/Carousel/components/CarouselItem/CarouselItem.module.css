@@ -2,6 +2,6 @@
   flex-shrink: 0; /* keep the item’s size, don’t let it shrink */
   scroll-snap-align: start; /* align at start */
   scroll-snap-stop: always; /* stop at each item */
-  max-width: 20rem;
+  max-width: var(--carousel-max-width);
   width: 100%;
 }

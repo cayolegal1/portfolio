@@ -11,7 +11,7 @@
   align-items: center;
   display: flex;
   gap: 1rem;
-  max-width: 20rem;
+  max-width: var(--carousel-max-width);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   width: 100%;
@@ -19,9 +19,4 @@
 
 .carousel::-webkit-scrollbar {
   display: none;
-}
-
-.carousel_container:fullscreen {
-  background-color: red;
-  margin-inline: 200px;
 }

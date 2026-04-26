@@ -1,21 +1,28 @@
 :root {
   --background: rgb(3 7 18 / 1);
-  --background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #7877c64d, #fff0);
+  --background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    #7877c64d,
+    #fff0
+  );
   --first-gradient-color: #0691ee;
   --fourth-gradient-color: #39a6ef;
   --padding-inline: 1.2rem;
   --second-gradient-color: #0f98dc;
   --text-color: #f1ece1;
   --third-gradient-color: #2c87e1;
-  --text-gradient: linear-gradient(90deg,
-      var(--first-gradient-color),
-      var(--second-gradient-color),
-      var(--third-gradient-color),
-      var(--fourth-gradient-color));
+  --text-gradient: linear-gradient(
+    90deg,
+    var(--first-gradient-color),
+    var(--second-gradient-color),
+    var(--third-gradient-color),
+    var(--fourth-gradient-color)
+  );
   --gradient-color: #2e8ee4;
   --button-color: #1269b6;
   --transition-time: 300ms;
   --nav-mobile-spacing: 4.5rem;
+  --carousel-max-width: 30rem;
 }
 
 * {
@@ -64,6 +71,5 @@ button {
 @media (prefers-color-scheme: light) {
   html {
     color-scheme: dark;
-
   }
 }

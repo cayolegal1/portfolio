@@ -1,28 +1,24 @@
 .image {
   border-radius: 10px;
   cursor: pointer;
-  max-height: 20rem;
-  max-width: 20rem;
+  max-height: 25rem;
+  max-width: var(--carousel-max-width);
   transition: transform 350ms;
   width: 100%;
 }
 
 .big_picture {
   border-radius: 20px;
-  bottom: 0;
   height: 60rem;
   inset: 0;
-  left: 0;
   margin: auto;
   max-height: max-content;
   max-width: 50rem;
-  position: absolute;
-  right: 0;
-  top: -25%;
+  position: fixed;
   transform: scale(1.1);
   transition: transform 350ms;
   width: 80vw;
-  z-index: 100;
+  z-index: 200;
 }
 
 .overlay {
@@ -37,5 +33,5 @@
   right: 0;
   top: 0;
   transition: opacity 500ms;
-  z-index: 10;
+  z-index: 99;
 }
