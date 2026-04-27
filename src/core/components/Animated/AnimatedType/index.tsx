@@ -6,7 +6,7 @@ import styles from "./AnimatedType.module.css";
 export default function AnimatedType({
   strings,
   className = "",
-  typeSpeed = 40,
+  typeSpeed = 45,
   ...props
 }: ReactTypedProps): JSX.Element {
   return (
