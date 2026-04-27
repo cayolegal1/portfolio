@@ -26,10 +26,7 @@ export default function ProjectList(): JSX.Element {
             ))}
           </Carousel>
 
-          <ProjectCard
-            title={project.title}
-            description={project.description}
-          />
+          <ProjectCard project={project} />
         </AnimatedProjectCard>
       ))}
     </div>

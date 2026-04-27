@@ -3,12 +3,17 @@ import { useState, type JSX } from "react";
 import type { SvgGradientProps } from "./SvgGradient.types";
 import styles from "./SvgGradient.module.css";
 
-export default function SvgGradient({ children, properties, gradientId }: SvgGradientProps): JSX.Element {
+export default function SvgGradient({
+  children,
+  properties,
+  gradientId,
+  shouldAnimate = true,
+}: SvgGradientProps): JSX.Element {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <svg
       {...properties}
-      className={styles.icon}
+      className={`${styles.icon} ${shouldAnimate ? styles.icon_animate : ""}`.trim()}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

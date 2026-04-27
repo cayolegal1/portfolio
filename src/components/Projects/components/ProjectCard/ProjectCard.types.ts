@@ -1,4 +1,5 @@
+import { Project } from "@/core/types/project";
+
 export type ProjectCardProps = {
-  title: string;
-  description: string;
+  project: Project;
 };

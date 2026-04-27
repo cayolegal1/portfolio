@@ -1,34 +1,34 @@
 .icon {
-    cursor: pointer;
-    transform: translateY(0);
-    transition: 0.5s;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: 0.5s;
 }
 
-.icon:hover {
-    transform: translateY(5px);
+.icon_animate:hover {
+  transform: translateY(5px);
 }
 
 .stop {
-    stop-opacity: 1;
-    transition: 0.5s;
+  stop-opacity: 1;
+  transition: 0.5s;
 }
 
 .white_stop {
-    stop-color: white;
+  stop-color: white;
 }
 
 .first_stop {
-    stop-color: var(--first-gradient-color);
+  stop-color: var(--first-gradient-color);
 }
 
 .second_stop {
-    stop-color: var(--second-gradient-color);
+  stop-color: var(--second-gradient-color);
 }
 
 .third_stop {
-    stop-color: var(--third-gradient-color);
+  stop-color: var(--third-gradient-color);
 }
 
 .fourth_stop {
-    stop-color: var(--fourth-gradient-color);
+  stop-color: var(--fourth-gradient-color);
 }

@@ -4,4 +4,5 @@ export type SvgGradientProps = HTMLAttributes<HTMLOrSVGElement> & {
   children: ReactNode;
   properties: SVGAttributes<SVGSVGElement>;
   gradientId: string;
-}
+  shouldAnimate?: boolean;
+};
