@@ -24,11 +24,15 @@ export default function HeroSkills() {
       <Text as="h2" className={styles.hero_skills_content}>
         {translate("i_am")}{" "}
         <AnimatedType
-          loop
+          // loop
           backSpeed={55}
           className={`${gradient.text_gradient_config} ${gradient.text_gradient}`}
           startDelay={isRendered ? 0 : delay}
-          strings={["Software Dev", "Web Dev", "App Dev"]}
+          strings={[
+            "Software Dev", 
+            // "Web Dev", 
+            // "App Dev"
+          ]}
         />
       </Text>
     </AnimatedRender>
