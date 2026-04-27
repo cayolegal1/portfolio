@@ -4,7 +4,7 @@
   border: 1px solid #303034;
   display: flex;
   flex-direction: column;
-  height: 30rem;
+  height: 25rem;
   max-width: calc(28rem + 2px);
   padding: 1rem;
   transform: translateY(-2px);
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 550px) {
   .container {
-    height: 35rem;
+    height: 30rem;
     max-width: 35rem;
   }
 }
