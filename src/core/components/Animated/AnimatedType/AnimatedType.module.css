@@ -1,8 +1,9 @@
 .cursor {
     position: relative;
+    color: white;
 }
 
-.cursor::after {
+/* .cursor::after {
     animation: cursor 1s linear 3s normal 3, opacity 0.3s linear 6s 1 forwards;;
     border-left: 3px solid var(--text-color);
     border-radius: 50px;
@@ -10,7 +11,7 @@
     height: clamp(3.5rem, 3.5vw, 48px);
     margin-left: 2px;
     position: absolute;
-}
+} */
 
 @keyframes opacity {
     to {

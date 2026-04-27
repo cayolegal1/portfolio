@@ -1,5 +1,5 @@
 "use client";
-import React, { type JSX } from "react";
+import  { type JSX } from "react";
 import { ReactTyped, type ReactTypedProps } from "react-typed";
 import styles from "./AnimatedType.module.css";
 
@@ -13,9 +13,8 @@ export default function AnimatedType({
     <ReactTyped
       {...props}
       className={`${styles.cursor} ${className}`}
-      showCursor={false}
+      showCursor={true}
       strings={strings}
-      style={{ whiteSpace: "normal" }}
       typeSpeed={typeSpeed}
     />
   );

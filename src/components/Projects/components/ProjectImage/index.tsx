@@ -28,9 +28,10 @@ export default function ProjectImage({
     <>
       <img
         {...props}
-        ref={imgRef}
+        alt="project_image"
         loading="lazy"
         onClick={() => setIsBigPictureMode(prev => !prev)}
+        ref={imgRef}
         className={`${styles.image} ${
           isBigPictureMode ? styles.big_picture : ""
         }`.trim()}
