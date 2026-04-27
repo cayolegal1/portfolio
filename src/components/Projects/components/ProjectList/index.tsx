@@ -2,7 +2,7 @@ import { type JSX } from "react";
 import Carousel from "@/core/components/Carousel";
 import CarouselItem from "@/core/components/Carousel/components/CarouselItem";
 import ProjectImage from "../ProjectImage";
-import AnimatedProjectCard from "../AnimatedProjectImage";
+import AnimatedProjectCard from "../AnimatedProjectCard";
 import styles from "./ProjectList.module.css";
 import ProjectCard from "../ProjectCard";
 import { useProjectsTranslation } from "@/core/hooks/useProjectsTranslation";
