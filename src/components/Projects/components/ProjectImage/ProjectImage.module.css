@@ -1,7 +1,7 @@
 .image {
   border-radius: 10px 10px 0 0;
   cursor: pointer;
-  max-height: 27rem;
+  height: 27rem;
   max-width: 35rem;
   transition: transform 350ms;
   width: 100%;
@@ -12,7 +12,7 @@
   height: 60rem;
   inset: 0;
   margin: auto;
-  max-height: max-content;
+  max-height: max-content !important;
   max-width: 50rem;
   position: fixed;
   transform: scale(1.1);
