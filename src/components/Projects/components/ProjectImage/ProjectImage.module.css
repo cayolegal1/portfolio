@@ -1,15 +1,11 @@
 .image {
   border-radius: 10px 10px 0 0;
   cursor: pointer;
-  max-height: 20rem;
+  max-height: 23rem;
   max-width: 23rem;
   transition: transform 350ms;
   width: 100%;
 }
-
-/* .image:hover {
-  transform: scale(0.99);
-} */
 
 .big_picture {
   border-radius: 20px;

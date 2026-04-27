@@ -9,7 +9,12 @@ import ProjectCard from "../ProjectCard";
 
 export default function ProjectList(): JSX.Element {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        justifyContent: projects.length > 2 ? "start" : "center",
+      }}
+    >
       {projects.map(project => (
         <AnimatedProjectCard id={`project_${project.name}`} key={project.name}>
           <Carousel>

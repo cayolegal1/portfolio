@@ -9,7 +9,7 @@ export default function ProjectCard({
 }: ProjectCardProps): JSX.Element {
   return (
     <div className={styles.container}>
-      <Text as="h4" size="caption" centered={false}>
+      <Text as="h4" size="subtitle" centered={false}>
         {title}
       </Text>
 
