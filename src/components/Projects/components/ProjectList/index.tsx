@@ -3,11 +3,12 @@ import Carousel from "@/core/components/Carousel";
 import CarouselItem from "@/core/components/Carousel/components/CarouselItem";
 import ProjectImage from "../ProjectImage";
 import AnimatedProjectCard from "../AnimatedProjectImage";
-import { projects } from "@/core/data/projects";
 import styles from "./ProjectList.module.css";
 import ProjectCard from "../ProjectCard";
+import { useProjectsTranslation } from "@/core/hooks/useProjectsTranslation";
 
 export default function ProjectList(): JSX.Element {
+  const projects = useProjectsTranslation();
   return (
     <div
       className={styles.container}

@@ -24,7 +24,30 @@
   },
   "Projects": {
     "title": "De idea a realidad",
-    "subtitle": "Estos son algunos de mis proyectos destacados"
+    "subtitle": "Estos son algunos de mis proyectos destacados",
+    "length": "2",
+    "0": {
+      "id": "0",
+      "name": "labarra.py",
+      "title": "La Barra",
+      "description": "La Barra es una aplicación móvil para comprar bebidas que te permite explorar un catálogo de cervezas, gaseosas, jugos y más, con acceso rápido a promociones y pedidos de delivery a domicilio de forma sencilla y directa",
+      "android_url": "https://play.google.com/store/apps/details?id=com.labarraapp",
+      "ios_url": "https://apps.apple.com/py/app/la-barra-py/id6471861226",
+      "github_url": "",
+      "website_url": "",
+      "images_path": "/la_barra_assets/image_1.webp,/la_barra_assets/image_2.webp"
+    },
+    "1": {
+      "id": "1",
+      "name": "labarra.py2",
+      "title": "La Barra",
+      "description": "La Barra es una aplicación móvil para comprar bebidas que te permite explorar un catálogo de cervezas, gaseosas, jugos y más, con acceso rápido a promociones y pedidos de delivery a domicilio de forma sencilla y directa",
+      "android_url": "",
+      "ios_url": "",
+      "github_url": "",
+      "website_url": "",
+      "images_path": "/la_barra_assets/image_1.webp,/la_barra_assets/image_2.webp"
+    }
   },
   "Experience": {
     "title": "Experiencia laboral",
