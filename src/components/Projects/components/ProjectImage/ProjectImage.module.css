@@ -1,8 +1,8 @@
 .image {
   border-radius: 10px 10px 0 0;
   cursor: pointer;
-  max-height: 23rem;
-  max-width: 23rem;
+  max-height: 27rem;
+  max-width: 35rem;
   transition: transform 350ms;
   width: 100%;
 }
@@ -34,4 +34,10 @@
   top: 0;
   transition: opacity 500ms;
   z-index: 99;
+}
+
+@media screen and (min-width: 550px) {
+  .image {
+    max-height: 30rem;
+  }
 }

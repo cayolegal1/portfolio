@@ -19,9 +19,10 @@ export default function Carousel({
   return (
     <div className={styles.carousel_container}>
       <CarouselButton
-        side="left"
-        onClick={scrollLeft}
         disabled={!canScrollLeft}
+        onClick={scrollLeft}
+        side="left"
+        title="Scroll left"
       />
 
       <ul
@@ -33,9 +34,10 @@ export default function Carousel({
       </ul>
 
       <CarouselButton
-        side="right"
-        onClick={scrollRight}
         disabled={!canScrollRight}
+        onClick={scrollRight}
+        side="right"
+        title="Scroll right"
       />
     </div>
   );
