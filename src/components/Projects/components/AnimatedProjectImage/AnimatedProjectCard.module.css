@@ -1,5 +1,9 @@
 .container {
-  pointer-events: none;
+  align-items: center;
   animation-duration: 0.8s;
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: none;
 }

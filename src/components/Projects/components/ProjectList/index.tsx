@@ -5,6 +5,7 @@ import ProjectImage from "../ProjectImage";
 import AnimatedProjectCard from "../AnimatedProjectImage";
 import { projects } from "@/core/data/projects";
 import styles from "./ProjectList.module.css";
+import ProjectCard from "../ProjectCard";
 
 export default function ProjectList(): JSX.Element {
   return (
@@ -18,6 +19,11 @@ export default function ProjectList(): JSX.Element {
               </CarouselItem>
             ))}
           </Carousel>
+
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+          />
         </AnimatedProjectCard>
       ))}
     </div>

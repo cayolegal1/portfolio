@@ -1,0 +1,15 @@
+.container {
+  /* background-image: var(--background-image); */
+  background-color: #202440;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #303034;
+  max-width: calc(23rem + 2px);
+  padding: 1rem;
+  transform: translateY(-2px);
+  width: 100%;
+  transition: border-color var(--transition-time);
+}
+
+.container:hover {
+  border-color: var(--button-color);
+}

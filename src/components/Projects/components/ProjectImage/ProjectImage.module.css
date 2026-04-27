@@ -2,7 +2,7 @@
   border-radius: 10px 10px 0 0;
   cursor: pointer;
   max-height: 20rem;
-  max-width: var(--project-max-width);
+  max-width: 23rem;
   transition: transform 350ms;
   width: 100%;
 }
