@@ -14,7 +14,7 @@ export default function ProjectCard({
         {title}
       </Text>
 
-      <Text as="p" size="description" centered={false}>
+      <Text as="p" size="caption" centered={false}>
         {description}
       </Text>
 
