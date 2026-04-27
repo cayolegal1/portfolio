@@ -2,8 +2,11 @@
   background-color: #202440;
   border-radius: 0 0 10px 10px;
   border: 1px solid #303034;
+  display: flex;
+  flex-direction: column;
   height: 30rem;
-  max-width: calc(23rem + 2px);
+  /* max-width: calc(23rem + 2px); */
+  max-width: 35rem;
   padding: 1rem;
   transform: translateY(-2px);
   transition: border-color var(--transition-time);
@@ -17,7 +20,7 @@
 .links_container {
   display: flex;
   justify-content: flex-start;
-  margin-top: 0.5rem;
+  margin-top: auto;
   width: 100%;
 }
 
