@@ -1,21 +1,24 @@
 export type Project = {
-  description: string;
-  images_path: string[];
-  name: string;
-  title: string;
+  id: string;
   androidUrl?: string;
-  iosUrl?: string;
-  websiteUrl?: string;
+  description: string;
   githubUrl?: string;
+  imagesPath: string[];
+  iosUrl?: string;
+  name: string;
+  technologies: string[];
+  title: string;
+  websiteUrl?: string;
 };
 
 export type ProjectJson = {
-  description: string;
-  images_path: string;
-  name: string;
-  title: string;
   android_url?: string;
-  ios_url?: string;
-  website_url?: string;
+  description: string;
   github_url?: string;
-}
+  images_path: string[];
+  ios_url?: string;
+  name: string;
+  technologies: string[];
+  title: string;
+  website_url?: string;
+};

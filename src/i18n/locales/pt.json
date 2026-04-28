@@ -25,7 +25,7 @@
   "Projects": {
     "title": "De ideia à realidade",
     "subtitle": "Estes são alguns dos meus projetos em destaque",
-    "items":  [
+    "items": [
       {
         "id": "0",
         "name": "labarra.py",
@@ -33,7 +33,11 @@
         "description": "La Barra é um aplicativo móvel para comprar bebidas que permite explorar um catálogo de cervejas, refrigerantes, sucos e mais, com acesso rápido a promoções e pedidos de entrega em casa de forma simples e direta.",
         "android_url": "https://play.google.com/store/apps/details?id=com.labarraapp",
         "ios_url": "https://apps.apple.com/py/app/la-barra-py/id6471861226",
-        "images_path": "/la_barra_assets/image_1.webp,/la_barra_assets/image_2.webp"
+        "images_path": [
+          "/la_barra_assets/image_1.webp",
+          "/la_barra_assets/image_2.webp"
+        ],
+        "technologies": ["typescript", "react_native", "zustand", "react_query"]
       }
     ]
   },

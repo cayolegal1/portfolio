@@ -13,7 +13,9 @@ export type TextSize =
   | "subtitle"
   | "text"
   | "description"
-  | "caption";
+  | "caption"
+  | "small"
+  | "xs";
 
 type BaseTextProps<T extends ElementType> = TextGradientProps & {
   as?: T;

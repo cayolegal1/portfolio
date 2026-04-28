@@ -17,9 +17,9 @@ export default function ProjectList(): JSX.Element {
       }}
     >
       {projects.map(project => (
-        <AnimatedProjectCard id={`project_${project.name}`} key={project.name}>
+        <AnimatedProjectCard id={project.id} key={project.id}>
           <Carousel>
-            {project.images_path.map(imagePath => (
+            {project.imagesPath.map(imagePath => (
               <CarouselItem className={styles.carousel_item} key={imagePath}>
                 <ProjectImage src={imagePath} />
               </CarouselItem>

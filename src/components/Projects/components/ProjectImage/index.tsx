@@ -32,9 +32,7 @@ export default function ProjectImage({
         loading="lazy"
         onClick={() => setIsBigPictureMode(prev => !prev)}
         ref={imgRef}
-        className={`${styles.image} ${
-          isBigPictureMode ? styles.big_picture : ""
-        }`.trim()}
+        className={`${isBigPictureMode ? styles.big_picture : styles.image}`.trim()}
       />
 
       <div className={isBigPictureMode ? styles.overlay : ""} />

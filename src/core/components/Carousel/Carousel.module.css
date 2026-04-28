@@ -3,7 +3,7 @@
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-  width: 35rem;
+  width: 32rem;
 }
 
 .carousel {
@@ -18,6 +18,12 @@
 
 .carousel::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (min-width: 360px) {
+  .carousel_container {
+    width: 35rem;
+  }
 }
 
 @media screen and (min-width: 550px) {

@@ -12,7 +12,7 @@
   height: 60rem;
   inset: 0;
   margin: auto;
-  max-height: max-content !important;
+  max-height: max-content;
   max-width: 50rem;
   position: fixed;
   transform: scale(1.1);

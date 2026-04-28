@@ -20,6 +20,8 @@ export default function Text<T extends ElementType>({
     text: styles.text_size,
     description: styles.description,
     caption: styles.caption,
+    small: styles.small,
+    xs: styles.xs,
   };
 
   if (variant === "gradient") {

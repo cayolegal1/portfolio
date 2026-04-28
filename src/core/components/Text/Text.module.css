@@ -1,9 +1,9 @@
 .text {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 .uppercase {
@@ -12,25 +12,33 @@
 
 /* sizes */
 .xl {
-    font-size: clamp(2.6rem, 2.5vw, 3.6rem);
+  font-size: clamp(2.6rem, 2.5vw, 3.6rem);
 }
 
 .title {
-    font-size: clamp(2.6rem, 2.5vw, 3.0rem);
+  font-size: clamp(2.6rem, 2.5vw, 3rem);
 }
 
 .subtitle {
-    font-size: clamp(2.0rem, 2.5vw, 2.5rem);
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
 }
 
 .text_size {
-    font-size: clamp(1.5rem, 2.5vw, 2.0rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
 .description {
-    font-size: clamp(1.6rem, 2.4vw, 1.6rem);
+  font-size: clamp(1.6rem, 2.4vw, 1.6rem);
 }
 
 .caption {
-    font-size: clamp(1.4rem, 2.4vw, 1.4rem);
+  font-size: clamp(1.4rem, 2.4vw, 1.4rem);
+}
+
+.small {
+  font-size: clamp(1.2rem, 1.4rem, 1.4rem);
+}
+
+.xs {
+  font-size: clamp(1rem, 2.4vw, 1rem);
 }

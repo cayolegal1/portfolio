@@ -1,0 +1,13 @@
+.project_chip_container {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #b3b3bf;
+  padding: 0.5rem 1rem;
+  transition: all 500ms;
+}
+
+.project_chip_container:hover {
+  background-color: rgb(63 63 70 / 1);
+  border-color: var(--gradient-color);
+  transition: all 500ms;
+}
