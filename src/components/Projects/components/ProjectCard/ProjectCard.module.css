@@ -1,6 +1,5 @@
 .container {
-  background-color: #202440;
-  background-color: #222648;
+  background-color: transparent;
   border-radius: 0 0 10px 10px;
   border: 1px solid #303034;
   display: flex;
