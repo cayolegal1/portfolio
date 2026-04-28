@@ -1,5 +1,5 @@
 .container {
-  background-color: transparent;
+  background-color: rgba(63, 63, 70, 0);
   border-radius: 0 0 10px 10px;
   border: 1px solid #303034;
   display: flex;
@@ -8,12 +8,15 @@
   max-width: calc(25rem + 2px);
   padding: 1rem;
   transform: translateY(-3px);
-  transition: border-color var(--transition-time);
+  transition:
+    background-color var(--transition-time),
+    border-color var(--transition-time);
   width: 100%;
 }
 
 .container:hover {
   border-color: #1e466a;
+  background-color: rgba(63, 63, 70, 0.2);
 }
 
 .technologies_container {
