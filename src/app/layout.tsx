@@ -14,7 +14,11 @@ import ENV from "@/core/config/env";
 import "./globals.css";
 import "./custom.css";
 
-const inter = Nunito({ subsets: ["latin"], weight: "500" });
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
 
 export default async function RootLayout({
   children,
@@ -27,19 +31,13 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir="ltr">
       <head>
-        <link rel="pre-connect" href="https://www.googletagmanager.com/" />
+        <link rel="preconnect" href="https://www.googletagmanager.com/" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta charSet="utf-8" />
-        <meta
-          name="description"
-          content="Software Developer specializing in fullstack development with React, Next.js, Node.js, and SQL. Experienced in building modern user interfaces and robust backend systems for scalable, end-to-end solutions."
-        />
         <JsonLDScript />
       </head>
-      <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
+      <body className={nunito.className}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
@@ -52,9 +50,17 @@ const { name, linkedin_url, country } = data;
 const websiteTitle = `${name} - Software Developer`;
 const websiteOgImage = `${data.website_url}/social-img.webp`;
 
+const OG_LOCALES: Record<string, string> = {
+  es: "es_ES",
+  en: "en_US",
+  pt: "pt_BR",
+};
+
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const translate = await getTranslations("Metadata");
   const description = translate("description");
+  const ogLocale = OG_LOCALES[locale] ?? "es_ES";
   return {
     title: websiteTitle,
     description,
@@ -120,13 +126,14 @@ export async function generateMetadata(): Promise<Metadata> {
           username: name,
         },
       ],
-      locale: "es_ES",
+      locale: ogLocale,
       siteName: websiteTitle,
       title: websiteTitle,
-      type: "article",
+      type: "website",
       url: data.website_url,
     },
     twitter: {
+      card: "summary_large_image",
       creator: "@cayo_legal",
       description,
       images: [
