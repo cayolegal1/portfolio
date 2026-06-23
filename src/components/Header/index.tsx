@@ -1,4 +1,4 @@
-import React, { JSX, ReactElement } from "react";
+import React, { ReactElement } from "react";
 import NavButton from "./components/NavButton";
 import HeaderContent from "./components/HeaderContent";
 import { getLocale } from "@/i18n/utils";

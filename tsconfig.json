@@ -33,7 +33,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".eslintrc.json",
     "./global.d.ts",
     ".next/dev/types/**/*.ts"
   ],

@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Project, ProjectJson } from "../types/project";
 import { technologies, unspecializedTech } from "../data/technologies";
-import type { Technology } from "../types/technology";
 
 const getTechnology = (tech: string): string => {
   return technologies[tech]?.name || unspecializedTech[tech]?.name || "";

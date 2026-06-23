@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio — Cayo Legal
 
-## Getting Started
+Sitio personal de un desarrollador FullStack. Construido con un enfoque en
+rendimiento, SEO, accesibilidad e internacionalización.
 
-First, run the development server:
+🔗 **Live:** https://cayolegal.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router) + React 19
+- **Lenguaje:** TypeScript (modo `strict`)
+- **Estilos:** CSS Modules
+- **i18n:** [next-intl](https://next-intl-docs.vercel.app/) — español, inglés y portugués
+- **Observabilidad:** [Sentry](https://sentry.io/) (errores + source maps)
+- **Analytics:** Google Analytics (solo en producción)
+- **Email:** API route propia que actúa de proxy validado hacia EmailJS
+- **Tooling:** ESLint · Prettier · Husky + lint-staged · bundle analyzer
+- **Deploy:** Vercel
+
+## Características
+
+- 🌐 Detección de idioma por cookie/`Accept-Language` con fallback a español
+- 🔍 SEO: metadata dinámica, Open Graph/Twitter cards, `sitemap.ts`, `robots.ts` y JSON-LD (`schema.org/Person`)
+- 🛡️ Endpoint de contacto con validación de campos, límite de longitud y honeypot anti-spam
+- 🔒 Cabeceras de seguridad (CSP, `X-Frame-Options`, `X-Content-Type-Options`)
+- ⚡ Fuentes optimizadas con `next/font`, animaciones con `IntersectionObserver`
+
+## Estructura
+
+```
+src/
+├── app/            # App Router: páginas, layout, API routes, sitemap/robots
+├── components/     # Componentes de cada sección (Hero, Projects, Contact, ...)
+├── core/           # Reutilizable: componentes UI, hooks, datos, tipos, config
+└── i18n/           # Configuración y mensajes de next-intl (es / en / pt)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desarrollo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Requiere Node 20+ y [pnpm](https://pnpm.io/).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+pnpm install
+pnpm dev          # servidor de desarrollo (Turbopack) en http://localhost:3000
+```
 
-## Learn More
+### Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Script               | Descripción                              |
+| -------------------- | ---------------------------------------- |
+| `pnpm dev`           | Servidor de desarrollo con Turbopack     |
+| `pnpm build`         | Build de producción                      |
+| `pnpm start`         | Sirve el build de producción             |
+| `pnpm lint`          | Linting con ESLint                       |
+| `pnpm check:types`   | Chequeo de tipos con `tsc --noEmit`      |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Variables de entorno
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Crear un archivo `.env.local`:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+NEXT_PUBLIC_EMAIL_SERVICE_ID=...
+NEXT_PUBLIC_EMAIL_TEMPLATE_ID=...
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=...
+NEXT_PUBLIC_GA_ID=...
+```
