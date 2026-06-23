@@ -1,51 +1,24 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
-export const useCarousel = () => {
+export const useCarousel = (itemCount: number) => {
   const carouselRef = useRef<HTMLUListElement | null>(null);
+  const [index, setIndex] = useState(0);
 
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const checkPosition = () => {
-    const el = carouselRef.current;
-    if (!el) return;
-
-    const isAtStart = el.scrollLeft <= 0;
-    const isAtEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 10; // Adding a small threshold to account for potential rounding issues
-    setCanScrollLeft(!isAtStart);
-    setCanScrollRight(!isAtEnd);
+  const scrollToIndex = (target: number) => {
+    const next = Math.max(0, Math.min(target, itemCount - 1));
+    setIndex(next);
+    carouselRef.current?.children[next]?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest", // no mover la página verticalmente
+      inline: "start",
+    });
   };
-
-  const scrollAmount = 50;
-
-  const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    }
-  };
-
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    }
-  };
-
-  useEffect(() => {
-    const el = carouselRef.current;
-    if (!el || typeof window === "undefined") return;
-
-    el.addEventListener("scroll", checkPosition);
-
-    return () => {
-      el.removeEventListener("scroll", checkPosition);
-    };
-  }, []);
 
   return {
-    canScrollLeft,
-    canScrollRight,
     carouselRef,
-    scrollLeft,
-    scrollRight,
+    canScrollLeft: index > 0,
+    canScrollRight: index < itemCount - 1,
+    scrollLeft: () => scrollToIndex(index - 1),
+    scrollRight: () => scrollToIndex(index + 1),
   };
 };

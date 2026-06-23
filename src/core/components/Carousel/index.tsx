@@ -1,4 +1,5 @@
 "use client";
+import { Children } from "react";
 import CarouselButton from "./components/CarouselButton";
 import { useCarousel } from "@/core/hooks/useCarousel";
 import styles from "./Carousel.module.css";
@@ -15,7 +16,7 @@ export default function Carousel({
     carouselRef,
     scrollLeft,
     scrollRight,
-  } = useCarousel();
+  } = useCarousel(Children.count(children));
   return (
     <div className={styles.carousel_container}>
       <CarouselButton
