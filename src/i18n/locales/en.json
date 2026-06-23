@@ -98,6 +98,25 @@
   "Technologies": {
     "title": "My Tech Stack"
   },
+  "About": {
+    "title": "About me",
+    "badge": "FullStack Developer",
+    "image_alt": "Photo of Cayo Legal",
+    "paragraphs": [
+      "I'm Cayo, a FullStack developer from Paraguay who loves building digital products that feel fast, clear and well-crafted. I work end to end — from polished interfaces in React and React Native to solid APIs in Node and NestJS.",
+      "Today I lead the technical innovation of the internal systems where I work, building reusable libraries and raising the team's quality standards. Throughout my career I've helped e-commerce, fintech and custom-software companies ship their ideas to production."
+    ],
+    "stats": {
+      "experience": "Years of experience",
+      "companies": "Companies"
+    },
+    "languages_title": "Languages",
+    "languages": [
+      { "name": "Spanish", "level": "Native" },
+      { "name": "English", "level": "Intermediate (B2)" },
+      { "name": "Portuguese", "level": "Basic (A2)" }
+    ]
+  },
   "Contact": {
     "title": "Contact me",
     "full_name": "Fullname",

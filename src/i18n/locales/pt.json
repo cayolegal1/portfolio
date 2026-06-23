@@ -98,6 +98,25 @@
   "Technologies": {
     "title": "Tecnologias"
   },
+  "About": {
+    "title": "Sobre mim",
+    "badge": "Desenvolvedor FullStack",
+    "image_alt": "Foto de Cayo Legal",
+    "paragraphs": [
+      "Sou o Cayo, desenvolvedor FullStack do Paraguai apaixonado por construir produtos digitais rápidos, claros e bem-feitos. Trabalho de ponta a ponta: de interfaces caprichadas em React e React Native a APIs sólidas em Node e NestJS.",
+      "Hoje lidero a inovação tecnológica dos sistemas internos onde trabalho, criando bibliotecas reutilizáveis e elevando os padrões de qualidade da equipe. Ao longo da minha carreira, ajudei empresas de e-commerce, fintech e software sob medida a levar suas ideias à produção."
+    ],
+    "stats": {
+      "experience": "Anos de experiência",
+      "companies": "Empresas"
+    },
+    "languages_title": "Idiomas",
+    "languages": [
+      { "name": "Espanhol", "level": "Nativo" },
+      { "name": "Inglês", "level": "Intermediário (B2)" },
+      { "name": "Português", "level": "Básico (A2)" }
+    ]
+  },
   "Contact": {
     "title": "Contate-me",
     "full_name": "Nome completo",

@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Technologies from "@/components/Technologies";
+import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Toast from "@/core/components/Toast";
@@ -19,6 +20,7 @@ export default function App() {
         <Projects />
         <Experience />
         <Technologies />
+        <About />
         <Contact />
       </main>
       <Footer />
