@@ -10,7 +10,19 @@
 
 .performance {
   content-visibility: auto;
-  contain-intrinsic-inline-size: 1000px;
+
+  /* 
+    Optimización de rendimiento:
+    - content-visibility: auto evita renderizar esta sección hasta que entra en viewport (lazy rendering real del browser)
+    - contain-intrinsic-size define un tamaño estimado mientras no se renderiza
+
+    Usamos "500px" para:
+    - evitar layout shift (CLS) cuando el contenido aún no está renderizado
+    - permitir que el navegador “aprenda” el tamaño real después del primer render
+
+    400px es un valor base aproximado; el navegador lo ajusta automáticamente tras el render real.
+  */
+  contain-intrinsic-size: 500px;
 }
 
 .separator {
