@@ -1,5 +1,6 @@
 import { type JSX } from "react";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import ENV from "@/core/config/env";
 
 export default function ProductionScripts(): JSX.Element {
@@ -17,6 +18,7 @@ export default function ProductionScripts(): JSX.Element {
               gtag('config', "${ENV.GOOGLE_ANALYTICS_ID}");
             `}
       </Script>
+      <Analytics />
     </>
   );
 }
