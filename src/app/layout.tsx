@@ -56,6 +56,12 @@ const OG_LOCALES: Record<string, string> = {
   pt: "pt_BR",
 };
 
+// Descripción fija para el <meta name="description"> que indexa Google.
+// Se mantiene hardcodeada para controlar el snippet de búsqueda y evitar que
+// los buscadores tomen texto arbitrario de la página.
+const META_DESCRIPTION =
+  "Software Developer specializing in fullstack development with React, Next.js, Node.js, and SQL. Experienced in building modern user interfaces and robust backend systems for scalable, end-to-end solutions.";
+
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   const translate = await getTranslations("Metadata");
@@ -63,7 +69,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const ogLocale = OG_LOCALES[locale] ?? "es_ES";
   return {
     title: websiteTitle,
-    description,
+    description: META_DESCRIPTION,
     keywords: [
       "desarrollador de software",
       "desarrollador web",
@@ -87,7 +93,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "software devs in paraguay",
       "i want a website",
     ],
-    abstract: description,
+    abstract: META_DESCRIPTION,
     generator: "Next.js",
     applicationName: name,
     publisher: name,
