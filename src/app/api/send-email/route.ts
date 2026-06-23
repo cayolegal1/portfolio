@@ -3,7 +3,47 @@ import { getTranslations } from "next-intl/server";
 import ENV from "@/core/config/env";
 import data from "@/core/data/user-info.json";
 
-const getEmailValues = async (values: object) => {
+// Solo estos campos se reenvían a la plantilla de EmailJS. Cualquier otra
+// propiedad del payload (incluyendo intentos de inyectar parámetros extra)
+// se descarta.
+const FIELD_LIMITS = {
+  name: 100,
+  email: 254,
+  subject: 150,
+  message: 5000,
+} as const;
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Campo señuelo (honeypot): los bots tienden a completar todos los inputs.
+// Si viene con valor, es spam.
+const HONEYPOT_FIELD = "company";
+
+type ContactPayload = Record<keyof typeof FIELD_LIMITS, string>;
+
+const validate = (input: unknown): ContactPayload | null => {
+  if (typeof input !== "object" || input === null) return null;
+  const record = input as Record<string, unknown>;
+
+  if (typeof record[HONEYPOT_FIELD] === "string" && record[HONEYPOT_FIELD]) {
+    return null;
+  }
+
+  const result = {} as ContactPayload;
+  for (const [field, maxLength] of Object.entries(FIELD_LIMITS)) {
+    const value = record[field];
+    if (typeof value !== "string") return null;
+    const trimmed = value.trim();
+    if (!trimmed || trimmed.length > maxLength) return null;
+    result[field as keyof ContactPayload] = trimmed;
+  }
+
+  if (!EMAIL_REGEX.test(result.email)) return null;
+
+  return result;
+};
+
+const getEmailValues = async (values: ContactPayload) => {
   const translate = await getTranslations("Contact");
   return {
     ...values,
@@ -16,7 +56,16 @@ const getEmailValues = async (values: object) => {
 
 export async function POST(request: NextRequest) {
   try {
-    const data = await request.json();
+    const body = await request.json();
+    const values = validate(body);
+
+    if (!values) {
+      return NextResponse.json(
+        { ok: false, message: "Invalid request" },
+        { status: 400 },
+      );
+    }
+
     const response = await fetch(
       "https://api.emailjs.com/api/v1.0/email/send",
       {
@@ -28,7 +77,7 @@ export async function POST(request: NextRequest) {
           service_id: ENV.EMAIL_SERVICE_ID,
           template_id: ENV.EMAIL_TEMPLATE_ID,
           user_id: ENV.EMAILJS_PUBLIC_KEY,
-          template_params: await getEmailValues(data),
+          template_params: await getEmailValues(values),
         }),
       },
     );

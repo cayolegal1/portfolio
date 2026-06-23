@@ -26,6 +26,25 @@ export default function ContactForm(): JSX.Element {
         />
       ))}
 
+      {/* Honeypot anti-spam: invisible para usuarios, los bots lo completan. */}
+      <input
+        type="text"
+        name="company"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          width: 1,
+          height: 1,
+          padding: 0,
+          margin: -1,
+          overflow: "hidden",
+          clip: "rect(0 0 0 0)",
+          border: 0,
+        }}
+      />
+
       <Button className={styles.btn} type="submit" disabled={isLoading}>
         {isLoading ? <Loader /> : translate("submit")}
       </Button>
