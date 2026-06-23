@@ -9,16 +9,18 @@ import type { JSX } from "react";
 export default function NavItem({
   item,
   active,
+  onSelect,
   ...props
 }: NavItemProps): JSX.Element {
   const translate = useTranslations("Header");
   const title = translate(item.title);
 
   const scrollToSection = () => {
-    const section = document.getElementById(item.href);
-    if (section) {
-      section.scrollIntoView(true);
-    }
+    document.getElementById(item.href)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    onSelect?.();
   };
 
   return (

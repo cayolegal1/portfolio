@@ -11,7 +11,9 @@ export default function HeaderContent({
   currentLocale,
   sections,
 }: HeaderContentProps) {
-  const activeSection = useActiveSection(sections.map(section => section.href));
+  const { activeId, selectSection } = useActiveSection(
+    sections.map(section => section.href),
+  );
   return (
     <AnimatedRender
       animationType="fadeInDown"
@@ -27,9 +29,10 @@ export default function HeaderContent({
               style={{
                 animationDelay: `${ANIMATION_LIST_DELAY + index * ANIMATION_LIST_DELAY}ms`,
               }}
-              active={activeSection === item.href}
+              active={activeId === item.href}
               key={item.href}
               item={item}
+              onSelect={() => selectSection(item.href)}
             />
           ) : (
             <div

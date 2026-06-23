@@ -18,4 +18,5 @@ export type NavItem = {
 export type NavItemProps = HTMLAttributes<HTMLButtonElement> & {
   item: NavItem;
   active: boolean;
+  onSelect?: () => void;
 };
