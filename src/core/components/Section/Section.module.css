@@ -9,7 +9,7 @@
 }
 
 .performance {
-  content-visibility: auto;
+  /* content-visibility: auto; */
 
   /* 
     Optimización de rendimiento:
@@ -22,7 +22,7 @@
 
     400px es un valor base aproximado; el navegador lo ajusta automáticamente tras el render real.
   */
-  contain-intrinsic-size: 500px;
+  /* contain-intrinsic-size: auto; */
 }
 
 .separator {

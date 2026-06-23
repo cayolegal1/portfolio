@@ -1,14 +1,15 @@
 .image {
-  border-radius: 10px 10px 0 0;
   cursor: pointer;
-  height: 27rem;
-  max-width: 35rem;
-  transition: transform 350ms;
+  display: block;
+  height: 33rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   width: 100%;
 }
 
 .big_picture {
   border-radius: 20px;
+  cursor: pointer;
   height: 60rem;
   inset: 0;
   margin: auto;
@@ -38,6 +39,6 @@
 
 @media screen and (min-width: 550px) {
   .image {
-    height: 32rem;
+    height: 33rem;
   }
 }

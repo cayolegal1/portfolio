@@ -1,16 +1,12 @@
 .carousel_container {
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  width: 32rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .carousel {
-  align-items: center;
+  align-items: stretch;
   display: flex;
-  gap: 1rem;
-  max-width: var(--project-max-width);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   width: 100%;
@@ -20,14 +16,32 @@
   display: none;
 }
 
-@media screen and (min-width: 360px) {
-  .carousel_container {
-    width: 35rem;
-  }
+/* Botones glassy que aparecen al hover del contenedor */
+.dots {
+  bottom: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 4;
 }
 
-@media screen and (min-width: 550px) {
-  .carousel_container {
-    width: 42rem;
-  }
+.dot {
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 0.8rem;
+  padding: 0;
+  transition:
+    background-color var(--transition-time),
+    width var(--transition-time);
+  width: 0.8rem;
+}
+
+.dot_active {
+  background-color: var(--text-color);
+  width: 2rem;
+  border-radius: 50px;
 }

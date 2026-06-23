@@ -1,53 +1,83 @@
-.container {
-  background-color: rgba(63, 63, 70, 0);
-  border-radius: 0 0 10px 10px;
+.card {
+  background-color: rgba(63, 63, 70, 0.08);
   border: 1px solid #303034;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-  height: max-content;
-  max-width: calc(25rem + 2px);
-  padding: 1rem;
-  transform: translateY(-3px);
+  overflow: hidden;
+  position: relative;
   transition:
-    background-color var(--transition-time),
-    border-color var(--transition-time);
+    transform var(--transition-time),
+    border-color var(--transition-time),
+    box-shadow var(--transition-time);
   width: 100%;
 }
 
-.container:hover {
-  border-color: #1e466a;
-  background-color: rgba(63, 63, 70, 0.2);
+.card:hover {
+  border-color: var(--gradient-color);
+  box-shadow:
+    0 1.2rem 2.5rem rgba(0, 0, 0, 0.5),
+    0 0 2.5rem rgba(46, 142, 228, 0.22);
 }
 
-.technologies_container {
+.media {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.6rem;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.description {
+  color: rgba(241, 236, 225, 0.7);
+  line-height: 1.6;
+}
+
+.technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-block: 1rem;
+  gap: 0.6rem;
 }
 
-.links_container {
+.actions {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   margin-top: auto;
-  width: 100%;
+  padding-top: 0.6rem;
 }
 
-.links {
+.action {
   align-items: center;
-  display: flex;
-  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  transition:
+    background-color var(--transition-time),
+    border-color var(--transition-time),
+    transform var(--transition-time);
 }
 
-@media screen and (min-width: 360px) {
-  .container {
-    max-width: calc(28rem + 2px);
-  }
+.action:hover {
+  background-color: rgba(46, 142, 228, 0.15);
+  border-color: var(--gradient-color);
+  transform: translateY(-2px);
 }
 
-@media screen and (min-width: 550px) {
-  .container {
-    height: 25rem;
-    max-width: 35rem;
-  }
+.action svg {
+  height: 2rem;
+  width: 2rem;
 }

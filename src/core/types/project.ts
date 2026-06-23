@@ -1,3 +1,5 @@
+import type { Technology } from "./technology";
+
 export type Project = {
   id: string;
   androidUrl?: string;
@@ -6,7 +8,7 @@ export type Project = {
   imagesPath: string[];
   iosUrl?: string;
   name: string;
-  technologies: string[];
+  technologies: Technology[];
   title: string;
   websiteUrl?: string;
 };

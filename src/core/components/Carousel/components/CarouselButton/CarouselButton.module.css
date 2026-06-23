@@ -1,25 +1,39 @@
 .carousel_button {
   align-items: center;
-  background-color: var(--gradient-color);
-  cursor: pointer;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: rgba(3, 7, 18, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 100%;
+  cursor: pointer;
   display: flex;
+  height: 3.4rem;
   justify-content: center;
-  transition: 0.3s background;
-  z-index: 3;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition:
+    background-color var(--transition-time),
+    opacity var(--transition-time);
+  width: 3.4rem;
+  z-index: 4;
+}
+
+.carousel_button:not(:disabled):hover {
+  background-color: var(--gradient-color);
 }
 
 .carousel_button_disabled {
-  background-color: #053868;
   cursor: not-allowed;
+  opacity: 0.45;
 }
 
 .carousel_button_left {
-  transform: translateX(10px);
+  left: 1rem;
 }
 
 .carousel_button_right {
-  transform: translateX(-10px);
+  right: 1rem;
 }
 
 .carousel_icon_left {

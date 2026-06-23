@@ -1,31 +1,15 @@
 import { type JSX } from "react";
-import Carousel from "@/core/components/Carousel";
-import CarouselItem from "@/core/components/Carousel/components/CarouselItem";
-import ProjectImage from "../ProjectImage";
 import AnimatedProjectCard from "../AnimatedProjectCard";
-import styles from "./ProjectList.module.css";
 import ProjectCard from "../ProjectCard";
 import { useProjectsTranslation } from "@/core/hooks/useProjectsTranslation";
+import styles from "./ProjectList.module.css";
 
 export default function ProjectList(): JSX.Element {
   const projects = useProjectsTranslation();
   return (
-    <div
-      className={styles.container}
-      style={{
-        justifyContent: projects.length > 2 ? "start" : "center",
-      }}
-    >
+    <div className={styles.grid}>
       {projects.map(project => (
         <AnimatedProjectCard id={project.id} key={project.id}>
-          <Carousel>
-            {project.imagesPath.map(imagePath => (
-              <CarouselItem className={styles.carousel_item} key={imagePath}>
-                <ProjectImage src={imagePath} />
-              </CarouselItem>
-            ))}
-          </Carousel>
-
           <ProjectCard project={project} />
         </AnimatedProjectCard>
       ))}

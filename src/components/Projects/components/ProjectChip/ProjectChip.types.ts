@@ -1,5 +1,4 @@
-import type { ReactNode } from "react";
-
 export type ProjectChipProps = {
-  children: ReactNode;
+  name: string;
+  logo?: string;
 };
