@@ -1,11 +1,10 @@
 "use client";
 import { useEffect, useRef, useState, type JSX } from "react";
+import Image from "next/image";
 import styles from "./ProjectImage.module.css";
 import type { ProjectImageProps } from "./ProjectImage.types";
 
-export default function ProjectImage({
-  ...props
-}: ProjectImageProps): JSX.Element {
+export default function ProjectImage({ src }: ProjectImageProps): JSX.Element {
   const [isBigPictureMode, setIsBigPictureMode] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -26,10 +25,12 @@ export default function ProjectImage({
 
   return (
     <>
-      <img
-        {...props}
+      <Image
+        src={src as string}
         alt="project_image"
-        loading="lazy"
+        width={1280}
+        height={720}
+        sizes="(max-width: 550px) 100vw, 35rem"
         onClick={() => setIsBigPictureMode(prev => !prev)}
         ref={imgRef}
         className={`${isBigPictureMode ? styles.big_picture : styles.image}`.trim()}
