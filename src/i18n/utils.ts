@@ -4,31 +4,28 @@ import { defaultLocale, supportedLocales } from "./settings";
 
 export function parseBrowserLocale(headerLang: string | null) {
   if (!headerLang) return null;
-  try {
-    const locales = headerLang.split(";")[0].split(",");
-    return locales[1] || null;
-  } catch (err) {
-    return null;
-  }
+  // Accept-Language: "es-ES,es;q=0.9,en;q=0.8" -> idioma preferido "es"
+  const preferred = headerLang.split(",")[0]?.trim();
+  if (!preferred) return null;
+  const language = preferred.split("-")[0].toLowerCase();
+  return language || null;
 }
 
 export async function getBrowserLocale() {
   const headersList = await headers();
   const browserLocaleHeader = headersList.get("accept-language");
-  const browserLocale = parseBrowserLocale(browserLocaleHeader);
-  return browserLocale;
+  return parseBrowserLocale(browserLocaleHeader);
 }
 
 export async function getLocale() {
   const browserLocale = await getBrowserLocale();
   const cookieStore = await cookies();
   const cookieLocale = cookieStore.get("locale")?.value;
-  const locale = cookieLocale || browserLocale || defaultLocale;
-  const responseLocale = !supportedLocales.includes(locale)
-    ? defaultLocale
-    : locale;
-
-  return responseLocale;
+  // Prioridad cookie -> navegador -> default, quedándose con el primero válido.
+  const candidates = [cookieLocale, browserLocale, defaultLocale];
+  return candidates.find(
+    (locale): locale is string => !!locale && supportedLocales.includes(locale),
+  )!;
 }
 
 export function setCookieLocaleFromBrowser(

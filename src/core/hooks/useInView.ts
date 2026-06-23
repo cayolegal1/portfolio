@@ -54,6 +54,9 @@ export const useInView = (
         );
       };
     }
+    // El observer se configura una sola vez al montar; href/once/observerConfig
+    // se asumen estables durante el ciclo de vida del componente.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return isInView;
