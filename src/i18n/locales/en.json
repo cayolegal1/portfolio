@@ -56,7 +56,7 @@
       "company_logo": "/company_logos/bepsa.webp",
       "position": "Software Developer",
       "from_date": "November 2024 - Actually",
-      "description": "I am responsible for facilitating development for other teams through the creation of internal libraries, maintaining quality standards, implementing best practices, and producing technical documentation with React and Vite, using Scrum as an agile methodology.",
+      "description": "I design internal component libraries and secure APIs with NestJS, uphold quality through code reviews, and build interfaces in React. Today I lead the native Android development (Kotlin + Jetpack Compose) of the new Dinelco POS app.",
       "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
     },
     "1": {
@@ -66,7 +66,7 @@
       "company_logo": "/company_logos/bdp.webp",
       "position": "Mobile Developer",
       "from_date": "October 2023 - November 2024",
-      "description": "Development of a beverage e-commerce mobile application with React Native and TypeScript following the agile Scrum methodology.",
+      "description": "I built an e-commerce mobile app for iOS and Android with React Native, focused on user experience and unit tests that drastically reduced errors.",
       "technologies": "typescript,react,react_native,zustand,react_query,jest,testing_library,git"
     },
     "2": {
@@ -76,7 +76,7 @@
       "company_logo": "/company_logos/mega_digital.webp",
       "position": "Software Developer",
       "from_date": "May 2023 - October 2023",
-      "description": "Development of an enterprise web platform that automates invoicing, manages work teams, and provides metrics, built with Next.js. Development of a real-time customer support mobile app using React Native and Socket.IO.",
+      "description": "I built an enterprise web platform in Next.js (invoicing, CRM and real-time metrics) and a customer support mobile app with real-time chat.",
       "technologies": "javascript,react,react_native,next_js,socket_io,material_ui,git"
     },
     "3": {
@@ -86,7 +86,7 @@
       "company_logo": "/company_logos/innovatica.webp",
       "position": "Software Developer",
       "from_date": "October 2022 - May 2023",
-      "description": "Custom software development for USA clients using React and React Native. Creation of reusable components following Figma designs.",
+      "description": "I built custom software for US clients with React and React Native, with dynamic interfaces that improved usability.",
       "technologies": "javascript,react,react_native,material_ui,docker,git,figma"
     },
     "4": {
@@ -96,7 +96,7 @@
       "company_logo": "/company_logos/clt.webp",
       "position": "Software Developer",
       "from_date": "July 2022 - October 2022",
-      "description": "Development of enterprise banking software using .NET Core and SQL.",
+      "description": "I built enterprise banking software with .NET Core and SQL, with secure and stable solutions for internal financial processes.",
       "technologies": ".net,sql"
     }
   },
