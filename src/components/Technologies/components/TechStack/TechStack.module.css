@@ -57,9 +57,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* Ancho acotado para que las filas queden parejas al hacer wrap. */
+  /* Ancho acotado a ~5 por fila para que el wrap quede parejo en todos los
+     filtros (19 -> 5/5/5/4, 8 -> 5/3) sin filas con un solo item. */
   margin-inline: auto;
-  max-width: 52rem;
+  max-width: 37rem;
   row-gap: 3.5rem;
 }
 
