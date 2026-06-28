@@ -2,7 +2,7 @@
   /* Marco 4:5 (exportá las capturas a 1080x1350 para que encajen perfecto).
      contain muestra la captura completa sin recortar; mientras las imágenes
      no sean 4:5 queda un margen con el fondo de la card. */
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 4;
   cursor: pointer;
   display: block;
   /* next/image trae un atributo height; lo anulamos para que mande aspect-ratio. */
