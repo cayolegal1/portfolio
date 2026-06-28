@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { technologiesList } from "@/core/data/technologies";
 import styles from "./HeroStack.module.css";
-import heroStyles from "../../Hero.module.css";
 
 import type { JSX } from "react";
 
@@ -10,10 +9,7 @@ const loop = [...technologiesList, ...technologiesList];
 
 export default function HeroStack(): JSX.Element {
   return (
-    <div
-      className={`${styles.stack} ${heroStyles.enter}`}
-      style={{ animationDelay: "0.42s" }}
-    >
+    <div className={styles.stack}>
       <ul className={styles.track}>
         {loop.map((tech, index) => (
           <li className={styles.item} key={`${tech.name}-${index}`}>

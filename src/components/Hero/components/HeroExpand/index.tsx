@@ -16,7 +16,6 @@ export default function HeroExpand(): JSX.Element {
       aria-label="Ir a proyectos"
       className={`${styles.expand_container} ${heroStyles.enter}`}
       onClick={scrollToNextSection}
-      style={{ animationDelay: "0.42s" }}
       type="button"
     >
       <span className={styles.hint}>

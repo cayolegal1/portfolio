@@ -7,6 +7,9 @@
 
 .content {
   align-items: center;
+  /* Todo el bloque entra a la par con un efecto suave (fade + subida + leve
+     scale), en lugar de animar cada elemento por separado. */
+  animation: hero_reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -14,6 +17,17 @@
   position: relative;
   width: 100%;
   z-index: 1;
+}
+
+@keyframes hero_reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 /* ---------- Fondo aurora (CSS puro, solo transform: GPU) ---------- */
@@ -33,6 +47,16 @@
   pointer-events: none;
   position: absolute;
   z-index: 0;
+  animation: aurora_in 1.4s ease both;
+}
+
+@keyframes aurora_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .aurora::before,
@@ -76,15 +100,15 @@
   }
 }
 
-/* ---------- Entrada sutil ---------- */
+/* Entrada del indicador de scroll (aparece junto al bloque). */
 .enter {
-  animation: hero_enter 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: hero_enter 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
 
 @keyframes hero_enter {
   from {
     opacity: 0;
-    transform: translate3d(0, 12px, 0);
+    transform: translate3d(0, 16px, 0);
   }
   to {
     opacity: 1;
@@ -93,7 +117,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .content,
   .enter,
+  .aurora,
   .aurora::before,
   .aurora::after {
     animation: none;
