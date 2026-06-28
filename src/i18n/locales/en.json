@@ -103,6 +103,18 @@
   "Technologies": {
     "title": "My Tech Stack"
   },
+  "CommandPalette": {
+    "placeholder": "Search an action or section...",
+    "nav": "Navigate",
+    "language": "Language",
+    "links": "Links",
+    "view_github": "View GitHub",
+    "view_linkedin": "View LinkedIn",
+    "copy_email": "Copy email",
+    "email_copied": "Email copied!",
+    "trigger": "Search",
+    "empty": "No results"
+  },
   "About": {
     "title": "About me",
     "badge": "Available for work",

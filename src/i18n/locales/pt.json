@@ -103,6 +103,18 @@
   "Technologies": {
     "title": "Tecnologias"
   },
+  "CommandPalette": {
+    "placeholder": "Buscar uma ação ou seção...",
+    "nav": "Navegar",
+    "language": "Idioma",
+    "links": "Links",
+    "view_github": "Ver GitHub",
+    "view_linkedin": "Ver LinkedIn",
+    "copy_email": "Copiar email",
+    "email_copied": "Email copiado!",
+    "trigger": "Buscar",
+    "empty": "Sem resultados"
+  },
   "About": {
     "title": "Sobre mim",
     "badge": "Disponível para trabalhar",
