@@ -1,9 +1,11 @@
 .image {
+  /* Marco 4:5: exportá las capturas a este ratio (p.ej. 1080x1350) y no se
+     recorta nada. cover solo recorta si la imagen no respeta el ratio. */
+  aspect-ratio: 4 / 5;
   cursor: pointer;
   display: block;
-  height: 33rem;
-  /* Las capturas son verticales y de distinto tamaño; cover llena el marco
-     sin deformar (evita la distorsión y el aviso de aspect-ratio). */
+  /* next/image trae un atributo height; lo anulamos para que mande aspect-ratio. */
+  height: auto;
   object-fit: cover;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -49,10 +51,6 @@
 }
 
 @media screen and (min-width: 550px) {
-  .image {
-    height: 33rem;
-  }
-
   .big_picture {
     max-width: 60rem;
   }
