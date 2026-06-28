@@ -7,7 +7,7 @@
   display: block;
   /* next/image trae un atributo height; lo anulamos para que mande aspect-ratio. */
   height: auto;
-  object-fit: contain;
+  /* object-fit: contain; */
   scroll-snap-align: start;
   scroll-snap-stop: always;
   width: 100%;
