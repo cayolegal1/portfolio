@@ -35,16 +35,24 @@ export default function ProjectImage({ src }: ProjectImageProps): JSX.Element {
   }, [isOpen, close]);
 
   return (
-    <>
-      <Image
-        alt="project_image"
-        className={styles.image}
-        height={720}
+    <div className={styles.stage}>
+      <button
+        aria-label="Ampliar captura del proyecto"
+        className={styles.device}
         onClick={open}
-        sizes="(max-width: 550px) 100vw, 35rem"
-        src={src as string}
-        width={1280}
-      />
+        type="button"
+      >
+        <span aria-hidden="true" className={styles.notch} />
+        <span className={styles.screen}>
+          <Image
+            alt="Captura del proyecto"
+            className={styles.image}
+            fill
+            sizes="(max-width: 550px) 60vw, 200px"
+            src={src as string}
+          />
+        </span>
+      </button>
 
       {isOpen &&
         createPortal(
@@ -56,7 +64,7 @@ export default function ProjectImage({ src }: ProjectImageProps): JSX.Element {
             tabIndex={-1}
           >
             <Image
-              alt="project_image"
+              alt="Captura del proyecto"
               className={`${styles.big_picture} ${isShown ? styles.big_picture_visible : ""}`}
               height={720}
               loading="eager"
@@ -67,6 +75,6 @@ export default function ProjectImage({ src }: ProjectImageProps): JSX.Element {
           </div>,
           document.body,
         )}
-    </>
+    </div>
   );
 }

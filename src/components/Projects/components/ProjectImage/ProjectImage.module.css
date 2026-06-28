@@ -1,16 +1,79 @@
-.image {
-  /* Marco 4:5 (exportá las capturas a 1080x1350 para que encajen perfecto).
-     contain muestra la captura completa sin recortar; mientras las imágenes
-     no sean 4:5 queda un margen con el fondo de la card. */
-  aspect-ratio: 4 / 4;
+.stage {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem 1rem 3.4rem;
+  width: 100%;
+}
+
+/* Marco tipo celular alrededor de la captura. */
+.device {
+  animation: device_float 5s ease-in-out infinite;
+  background: #0a0a0a;
+  border: none;
+  border-radius: 26px;
+  box-shadow:
+    0 1.8rem 4rem rgba(0, 0, 0, 0.5),
+    0 0 2.6rem rgba(46, 142, 228, 0.14);
   cursor: pointer;
   display: block;
-  /* next/image trae un atributo height; lo anulamos para que mande aspect-ratio. */
-  height: auto;
-  /* object-fit: contain; */
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  padding: 7px;
+  position: relative;
+  transition: transform var(--transition-time);
+  width: min(60%, 190px);
+}
+
+.device:hover {
+  box-shadow:
+    0 2.2rem 4.5rem rgba(0, 0, 0, 0.55),
+    0 0 3rem rgba(46, 142, 228, 0.28);
+}
+
+.device:focus-visible {
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 4px;
+}
+
+.screen {
+  aspect-ratio: 4 / 5;
+  background: #000;
+  border-radius: 20px;
+  display: block;
+  overflow: hidden;
+  position: relative;
   width: 100%;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.notch {
+  background: #0a0a0a;
+  border-radius: 0 0 8px 8px;
+  height: 13px;
+  left: 50%;
+  position: absolute;
+  top: 7px;
+  transform: translateX(-50%);
+  width: 42px;
+  z-index: 2;
+}
+
+@keyframes device_float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .device {
+    animation: none;
+  }
 }
 
 .overlay {
