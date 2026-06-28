@@ -16,8 +16,9 @@ export default function NavButton() {
         aria-roledescription="Botón para abrir o cerrar menú de navegación"
         as="button"
         className={styles.button}
-        delay="2.8s"
+        delay="0.2s"
         onClick={toggleMobileNavbar}
+        style={{ animationDuration: "0.6s" }}
       >
         <NavHamburguer expanded={isNavBarExpanded} />
       </AnimatedRender>
