@@ -1,11 +1,102 @@
 .progress_bar {
-  background-color: var(--gradient-color);
+  background: linear-gradient(
+    90deg,
+    var(--first-gradient-color),
+    var(--fourth-gradient-color)
+  );
   border-radius: 5px;
   height: 3px;
   position: fixed;
   top: 0;
-  width: 100%;
   transform-origin: left;
   transition: 0s;
+  width: 100%;
   z-index: 2;
+}
+
+.rail {
+  display: none;
+  flex-direction: column;
+  gap: 1.4rem;
+  position: fixed;
+  right: 1.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 80;
+}
+
+@media (min-width: 900px) {
+  .rail {
+    display: flex;
+  }
+}
+
+.node {
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.node_label {
+  color: #8b95a3;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateX(0.6rem);
+  transition:
+    color var(--transition-time),
+    opacity var(--transition-time),
+    transform var(--transition-time);
+}
+
+.node:hover .node_label {
+  color: var(--text-color);
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.node_active .node_label {
+  color: var(--fourth-gradient-color);
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.node_dot {
+  background: #3a4150;
+  border-radius: 50%;
+  flex: none;
+  height: 9px;
+  transition:
+    background var(--transition-time),
+    box-shadow var(--transition-time),
+    width var(--transition-time),
+    height var(--transition-time);
+  width: 9px;
+}
+
+.node:hover .node_dot {
+  background: #8b95a3;
+}
+
+.node_active .node_dot {
+  background: var(--gradient-color);
+  box-shadow: 0 0 0 4px rgba(46, 142, 228, 0.18);
+  height: 11px;
+  width: 11px;
+}
+
+.node:focus-visible {
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .node_label,
+  .node_dot {
+    transition: none;
+  }
 }
