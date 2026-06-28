@@ -101,9 +101,7 @@
     }
   },
   "Technologies": {
-    "title": "Tecnologías",
-    "hint": "Pasá el mouse o tocá una tecnología para ver dónde la usé",
-    "not_used": "Parte de mi stack"
+    "title": "Tecnologías"
   },
   "CommandPalette": {
     "placeholder": "Buscar una acción o sección...",

@@ -101,9 +101,7 @@
     }
   },
   "Technologies": {
-    "title": "My Tech Stack",
-    "hint": "Hover or tap a technology to see where I used it",
-    "not_used": "Part of my stack"
+    "title": "My Tech Stack"
   },
   "CommandPalette": {
     "placeholder": "Search an action or section...",
