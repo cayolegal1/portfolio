@@ -2,4 +2,100 @@
   content-visibility: visible;
   min-height: 100vh;
   padding-bottom: 5rem;
+  position: relative;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 56rem;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+/* ---------- Fondo aurora (CSS puro, solo transform: GPU) ---------- */
+.aurora {
+  /* Full-bleed: ocupa todo el ancho del viewport (ignora el padding del main)
+     para que el glow llegue a los bordes y no queden franjas a los costados. */
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+  /* Desvanece el glow antes del borde inferior para que no quede una línea
+     dura al cortar con overflow: hidden. */
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 95%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 95%);
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+}
+
+.aurora::before,
+.aurora::after {
+  border-radius: 50%;
+  content: "";
+  height: 50rem;
+  position: absolute;
+  width: 50rem;
+}
+
+.aurora::before {
+  background: radial-gradient(circle, rgba(6, 145, 238, 0.22), transparent 60%);
+  left: 0;
+  top: -18%;
+  animation: aurora_a 18s ease-in-out infinite alternate;
+}
+
+.aurora::after {
+  background: radial-gradient(circle, rgba(120, 119, 198, 0.2), transparent 60%);
+  bottom: -22%;
+  right: -5%;
+  animation: aurora_b 22s ease-in-out infinite alternate;
+}
+
+@keyframes aurora_a {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(12%, 8%, 0) scale(1.15);
+  }
+}
+
+@keyframes aurora_b {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.1);
+  }
+  to {
+    transform: translate3d(-10%, -6%, 0) scale(1);
+  }
+}
+
+/* ---------- Entrada sutil ---------- */
+.enter {
+  animation: hero_enter 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes hero_enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enter,
+  .aurora::before,
+  .aurora::after {
+    animation: none;
+  }
 }

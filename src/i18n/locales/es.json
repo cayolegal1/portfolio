@@ -20,7 +20,12 @@
     "i_am": "Soy un",
     "developer": "Desarrollador",
     "of_software": "de Software",
-    "of_apps": "de Apps"
+    "of_apps": "de Apps",
+    "intro": "Hola, soy",
+    "badge": "Disponible para proyectos",
+    "tagline": "Construyo productos web y mobile, de la idea a producción.",
+    "cta_projects": "Ver proyectos",
+    "cta_contact": "Contactame"
   },
   "Projects": {
     "title": "De idea a realidad",

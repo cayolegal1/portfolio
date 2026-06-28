@@ -1,12 +1,35 @@
 .expand_container {
+  bottom: 0rem;
+  cursor: pointer;
   display: flex;
   justify-content: center;
-  bottom: 0rem;
   position: absolute;
 }
 
 @media (min-height: 620px) {
   .expand_container {
     bottom: 5rem;
+  }
+}
+
+/* Bob sutil para invitar al scroll (solo transform). */
+.hint {
+  animation: hint_bob 1.8s ease-in-out infinite;
+  display: inline-flex;
+}
+
+@keyframes hint_bob {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 6px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint {
+    animation: none;
   }
 }

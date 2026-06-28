@@ -20,7 +20,12 @@
     "i_am": "I am a",
     "developer": "Developer",
     "of_software": "of Software",
-    "of_apps": "of Apps"
+    "of_apps": "of Apps",
+    "intro": "Hi, I'm",
+    "badge": "Available for work",
+    "tagline": "I build web and mobile products, from idea to production.",
+    "cta_projects": "View projects",
+    "cta_contact": "Get in touch"
   },
   "Projects": {
     "title": "From idea to reality",

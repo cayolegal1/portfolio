@@ -1,7 +1,7 @@
-import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import GitHubGradientIcon from "@/core/components/Icons/Gradient/GitHubGradientIcon";
 import LinkedinGradientIcon from "@/core/components/Icons/Gradient/LinkedinGradientIcon";
 import styles from "./HeroContact.module.css";
+import heroStyles from "../../Hero.module.css";
 import data from "@/core/data/user-info.json";
 
 import type { JSX } from "react";
@@ -23,10 +23,9 @@ const contactLinks = [
 
 export default function HeroContact(): JSX.Element {
   return (
-    <AnimatedRender
-      animationType="fadeInDown"
-      delay="2.5s"
-      className={styles.social_media_container}
+    <div
+      className={`${styles.social_media_container} ${heroStyles.enter}`}
+      style={{ animationDelay: "0.36s" }}
     >
       {contactLinks.map(source => (
         <a
@@ -40,6 +39,6 @@ export default function HeroContact(): JSX.Element {
           {source.icon}
         </a>
       ))}
-    </AnimatedRender>
+    </div>
   );
 }

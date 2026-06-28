@@ -28,9 +28,6 @@ const nextConfig = {
       },
     ];
   },
-  experimental: {
-    optimizePackageImports: ["react-typed"],
-  },
   poweredByHeader: false,
   images: {
     minimumCacheTTL: 31536000,

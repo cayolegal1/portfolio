@@ -1,25 +1,27 @@
 "use client";
 import type { JSX } from "react";
-import AnimatedRender from "@/core/components/Animated/AnimatedRender";
 import ExpandGradientIcon from "@/core/components/Icons/Gradient/ExpandGradientIcon";
 import { SECTIONS } from "@/core/data/global";
 import styles from "./HeroExpand.module.css";
+import heroStyles from "../../Hero.module.css";
 
 export default function HeroExpand(): JSX.Element {
   const scrollToNextSection = () => {
-    const section = document.getElementById(SECTIONS.PROJECTS);
-    if (section) {
-      section.scrollIntoView(true);
-    }
+    document
+      .getElementById(SECTIONS.PROJECTS)
+      ?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <AnimatedRender
-      animationType="bounceInDown"
-      delay="2.8s"
-      className={styles.expand_container}
+    <button
+      aria-label="Ir a proyectos"
+      className={`${styles.expand_container} ${heroStyles.enter}`}
       onClick={scrollToNextSection}
+      style={{ animationDelay: "0.42s" }}
+      type="button"
     >
-      <ExpandGradientIcon />
-    </AnimatedRender>
+      <span className={styles.hint}>
+        <ExpandGradientIcon />
+      </span>
+    </button>
   );
 }
