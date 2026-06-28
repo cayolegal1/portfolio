@@ -12,3 +12,9 @@
 .social_media_icon:hover {
   transform: translateY(5px);
 }
+
+.social_media_icon:focus-visible {
+  border-radius: 0.6rem;
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 4px;
+}

@@ -12,6 +12,12 @@
   }
 }
 
+.expand_container:focus-visible {
+  border-radius: 0.8rem;
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 4px;
+}
+
 /* Bob sutil para invitar al scroll (solo transform). */
 .hint {
   animation: hint_bob 1.8s ease-in-out infinite;

@@ -26,6 +26,13 @@
   width: max-content;
 }
 
+/* Pausa el desplazamiento al pasar el cursor o enfocar dentro: permite leer
+   los logos con calma y evita movimiento bajo interacción del teclado. */
+.stack:hover .track,
+.stack:focus-within .track {
+  animation-play-state: paused;
+}
+
 .item {
   align-items: center;
   display: flex;

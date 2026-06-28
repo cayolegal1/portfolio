@@ -40,3 +40,9 @@
   border-color: var(--gradient-color);
   transform: translateY(-2px);
 }
+
+.primary:focus-visible,
+.secondary:focus-visible {
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 3px;
+}
