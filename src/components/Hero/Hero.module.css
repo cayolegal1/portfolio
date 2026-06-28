@@ -81,7 +81,11 @@
 }
 
 .aurora::after {
-  background: radial-gradient(circle, rgba(120, 119, 198, 0.2), transparent 60%);
+  background: radial-gradient(
+    circle,
+    rgba(120, 119, 198, 0.2),
+    transparent 60%
+  );
   bottom: -22%;
   right: -5%;
   animation: aurora_b 22s ease-in-out infinite alternate;

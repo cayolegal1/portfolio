@@ -1,0 +1,43 @@
+.scroll_out {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tilt {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transform: perspective(1100px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.25s ease-out;
+  width: 100%;
+  will-change: transform;
+}
+
+/* Parallax de salida: el hero se desvanece y sube levemente al scrollear.
+   Usa scroll-driven animations donde estén soportadas; si no, no pasa nada. */
+@supports (animation-timeline: scroll()) {
+  .scroll_out {
+    animation: hero_scroll_out linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 75vh;
+  }
+}
+
+@keyframes hero_scroll_out {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0) scale(0.97);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilt {
+    transform: none;
+    transition: none;
+  }
+  .scroll_out {
+    animation: none;
+  }
+}

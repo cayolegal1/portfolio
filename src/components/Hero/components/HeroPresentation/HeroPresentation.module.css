@@ -1,14 +1,15 @@
 .badge {
   align-items: center;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--text-color);
   display: inline-flex;
   font-size: 1.3rem;
   gap: 0.6rem;
   margin-bottom: 1rem;
   padding: 0.5rem 1.2rem;
+  text-align: center;
 }
 
 .badge_dot {
@@ -42,18 +43,38 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
-  /* Gradiente vivo: el gradiente fluye lentamente bajo el texto. */
-  background-size: 220% auto !important;
-  animation: name_flow 7s ease-in-out infinite;
+  text-align: center;
+  /* Gradiente base QUIETO + una banda de luz blanca que lo recorre cada tanto.
+     Capa 1 (shine) = se mueve; capa 2 (gradiente base) = fija. */
+  background-image:
+    linear-gradient(
+      100deg,
+      transparent 42%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 58%
+    ),
+    var(--text-gradient) !important;
+  background-size:
+    250% 100%,
+    100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-position:
+    130% 0,
+    0 0 !important;
+  animation: name_shine 5s ease-in-out infinite;
 }
 
-@keyframes name_flow {
-  0%,
-  100% {
-    background-position: 0% 50%;
+@keyframes name_shine {
+  0% {
+    background-position:
+      130% 0,
+      0 0;
   }
-  50% {
-    background-position: 100% 50%;
+  35%,
+  100% {
+    background-position:
+      -30% 0,
+      0 0;
   }
 }
 
@@ -66,6 +87,7 @@
 .role {
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 500;
+  text-align: center;
 }
 
 .tagline {
