@@ -1,4 +1,4 @@
-.hamburguer{
+.hamburguer {
   position: relative;
   width: 21px;
   height: 21px;
@@ -51,7 +51,7 @@
     transform var(--transition-time) ease-out var(--transition-time);
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   .hamburguer {
     display: none;
   }

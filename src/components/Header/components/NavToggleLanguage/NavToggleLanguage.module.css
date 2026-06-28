@@ -19,7 +19,7 @@
   opacity: 0.7;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   .language_item {
     margin-bottom: 12px;
     padding-inline: 0;

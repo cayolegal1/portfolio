@@ -29,8 +29,7 @@
   pointer-events: all;
 }
 
-
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   .button {
     display: none;
   }

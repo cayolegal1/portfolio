@@ -28,7 +28,7 @@
   width: 100%;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   body .header {
     animation-fill-mode: forwards;
     animation-iteration-count: 1;

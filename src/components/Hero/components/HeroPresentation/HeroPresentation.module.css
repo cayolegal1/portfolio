@@ -44,36 +44,41 @@
   letter-spacing: -0.02em;
   line-height: 1.1;
   text-align: center;
-  /* Gradiente base QUIETO + una banda de luz blanca que lo recorre cada tanto.
-     Capa 1 (shine) = se mueve; capa 2 (gradiente base) = fija. */
+
+  /* Necesario para que el gradiente se vea en el texto */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Banda de brillo + gradiente base */
   background-image:
     linear-gradient(
-      100deg,
-      transparent 42%,
+      110deg,
+      transparent 40%,
       rgba(255, 255, 255, 0.9) 50%,
-      transparent 58%
+      transparent 60%
     ),
-    var(--text-gradient) !important;
+    var(--text-gradient);
+
   background-size:
     250% 100%,
-    100% 100% !important;
-  background-repeat: no-repeat !important;
-  background-position:
-    130% 0,
-    0 0 !important;
-  animation: name_shine 5s ease-in-out infinite;
+    100% 100%;
+
+  background-repeat: no-repeat, no-repeat;
+
+  animation: shine 5s linear infinite;
 }
 
-@keyframes name_shine {
+@keyframes shine {
   0% {
     background-position:
-      130% 0,
+      200% 0,
       0 0;
   }
-  35%,
-  100% {
+
+  105% {
     background-position:
-      -30% 0,
+      -200% 0,
       0 0;
   }
 }

@@ -1,64 +1,64 @@
 body .navbar__hidden {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 body.menu_open .nav_item {
-    opacity: 0;
-    animation: NavAnimation 0.3s ease-in-out 0s forwards;
+  opacity: 0;
+  animation: NavAnimation 0.3s ease-in-out 0s forwards;
 }
 
 .toast__visible {
-    opacity: 1;
-    transform: translateY(0) scale(99%);
+  opacity: 1;
+  transform: translateY(0) scale(99%);
 }
 
 .toast__hidden {
-    opacity: 0;
-    transform: translateY(150%) scale(40%);
+  opacity: 0;
+  transform: translateY(150%) scale(40%);
 }
 
 .section_title {
-    position: relative;
+  position: relative;
 }
 
 .section_title::after {
-    background-color: var(--gradient-color);
-    border-radius: 3px;
-    bottom: -3px;
-    content: "";
-    height: 4px;
-    left: 0;
-    margin-left: 1px;
-    position: absolute;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 0.7s ease-out;
-    width: 40px;
-    z-index: -1;
+  background-color: var(--gradient-color);
+  border-radius: 3px;
+  bottom: -3px;
+  content: "";
+  height: 4px;
+  left: 0;
+  margin-left: 1px;
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.7s ease-out;
+  width: 40px;
+  z-index: -1;
 }
 
 .visible .section_title::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-@media (min-width: 550px) {
-    body .navbar__hidden {
-        right: 0;
-        transform: none;
-    }
+@media (min-width: 650px) {
+  body .navbar__hidden {
+    right: 0;
+    transform: none;
+  }
 
-    .nav_item {
-        animation: none;
-    }
+  .nav_item {
+    animation: none;
+  }
 }
 
 @keyframes NavAnimation {
-    from {
-        transform: translate3d(-50%, 0, 0);
-    }
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
 
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
