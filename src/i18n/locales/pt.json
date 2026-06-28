@@ -101,7 +101,16 @@
     }
   },
   "Technologies": {
-    "title": "Tecnologias"
+    "title": "Tecnologias",
+    "categories": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Banco de dados",
+      "testing": "Testing",
+      "tooling": "Tooling"
+    }
   },
   "CommandPalette": {
     "placeholder": "Buscar uma ação ou seção...",

@@ -101,7 +101,16 @@
     }
   },
   "Technologies": {
-    "title": "My Tech Stack"
+    "title": "My Tech Stack",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Database",
+      "testing": "Testing",
+      "tooling": "Tooling"
+    }
   },
   "CommandPalette": {
     "placeholder": "Search an action or section...",
