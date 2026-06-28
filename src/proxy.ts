@@ -8,6 +8,16 @@ export function proxy(request: NextRequest) {
     setCookieLocaleFromBrowser(request, response);
   }
 
+  // La página es dinámica (lee cookie/Accept-Language para el idioma), así que
+  // Next responde con `no-store`, lo que desactiva el back/forward cache. Lo
+  // reemplazamos por una directiva sin `no-store`: sigue sin cachearse en CDN
+  // y se revalida, pero permite que el navegador restaure desde bfcache (es
+  // memoria privada del propio usuario, sin riesgo para un portfolio).
+  response.headers.set(
+    "Cache-Control",
+    "private, no-cache, max-age=0, must-revalidate",
+  );
+
   return response;
 }
 
