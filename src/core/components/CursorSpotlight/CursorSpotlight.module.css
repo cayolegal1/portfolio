@@ -1,0 +1,21 @@
+.spotlight {
+  background: radial-gradient(
+    34rem 34rem at var(--spot-x, 50%) var(--spot-y, 50%),
+    rgba(6, 145, 238, 0.13),
+    transparent 70%
+  );
+  inset: 0;
+  /* Suma luz sobre el contenido en lugar de taparlo (efecto linterna). */
+  mix-blend-mode: screen;
+  opacity: var(--spot-opacity, 0);
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spotlight {
+    display: none;
+  }
+}

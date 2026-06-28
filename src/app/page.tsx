@@ -8,11 +8,13 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Toast from "@/core/components/Toast";
 import ScrollIndicator from "@/core/components/ScrollIndicator";
+import CursorSpotlight from "@/core/components/CursorSpotlight";
 import styles from "./page.module.css";
 
 export default function App() {
   return (
     <>
+      <CursorSpotlight />
       <ScrollIndicator />
       <Header />
       <main className={styles.main}>

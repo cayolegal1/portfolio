@@ -39,6 +39,11 @@
   top: 0;
   transform: translateX(-50%);
   width: 100vw;
+  /* Textura de grid sutil (uniforme a lo ancho para no marcar los costados). */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: 44px 44px;
   /* Desvanece el glow antes del borde inferior para que no quede una línea
      dura al cortar con overflow: hidden. */
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 95%);

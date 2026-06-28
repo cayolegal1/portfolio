@@ -42,6 +42,25 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  /* Gradiente vivo: el gradiente fluye lentamente bajo el texto. */
+  background-size: 220% auto !important;
+  animation: name_flow 7s ease-in-out infinite;
+}
+
+@keyframes name_flow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .name {
+    animation: none;
+  }
 }
 
 .role {
