@@ -15,13 +15,13 @@ export type CategorizedTech = Technology & { categories: TechCategory[] };
 const resolve = (key: string): Technology =>
   technologies[key] ?? unspecializedTech[key];
 
-// Categorías de cada tecnología (algunas aplican a más de una: JS y TS se usan
-// tanto en frontend como en backend).
+// Categorías de cada tecnología. JS y TS no llevan categoría: son lenguajes
+// que sirven para front y back, así que solo aparecen en "Todos".
 const ENTRIES: Array<[string, TechCategory[]]> = [
   [TECH.HTML, ["frontend"]],
   [TECH.CSS, ["frontend"]],
-  [TECH.JS, ["frontend", "backend"]],
-  [TECH.TS, ["frontend", "backend"]],
+  [TECH.JS, []],
+  [TECH.TS, []],
   [TECH.REACT, ["frontend"]],
   [TECH.NEXT, ["frontend"]],
   [TECH.ZUSTAND, ["frontend"]],

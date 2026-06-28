@@ -53,10 +53,13 @@
 
 .grid {
   align-items: center;
-  column-gap: 1.5rem;
+  column-gap: 2.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* Ancho acotado para que las filas queden parejas al hacer wrap. */
+  margin-inline: auto;
+  max-width: 52rem;
   row-gap: 3.5rem;
 }
 
