@@ -2,6 +2,7 @@
 import { useMemo, useState, type JSX } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Tooltip from "@/core/components/Tooltip";
 import {
   categorizedTech,
   techCategories,
@@ -18,8 +19,8 @@ export default function TechStack(): JSX.Element {
   const counts = useMemo(() => {
     const map: Record<string, number> = { all: categorizedTech.length };
     techCategories.forEach(category => {
-      map[category] = categorizedTech.filter(
-        tech => tech.category === category,
+      map[category] = categorizedTech.filter(tech =>
+        tech.categories.includes(category),
       ).length;
     });
     return map;
@@ -29,7 +30,11 @@ export default function TechStack(): JSX.Element {
 
   return (
     <div className={styles.wrap}>
-      <div aria-label={translate("title")} className={styles.chips} role="tablist">
+      <div
+        aria-label={translate("title")}
+        className={styles.chips}
+        role="tablist"
+      >
         {filters.map(option => (
           <button
             aria-selected={filter === option}
@@ -47,23 +52,25 @@ export default function TechStack(): JSX.Element {
 
       <div className={styles.grid}>
         {categorizedTech.map(tech => {
-          const visible = filter === "all" || tech.category === filter;
+          const visible =
+            filter === "all" || tech.categories.includes(filter);
           return (
-            <div
-              className={`${styles.tile} ${styles[`cat_${tech.category}`]} ${visible ? "" : styles.hidden}`}
+            <span
+              className={`${styles.item} ${visible ? "" : styles.hidden}`}
               key={tech.name}
             >
-              <span aria-hidden="true" className={styles.dot} />
-              <Image
-                alt={`${tech.name} logo`}
-                className={styles.logo}
-                height={28}
-                loading="lazy"
-                src={tech.logo_path}
-                width={28}
-              />
-              <span className={styles.tile_name}>{tech.name}</span>
-            </div>
+              <Tooltip tooltip={tech.name}>
+                <Image
+                  alt={`${tech.name} logo`}
+                  className={styles.logo}
+                  height={45}
+                  loading="lazy"
+                  src={tech.logo_path}
+                  title={tech.name}
+                  width={45}
+                />
+              </Tooltip>
+            </span>
           );
         })}
       </div>
