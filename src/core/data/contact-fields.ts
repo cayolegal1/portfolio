@@ -20,7 +20,7 @@ export const fields: ContactField[] = [
   },
   {
     autoCapitalize: "sentences",
-    autoComplete: "subject",
+    autoComplete: "off",
     label: "subject",
     name: "subject",
     placeholder: "subject_placeholder",
