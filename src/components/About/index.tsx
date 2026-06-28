@@ -5,6 +5,7 @@ import Section from "@/core/components/Section";
 import AnimatedTitle from "@/core/components/Animated/AnimatedTitle";
 import AnimatedInView from "@/core/components/Animated/AnimatedInView";
 import Text from "@/core/components/Text";
+import CountUp from "@/core/components/CountUp";
 import { useExperienceTranslation } from "@/core/hooks/useExperienceTranslation";
 import { getYearsOfExperience } from "@/core/utils/experience";
 import { SECTIONS } from "@/core/data/global";
@@ -22,8 +23,8 @@ export default function About(): JSX.Element {
   const yearsOfExperience = getYearsOfExperience(data.career_start_date);
 
   const stats = [
-    { value: `+${yearsOfExperience}`, label: translate("stats.experience") },
-    { value: `${experiences.length}`, label: translate("stats.companies") },
+    { value: yearsOfExperience, prefix: "+", label: translate("stats.experience") },
+    { value: experiences.length, prefix: "", label: translate("stats.companies") },
   ];
 
   return (
@@ -72,15 +73,11 @@ export default function About(): JSX.Element {
           <ul className={styles.stats}>
             {stats.map(stat => (
               <li className={styles.stat} key={stat.label}>
-                <Text
-                  as="span"
-                  centered={false}
+                <CountUp
                   className={styles.stat_value}
-                  size="title"
-                  variant="gradient"
-                >
-                  {stat.value}
-                </Text>
+                  prefix={stat.prefix}
+                  value={stat.value}
+                />
                 <Text
                   as="span"
                   centered={false}
