@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { notifySuccess, notifyError } from "../utils/toast";
+import { celebrate } from "../utils/confetti";
 
 export const useSendEmail = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -34,6 +35,7 @@ export const useSendEmail = () => {
       await submitEmail(formRef.current, {
         onSuccess: () => {
           formRef.current!.reset();
+          celebrate();
           notifySuccess(
             translate("success_message"),
             translate("success_message_body"),
