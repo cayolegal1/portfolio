@@ -1,12 +1,13 @@
 .image {
-  /* Marco 4:5: exportá las capturas a este ratio (p.ej. 1080x1350) y no se
-     recorta nada. cover solo recorta si la imagen no respeta el ratio. */
+  /* Marco 4:5 (exportá las capturas a 1080x1350 para que encajen perfecto).
+     contain muestra la captura completa sin recortar; mientras las imágenes
+     no sean 4:5 queda un margen con el fondo de la card. */
   aspect-ratio: 4 / 5;
   cursor: pointer;
   display: block;
   /* next/image trae un atributo height; lo anulamos para que mande aspect-ratio. */
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   width: 100%;
