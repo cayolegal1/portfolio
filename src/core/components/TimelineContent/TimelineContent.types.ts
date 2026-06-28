@@ -12,5 +12,6 @@ export type Experience = {
 };
 
 export type TimelineContentProps = {
+  active?: boolean;
   content: Experience;
 };

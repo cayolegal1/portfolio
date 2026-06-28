@@ -1,30 +1,76 @@
-.content_container {
-    display: grid;
-    grid-template-columns: 100%;
-    row-gap: 2rem;
-    max-width: 95%;
+.card {
+  background: rgba(63, 63, 70, 0.08);
+  border: 1px solid #303034;
+  border-radius: 14px;
+  padding: 1.8rem 2rem;
+  transition:
+    border-color var(--transition-time),
+    box-shadow var(--transition-time),
+    transform var(--transition-time);
 }
 
-.content_container a {
+.card:hover {
+  border-color: var(--gradient-color);
+  box-shadow:
+    0 1rem 2.5rem rgba(0, 0, 0, 0.45),
+    0 0 2rem rgba(46, 142, 228, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Trabajo actual: resaltado permanente. */
+.card_active {
+  border-color: rgba(46, 142, 228, 0.5);
+  box-shadow: 0 0 2.2rem rgba(46, 142, 228, 0.12);
+}
+
+.header {
   align-items: center;
   display: flex;
-  gap: 1.0rem;
-  margin-bottom: 0.5rem;
-  transition: all var(--transition-time) ease-in-out;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.logo_wrap {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #303034;
+  border-radius: 50%;
+  display: flex;
+  flex: none;
+  height: 4.4rem;
+  justify-content: center;
+  overflow: hidden;
+  width: 4.4rem;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 2.6rem;
+  object-fit: contain;
+  width: 2.6rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.company_link {
+  align-items: center;
+  display: inline-flex;
+  transition: transform var(--transition-time) ease-in-out;
   width: fit-content;
 }
 
-.content_container a:hover {
-  transform: scale(1.011);
+.company_link:hover {
+  transform: scale(1.02);
 }
 
-.content_container a img {
-  border-radius: 100px;
-  object-fit: contain;
-}
-
-.content_container time {
-  color: #bababa;
+.card time {
+  color: #8b95a3;
+  margin-top: 0.2rem;
 }
 
 .tech_container {
@@ -32,13 +78,6 @@
   cursor: default;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-@media (min-width: 800px) {
-    .content_container {
-      grid-template-columns: 50% 50%;
-      column-gap: 10%;
-    }
+  gap: 0.6rem;
+  margin-top: 1.4rem;
 }

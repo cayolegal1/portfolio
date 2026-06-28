@@ -1,6 +1,28 @@
 .timeline_container {
-  margin-top: 3.0rem;
+  margin-top: 3rem;
 
   /* for the content visibility optimization */
   margin-inline: 0.8rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 0;
+  position: relative;
+}
+
+/* Rail vertical: gris sutil (el mismo que tenía el timeline original). */
+.timeline::before {
+  background: #ffffff26;
+  bottom: 1.8rem;
+  content: "";
+  left: 7px;
+  position: absolute;
+  top: 1.8rem;
+  width: 2px;
 }

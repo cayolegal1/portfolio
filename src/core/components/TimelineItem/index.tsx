@@ -10,11 +10,12 @@ export default function TimelineItem({
   ...props
 }: TimelineItemProps): JSX.Element {
   return (
-    <div {...props} className={styles.timeline_item_container}>
-      <div className={styles.timeline_item}>
-        <span className={active ? styles.active : ""} />
-        <TimelineContent content={experience} />
-      </div>
+    <div {...props} className={styles.item}>
+      <span
+        aria-hidden="true"
+        className={`${styles.dot} ${active ? styles.active : ""}`}
+      />
+      <TimelineContent active={active} content={experience} />
     </div>
   );
 }

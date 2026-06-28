@@ -16,7 +16,7 @@ export default function Experience(): JSX.Element {
     <Section id={SECTIONS.EXPERIENCE}>
       <AnimatedTitle id="experience_title">{translate("title")}</AnimatedTitle>
       <div className={styles.timeline_container}>
-        <Timeline>
+        <Timeline className={styles.timeline}>
           {experiences.map((experience, index) => (
             <AnimatedInView
               animationType="slideInUp"

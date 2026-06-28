@@ -1,58 +1,42 @@
-.timeline_item_container {
-    position: relative;
+.item {
+  padding-bottom: 5.5rem;
+  padding-left: 3.2rem;
+  position: relative;
 }
 
-.timeline_item {
-    margin-left: 2.5rem;
-    padding-bottom: 7.0rem;
+.item:last-child {
+  padding-bottom: 0;
 }
 
-.timeline_item::before {
-    border-left: 2px solid #ffffff26;
-    content: "";
-    height: 100%;
-    left: 2px;
-    position: absolute;
-    width: 0;
+/* Punto sobre el rail (alineado con .timeline::before, left 7px / centro 8px). */
+.dot {
+  background: var(--background);
+  border: 2px solid var(--gradient-color);
+  border-radius: 50%;
+  height: 14px;
+  left: 1px;
+  position: absolute;
+  top: 1.8rem;
+  width: 14px;
 }
 
-.timeline_item span {
-    background: var(--gradient-color);
-    border-radius: 50%;
-    font-size: 4rem;
-    height: 15px;
-    left: -5px;
-    position: absolute;
-    top: 20px;
-    width: 15px;
-}
-
+/* Trabajo actual: punto relleno que late. */
 .active {
-    animation: pulse_animation 1.5s infinite;
+  animation: dot_pulse 1.8s infinite;
+  background: var(--gradient-color);
 }
 
-@keyframes pulse_animation {
-    0% {
-        transform: scale(.95);
-        box-shadow: 0 0 0 0px var(--gradient-color);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
-    }
+@keyframes dot_pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(46, 142, 228, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 9px rgba(46, 142, 228, 0);
+  }
 }
 
-@media (min-width: 330px) {
-    .timeline_item {
-        margin-left: 3.0rem;
-    }
-}
-
-@media (min-width: 550px) {
-    .timeline_item {
-        margin-left: 0;
-        margin-inline: 4.8rem;
-    }
-    
+@media (prefers-reduced-motion: reduce) {
+  .active {
+    animation: none;
+  }
 }
