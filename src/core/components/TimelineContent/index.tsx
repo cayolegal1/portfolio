@@ -60,7 +60,12 @@ export default function TimelineContent({
         </div>
       </header>
 
-      <Text as="p" centered={false} size="description">
+      <Text
+        as="p"
+        centered={false}
+        className={styles.tech_description}
+        size="description"
+      >
         {description}
       </Text>
 
