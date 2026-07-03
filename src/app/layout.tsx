@@ -34,6 +34,7 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com/" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="description" content={META_DESCRIPTION} />
         <JsonLDScript />
       </head>
       <body className={nunito.className}>
