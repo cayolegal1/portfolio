@@ -121,6 +121,8 @@
     "view_linkedin": "View LinkedIn",
     "copy_email": "Copy email",
     "email_copied": "Email copied!",
+    "actions": "Actions",
+    "install_pwa": "Install as app",
     "trigger": "Search",
     "empty": "No results"
   },

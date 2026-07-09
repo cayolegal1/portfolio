@@ -11,6 +11,7 @@ import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { toggleLanguage } from "@/app/actions";
+import { usePwaInstall } from "@/core/hooks/usePwaInstall";
 import { SECTIONS } from "@/core/data/global";
 import { LOCALES } from "@/i18n/settings";
 import data from "@/core/data/user-info.json";
@@ -28,6 +29,7 @@ export default function CommandPalette(): JSX.Element | null {
   const t = useTranslations("CommandPalette");
   const nav = useTranslations("Header");
   const router = useRouter();
+  const { install } = usePwaInstall();
 
   const [isMac] = useState(
     () =>
@@ -92,8 +94,18 @@ export default function CommandPalette(): JSX.Element | null {
           }
         },
       },
+      {
+        id: "install-pwa",
+        group: t("actions"),
+        label: t("install_pwa"),
+        keywords: "pwa install instalar app aplicacion aplicativo",
+        run: () => {
+          install();
+          close();
+        },
+      },
     ];
-  }, [t, nav, close, router, copied]);
+  }, [t, nav, close, router, copied, install]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
