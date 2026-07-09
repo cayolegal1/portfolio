@@ -1,5 +1,6 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
+import ENV from "@/core/config/env";
 
 /**
  * Chrome dispara `beforeinstallprompt` antes de mostrar el prompt nativo de
@@ -19,6 +20,22 @@ type BeforeInstallPromptEvent = Event & {
 export const usePwaInstall = () => {
   const deferredPrompt = useRef<BeforeInstallPromptEvent | null>(null);
   const [canInstall, setCanInstall] = useState(false);
+
+  // Registra el Service Worker: sin él Chrome no dispara `beforeinstallprompt`.
+  // Solo en producción para evitar problemas de caché durante el desarrollo.
+  useEffect(() => {
+    if (
+      typeof window === "undefined" ||
+      !("serviceWorker" in navigator) ||
+      !ENV.IS_PROD
+    ) {
+      return;
+    }
+
+    navigator.serviceWorker.register("/sw.js").catch(() => {
+      // Registro fallido: la web sigue funcionando, solo no será instalable.
+    });
+  }, []);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
