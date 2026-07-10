@@ -2,6 +2,9 @@
   "Metadata": {
     "description": "Software Developer specializing in React and Next. Expert in creating modern and optimized interfaces, with backend knowledge for complete solutions."
   },
+  "PwaSplash": {
+    "loading": "Opening…"
+  },
   "Header": {
     "about_me": "About me",
     "contact": "Contact",

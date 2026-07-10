@@ -7,6 +7,7 @@ import { getMessages, getTranslations, getLocale } from "next-intl/server";
 // components
 import ProductionScripts from "@/components/ProductionScripts";
 import JsonLDScript from "@/components/JsonLdScript";
+import PwaSplash from "@/core/components/PwaSplash";
 
 // core
 import data from "@/core/data/user-info.json";
@@ -39,6 +40,7 @@ export default async function RootLayout({
       </head>
       <body className={nunito.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <PwaSplash />
           {children}
         </NextIntlClientProvider>
       </body>

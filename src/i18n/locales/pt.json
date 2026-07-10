@@ -2,6 +2,9 @@
   "Metadata": {
     "description": "Desenvolvedor de Software especializado em React e Next. Especialista em criação de interfaces modernas e otimizadas, com conhecimento de backend para soluções completas."
   },
+  "PwaSplash": {
+    "loading": "Abrindo…"
+  },
   "Header": {
     "about_me": "Sobre mim",
     "contact": "Contato",
