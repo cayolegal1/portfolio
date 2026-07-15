@@ -1,0 +1,129 @@
+/* Ángulo animable del borde brillante (requiere @property para interpolar). */
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.card {
+  background-color: rgba(63, 63, 70, 0.08);
+  border: 1px solid #303034;
+  border-radius: 16px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.4rem;
+  overflow: hidden;
+  padding: 2.4rem 2.2rem;
+  position: relative;
+  transition:
+    transform var(--transition-time),
+    box-shadow var(--transition-time),
+    border-color var(--transition-time);
+}
+
+/*
+  Borde brillante que recorre el contorno en loop infinito al hacer hover.
+  Un conic-gradient con un arco de luz rota (--border-angle) y una máscara
+  deja visible solo el anillo del borde (padding = grosor del borde).
+*/
+.card::after {
+  background: conic-gradient(
+    from var(--border-angle),
+    transparent 45%,
+    #0691ee 68%,
+    #39a6ef 82%,
+    #9bd8ff 92%,
+    transparent 100%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  padding: 1.5px;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity var(--transition-time);
+  z-index: 2;
+}
+
+.card:hover {
+  border-color: transparent;
+  box-shadow:
+    0 1.2rem 2.5rem rgba(0, 0, 0, 0.5),
+    0 0 2.5rem rgba(46, 142, 228, 0.22);
+  transform: translateY(-6px);
+}
+
+.card:hover::after {
+  animation: border-travel 3s linear infinite;
+  opacity: 1;
+}
+
+@keyframes border-travel {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+.icon {
+  align-items: center;
+  background: var(--text-gradient);
+  background-size: 200% 200%;
+  border-radius: 14px;
+  display: flex;
+  height: 5.6rem;
+  justify-content: center;
+  transition:
+    transform var(--transition-time),
+    background-position 0.6s ease;
+  width: 5.6rem;
+}
+
+.card:hover .icon {
+  background-position: 100% 0;
+  transform: translateY(-2px) rotate(-4deg);
+}
+
+.icon svg {
+  height: 2.9rem;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  width: 2.9rem;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 0.4rem;
+}
+
+.description {
+  color: rgba(241, 236, 225, 0.7);
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .icon {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .card:hover::after {
+    animation: none;
+    opacity: 1;
+  }
+}

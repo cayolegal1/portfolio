@@ -41,7 +41,7 @@ body.menu_open .nav_item {
   transform: scaleX(1);
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   body .navbar__hidden {
     right: 0;
     transform: none;

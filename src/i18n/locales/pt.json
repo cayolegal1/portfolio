@@ -14,8 +14,45 @@
     "language": "Idioma",
     "portuguese": "Português",
     "projects": "Projetos",
+    "services": "Serviços",
     "spanish": "Espanhol",
     "technologies": "Tecnologías"
+  },
+  "Services": {
+    "title": "Serviços",
+    "subtitle": "Soluções de ponta a ponta para levar seu produto ao próximo nível.",
+    "items": [
+      {
+        "title": "Desenvolvimento Web",
+        "description": "Sites e aplicações web modernas, rápidas e otimizadas. Interfaces caprichadas que convertem visitas em clientes.",
+        "features": ["React e Next.js", "SEO e performance", "Design responsivo"]
+      },
+      {
+        "title": "Aplicações Móveis",
+        "description": "Apps para iOS e Android, multiplataforma ou nativas conforme o que seu produto precisa.",
+        "features": ["React Native", "Android nativo (Kotlin)", "Publicação nas lojas"]
+      },
+      {
+        "title": "Backend & APIs",
+        "description": "APIs e serviços robustos, seguros e escaláveis. A base sólida sobre a qual seu produto cresce.",
+        "features": ["Node.js e NestJS", "Bancos de dados SQL", "Arquitetura escalável"]
+      },
+      {
+        "title": "Produto End-to-End",
+        "description": "Da ideia à produção: design, desenvolvimento, deploy e manutenção, com um único responsável.",
+        "features": ["Um único responsável", "Deploy e CI/CD", "Suporte contínuo"]
+      },
+      {
+        "title": "Consultoria e Qualidade",
+        "description": "Elevo os padrões da equipe com boas práticas que reduzem erros e aceleram as entregas.",
+        "features": ["Testing e CI/CD", "Bibliotecas reutilizáveis", "Code reviews"]
+      },
+      {
+        "title": "Otimização e Escala",
+        "description": "Melhoro produtos já existentes: performance, experiência do usuário e capacidade de escalar.",
+        "features": ["Auditoria de performance", "Refactor e melhorias", "Mais conversão"]
+      }
+    ]
   },
   "Hero": {
     "greeting": "Olá",

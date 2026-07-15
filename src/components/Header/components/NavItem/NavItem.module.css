@@ -14,7 +14,7 @@
   font-weight: 500;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .nav_link {
     margin-left: 0;
     margin-bottom: 0;

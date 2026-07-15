@@ -75,7 +75,7 @@
   color: transparent;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .dropdown_container {
     margin-left: 0;
   }

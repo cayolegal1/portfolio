@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+}
+
+.subtitle {
+  margin-top: 2rem;
+}
+
+.services_section {
+  margin-top: 3rem;
+  width: 100%;
+}

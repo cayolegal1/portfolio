@@ -8,6 +8,7 @@ import { NavItem } from "./components/NavItem/NavItem.types";
 const headers = [
   { title: "home", href: SECTIONS.HOME },
   { title: "projects", href: SECTIONS.PROJECTS },
+  { title: "services", href: SECTIONS.SERVICES },
   { title: "experience", href: SECTIONS.EXPERIENCE },
   { title: "technologies", href: SECTIONS.TECHNOLOGIES },
   { title: "about_me", href: SECTIONS.ABOUT },

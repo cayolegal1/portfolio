@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
 import Experience from "@/components/Experience";
 import Technologies from "@/components/Technologies";
 import About from "@/components/About";
@@ -22,6 +23,7 @@ export default function App() {
       <main className={styles.main}>
         <Hero />
         <Projects />
+        <Services />
         <Experience />
         <Technologies />
         <About />

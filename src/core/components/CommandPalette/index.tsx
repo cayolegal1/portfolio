@@ -70,6 +70,7 @@ export default function CommandPalette(): JSX.Element | null {
     return [
       { id: "nav-home", group: t("nav"), label: nav("home"), run: goTo(SECTIONS.HOME) },
       { id: "nav-projects", group: t("nav"), label: nav("projects"), run: goTo(SECTIONS.PROJECTS) },
+      { id: "nav-services", group: t("nav"), label: nav("services"), run: goTo(SECTIONS.SERVICES) },
       { id: "nav-experience", group: t("nav"), label: nav("experience"), run: goTo(SECTIONS.EXPERIENCE) },
       { id: "nav-technologies", group: t("nav"), label: nav("technologies"), run: goTo(SECTIONS.TECHNOLOGIES) },
       { id: "nav-about", group: t("nav"), label: nav("about_me"), run: goTo(SECTIONS.ABOUT) },

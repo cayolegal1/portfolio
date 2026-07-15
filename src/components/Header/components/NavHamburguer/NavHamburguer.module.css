@@ -51,7 +51,7 @@
     transform var(--transition-time) ease-out var(--transition-time);
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .hamburguer {
     display: none;
   }

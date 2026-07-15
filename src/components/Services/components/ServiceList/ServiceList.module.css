@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr;
+  margin-inline: auto;
+  /* Máximo 2 columnas: acotamos el ancho total para no ensanchar la sección
+     más que el resto del main. */
+  max-width: 68rem;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -14,8 +14,45 @@
     "language": "Language",
     "portuguese": "Portuguese",
     "projects": "Projects",
+    "services": "Services",
     "spanish": "Spanish",
     "technologies": "Technologies"
+  },
+  "Services": {
+    "title": "Services",
+    "subtitle": "End-to-end solutions to take your product to the next level.",
+    "items": [
+      {
+        "title": "Web Development",
+        "description": "Modern, fast, optimized websites and web apps. Polished interfaces that turn visitors into customers.",
+        "features": ["React & Next.js", "SEO & performance", "Responsive design"]
+      },
+      {
+        "title": "Mobile Applications",
+        "description": "iOS and Android apps, cross-platform or native depending on what your product needs.",
+        "features": ["React Native", "Native Android (Kotlin)", "App store publishing"]
+      },
+      {
+        "title": "Backend & APIs",
+        "description": "Robust, secure, and scalable APIs and services. The solid foundation your product grows on.",
+        "features": ["Node.js & NestJS", "SQL databases", "Scalable architecture"]
+      },
+      {
+        "title": "End-to-End Product",
+        "description": "From idea to production: design, development, deployment, and maintenance, with a single owner.",
+        "features": ["A single owner", "Deploy & CI/CD", "Ongoing support"]
+      },
+      {
+        "title": "Consulting & Quality",
+        "description": "I raise the team's standards with best practices that reduce errors and speed up delivery.",
+        "features": ["Testing & CI/CD", "Reusable libraries", "Code reviews"]
+      },
+      {
+        "title": "Optimization & Scale",
+        "description": "I improve existing products: performance, user experience, and the ability to scale.",
+        "features": ["Performance audit", "Refactor & improvements", "Higher conversion"]
+      }
+    ]
   },
   "Hero": {
     "greeting": "Hi",
