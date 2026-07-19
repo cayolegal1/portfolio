@@ -10,6 +10,7 @@ import {
   SpainFlag,
   USAFlag,
 } from "@/core/components/Icons/FlagsIcons";
+import CheckIcon from "@/core/components/Icons/CheckIcon";
 import styles from "./NavToggleLanguage.module.css";
 
 import type { JSX } from "react";
@@ -33,22 +34,39 @@ export default function NavToggleLanguage({
     await toggleLanguage(data);
   };
 
+  const current =
+    languages.find(language => language.locale === locale) ?? languages[0];
+
+  const trigger = (
+    <span className={styles.trigger}>
+      <span className={styles.flag_container}>{current.flag}</span>
+      <span className={styles.trigger_code}>
+        {current.locale.toUpperCase()}
+      </span>
+    </span>
+  );
+
   return (
-    <Dropdown title={translate(title as "language")}>
-      {languages.map(language => (
-        <form action={formAction} key={language.locale}>
-          <input type="hidden" name="locale" value={language.locale} />
-          <button type="submit" className={styles.language_item}>
-            <div className={styles.flag_container}>{language.flag}</div>
-            <Text
-              size="caption"
-              variant={locale === language.locale ? "gradient" : "normal"}
+    <Dropdown title={translate(title as "language")} trigger={trigger}>
+      {languages.map(language => {
+        const isActive = locale === language.locale;
+        return (
+          <form action={formAction} key={language.locale}>
+            <input type="hidden" name="locale" value={language.locale} />
+            <button
+              type="submit"
+              className={styles.language_item}
+              aria-current={isActive ? "true" : undefined}
             >
-              {translate(language.label)}
-            </Text>
-          </button>
-        </form>
-      ))}
+              <div className={styles.flag_container}>{language.flag}</div>
+              <Text size="caption" variant={isActive ? "gradient" : "normal"}>
+                {translate(language.label)}
+              </Text>
+              {isActive && <CheckIcon className={styles.check} />}
+            </button>
+          </form>
+        );
+      })}
     </Dropdown>
   );
 }

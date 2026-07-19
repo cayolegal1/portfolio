@@ -30,12 +30,14 @@
 
 .section_dropdown {
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   left: -12px;
   min-width: 12rem;
   opacity: 0;
-  padding: 10px;
-  padding-bottom: 0;
+  padding: 6px;
   pointer-events: none;
   position: absolute;
   top: 37px;
@@ -67,7 +69,7 @@
   transition: all var(--transition-time);
 }
 
-.label_container:hover svg path {
+.label_container:hover > svg path {
   fill: var(--gradient-color);
 }
 

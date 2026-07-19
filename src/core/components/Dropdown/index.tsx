@@ -10,7 +10,7 @@ import type { JSX } from "react";
 const checkboxId = "checkbox_dropdown";
 const containerId = "dropdown_container";
 
-const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
+const Dropdown = ({ children, title, trigger }: DropdownProps): JSX.Element => {
   useDropdownClick(checkboxId, containerId);
   return (
     <div className={styles.dropdown_container} id={containerId}>
@@ -21,16 +21,21 @@ const Dropdown = ({ children, title }: DropdownProps): JSX.Element => {
         type="checkbox"
       />
       <div className={styles.label_container}>
-        <Text
-          as="label"
-          className={styles.label}
-          htmlFor={checkboxId}
-          inHover
-          size="description"
-          variant="gradient"
-        >
-          {title}
-        </Text>
+        {trigger ? (
+          <span className={styles.label} role="button" aria-label={title}>
+            {trigger}
+          </span>
+        ) : (
+          <Text
+            as="span"
+            className={styles.label}
+            inHover
+            size="description"
+            variant="gradient"
+          >
+            {title}
+          </Text>
+        )}
         <ExpandGradientIcon
           properties={{
             width: "23px",
