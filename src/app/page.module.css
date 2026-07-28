@@ -3,3 +3,27 @@
   min-height: 100vh;
   padding-inline: var(--padding-inline);
 }
+
+.main:focus {
+  outline: none;
+}
+
+.skip_link {
+  background-color: var(--button-color);
+  border-radius: 0 0 8px 0;
+  color: #fff;
+  font-size: 1.4rem;
+  left: 0;
+  padding: 1rem 1.6rem;
+  position: fixed;
+  top: 0;
+  transform: translateY(-120%);
+  transition: transform 150ms ease;
+  z-index: 1000;
+}
+
+.skip_link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  transform: translateY(0);
+}

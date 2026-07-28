@@ -1,15 +1,26 @@
+.trigger {
+  cursor: zoom-in;
+  display: block;
+  padding: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 2px;
+}
+
 .image {
   /* Marco 4:5 (exportá las capturas a 1080x1350 para que encajen perfecto).
      contain muestra la captura completa sin recortar; mientras las imágenes
      no sean 4:5 queda un margen con el fondo de la card. */
   aspect-ratio: 4 / 4;
-  cursor: pointer;
   display: block;
   /* next/image trae un atributo height; lo anulamos para que mande aspect-ratio. */
   height: auto;
   /* object-fit: contain; */
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   width: 100%;
 }
 
@@ -29,6 +40,29 @@
 
 .overlay_visible {
   opacity: 1;
+}
+
+.close {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 2.4rem;
+  height: 3.2rem;
+  justify-content: center;
+  line-height: 1;
+  position: fixed;
+  right: 1.2rem;
+  top: 1.2rem;
+  width: 3.2rem;
+  z-index: 210;
+}
+
+.close:focus-visible {
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 2px;
 }
 
 .big_picture {

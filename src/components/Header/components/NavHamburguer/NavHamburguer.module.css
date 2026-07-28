@@ -30,7 +30,7 @@
   top: 12px;
 }
 
-.hamburguer[aria-expanded="true"] .top {
+.hamburguer[data-expanded="true"] .top {
   top: var(--middle);
   transform: rotate(45deg);
   transition:
@@ -38,12 +38,12 @@
     transform var(--transition-time) ease-out var(--transition-time);
 }
 
-.hamburguer[aria-expanded="true"] .middle {
+.hamburguer[data-expanded="true"] .middle {
   opacity: 0;
   transition: opacity 0.1s ease var(--transition-time);
 }
 
-.hamburguer[aria-expanded="true"] .bottom {
+.hamburguer[data-expanded="true"] .bottom {
   top: var(--middle);
   transform: rotate(-45deg);
   transition:

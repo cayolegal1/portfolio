@@ -9,7 +9,7 @@ export default function AnimatedTitle({
 }: AnimatedTitleProps): JSX.Element {
   return (
     <AnimatedInView id={id} animationType="pulse">
-      <Text as="h3" size="title" uppercase>
+      <Text as="h2" size="title" uppercase>
         <Text className="section_title">{children}</Text>
       </Text>
     </AnimatedInView>

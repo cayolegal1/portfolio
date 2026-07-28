@@ -6,23 +6,24 @@
   z-index: 5;
 }
 
-.dropdown_input {
-  display: none;
-}
-
 .label_container {
   align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
   display: flex;
 }
 
-.label {
-  font-family: Arial;
+.label_container:focus-visible {
+  border-radius: 6px;
+  outline: 2px solid var(--fourth-gradient-color);
+  outline-offset: 4px;
 }
 
-.dropdown_input:checked + .label_container .label,
-.dropdown_input:not(:checked) + .label_container .label {
+.label {
   border: none;
   cursor: pointer;
+  font-family: Arial;
   font-size: 1.6rem;
   position: relative;
   transition: all 200ms linear;
@@ -46,7 +47,7 @@
   width: 100%;
 }
 
-.dropdown_input:checked ~ .section_dropdown {
+.dropdown_container[data-open="true"] .section_dropdown {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0);
@@ -56,7 +57,7 @@
   transform: rotate(0) translateY(1.5px);
 }
 
-.dropdown_input:checked + div .label + svg {
+.dropdown_container[data-open="true"] .label + svg {
   transform: rotate(-180deg);
 }
 
@@ -73,10 +74,6 @@
   fill: var(--gradient-color);
 }
 
-.label_container:hover label {
-  color: transparent;
-}
-
 @media (min-width: 700px) {
   .dropdown_container {
     margin-left: 0;
@@ -91,7 +88,7 @@
     left: -6px;
   }
 
-  .dropdown_input:checked ~ .section_dropdown::after {
+  .dropdown_container[data-open="true"] .section_dropdown::after {
     border-bottom: 8px solid #2f3455;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;

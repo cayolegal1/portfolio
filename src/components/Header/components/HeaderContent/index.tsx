@@ -28,33 +28,36 @@ export default function HeaderContent({
       style={{ animationDuration: "0.6s" }}
     >
       <nav className={styles.nav}>
-        {sections.map((item, index) =>
-          item.href !== SECTIONS.LANGUAGE ? (
-            <NavItem
-              style={{
-                animationDelay: `${ITEM_STAGGER + index * ITEM_STAGGER}ms`,
-              }}
-              active={activeId === item.href}
-              key={item.href}
-              item={item}
-              onSelect={() => selectSection(item.href)}
-            />
-          ) : (
-            <div
-              key={item.href}
-              className="nav_item"
-              style={{
-                animationDelay: `${ITEM_STAGGER + index * ITEM_STAGGER}ms`,
-              }}
-            >
-              <NavToggleLanguage
-                key={item.href}
-                locale={currentLocale}
-                title={item.title}
-              />
-            </div>
-          ),
-        )}
+        <ul className={styles.nav_list}>
+          {sections.map((item, index) =>
+            item.href !== SECTIONS.LANGUAGE ? (
+              <li className={styles.nav_list_item} key={item.href}>
+                <NavItem
+                  style={{
+                    animationDelay: `${ITEM_STAGGER + index * ITEM_STAGGER}ms`,
+                  }}
+                  active={activeId === item.href}
+                  item={item}
+                  onSelect={() => selectSection(item.href)}
+                />
+              </li>
+            ) : (
+              <li className={styles.nav_list_item} key={item.href}>
+                <div
+                  className="nav_item"
+                  style={{
+                    animationDelay: `${ITEM_STAGGER + index * ITEM_STAGGER}ms`,
+                  }}
+                >
+                  <NavToggleLanguage
+                    locale={currentLocale}
+                    title={item.title}
+                  />
+                </div>
+              </li>
+            ),
+          )}
+        </ul>
       </nav>
     </AnimatedRender>
   );

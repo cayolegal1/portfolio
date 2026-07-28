@@ -17,7 +17,7 @@ export default function ServiceCard({
     <article className={styles.card}>
       <div className={styles.icon}>{icon}</div>
 
-      <Text as="h4" centered={false} className={styles.title} size="subtitle">
+      <Text as="h3" centered={false} className={styles.title} size="subtitle">
         {title}
       </Text>
 

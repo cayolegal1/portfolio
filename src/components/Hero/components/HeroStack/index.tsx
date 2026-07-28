@@ -12,7 +12,11 @@ export default function HeroStack(): JSX.Element {
     <div className={styles.stack}>
       <ul className={styles.track}>
         {loop.map((tech, index) => (
-          <li className={styles.item} key={`${tech.name}-${index}`}>
+          <li
+            aria-hidden={index >= technologiesList.length}
+            className={styles.item}
+            key={`${tech.name}-${index}`}
+          >
             <Image
               alt={tech.name}
               className={styles.logo}

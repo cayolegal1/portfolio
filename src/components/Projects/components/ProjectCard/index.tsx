@@ -47,16 +47,19 @@ export default function ProjectCard({
     <article className={styles.card}>
       <div className={styles.media}>
         <Carousel>
-          {imagesPath.map(imagePath => (
+          {imagesPath.map((imagePath, index) => (
             <CarouselItem key={imagePath}>
-              <ProjectImage src={imagePath} />
+              <ProjectImage
+                src={imagePath}
+                alt={`${title} — captura ${index + 1} de ${imagesPath.length}`}
+              />
             </CarouselItem>
           ))}
         </Carousel>
       </div>
 
       <div className={styles.body}>
-        <Text as="h4" size="xl" centered={false} className={styles.title}>
+        <Text as="h3" size="xl" centered={false} className={styles.title}>
           {title}
         </Text>
 

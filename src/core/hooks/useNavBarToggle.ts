@@ -22,9 +22,19 @@ export const useNavBarToggle = () => {
       }
     };
 
-    window.addEventListener("resize", listener);
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && isNavBarExpanded) {
+        toggleMobileNavbar();
+      }
+    };
 
-    return () => window.removeEventListener("resize", listener);
+    window.addEventListener("resize", listener);
+    document.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      window.removeEventListener("resize", listener);
+      document.removeEventListener("keydown", onKeyDown);
+    };
   }, [isNavBarExpanded]);
 
   return {

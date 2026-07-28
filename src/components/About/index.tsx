@@ -92,7 +92,7 @@ export default function About(): JSX.Element {
 
           <div className={styles.languages}>
             <Text
-              as="h4"
+              as="h3"
               centered={false}
               className={styles.languages_title}
               size="caption"

@@ -11,16 +11,21 @@ import Toast from "@/core/components/Toast";
 import ScrollIndicator from "@/core/components/ScrollIndicator";
 import CursorSpotlight from "@/core/components/CursorSpotlight";
 import CommandPalette from "@/core/components/CommandPalette";
+import { getTranslations } from "next-intl/server";
 import styles from "./page.module.css";
 
-export default function App() {
+export default async function App() {
+  const translate = await getTranslations("Header");
   return (
     <>
+      <a className={styles.skip_link} href="#main-content">
+        {translate("skip_to_content")}
+      </a>
       <CursorSpotlight />
       <CommandPalette />
       <ScrollIndicator />
       <Header />
-      <main className={styles.main}>
+      <main className={styles.main} id="main-content" tabIndex={-1}>
         <Hero />
         <Projects />
         <Services />

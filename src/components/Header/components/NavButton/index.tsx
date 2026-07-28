@@ -12,8 +12,9 @@ export default function NavButton() {
     <>
       <AnimatedRender
         animationType="fadeInDown"
+        aria-controls="header"
+        aria-expanded={isNavBarExpanded}
         aria-label={isNavBarExpanded ? "Cerrar menú" : "Abrir menú"}
-        aria-roledescription="Botón para abrir o cerrar menú de navegación"
         as="button"
         className={styles.button}
         delay="0.2s"
@@ -23,8 +24,9 @@ export default function NavButton() {
         <NavHamburguer expanded={isNavBarExpanded} />
       </AnimatedRender>
       <div
+        aria-hidden="true"
         className={`
-          ${styles.overlay} 
+          ${styles.overlay}
           ${isNavBarExpanded && styles.overlay__active}
         `}
         onClick={toggleMobileNavbar}

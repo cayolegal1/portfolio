@@ -33,15 +33,14 @@ export default function TechStack(): JSX.Element {
       <div
         aria-label={translate("title")}
         className={styles.chips}
-        role="tablist"
+        role="group"
       >
         {filters.map(option => (
           <button
-            aria-selected={filter === option}
+            aria-pressed={filter === option}
             className={`${styles.chip} ${filter === option ? styles.chip_active : ""}`}
             key={option}
             onClick={() => setFilter(option)}
-            role="tab"
             type="button"
           >
             {translate(`categories.${option}`)}
