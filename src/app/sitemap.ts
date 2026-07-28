@@ -5,7 +5,7 @@ import path from "path";
 import data from "@/core/data/user-info.json";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const pages = await glob("**/*.tsx", { cwd: "src/app" });
+  const pages = await glob("**/page.tsx", { cwd: "src/app" });
 
   const routesData = await Promise.all(
     pages.map(async filename => {
@@ -20,10 +20,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   return routesData
-    .filter(
-      ({ route }) =>
-        !route.includes("layout.tsx") || !route.includes("global-error.tsx"),
-    )
     .map(({ route, lastModified }) => ({
       changeFrequency: "weekly",
       lastModified,
