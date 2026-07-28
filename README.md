@@ -3,7 +3,7 @@
 Sitio personal de un desarrollador FullStack. Construido con un enfoque en
 rendimiento, SEO, accesibilidad e internacionalización.
 
-🔗 **Live:** https://cayolegal.vercel.app
+🔗 **Live:** https://cayolegal.dev
 
 ## Stack
 
@@ -46,13 +46,13 @@ pnpm dev          # servidor de desarrollo (Turbopack) en http://localhost:3000
 
 ### Scripts
 
-| Script               | Descripción                              |
-| -------------------- | ---------------------------------------- |
-| `pnpm dev`           | Servidor de desarrollo con Turbopack     |
-| `pnpm build`         | Build de producción                      |
-| `pnpm start`         | Sirve el build de producción             |
-| `pnpm lint`          | Linting con ESLint                       |
-| `pnpm check:types`   | Chequeo de tipos con `tsc --noEmit`      |
+| Script             | Descripción                          |
+| ------------------ | ------------------------------------ |
+| `pnpm dev`         | Servidor de desarrollo con Turbopack |
+| `pnpm build`       | Build de producción                  |
+| `pnpm start`       | Sirve el build de producción         |
+| `pnpm lint`        | Linting con ESLint                   |
+| `pnpm check:types` | Chequeo de tipos con `tsc --noEmit`  |
 
 ### Variables de entorno
 
