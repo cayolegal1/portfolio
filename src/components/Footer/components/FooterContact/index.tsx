@@ -1,6 +1,5 @@
 import Text from "@/core/components/Text";
 import EmailIcon from "@/core/components/Icons/EmailIcon";
-import PhoneIcon from "@/core/components/Icons/PhoneIcon";
 import LocationIcon from "@/core/components/Icons/LocationIcon";
 import data from "@/core/data/user-info.json";
 import type { FooterContactProps } from "./FooterContact.types";
@@ -28,14 +27,6 @@ export default function FooterContact({
             <EmailIcon />
             <Text centered={false} size="caption">
               {data.email}
-            </Text>
-          </a>
-        </li>
-        <li>
-          <a className={styles.footer_contact_link} href={`tel:${data.phone}`}>
-            <PhoneIcon />
-            <Text centered={false} size="caption">
-              {data.phone}
             </Text>
           </a>
         </li>
