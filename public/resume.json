@@ -1,0 +1,320 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Cayo Amin Legal Figueredo",
+    "label": "Desarrollador Fullstack · Móvil y Web · Android Nativo",
+    "image": "https://cayolegal.dev/about-me.jpg",
+    "email": "cayolegal@hotmail.com",
+    "phone": "+595 984 801 293",
+    "url": "https://cayolegal.dev",
+    "summary": "Desarrollador fullstack con más de 4 años de experiencia construyendo productos web y móviles, actualmente enfocado en pagos y sistemas POS en fintech. Combino React, Next.js y NestJS en la web con Android nativo en Kotlin y Jetpack Compose, y me importan la arquitectura limpia, el testing y la entrega ágil.",
+    "location": {
+      "address": "Luque",
+      "city": "Asunción",
+      "countryCode": "PY",
+      "region": "Paraguay"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "cayo-amin-legal-figueredo",
+        "url": "https://www.linkedin.com/in/cayo-amin-legal-figueredo/"
+      },
+      {
+        "network": "GitHub",
+        "username": "cayolegal1",
+        "url": "https://github.com/cayolegal1"
+      },
+      {
+        "network": "X",
+        "username": "cayo_legal",
+        "url": "https://x.com/cayo_legal"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Bepsa",
+      "position": "Desarrollador Android",
+      "location": "Asunción, Paraguay",
+      "url": "https://www.bepsa.com.py/",
+      "startDate": "2026-04-01",
+      "summary": "Desarrollo Android nativo (Kotlin + Jetpack Compose) de la nueva app del POS Dinelco, enfocada en pagos y disponibilidad.",
+      "highlights": [
+        "Integré pagos con QR (Bepsa/SPI, PIX y QR transfronterizo PY–AR) sobre ISO 8583 y robustecí todo el flujo: persistencia de la venta al generar el QR, reconciliación de pendientes al iniciar la app, expiración y reverso automáticos, y polling gobernado por el switch, evitando pagos perdidos o duplicados.",
+        "Lideré la incorporación de billeteras digitales (Claro, Tigo Money y Personal Pay) de extremo a extremo: flujos OTP y USSD de mensaje único, reverso automático ante timeout o abandono, persistencia, comprobantes y reimpresión.",
+        "Rediseñé la capa de comunicación con el switch sobre TLS 1.2: failover entre host primario y secundario, reconexión automática con verificación de conexión viva, timeouts sincronizados desde la API y envío sin reintentos para no duplicar transacciones.",
+        "Diseñé e implementé la actualización OTA del POS: detección de nuevas versiones contra la API, descarga del APK por HTTPS, instalación iniciada desde la app y acciones post-actualización (como el cierre de lote) al detectar inactividad.",
+        "Rediseñé los reportes y comprobantes del POS: cada QR y billetera se discrimina por separado, encabezado unificado para los cinco reportes con menor consumo de papel, y nuevo ticket digital y de papel con AID, marca por BIN y logo del comercio.",
+        "Implementé la funcionalidad de propina de punta a punta: reglas de cálculo y redondeo, padrón de mozos, envío en ISO 8583 para tarjetas, QR, billeteras y alias, desglose en comprobantes, reportes por mozo y sección en el cierre de lote, con tests unitarios.",
+        "Integré el POS con cajas registradoras vía GeoSwitch: cobro de órdenes de la caja desde el POS, reporte de la venta a la caja y persistencia y recuperación de órdenes reclamadas.",
+        "Construí el módulo de configuración y sincronización del POS: terminal, parámetros de red, BINes y emisores, entidades SPI, comercio, selector de ambientes DEV/QA/PROD y reporte de configuración impreso y digital.",
+        "Implementé la reimpresión de comprobantes (última transacción, por número de cargo y por listado) con vista previa digital."
+      ]
+    },
+    {
+      "name": "Bepsa",
+      "position": "Desarrollador de Software",
+      "location": "Asunción, Paraguay",
+      "url": "https://www.bepsa.com.py/",
+      "startDate": "2024-11-01",
+      "summary": "Arquitectura de micro-frontends, design system corporativo y APIs seguras con NestJS sobre DB2 (AS/400) y PostgreSQL.",
+      "highlights": [
+        "Diseño la arquitectura de un ecosistema modular de micro-frontends con librería de componentes compartida.",
+        "Diseño y mantengo el design system de la organización (React, TypeScript, Radix UI), publicado como paquete npm con semantic-release.",
+        "Diseño APIs REST seguras con NestJS y TypeScript: JWT/Auth0, validación de datos, OpenAPI y Sequelize sobre DB2 (AS/400) y PostgreSQL.",
+        "Desarrollo interfaces con React, TypeScript y Tailwind CSS usando Zustand, TanStack Query y React Hook Form + Zod.",
+        "Realizo code reviews y establezco convenciones de calidad (Conventional Commits, ESLint/Prettier, hooks de pre-commit)."
+      ]
+    },
+    {
+      "name": "Bebidas del Paraguay",
+      "position": "Desarrollador Móvil",
+      "location": "Paraguay (Remoto)",
+      "url": "https://www.facebook.com/profile.php?id=100063883334434",
+      "startDate": "2023-10-01",
+      "endDate": "2024-11-01",
+      "summary": "App móvil de e-commerce para iOS y Android con React Native y TypeScript.",
+      "highlights": [
+        "Desarrollé una aplicación móvil e-commerce para iOS y Android con React Native y TypeScript.",
+        "Apliqué Scrum para entregar funcionalidades en tiempo y forma.",
+        "Optimicé la experiencia del usuario con un diseño simple y funcional.",
+        "Incorporé tests unitarios a toda la lógica de la aplicación, reduciendo drásticamente los errores para el usuario final."
+      ]
+    },
+    {
+      "name": "Mega Digital",
+      "position": "Desarrollador de Software",
+      "location": "Paraguay (Remoto)",
+      "url": "https://www.megadigital.com.py/",
+      "startDate": "2023-05-01",
+      "endDate": "2023-11-01",
+      "summary": "Plataforma web empresarial en Next.js para cobranzas, CRM y atención al cliente, más una app móvil de soporte.",
+      "highlights": [
+        "Desarrollé una plataforma web empresarial en Next.js para automatizar Cobranzas, CRM y Atención al Cliente.",
+        "Implementé gestión de equipos de trabajo y métricas en tiempo real.",
+        "Creé una aplicación móvil de atención al cliente para iOS y Android con chat en tiempo real."
+      ]
+    },
+    {
+      "name": "Innovatica",
+      "position": "Desarrollador de Software",
+      "location": "Asunción, Paraguay",
+      "url": "https://innovatica.com.py/",
+      "startDate": "2022-11-01",
+      "endDate": "2023-05-01",
+      "summary": "Software a medida para clientes de Estados Unidos con React y React Native.",
+      "highlights": [
+        "Desarrollé software a medida para clientes de EE. UU. utilizando React y React Native.",
+        "Implementé interfaces dinámicas que mejoraron la usabilidad."
+      ]
+    },
+    {
+      "name": "Cabaña Los Troncos",
+      "position": "Desarrollador de Software",
+      "location": "Asunción, Paraguay",
+      "url": "https://www.clt.com.py/",
+      "startDate": "2022-07-01",
+      "endDate": "2022-11-01",
+      "summary": "Software de banca empresarial con .NET Core y SQL.",
+      "highlights": [
+        "Desarrollé software de banca empresarial con .NET Core y SQL.",
+        "Implementé soluciones seguras y estables para procesos financieros internos."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "La Barra",
+      "description": "Aplicación móvil de e-commerce para comprar bebidas: catálogo de cervezas, gaseosas y jugos, promociones y pedidos de delivery a domicilio.",
+      "url": "https://play.google.com/store/apps/details?id=com.labarraapp",
+      "startDate": "2023-10-01",
+      "endDate": "2024-11-01",
+      "entity": "Bebidas del Paraguay",
+      "type": "application",
+      "roles": [
+        "Desarrollador Móvil"
+      ],
+      "keywords": [
+        "TypeScript",
+        "React Native",
+        "Zustand",
+        "TanStack Query",
+        "Jest"
+      ]
+    },
+    {
+      "name": "Portfolio personal (cayolegal.dev)",
+      "description": "Portfolio multiidioma (es/en/pt) construido con Next.js App Router, CSS Modules, next-intl, PWA instalable, monitoreo con Sentry y CI en GitHub Actions.",
+      "url": "https://cayolegal.dev",
+      "type": "application",
+      "roles": [
+        "Desarrollador"
+      ],
+      "keywords": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "next-intl",
+        "PWA",
+        "Sentry"
+      ]
+    },
+    {
+      "name": "DGB Business & Services",
+      "description": "Sitio web corporativo para una plataforma paraguaya de gestión comercial e intermediación de negocios (bienes raíces, seguros corporativos, comercio internacional y alianzas estratégicas), multiidioma (es/en/pt).",
+      "url": "https://dgb-business.vercel.app",
+      "entity": "DGB Business & Services",
+      "type": "application",
+      "roles": [
+        "Desarrollador Web"
+      ],
+      "keywords": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Desarrollo Web",
+      "level": "Avanzado",
+      "keywords": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Micro-frontends"
+      ]
+    },
+    {
+      "name": "UI y Design Systems",
+      "level": "Avanzado",
+      "keywords": [
+        "Tailwind CSS",
+        "Shadcn",
+        "Radix UI",
+        "Material UI",
+        "Storybook",
+        "Design System"
+      ]
+    },
+    {
+      "name": "Desarrollo Móvil",
+      "level": "Avanzado",
+      "keywords": [
+        "React Native",
+        "iOS",
+        "Android",
+        "Expo"
+      ]
+    },
+    {
+      "name": "Android Nativo",
+      "level": "Intermedio",
+      "keywords": [
+        "Kotlin",
+        "Jetpack Compose",
+        "POS",
+        "ISO 8583",
+        "OTA"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Avanzado",
+      "keywords": [
+        "Node.js",
+        "NestJS",
+        "Express",
+        "REST",
+        "OpenAPI",
+        "Auth0",
+        "JWT"
+      ]
+    },
+    {
+      "name": "Bases de datos y ORMs",
+      "level": "Intermedio",
+      "keywords": [
+        "PostgreSQL",
+        "DB2 (AS/400)",
+        "SQL",
+        "Prisma",
+        "Sequelize"
+      ]
+    },
+    {
+      "name": "Estado, Formularios y Testing",
+      "level": "Avanzado",
+      "keywords": [
+        "Zustand",
+        "TanStack Query",
+        "React Hook Form",
+        "Zod",
+        "Jest",
+        "Testing Library",
+        "Vitest"
+      ]
+    },
+    {
+      "name": "CI/CD y Tooling",
+      "level": "Intermedio",
+      "keywords": [
+        "GitLab CI",
+        "GitHub Actions",
+        "semantic-release",
+        "Docker",
+        "Git",
+        "Conventional Commits",
+        "ESLint",
+        "Prettier",
+        "Vite",
+        "AWS"
+      ]
+    },
+    {
+      "name": "Metodologías",
+      "level": "Avanzado",
+      "keywords": [
+        "Scrum",
+        "Metodologías ágiles",
+        "Code reviews",
+        "Liderazgo técnico",
+        "Arquitectura limpia"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio (B2)"
+    },
+    {
+      "language": "Portugués",
+      "fluency": "Básico (A2)"
+    }
+  ],
+  "references": [
+    {
+      "name": "Aldo Perinetto — Jefe de Bebidas del Paraguay",
+      "reference": "Referencia laboral disponible a pedido."
+    },
+    {
+      "name": "Diógenes Caraballo — CEO de Mega Digital",
+      "reference": "Referencia laboral disponible a pedido."
+    }
+  ],
+  "meta": {
+    "canonical": "https://cayolegal.dev/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-08-26T00:00:00"
+  }
+}

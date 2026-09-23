@@ -84,6 +84,15 @@
           "/la_barra_assets/image_2.webp"
         ],
         "technologies": ["typescript", "react_native", "zustand", "react_query"]
+      },
+      {
+        "id": "1",
+        "name": "dgb-business.vercel.app",
+        "title": "DGB Business & Services",
+        "description": "Corporate website for DGB Business & Services, a Paraguayan business-management platform that connects companies, investors and projects: real estate, corporate insurance, international trade and strategic alliances, with content in Spanish, English and Portuguese.",
+        "website_url": "https://dgb-business.vercel.app",
+        "images_path": ["/dgb_business_assets/image_1.jpg"],
+        "technologies": ["next_js", "typescript", "tailwind_css"]
       }
     ]
   },
@@ -97,7 +106,7 @@
       "company_logo": "/company_logos/bepsa.webp",
       "position": "Software Developer",
       "from_date": "November 2024 - Actually",
-      "description": "I design internal component libraries and secure APIs with NestJS, uphold quality through code reviews, and build interfaces in React. Today I lead the native Android development (Kotlin + Jetpack Compose) of the new Dinelco POS app.",
+      "description": "I design internal component libraries and secure APIs with NestJS, uphold quality through code reviews, and build interfaces in React. Today I lead the native Android development (Kotlin + Jetpack Compose) of the new Dinelco POS app: QR payments (Bepsa, PIX and PY–AR) and digital wallets over ISO 8583, resilient TLS communication with the switch (failover and automatic reconnection), OTA updates and per-payment-method reports.",
       "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
     },
     "1": {
@@ -210,7 +219,10 @@
     "phone": "Phone number"
   },
   "Footer": {
+    "contact_title": "Contact",
     "copyright": "All rights reserved",
-    "footer_stack": "Developed in"
+    "footer_stack": "Developed in",
+    "nav_title": "Navigation",
+    "tagline": "I build web and mobile products, from idea to production."
   }
 }

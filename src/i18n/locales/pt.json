@@ -84,6 +84,15 @@
           "/la_barra_assets/image_2.webp"
         ],
         "technologies": ["typescript", "react_native", "zustand", "react_query"]
+      },
+      {
+        "id": "1",
+        "name": "dgb-business.vercel.app",
+        "title": "DGB Business & Services",
+        "description": "Site institucional para a DGB Business & Services, uma plataforma paraguaia de gestão comercial que conecta empresas, investidores e projetos: imóveis, seguros corporativos, comércio internacional e alianças estratégicas, com conteúdo em espanhol, inglês e português.",
+        "website_url": "https://dgb-business.vercel.app",
+        "images_path": ["/dgb_business_assets/image_1.jpg"],
+        "technologies": ["next_js", "typescript", "tailwind_css"]
       }
     ]
   },
@@ -97,7 +106,7 @@
       "company_logo": "/company_logos/bepsa.webp",
       "position": "Desenvolvedor de Software",
       "from_date": "Novembro de 2024 - Atualmente",
-      "description": "Projeto bibliotecas internas de componentes e APIs seguras com NestJS, mantenho a qualidade com code reviews e desenvolvo interfaces em React. Hoje lidero o desenvolvimento Android nativo (Kotlin + Jetpack Compose) do novo app do POS Dinelco.",
+      "description": "Projeto bibliotecas internas de componentes e APIs seguras com NestJS, mantenho a qualidade com code reviews e desenvolvo interfaces em React. Hoje lidero o desenvolvimento Android nativo (Kotlin + Jetpack Compose) do novo app do POS Dinelco: pagamentos com QR (Bepsa, PIX e PY–AR) e carteiras digitais sobre ISO 8583, comunicação TLS resiliente com o switch (failover e reconexão automática), atualização OTA e relatórios por meio de pagamento.",
       "technologies": "typescript,react,shadcn,tailwind_css,auth0,react_query,storybook,gitlab,git"
     },
     "1": {
@@ -210,7 +219,10 @@
     "phone": "Telefone"
   },
   "Footer": {
+    "contact_title": "Contato",
     "copyright": "Todos os direitos reservados",
-    "footer_stack": "Desenvolvido em"
+    "footer_stack": "Desenvolvido em",
+    "nav_title": "Navegação",
+    "tagline": "Construo produtos web e mobile, da ideia à produção."
   }
 }
